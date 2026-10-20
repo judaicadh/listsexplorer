@@ -1,0 +1,23 @@
+{# A–Z directory. Expects `items` (entities) and `label`. #}
+<div class="filter-bar">
+  <label for="flt">Filter {{ label }}</label>
+  <input id="flt" type="search" data-filter-input placeholder="Type a name or spelling">
+  <span class="muted" data-filter-count></span>
+</div>
+{% set letters = [] %}
+{% for e in items %}{% set L = e.name | initial %}{% if not (L in letters) %}{% set letters = (letters.push(L), letters) %}{% endif %}{% endfor %}
+<nav aria-label="Jump to letter" class="az">{% for L in letters %}<a href="#letter-{{ L }}">{{ L }}</a>{% endfor %}</nav>
+{% for L in letters %}
+<section data-filter-group class="az-group" aria-labelledby="letter-{{ L }}">
+  <h2 id="letter-{{ L }}" class="az-head">{{ L }}</h2>
+  <ul class="dir">
+    {% for e in items %}{% if (e.name | initial) == L %}
+    <li data-filter-item="{{ e.printedForms | join(' ') }} {{ e.place.name if e.place }}">
+      <a href="{{ e.url }}">{{ e.name }}</a>
+      <span class="muted">{% if e.type %}{{ e.type }} · {% endif %}{% if e.place %}{{ e.place.name }} · {% endif %}{{ e.entries.length | plural("entry", "entries") }}{% if e.roles.length %}, {{ e.roles.length | plural("role", "roles") }}{% endif %}{% if e.years.length %} · {{ e.years[0] }}{% if e.years.length > 1 %}–{{ e.years[e.years.length - 1] }}{% endif %}{% endif %}</span>
+    </li>
+    {% endif %}{% endfor %}
+  </ul>
+</section>
+{% endfor %}
+<script src="/assets/filter.js" defer></script>

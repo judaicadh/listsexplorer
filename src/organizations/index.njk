@@ -1,0 +1,11 @@
+---
+layout: base.njk
+title: Organizations
+permalink: /organizations/
+---
+<div class="wrap section">
+  <h1>Organizations</h1>
+  <p class="lede">Congregations, societies, committees, firms and banks — as donors, organizers or collecting agents.</p>
+  {% set items = db.organizations %}{% set label = "organizations" %}
+  {% include "directory.njk" %}
+</div>

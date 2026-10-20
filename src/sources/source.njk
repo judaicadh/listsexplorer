@@ -1,0 +1,23 @@
+---
+layout: base.njk
+pagination:
+  data: db.sources
+  size: 1
+  alias: source
+permalink: "/sources/{{ source.id }}/"
+eleventyComputed:
+  title: "{{ source.title }}"
+---
+{% from "macros.njk" import listCard %}
+<div class="wrap section">
+  <nav aria-label="Breadcrumb" class="crumbs"><a href="/sources/">Sources</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ source.title }}</span></nav>
+  <p class="eyebrow">{{ source.type or "Source" }}</p>
+  <h1><i>{{ source.title }}</i></h1>
+  {% if source.title_original %}<p class="orig" dir="auto">{{ source.title_original }}</p>{% endif %}
+  <p class="sub">{% if source.place %}<a href="{{ source.place.url }}">{{ source.place.name }}</a>{% endif %}{% if source.publisher %} · {{ source.publisher }}{% endif %}{% if source.dates %} · {{ source.dates }}{% endif %}{% if source.url %} · <a href="{{ source.url }}">Catalogue / digitized copy</a>{% endif %}</p>
+  {% if source.notes %}<p>{{ source.notes }}</p>{% endif %}
+  <section class="section-tight">
+    <h2>Lists in this source</h2>
+    <div class="grid-3">{% for l in source.lists %}{{ listCard(l) }}{% endfor %}</div>
+  </section>
+</div>

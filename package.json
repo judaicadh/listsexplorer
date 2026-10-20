@@ -1,0 +1,16 @@
+{
+  "name": "lists-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A static site for exploring historical subscriber and donation lists.",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "build": "npm run validate && eleventy",
+    "start": "eleventy --serve",
+    "clean": "rm -rf _site"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "csv-parse": "^5.5.6"
+  }
+}

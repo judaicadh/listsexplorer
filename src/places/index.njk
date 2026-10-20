@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: Places
+permalink: /places/
+---
+<div class="wrap section">
+  <h1>Places</h1>
+  <p class="lede">Towns and cities named in the lists, with the spellings used and their modern names.</p>
+  <div class="filter-bar">
+    <label for="flt">Filter places</label>
+    <input id="flt" type="search" data-filter-input placeholder="Any spelling">
+    <span class="muted" data-filter-count></span>
+  </div>
+  <div class="table-box">
+    <table>
+      <thead><tr><th scope="col">Place</th><th scope="col">Modern name</th><th scope="col">Country</th><th scope="col" class="num">Entries</th><th scope="col" class="num">Lists raised</th><th scope="col" class="num">People &amp; orgs</th></tr></thead>
+      <tbody>
+      {% for p in db.places %}
+      <tr data-filter-item="{{ p.name }} {{ p.variants | join(' ') }} {{ p.modern_name }} {{ p.country }}">
+        <td><a href="{{ p.url }}">{{ p.name }}</a>{% if p.variants.length %}<span class="muted block">{{ p.variants | join(", ") }}</span>{% endif %}</td>
+        <td>{{ p.modern_name }}</td>
+        <td>{{ p.country }}</td>
+        <td class="num">{{ p.entries.length }}</td>
+        <td class="num">{{ p.lists.length }}</td>
+        <td class="num">{{ p.entities.length }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="/assets/filter.js" defer></script>

@@ -1,0 +1,26 @@
+---
+layout: base.njk
+title: Download data
+permalink: /data/
+---
+<div class="wrap section prose">
+  <h1>Download the data</h1>
+  <p class="lede">The complete dataset behind this site, as plain CSV files (UTF-8). Built {{ site.builtAt }}.</p>
+  <div class="table-box">
+    <table>
+      <thead><tr><th scope="col">File</th><th scope="col">Contains</th><th scope="col" class="num">Rows</th></tr></thead>
+      <tbody>
+        <tr><td><a href="/data/entries.csv">entries.csv</a></td><td>One row per name in a list</td><td class="num">{{ db.entries.length }}</td></tr>
+        <tr><td><a href="/data/lists.csv">lists.csv</a></td><td>Each subscriber or donation list</td><td class="num">{{ db.lists.length }}</td></tr>
+        <tr><td><a href="/data/sources.csv">sources.csv</a></td><td>Books, periodicals and registers</td><td class="num">{{ db.sources.length }}</td></tr>
+        <tr><td><a href="/data/people.csv">people.csv</a></td><td>Identified individuals</td><td class="num">{{ db.people.length }}</td></tr>
+        <tr><td><a href="/data/organizations.csv">organizations.csv</a></td><td>Congregations, firms, banks, societies</td><td class="num">{{ db.organizations.length }}</td></tr>
+        <tr><td><a href="/data/roles.csv">roles.csv</a></td><td>Officers, committees and receiving agents of each list</td><td class="num">{{ db.roles.length }}</td></tr>
+        <tr><td><a href="/data/places.csv">places.csv</a></td><td>Places with variants and coordinates</td><td class="num">{{ db.places.length }}</td></tr>
+        <tr><td><a href="/data/currencies.csv">currencies.csv</a></td><td>Currencies and their units</td><td class="num">{{ db.currencies.length }}</td></tr>
+        <tr><td><a href="/search-index.json">search-index.json</a></td><td>Entries joined with names, lists and places (JSON)</td><td class="num">{{ db.entries.length }}</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>{{ site.license }}. Please cite the list and the original source.</p>
+</div>

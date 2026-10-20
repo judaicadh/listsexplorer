@@ -1,0 +1,11 @@
+id,name,variants,modern_name,country,lat,lon,authority,notes
+london,London,,London,United Kingdom,51.5074,-0.1278,,
+frankfurt,Frankfurt am Main,Frankfort,Frankfurt am Main,Germany,50.1109,8.6821,,
+vienna,Vienna,Wien,Vienna,Austria,48.2082,16.3738,,
+naples,Naples,Napoli,Naples,Italy,40.8518,14.2681,,
+paris,Paris,,Paris,France,48.8566,2.3522,,
+manchester,Manchester,,Manchester,United Kingdom,53.4808,-2.2426,,
+liverpool,Liverpool,,Liverpool,United Kingdom,53.4084,-2.9916,,
+glasgow,Glasgow,,Glasgow,United Kingdom,55.8642,-4.2518,,
+portsea,Portsea,,"Portsea, Portsmouth",United Kingdom,50.7989,-1.0912,,
+mogador,Mogador,Essaouira|Mogadore,Essaouira,Morocco,31.5085,-9.7595,,"Bombarded by the French navy in August 1844."

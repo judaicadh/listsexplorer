@@ -1,0 +1,25 @@
+---
+layout: base.njk
+title: Agents
+permalink: /agents/
+---
+<div class="wrap section">
+  <h1>Agents</h1>
+  <p class="lede">Banks, booksellers, rabbis and others who received subscriptions or forwarded them on behalf of donors — named in the lists as receiving houses or with “per …”.</p>
+  <div class="table-box">
+    <table>
+      <thead><tr><th scope="col">Agent</th><th scope="col">Type</th><th scope="col">Based in</th><th scope="col">Lists</th><th scope="col" class="num">Entries forwarded</th></tr></thead>
+      <tbody>
+      {% for a in db.agents %}
+      <tr>
+        <td><a href="{{ a.url }}">{{ a.name }}</a></td>
+        <td>{{ a.type or ("person" if a.kind == "person") }}</td>
+        <td>{% if a.place %}<a href="{{ a.place.url }}">{{ a.place.name }}</a>{% endif %}</td>
+        <td>{% for l in a.lists %}<a href="{{ l.url }}">{{ l.title }}</a>{% if not loop.last %}; {% endif %}{% endfor %}</td>
+        <td class="num">{{ a.agentEntries.length }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

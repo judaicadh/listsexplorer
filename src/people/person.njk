@@ -1,0 +1,12 @@
+---
+layout: base.njk
+pagination:
+  data: db.people
+  size: 1
+  alias: entity
+permalink: "/people/{{ entity.id }}/"
+crumb: ["/people/", "People"]
+eleventyComputed:
+  title: "{{ entity.name }}"
+---
+{% include "entity.njk" %}

@@ -1,0 +1,84 @@
+{# Shared body for person and organization pages. Expects `entity` and `crumb` = [url, label]. #}
+{% from "macros.njk" import entriesTable, totalsLine, typeTag %}
+<div class="wrap section">
+  <nav aria-label="Breadcrumb" class="crumbs"><a href="{{ crumb[0] }}">{{ crumb[1] }}</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ entity.name }}</span></nav>
+
+  <div class="split">
+    <div class="split-main stack">
+      <p class="eyebrow">{% if entity.kind == "person" %}Person{% else %}{{ entity.type | capitalize if entity.type else "Organization" }}{% endif %}</p>
+      <h1>{{ entity.name }}</h1>
+      {% if entity.name_original %}<p class="orig" dir="auto">{{ entity.name_original }}</p>{% endif %}
+      <p class="sub">
+        {%- if entity.birth or entity.death %}{{ entity.birth or "?" }}–{{ entity.death or "?" }} · {% endif -%}
+        {%- if entity.founded %}Founded {{ entity.founded }} · {% endif -%}
+        {%- if entity.place %}<a href="{{ entity.place.url }}">{{ entity.place.name }}</a>{% endif -%}
+      </p>
+      <div class="chips">
+        {% if entity.entries.length %}<span class="chip chip-don">{{ entity.entries.length | plural("entry", "entries") }}</span>{% endif %}
+        {% if entity.roles.length %}<span class="chip">{{ entity.roles.length | plural("role", "roles") }}</span>{% endif %}
+        {% if entity.agentEntries.length %}<span class="chip chip-sub">Agent for {{ entity.agentEntries.length | plural("entry", "entries") }}</span>{% endif %}
+        {% if entity.years.length %}<span class="chip">{{ entity.years[0] }}{% if entity.years.length > 1 %}–{{ entity.years[entity.years.length - 1] }}{% endif %}</span>{% endif %}
+      </div>
+      {% if entity.notes %}<p>{{ entity.notes }}</p>{% endif %}
+    </div>
+    <aside class="split-side stack">
+      <section class="panel">
+        <h2 class="h-small">Name forms</h2>
+        <ul class="plain">{% for f in entity.printedForms %}<li dir="auto">{{ f }}</li>{% endfor %}</ul>
+      </section>
+      {% if entity.totals.length %}
+      <section class="panel">
+        <h2 class="h-small">Total given</h2>
+        <p>{{ totalsLine(entity.totals) }}</p>
+      </section>
+      {% endif %}
+      {% if entity.authorities.length %}
+      <section class="panel">
+        <h2 class="h-small">Elsewhere</h2>
+        <ul class="plain">{% for a in entity.authorities %}<li><a href="{{ a }}">{{ a }}</a></li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+    </aside>
+  </div>
+
+  {% if entity.roles.length %}
+  <section class="section-tight">
+    <h2>Roles</h2>
+    <ul class="timeline">
+      {% for r in entity.roles %}
+      <li><span class="tl-year">{{ r.list.year }}</span><span><b>{{ r.roleLabel }}</b> · <a href="{{ r.list.url }}">{{ r.list.title }}</a>{% if r.name_as_printed %}<span class="muted block">Printed as <i>{{ r.name_as_printed }}</i>{% if r.address_as_printed %} · {{ r.address_as_printed }}{% endif %}</span>{% endif %}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if entity.entries.length %}
+  <section class="section-tight">
+    <h2>Appears in</h2>
+    {{ entriesTable(entity.entries, true, "Entries for " + entity.name) }}
+  </section>
+  {% endif %}
+
+  {% if entity.agentEntries.length %}
+  <section class="section-tight">
+    <h2>Received or forwarded</h2>
+    <p class="muted">Entries printed as paid through {{ entity.name }}.{% if entity.agentTotals.length %} Total: {{ totalsLine(entity.agentTotals) }}.{% endif %}</p>
+    {{ entriesTable(entity.agentEntries, true, "Entries received by " + entity.name) }}
+  </section>
+  {% endif %}
+
+  {% if entity.place and entity.place.entities.length > 1 %}
+  <section class="section-tight">
+    <h2 class="h-small">Also in {{ entity.place.name }}</h2>
+    <ul class="inline-list">
+      {% for o in entity.place.entities | reject("equalto", entity) %}{% if loop.index <= 12 %}<li><a href="{{ o.url }}">{{ o.name }}</a></li>{% endif %}{% endfor %}
+    </ul>
+    <p><a href="{{ entity.place.url }}">Everything in {{ entity.place.name }} →</a></p>
+  </section>
+  {% endif %}
+
+  <section class="panel cite">
+    <h2 class="h-small">Cite this record</h2>
+    <p>“{{ entity.name }}.” <i>{{ site.title }}</i>, {{ site.credits }}. [Stable URL]{{ entity.url }}. Accessed [date].</p>
+  </section>
+</div>

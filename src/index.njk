@@ -1,0 +1,59 @@
+---
+layout: base.njk
+---
+{% from "macros.njk" import listCard %}
+<section class="wrap hero">
+  <p class="eyebrow">A database of historical subscription and donation lists</p>
+  <h1>Find the people who paid for the books — and the causes — of their communities.</h1>
+  <p class="lede">Search names, towns, organizations and collecting agents across transcribed subscriber lists and donation lists. Every entry links back to the list and page it was printed on.</p>
+
+  <form class="search-bar" role="search" action="/search/" method="get">
+    <div class="field grow">
+      <label for="q">Name, place or list</label>
+      <input id="q" name="q" type="search" placeholder="e.g. Montefiore, Paris, synagogue">
+    </div>
+    <div class="field">
+      <label for="type">List type</label>
+      <select id="type" name="type">
+        <option value="">All lists</option>
+        {% for key, label in db.vocab.LIST_TYPES %}<option value="{{ key }}">{{ label }}</option>{% endfor %}
+      </select>
+    </div>
+    <button class="btn" type="submit">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      Search
+    </button>
+  </form>
+
+  <div class="stats">
+    <div class="stat"><span class="stat-n">{{ db.stats.lists }}</span><span class="muted">Lists</span></div>
+    <div class="stat"><span class="stat-n">{{ db.stats.entries }}</span><span class="muted">Entries</span></div>
+    <div class="stat"><span class="stat-n">{{ db.stats.people + db.stats.organizations }}</span><span class="muted">People &amp; organizations</span></div>
+    <div class="stat"><span class="stat-n">{{ db.stats.places }}</span><span class="muted">Places</span></div>
+    <div class="stat"><span class="stat-n">{% if db.stats.yearFrom %}{{ db.stats.yearFrom }}{% if db.stats.yearTo != db.stats.yearFrom %}–{{ db.stats.yearTo }}{% endif %}{% else %}—{% endif %}</span><span class="muted">Years covered</span></div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Ways to explore</h2>
+    <div class="grid-4">
+      <a class="card" href="/people/"><span class="card-title">People</span><span>Every name as printed, with spelling variants grouped and linked across lists.</span></a>
+      <a class="card" href="/organizations/"><span class="card-title">Organizations</span><span>Synagogues, societies, firms and banks that gave, organized or collected.</span></a>
+      <a class="card" href="/places/"><span class="card-title">Places</span><span>Towns as named in the lists, matched to modern place names.</span></a>
+      <a class="card" href="/agents/"><span class="card-title">Agents</span><span>Banks and individuals who received or forwarded subscriptions.</span></a>
+    </div>
+  </div>
+</section>
+
+{% if db.featuredLists.length %}
+<section class="wrap section">
+  <div class="row-between">
+    <h2>Featured lists</h2>
+    <a href="/lists/">All lists →</a>
+  </div>
+  <div class="grid-3">
+    {% for l in db.featuredLists %}{{ listCard(l) }}{% endfor %}
+  </div>
+</section>
+{% endif %}

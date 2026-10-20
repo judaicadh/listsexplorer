@@ -1,0 +1,54 @@
+{% macro typeTag(list) -%}
+<span class="tag tag-{{ list.list_type }}">{{ list.typeLabel }}</span>
+{%- endmacro %}
+
+{% macro entityLink(e, fallback) -%}
+{%- if e %}<a href="{{ e.url }}">{{ e.name }}</a>{% else %}{{ fallback }}{% endif -%}
+{%- endmacro %}
+
+{% macro certainty(e) -%}
+{%- if e.certainty == "uncertain" %} <span class="cert" title="Reading uncertain">?</span>{% elif e.certainty == "probable" %} <span class="cert cert-prob" title="Reading probable">~</span>{% endif -%}
+{%- endmacro %}
+
+{# Table of entries; showList = include the list column #}
+{% macro entriesTable(entries, showList=true, caption="") %}
+<div class="table-box">
+<table>
+  {% if caption %}<caption class="sr-only">{{ caption }}</caption>{% endif %}
+  <thead><tr>
+    <th scope="col">Name as printed</th>
+    <th scope="col">Identified as</th>
+    {% if showList %}<th scope="col">List</th><th scope="col">Year</th>{% endif %}
+    <th scope="col">Place</th>
+    <th scope="col">Via</th>
+    <th scope="col" class="num">Amount</th>
+  </tr></thead>
+  <tbody>
+  {% for e in entries %}
+  <tr>
+    <td>{{ e.name_as_printed }}{{ certainty(e) }}</td>
+    <td>{{ entityLink(e.entity, "—") }}</td>
+    {% if showList %}<td><a href="{{ e.list.url }}">{{ e.list.title }}</a></td><td class="num">{{ e.list.year }}</td>{% endif %}
+    <td>{% if e.place %}<a href="{{ e.place.url }}">{{ e.place.name }}</a>{% else %}{{ e.place_as_printed or "—" }}{% endif %}</td>
+    <td>{% if e.agent %}<a href="{{ e.agent.url }}">{{ e.agent.name }}</a>{% else %}—{% endif %}</td>
+    <td class="num">{{ e.amountLabel }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endmacro %}
+
+{% macro totalsLine(totals) -%}
+{%- for t in totals %}<span class="total">{{ t.display }}<span class="muted"> ({{ t.count }})</span></span>{% if not loop.last %} · {% endif %}{% endfor -%}
+{%- endmacro %}
+
+{% macro listCard(l) %}
+<a class="card list-card" href="{{ l.url }}">
+  {{ typeTag(l) }}
+  {% if l.title_original %}<span class="orig" dir="auto">{{ l.title_original }}</span>{% endif %}
+  <span class="card-title">{{ l.title }}</span>
+  <span class="muted">{% if l.source %}<i>{{ l.source.title }}</i> · {% endif %}{% if l.place %}{{ l.place.name }} · {% endif %}{{ l.dateLabel }}</span>
+  <span class="card-foot">{{ l.entries.length }} entries{% if l.status %} · {{ l.status }}{% endif %}</span>
+</a>
+{% endmacro %}

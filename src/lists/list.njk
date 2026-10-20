@@ -1,0 +1,110 @@
+---
+layout: base.njk
+pagination:
+  data: db.lists
+  size: 1
+  alias: list
+permalink: "/lists/{{ list.id }}/"
+eleventyComputed:
+  title: "{{ list.title }}"
+---
+{% from "macros.njk" import typeTag, entityLink, certainty, totalsLine %}
+<div class="wrap section">
+  <nav aria-label="Breadcrumb" class="crumbs"><a href="/lists/">Lists</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ list.title }}</span></nav>
+
+  <div class="split">
+    <div class="split-main stack">
+      {{ typeTag(list) }}
+      {% if list.title_original %}<p class="orig" dir="auto">{{ list.title_original }}</p>{% endif %}
+      <h1>{{ list.title }}</h1>
+      <p class="sub">{% if list.source %}<a href="{{ list.source.url }}"><i>{{ list.source.title }}</i></a>{% if list.citation %}, {{ list.citation }}{% endif %} · {% endif %}{% if list.place %}{{ list.place.name }}, {% endif %}{{ list.dateLabel }}</p>
+      {% if list.purpose %}<p>{{ list.purpose }}</p>{% endif %}
+      {% if list.notes %}<p class="note">{{ list.notes }}</p>{% endif %}
+    </div>
+    <dl class="split-side facts">
+      {% if list.organizer %}<dt>Organized by</dt><dd>{{ entityLink(list.organizer) }}</dd>{% endif %}
+      {% if list.beneficiaryPlace %}<dt>For</dt><dd><a href="{{ list.beneficiaryPlace.url }}">{{ list.beneficiaryPlace.name }}</a></dd>{% endif %}
+      {% if list.currency %}<dt>Currency</dt><dd>{{ list.currency.name }}</dd>{% endif %}
+      <dt>Entries</dt><dd>{{ list.entries.length }}{% if list.status %} · <span class="warn">{{ list.status }}</span>{% endif %}</dd>
+      {% if list.totals.length %}<dt>Total so far</dt><dd>{{ totalsLine(list.totals) }}</dd>{% endif %}
+      {% if list.transcriber %}<dt>Transcribed by</dt><dd>{{ list.transcriber }}</dd>{% endif %}
+      {% if list.pages %}<dt>Pages</dt><dd>{{ list.pages }}</dd>{% endif %}
+    </dl>
+  </div>
+
+  {% if list.officers.length %}
+  <section class="panel">
+    <h2 class="h-small">Officers &amp; committee</h2>
+    <ul class="officers">
+      {% for r in list.officers %}
+      <li><span class="muted small-note">{{ r.roleLabel }}</span>{{ entityLink(r.entity, r.displayName) }}{% if r.address_as_printed %}<span class="muted small-note">{{ r.address_as_printed }}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if list.agents.length %}
+  <section class="panel">
+    <h2 class="h-small">Subscriptions received by</h2>
+    <ul class="inline-list">
+      {% for r in list.agents %}<li>{{ entityLink(r.entity, r.displayName) }}{% if r.address_as_printed %} <span class="muted">({{ r.address_as_printed }})</span>{% endif %}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if list.topGifts.length > 1 %}
+  <section class="panel">
+    <h2>Largest amounts</h2>
+    <div class="bars">
+      {% for g in list.topGifts %}
+      <div class="bar-row">
+        <span class="bar-label">{% if g.entry.entity %}<a href="{{ g.entry.entity.url }}">{{ g.entry.name_as_printed }}</a>{% else %}{{ g.entry.name_as_printed }}{% endif %}</span>
+        <span class="bar-track" aria-hidden="true"><span class="bar bar-{{ list.list_type }}" style="width: {{ g.pct }}%"></span></span>
+        <span class="bar-val">{{ g.entry.amountLabel }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="section-tight">
+    <h2>{% if list.image %}Page &amp; transcription{% else %}Transcription{% endif %}</h2>
+    <div class="split">
+      {% if list.image %}
+      <figure class="split-side page-image">
+        <a href="{{ list.image }}"><img src="{{ list.image }}" alt="Printed page of {{ list.title }}" loading="lazy"></a>
+        <figcaption>{% if list.source %}<i>{{ list.source.title }}</i>, {% endif %}{{ list.dateLabel }}{% if list.image_credit %}. {{ list.image_credit }}{% endif %}{% if list.iiif_manifest %} · <a href="{{ list.iiif_manifest }}">IIIF manifest</a>{% endif %}</figcaption>
+      </figure>
+      {% endif %}
+      <div class="split-main">
+        {% for s in list.sections %}
+        <div class="tx-section">
+          {% if s.title %}<h3 class="tx-head">{{ s.title }}{% if s.totals.length %} <span class="muted">· {{ totalsLine(s.totals) }}</span>{% endif %}</h3>{% endif %}
+          <div class="table-box">
+            <table class="tx">
+              <thead><tr><th scope="col" class="num">#</th><th scope="col">Name as printed</th><th scope="col">Place</th><th scope="col" class="num">Amount</th></tr></thead>
+              <tbody>
+              {% for e in s.entries %}
+              <tr id="{{ e.id }}">
+                <td class="num muted">{{ e.seq }}</td>
+                <td>{% if e.entity %}<a href="{{ e.entity.url }}">{{ e.name_as_printed }}</a>{% else %}{{ e.name_as_printed }}{% endif %}{{ certainty(e) }}{% if e.note %}<span class="muted block">{{ e.note }}</span>{% endif %}{% if e.agent and not s.title %}<span class="muted block">via {{ e.agent.name }}</span>{% endif %}</td>
+                <td>{% if e.place %}<a href="{{ e.place.url }}">{{ e.place_as_printed or e.place.name }}</a>{% else %}{{ e.place_as_printed }}{% endif %}</td>
+                <td class="num">{{ e.amountLabel }}</td>
+              </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        {% endfor %}
+        <p class="muted small-note"><span class="cert cert-prob">~</span> reading probable · <span class="cert">?</span> reading uncertain</p>
+        <p class="actions"><a href="/search/?list={{ list.title | urlencode }}">Search within this list</a>{% if site.repoUrl %} · <a href="{{ site.repoUrl }}/issues/new?title={{ ('Correction: ' + list.title) | urlencode }}">Report a transcription error</a>{% endif %}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel cite">
+    <h2 class="h-small">Cite this list</h2>
+    <p>“{{ list.title }}.” {% if list.source %}<i>{{ list.source.title }}</i>, {% endif %}{{ list.dateLabel }}. Transcribed in <i>{{ site.title }}</i>, {{ site.credits }}. [Stable URL]{{ list.url }}. Accessed [date].</p>
+  </section>
+</div>

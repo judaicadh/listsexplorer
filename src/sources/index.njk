@@ -1,0 +1,25 @@
+---
+layout: base.njk
+title: Sources
+permalink: /sources/
+---
+<div class="wrap section">
+  <h1>Sources</h1>
+  <p class="lede">The books, periodicals, pamphlets and registers in which the lists were printed or written.</p>
+  <div class="table-box">
+    <table>
+      <thead><tr><th scope="col">Source</th><th scope="col">Type</th><th scope="col">Place</th><th scope="col">Dates</th><th scope="col" class="num">Lists</th></tr></thead>
+      <tbody>
+      {% for s in db.sources %}
+      <tr>
+        <td><a href="{{ s.url }}"><i>{{ s.title }}</i></a>{% if s.title_original %}<span class="muted block" dir="auto">{{ s.title_original }}</span>{% endif %}</td>
+        <td>{{ s.type }}</td>
+        <td>{% if s.place %}<a href="{{ s.place.url }}">{{ s.place.name }}</a>{% endif %}</td>
+        <td>{{ s.dates }}</td>
+        <td class="num">{{ s.lists.length }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

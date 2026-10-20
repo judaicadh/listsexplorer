@@ -1,0 +1,81 @@
+---
+layout: base.njk
+title: Search entries
+permalink: /search/
+---
+<div class="wrap section">
+  <h1>Search entries</h1>
+  <p class="lede">Each row is one name as it appears in a list. Filters combine; the address bar updates so you can share or bookmark a search.</p>
+
+  <form id="search-form" class="filters" role="search">
+    <div class="field grow">
+      <label for="f-q">Search</label>
+      <input id="f-q" name="q" type="search" placeholder="Name, place, list, agent…">
+    </div>
+    <div class="field">
+      <label for="f-type">List type</label>
+      <select id="f-type" name="type"><option value="">All</option></select>
+    </div>
+    <div class="field">
+      <label for="f-place">Place</label>
+      <select id="f-place" name="place"><option value="">All</option></select>
+    </div>
+    <div class="field">
+      <label for="f-list">List</label>
+      <select id="f-list" name="list"><option value="">All</option></select>
+    </div>
+    <div class="field">
+      <label for="f-agent">Via agent</label>
+      <select id="f-agent" name="agent"><option value="">Any</option></select>
+    </div>
+    <div class="field">
+      <label for="f-cur">Currency</label>
+      <select id="f-cur" name="cur"><option value="">All</option></select>
+    </div>
+    <div class="field small">
+      <label for="f-from">From year</label>
+      <input id="f-from" name="from" type="number" inputmode="numeric" min="1000" max="2100">
+    </div>
+    <div class="field small">
+      <label for="f-to">To year</label>
+      <input id="f-to" name="to" type="number" inputmode="numeric" min="1000" max="2100">
+    </div>
+    <div class="field">
+      <label for="f-sort">Sort by</label>
+      <select id="f-sort" name="sort">
+        <option value="list">List order</option>
+        <option value="amount">Largest amount</option>
+        <option value="name">Name</option>
+        <option value="place">Place</option>
+        <option value="year">Year</option>
+      </select>
+    </div>
+    <label class="check"><input id="f-linked" name="linked" type="checkbox" value="1"> Identified people &amp; organizations only</label>
+    <button type="reset" class="btn btn-quiet">Clear</button>
+  </form>
+
+  <div class="row-between results-head">
+    <p id="status" role="status" class="muted">Loading…</p>
+    <button type="button" id="download" class="btn btn-quiet">Download results (CSV)</button>
+  </div>
+  <p id="cur-note" class="muted small-note" hidden>Amounts in different currencies are not converted; sorting by amount compares within each currency.</p>
+
+  <div class="table-box">
+    <table>
+      <caption class="sr-only">Search results</caption>
+      <thead><tr>
+        <th scope="col">Name as printed</th>
+        <th scope="col">Identified as</th>
+        <th scope="col">List</th>
+        <th scope="col" class="num">Year</th>
+        <th scope="col">Place</th>
+        <th scope="col">Via</th>
+        <th scope="col" class="num">Amount</th>
+      </tr></thead>
+      <tbody id="results"></tbody>
+    </table>
+  </div>
+  <nav id="pager" class="pager" aria-label="Result pages"></nav>
+  <noscript><p>Search needs JavaScript. You can still browse <a href="/lists/">lists</a>, <a href="/people/">people</a> and <a href="/places/">places</a>, or <a href="/data/">download the data</a>.</p></noscript>
+</div>
+<script src="/assets/search.js" defer></script>

@@ -1,0 +1,39 @@
+---
+layout: base.njk
+pagination:
+  data: db.places
+  size: 1
+  alias: place
+permalink: "/places/{{ place.id }}/"
+eleventyComputed:
+  title: "{{ place.name }}"
+---
+{% from "macros.njk" import entriesTable, listCard %}
+<div class="wrap section">
+  <nav aria-label="Breadcrumb" class="crumbs"><a href="/places/">Places</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ place.name }}</span></nav>
+  <p class="eyebrow">Place</p>
+  <h1>{{ place.name }}</h1>
+  <p class="sub">{% if place.modern_name and place.modern_name != place.name %}Today {{ place.modern_name }}, {% endif %}{{ place.country }}{% if place.variants.length %} · Also printed as {{ place.variants | join(", ") }}{% endif %}{% if place.lat %} · <a href="https://www.openstreetmap.org/?mlat={{ place.lat }}&mlon={{ place.lon }}#map=11/{{ place.lat }}/{{ place.lon }}">Map</a>{% endif %}</p>
+  {% if place.notes %}<p>{{ place.notes }}</p>{% endif %}
+
+  {% if place.lists.length %}
+  <section class="section-tight">
+    <h2>Lists raised here</h2>
+    <div class="grid-3">{% for l in place.lists %}{{ listCard(l) }}{% endfor %}</div>
+  </section>
+  {% endif %}
+
+  {% if place.entries.length %}
+  <section class="section-tight">
+    <h2>Entries from {{ place.name }}</h2>
+    {{ entriesTable(place.entries, true, "Entries from " + place.name) }}
+  </section>
+  {% endif %}
+
+  {% if place.entities.length %}
+  <section class="section-tight">
+    <h2>People &amp; organizations based here</h2>
+    <ul class="inline-list">{% for e in place.entities %}<li><a href="{{ e.url }}">{{ e.name }}</a></li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+</div>

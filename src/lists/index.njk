@@ -1,0 +1,34 @@
+---
+layout: base.njk
+title: Lists
+permalink: /lists/
+---
+{% from "macros.njk" import typeTag %}
+<div class="wrap section">
+  <h1>Lists</h1>
+  <p class="lede">Every transcribed subscriber and donation list, in date order.</p>
+  <div class="filter-bar">
+    <label for="flt">Filter lists</label>
+    <input id="flt" type="search" data-filter-input placeholder="Title, source, place or year">
+    <span class="muted" data-filter-count></span>
+  </div>
+  <div class="table-box">
+    <table>
+      <thead><tr><th scope="col">Date</th><th scope="col">List</th><th scope="col">Type</th><th scope="col">Source</th><th scope="col">Place</th><th scope="col" class="num">Entries</th><th scope="col">Status</th></tr></thead>
+      <tbody>
+      {% for l in db.lists %}
+      <tr data-filter-item="{{ l.title }} {{ l.title_original }} {{ l.year }}">
+        <td class="nowrap">{{ l.dateLabel }}</td>
+        <td><a href="{{ l.url }}">{{ l.title }}</a>{% if l.title_original %}<div class="orig-sm" dir="auto">{{ l.title_original }}</div>{% endif %}</td>
+        <td>{{ typeTag(l) }}</td>
+        <td>{% if l.source %}<a href="{{ l.source.url }}"><i>{{ l.source.title }}</i></a>{% endif %}</td>
+        <td>{% if l.place %}<a href="{{ l.place.url }}">{{ l.place.name }}</a>{% endif %}</td>
+        <td class="num">{{ l.entries.length }}</td>
+        <td>{{ l.status }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="/assets/filter.js" defer></script>
