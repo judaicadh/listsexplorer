@@ -2,7 +2,7 @@ list_id,entity_id,role,name_as_printed,address_as_printed,note
 mogador-relief-1845-01-03,montefiore-moses,chairman,"Sir Moses Montefiore, F.R.S.","Grosvenor-gate, Park-lane",
 mogador-relief-1845-01-03,rothschild-anthony,treasurer,Baron Anthony De Rothschild,"New-court, St. Swithin's-lane",
 mogador-relief-1845-01-03,samuel-sampson,hon-secretary,Mr. Sampson Samuel,"11, North-buildings, Finsbury Circus",
-mogador-relief-1845-01-03,de-castro-emanuel,committee,"Emanuel De Castro, Esq.","South-street, Finsbury-square",
+mogador-relief-1845-01-03,de-castro-emanuel,committee,"Hananel De Castro, Esq.","South-street, Finsbury-square",
 mogador-relief-1845-01-03,guedalla-judah,committee,"Judah Guedalla, Esq.",Finsbury-square,
 mogador-relief-1845-01-03,montefiore-j-m,committee,"J. M. Montefiore, Esq.","Great Stanhope-street, May-fair",
 mogador-relief-1845-01-03,lucas-louis,committee,"Louis Lucas, Esq.",Hyde-park-gardens,
@@ -17,3 +17,24 @@ mogador-relief-1845-01-03,ransom-co,receiving-bank,Messrs. Ransom & Co.,"1, Pall
 mogador-relief-1845-01-03,coutts-co,receiving-bank,Messrs. Coutts & Co.,"59, Strand",
 brussa-relief-1855-10-19,foligno-isaac,president,Mr. Isaac Foligno,,President of the London Committee of Deputies of the British Jews; acknowledges receipts and invites further contributions.
 brussa-relief-1855-10-19,myers-i-h,agent,Rev. I. H. Myers,,Ramsgate Synagogue contribution printed as paid “per Rev. I. H. Myers”.
+melbourne-new-synagogue-1853,,committee,Messrs. D. and M. Benjamin,Collins-street,Committee to receive subscriptions
+melbourne-new-synagogue-1853,,committee,Messrs. Hart Brothers,Collins-street,Committee to receive subscriptions
+melbourne-new-synagogue-1853,,committee,Mr. M. Cashmore,Collins-street,Committee to receive subscriptions
+melbourne-new-synagogue-1853,,committee,Mr. E. Ellis,Elizabeth-street,Committee to receive subscriptions
+melbourne-new-synagogue-1853,,committee,Mr. Henry Harris,"40, Great Bourke-street",Committee to receive subscriptions
+mogador-relief-1845-01-03,bensusan-s-l,committee,"S. L. Bensusan, Esq.","Magdalen-row, Great Prescott-street",
+mogador-relief-1845-01-03,johnson-andrew,committee,"Andrew Johnson, Esq.",Fenchurch-st.,
+manchester-jewish-school-1849,spier-a,treasurer,A. Spier,,
+manchester-jewish-school-1849,franklin-isaac-a,hon-secretary,Isaac A. Franklin,,
+manchester-jewish-school-1849,lucas-philip,president,"P. Lucas, Esq.",Manchester,
+manchester-jewish-school-1849,franklin-j-a,agent,"J. A. Franklin, Esq.","8, George Street, Minories",Received donations in London
+swansea-congregation-1849,samuel-sampson,agent,"Sampson Samuel, Esq.","26, New Broad-street",Received donations in London
+swansea-congregation-1849,jewish-chronicle-office,agent,Jewish Chronicle Office,"24, Houndsditch",Received donations in London
+shearith-israel-mill-street-1728,pacheco-benjamin-mendez,committee,Benjamin Mendez Pacheco,,Manager of the work
+shearith-israel-mill-street-1728,franks-jacob,committee,Jacob Franks,,Manager of the work
+shearith-israel-mill-street-1728,gomez-mordecai,committee,Mordecai Gomez,,Manager of the work
+shearith-israel-mill-street-1728,gomez-moses,committee,Moses Gomez,,Manager of the work (interlined)
+shearith-israel-mill-street-1728,gomez-daniel,committee,Daniell Gomez,,Trustee: Bond to be given to him for the congregation
+shearith-israel-mill-street-1728,isaacs-abraham,committee,Abm. Isaacs,,Trustee: Bond to be given to him for the congregation
+shearith-israel-mill-street-1728,levy-nathan,committee,Nathl. Levy,,Trustee: Bond to be given to him for the congregation
+shearith-israel-mill-street-1728-receipts,franks-jacob,treasurer,J. Franks,,Received payments and paid the costs

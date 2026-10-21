@@ -1,8 +1,9 @@
 code,name,ratios,format,notes
 GBP,"Pounds, shillings and pence",20|12,£{0} {1}s. {2}d.,"Pre-decimal British: £1 = 20s., 1s. = 12d. Write amounts as 50.0.0"
-GBP-GNS,Guineas,21,{0} gns. {1}s.,"1 guinea = 21s. Write 2.0 for 2 guineas"
-FL-CONV,Gulden (Conventionsmünze),60,{0} fl. {1} kr.,"1 fl. = 60 kr. Write 12.30"
-RBL,Roubles,100,{0} rub. {1} kop.,"1 rouble = 100 kopecks. Write 5.50"
-FRF,French francs,100,{0} fr. {1} c.,"1 franc = 100 centimes"
-NLG,Dutch guilders,20|16,{0} gld. {1} st. {2} pen.,"1 guilder = 20 stuivers = 320 penningen"
-USD,US dollars,100,${0}.{1},"Write 12.50"
+GBP-GNS,Guineas,21,{0} gns. {1}s.,1 guinea = 21s. Write 2.0 for 2 guineas
+FL-CONV,Gulden (Conventionsmünze),60,{0} fl. {1} kr.,1 fl. = 60 kr. Write 12.30
+RBL,Roubles,100,{0} rub. {1} kop.,1 rouble = 100 kopecks. Write 5.50
+FRF,French francs,100,{0} fr. {1} c.,1 franc = 100 centimes
+NLG,Dutch guilders,20|16,{0} gld. {1} st. {2} pen.,1 guilder = 20 stuivers = 320 penningen
+USD,US dollars,100,${0}.{1},Write 12.50
+NY-CUR,New York currency (£ s. d.),20|12,£{0} {1}s. {2}d.,"Colonial New York money of account, not sterling. Write 15.1.6"

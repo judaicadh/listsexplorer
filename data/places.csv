@@ -8,7 +8,7 @@ manchester,Manchester,,Manchester,United Kingdom,53.4808,-2.2426,,
 liverpool,Liverpool,,Liverpool,United Kingdom,53.4084,-2.9916,,
 glasgow,Glasgow,,Glasgow,United Kingdom,55.8642,-4.2518,,
 portsea,Portsea,,"Portsea, Portsmouth",United Kingdom,50.7989,-1.0912,,
-mogador,Mogador,Essaouira|Mogadore,Essaouira,Morocco,31.5085,-9.7595,,"Bombarded by the French navy in August 1844."
+mogador,Mogador,Essaouira|Mogadore,Essaouira,Morocco,31.5085,-9.7595,,Bombarded by the French navy in August 1844.
 san-francisco,San Francisco,S. F.,San Francisco,United States,37.7749,-122.4194,,
 pacific-grove,Pacific Grove,,Pacific Grove,United States,36.6177,-121.9166,,
 eastern-europe,Eastern Europe,,,,,,,"Region, not a single place."
@@ -33,7 +33,7 @@ sheffield,Sheffield,,Sheffield,United Kingdom,53.3811,-1.4701,,
 sidmouth,Sidmouth,,"Sidmouth, Devon",United Kingdom,50.6780,-3.2390,,
 stockport,Stockport,,Stockport,United Kingdom,53.4106,-2.1575,,
 kingston-jamaica,Kingston,Jamaica,"Kingston, Jamaica",Jamaica,17.9714,-76.7920,,
-st-thomas,St. Thomas,"St. Thomas', W. I.","St. Thomas, U.S. Virgin Islands",U.S. Virgin Islands,18.3419,-64.9307,,"Danish West Indies in 1842."
+st-thomas,St. Thomas,"St. Thomas', W. I.","St. Thomas, U.S. Virgin Islands",U.S. Virgin Islands,18.3419,-64.9307,,Danish West Indies in 1842.
 curacao,Curaçao,"Curacoa, W. I.",Curaçao,Curaçao,12.1091,-68.9316,,
 barbados,Barbados,,Barbados,Barbados,13.0975,-59.6167,,
 charleston,Charleston,,"Charleston, South Carolina",United States,32.7765,-79.9311,,
@@ -106,3 +106,22 @@ brussa,Brussa,Bursa|Baroucha,Bursa,Turkey,,,,Beneficiary community named in the 
 merthyr-tydfil,Merthyr Tydfil,Merthyr Tidvil,Merthyr Tydfil,United Kingdom,,,,
 wolverhampton,Wolverhampton,,Wolverhampton,United Kingdom,,,,
 jersey,Jersey,,Jersey,Jersey,,,,
+ashton,Ashton,,Ashton-under-Lyne,United Kingdom,53.4880,-2.0980,,Printed as “(Ashton)” under Manchester.
+ireland,Ireland,,Ireland,,,,,Country heading.
+derry,Derry,,Derry/Londonderry,United Kingdom,54.9966,-7.3086,,
+county-down,Down,,County Down,United Kingdom,54.35,-5.85,,
+tandragee,Tandragee,,"Tandragee, County Armagh",United Kingdom,54.3560,-6.4150,,
+tollymore,Tollymore Park,,"Tollymore, County Down",United Kingdom,54.2280,-5.9310,,
+sligo,Sligo,Rathellen,Sligo,Ireland,54.2766,-8.4761,,
+black-river,Black River,,"Black River, Jamaica",Jamaica,18.0264,-77.8487,,
+falmouth-jamaica,Falmouth (Jamaica),,"Falmouth, Jamaica",Jamaica,18.4936,-77.6559,,"Not Falmouth, Cornwall."
+huddersfield,Huddersfield,,Huddersfield,United Kingdom,53.6458,-1.7850,,
+cork,Cork,,Cork,Ireland,51.8985,-8.4756,,
+antrim,Antrim,,County Antrim,United Kingdom,54.7,-6.2,,
+monmouth,Monmouth,,Monmouth,United Kingdom,51.8116,-2.7163,,
+staffordshire,Staffordshire,,Staffordshire,United Kingdom,52.8,-2.0,,County.
+burnley,Burnley,,Burnley,United Kingdom,53.7893,-2.2405,,
+oldham,Oldham,,Oldham,United Kingdom,53.5409,-2.1114,,
+neath,Neath,,Neath,United Kingdom,51.6631,-3.8048,,
+cardiff,Cardiff,,Cardiff,United Kingdom,51.4816,-3.1791,,
+pontypool,Pontypool,,Pontypool,United Kingdom,51.7016,-3.0441,,

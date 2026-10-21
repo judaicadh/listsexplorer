@@ -6,7 +6,7 @@ west-london-synagogue,West London Synagogue of British Jews,synagogue,,"West Lon
 portsea-hebrew-congregation,Portsea Hebrew Congregation,synagogue,,Hebrew Congregation (Portsea),portsea,,,,
 nm-rothschild,N. M. Rothschild & Sons,bank,,Messrs. N. M. De Rothschild,london,,,,
 barnett-hoare,"Barnett, Hoare & Co.",bank,,"Messrs. Barnett, Hoare and Co.",london,,,,"Address as printed: 62, Lombard-street."
-fuller-co,Fuller & Co.,bank,,Messrs. Fuller & Co.,london,,,,"Address as printed: Moorgate-street."
+fuller-co,Fuller & Co.,bank,,Messrs. Fuller & Co.,london,,,,Address as printed: Moorgate-street.
 masterman-co,Masterman & Co.,bank,,Messrs. Masterman & Co.,london,,,,"Address as printed: 35, Nicholas-lane."
 stone-martins,"Stone, Martins & Co.",bank,,"Messrs. Stone, Martins & Co.",london,,,,"Address as printed: 68, Lombard-street."
 ransom-co,Ransom & Co.,bank,,Messrs. Ransom & Co.,london,,,,"Address as printed: 1, Pall-mall East."
@@ -16,10 +16,10 @@ st-katharine-dock,St. Katharine Dock Company,company,,St. Katharine Dock Comp.,l
 london-dock,London Dock Company,company,,,london,,,,
 harter-co,J. C. Harter & Co.,firm,,Messrs. J. C. Harter & Co.,manchester,,,,
 bensusan-co,M. L. Bensusan & Co.,firm,,Messrs. M. L. Bensusan and Co.,london,,,,
-innes-tomlinson,Innes and Tomlinson,firm,,Messrs. Innes and Tomlinson,liverpool,,,,
+innes-tomlinson,Imrie and Tomlinson,firm,,Messrs. Imrie and Tomlinson,liverpool,,,,
 watson-mcknight,Watson & McKnight,firm,,Messrs. Watson & McKnight,glasgow,,,,
 bank-of-california,Bank of California,bank,,,san-francisco,,,,
-elkin-moses,Elkin & Moses,firm,,,barbados,,,,"Forwarded a subscription from Barbados."
+elkin-moses,Elkin & Moses,firm,,,barbados,,,,Forwarded a subscription from Barbados.
 great-synagogue-dukes-place,"Great Synagogue, Duke’s Place",synagogue,,,london,,,,
 cheltenham-synagogue,Cheltenham Synagogue,synagogue,,,cheltenham,,,,
 dublin-synagogue,Dublin Synagogue,synagogue,,,dublin,,,,
@@ -28,3 +28,6 @@ ramsgate-synagogue,Ramsgate Synagogue,synagogue,,,ramsgate,,,,
 swansea-synagogue,Swansea Synagogue,synagogue,,,swansea,,,,
 wolverhampton-synagogue,Wolverhampton Synagogue,synagogue,,,wolverhampton,,,,
 london-committee-deputies-british-jews,London Committee of Deputies of the British Jews,committee,,,london,,,,Organization named in the Brussa relief notice.
+manchester-hebrew-educational-society,Manchester Hebrew Educational Society,society,,,manchester,,,,
+jewish-chronicle-office,Jewish Chronicle (office),newspaper,,per Jewish Chronicle,london,,,,Forwarded donations sent to the newspaper.
+shearith-israel,Congregation Shearith Israel,synagogue,Kahal Kados Sheerit Israel,K.K. Sheerit Israel,new-york,,,,"New York's Spanish and Portuguese congregation. Its first purpose-built synagogue, on Mill Street, was dedicated in 1730."
