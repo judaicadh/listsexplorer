@@ -184,3 +184,11 @@ than formatted display amounts; all fields, including uncertainty notes, are kep
 Each export contains the entries for that list only, in their stored order. Existing
 IDs are retained. If reusing an exported CSV for a new list, clear `id` and `list_id`
 to assign new identifiers, and fill in new source details on the contribution page.
+
+
+The CSV checker also accepts spreadsheet headings `#` (sequence),
+`name as printed`, `amount (£.s.d)` (amount and GBP currency), `linked to`
+(entity ID), `via` (agent ID), and `checked`. Nonempty `checked` flags are retained
+in entry notes, without treating them as independent verification. Unknown entity,
+agent or place references appear as notices during standalone checking, so the
+rows can still be inspected. Catalogue import still requires resolving those links.

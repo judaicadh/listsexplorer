@@ -30,15 +30,25 @@
     if (state === "quoted") throw new Error("A quoted CSV field is missing its closing quote.");
     endRow();
     if (records.length < 2) throw new Error("Include a header and at least one entry.");
-    const header = records.shift().map(h => h.trim());
+    const aliases = { "#": "seq", "linked_to": "entity_id", "via": "agent_id", "amount_(£.s.d)": "amount" };
+    const printedHeaders = records.shift().map(h => h.trim().toLowerCase().replace(/\s+/g, "_"));
+    const pounds = printedHeaders.includes("amount_(£.s.d)");
+    const header = printedHeaders.map(h => aliases[h] || h);
     if (new Set(header).size !== header.length) throw new Error("CSV headers must be unique.");
-    const unknown = header.filter(h => !columns.includes(h));
+    const unknown = header.filter(h => !columns.includes(h) && h !== "checked");
     if (unknown.length) throw new Error("Unknown columns: " + unknown.join(", ") + ". Use the template's column names.");
     if (!header.includes("name_as_printed")) throw new Error("The CSV needs a name_as_printed column.");
     if (records.length > 20000) throw new Error("Please split lists larger than 20,000 entries.");
     return records.map((values, i) => {
       if (values.length !== header.length) throw new Error("CSV row " + (i + 2) + " has " + values.length + " fields; expected " + header.length + ".");
-      return Object.fromEntries(columns.map(c => [c, header.includes(c) ? values[header.indexOf(c)].trim() : ""]));
+      const entry = Object.fromEntries(columns.map(c => [c, header.includes(c) ? values[header.indexOf(c)].trim() : ""]));
+      if (pounds) {
+        if (entry.currency && entry.currency !== "GBP") throw new Error("CSV row " + (i + 2) + ": currency conflicts with the pounds/shillings/pence amount heading.");
+        entry.currency = "GBP";
+      }
+      const checked = header.includes("checked") ? values[header.indexOf("checked")].trim() : "";
+      if (checked) entry.note = [entry.note, "Spreadsheet review flag: " + checked].filter(Boolean).join("\n");
+      return entry;
     });
   }
   function context(db) {
@@ -99,8 +109,8 @@
       if (!e.name_as_printed) errors.push(label + "a printed name is required.");
       if (e.role && !["donor", "subscriber", "member", "pledger"].includes(e.role)) errors.push(label + "unknown role.");
       if (e.certainty && !["certain", "probable", "uncertain"].includes(e.certainty)) errors.push(label + "certainty must be certain, probable or uncertain.");
-      for (const key of ["entity_id", "agent_id"]) if (e[key] && !has(ctx.entities, e[key])) errors.push(label + "unknown " + key + ". Leave unidentified names unlinked.");
-      if (e.place_id && !has(ctx.places, e.place_id)) errors.push(label + "unknown place_id. Use place_as_printed for a place not yet in the directory.");
+      for (const key of ["entity_id", "agent_id"]) if (!entriesOnly && e[key] && !has(ctx.entities, e[key])) errors.push(label + "unknown " + key + ": " + e[key] + ". Leave unidentified names unlinked.");
+      if (!entriesOnly && e.place_id && !has(ctx.places, e.place_id)) errors.push(label + "unknown place_id. Use place_as_printed for a place not yet in the directory.");
       if (e.quantity && !/^[1-9]\d*$/.test(e.quantity)) errors.push(label + "quantity must be a positive whole number.");
       const currency = ctx.currencies.find(c => c.code === (e.currency || list.currency));
       if (e.currency && !currency) errors.push(label + "unknown currency.");
@@ -125,6 +135,10 @@
     const warnings = [];
     if (currency && !ctx.currencies.some(c => c.code === currency)) result.errors.push("Choose a known default currency.");
     if (entries.some(e => e.amount && !e.currency && !currency)) warnings.push("Some amounts have no currency. Their unit ranges have not been checked; choose a default currency to check them.");
+    entries.forEach((e, index) => {
+      for (const key of ["entity_id", "agent_id"]) if (e[key] && !ctx.entities.includes(e[key])) warnings.push("Entry " + (index + 1) + ": " + key + " “" + e[key] + "” is not in the catalogue yet; retained for review before importing.");
+      if (e.place_id && !ctx.places.some(p => p.id === e.place_id)) warnings.push("Entry " + (index + 1) + ": place_id “" + e.place_id + "” is not in the catalogue yet; retained for review before importing.");
+    });
     const uncertain = entries.filter(e => e.certainty !== "certain").length;
     if (uncertain) warnings.push(uncertain + (uncertain === 1 ? " entry has an uncertain or unconfirmed reading." : " entries have uncertain or unconfirmed readings.") + " A CSV check cannot verify the transcription against the source.");
     return { errors: result.errors, warnings, entries: result.contribution.entries };

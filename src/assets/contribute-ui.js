@@ -62,7 +62,15 @@
       const result = api.checkEntries(api.parse($("csv-text").value), context, $("list-currency").value);
       if (result.errors.length) { showIssues($("review-status"), result.errors); return; }
       previewRows = result.entries; previewCurrency = $("list-currency").value;
-      $("review-status").textContent = previewRows.length + (previewRows.length === 1 ? " entry checked. " : " entries checked. ") + "No CSV errors found. " + result.warnings.join(" ");
+      const summary = document.createElement("p");
+      summary.textContent = previewRows.length + (previewRows.length === 1 ? " entry checked. " : " entries checked. ") + "No CSV errors found.";
+      $("review-status").replaceChildren(summary);
+      if (result.warnings.length) {
+        const notices = document.createElement("ul");
+        result.warnings.slice(0, 30).forEach(warning => { const li = document.createElement("li"); li.textContent = warning; notices.append(li); });
+        $("review-status").append(notices);
+        if (result.warnings.length > 30) $("review-status").append("Showing the first 30 notices of " + result.warnings.length + ".");
+      }
       previewPage = 0; renderPreview(); $("preview").hidden = false;
     } catch (error) { $("review-status").textContent = error.message; }
   });
@@ -96,7 +104,7 @@
     $("preview-rows").replaceChildren();
     previewRows.slice(start, end).forEach((row, index) => {
       const tr = document.createElement("tr");
-      [row.seq || String(start + index + 1), row.name_as_printed, row.place_as_printed || row.place_id, row.amount + (row.amount ? " " + (row.currency || previewCurrency) : ""), row.certainty || "not recorded", row.note].forEach(value => { const td = document.createElement("td"); td.textContent = value; tr.append(td); });
+      [row.seq || String(start + index + 1), row.section, row.name_as_printed, row.place_as_printed || row.place_id, row.amount + (row.amount ? " " + (row.currency || previewCurrency) : ""), row.certainty || "not recorded", row.note].forEach(value => { const td = document.createElement("td"); td.textContent = value; tr.append(td); });
       $("preview-rows").append(tr);
     });
   }

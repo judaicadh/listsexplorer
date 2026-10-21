@@ -16,7 +16,7 @@ permalink: /contribute/
     <section class="panel">
       <h2>Check a CSV</h2>
       <p>Start here. You do not need a title, source details or a review confirmation to check a file.</p>
-      <p>Upload a UTF-8 CSV (up to 5 MB and 20,000 entries), or paste CSV text. The only required column is <code>name_as_printed</code>. Use the template for the other supported columns.</p>
+      <p>Upload a UTF-8 CSV (up to 5 MB and 20,000 entries), or paste CSV text. The only required column is <code>name_as_printed</code>. Use the template for the other supported columns. Spreadsheet headings such as <code>#</code>, <code>name as printed</code>, <code>amount (£.s.d)</code>, <code>linked to</code>, <code>via</code> and <code>checked</code> also work. Review flags are kept in notes.</p>
       <label for="csv-file">Choose a CSV file</label><input id="csv-file" type="file" accept=".csv,text/csv">
       <label for="csv-text">CSV text (editable)</label><textarea id="csv-text" rows="10" spellcheck="false" placeholder="name_as_printed,place_as_printed,amount,certainty,note"></textarea>
       <p class="small-note">Amounts use separate units: £1 10s. 6d. becomes <code>1.10.6</code>; $12.50 becomes <code>12.50</code>. Leave unknown amounts blank. Leave entity and place IDs blank unless you know their catalogue IDs; place names can go in <code>place_as_printed</code>.</p>
@@ -25,7 +25,7 @@ permalink: /contribute/
       <div class="filter-bar"><button class="btn" type="submit">Check CSV</button><button class="btn btn-quiet" id="template" type="button">Download CSV template</button></div>
       <div id="review-status" role="status" aria-live="polite"></div>
       <div id="preview" class="stack" hidden>
-        <div class="table-box"><table><caption id="preview-caption"></caption><thead><tr><th>#</th><th>Name as printed</th><th>Place</th><th>Amount</th><th>Certainty</th><th>Notes</th></tr></thead><tbody id="preview-rows"></tbody></table></div>
+        <div class="table-box"><table><caption id="preview-caption"></caption><thead><tr><th>#</th><th>Section</th><th>Name as printed</th><th>Place</th><th>Amount</th><th>Certainty</th><th>Notes</th></tr></thead><tbody id="preview-rows"></tbody></table></div>
         <div class="filter-bar"><button class="btn btn-quiet" id="preview-prev" type="button">Previous entries</button><button class="btn btn-quiet" id="preview-next" type="button">Next entries</button></div>
       </div>
     </section>

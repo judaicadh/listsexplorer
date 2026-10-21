@@ -106,3 +106,29 @@ test('standalone checks accept existing catalogue exports but catch duplicates w
   assert.ok(api.checkEntries([existing[0], existing[0]],ctx,'GBP').errors.length);
   assert.ok(api.validate({version:1,list:{},entries:existing},ctx).errors.length);
 });
+
+
+test('readable spreadsheet headings preserve the supplied Swansea sample', () => {
+  const rows = api.parse(fs.readFileSync(path.join(__dirname,'fixtures/swansea-1849.csv'),'utf8'));
+  assert.equal(rows.length,43);
+  assert.equal(rows[0].seq,'1');
+  assert.equal(rows[0].name_as_printed,'The Rev. Dr. Adler');
+  assert.equal(rows[0].entity_id,'adler-nathan-marcus');
+  assert.equal(rows[0].currency,'GBP');
+  assert.equal(rows[15].agent_id,'jewish-chronicle-office');
+  assert.equal(rows[26].entity_id,'sichel-a-s');
+  assert.equal(rows[42].name_as_printed,'Sundry small Subscriptions');
+  const result=api.checkEntries(rows,ctx);
+  assert.deepEqual(result.errors,[]);
+  assert.ok(result.warnings.some(w=>w.includes('sichel-a-s')));
+  assert.ok(result.warnings.some(w=>w.includes('jewish-chronicle-office')));
+  const total=rows.reduce((sum,r)=>{const [p,s,d]=r.amount.split('.').map(Number);return sum+p*240+s*12+d;},0);
+  assert.equal(total,16710);
+});
+test('header aliases cannot silently overwrite columns or imply verified readings', () => {
+  assert.throws(()=>api.parse('name as printed,name_as_printed\nA,B'),/unique/);
+  assert.throws(()=>api.parse('name as printed,amount (£.s.d),currency\nA,1.0.0,USD'),/conflicts/);
+  const rows=api.parse('name as printed,note,checked\nA,Check spelling,yes');
+  assert.equal(rows[0].certainty,'');
+  assert.equal(rows[0].note,'Check spelling\nSpreadsheet review flag: yes');
+});
