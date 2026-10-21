@@ -10,7 +10,9 @@ who gave, where they lived, how much, through which agent, and to what cause.
   with a stable, citable address; a search page filters every entry by name,
   place, list, agent, currency and year, and exports results as CSV.
 
-The starter data is a partial draft transcription of the *Committee for the
+The starter data has two lists: the San Francisco contributors to the Jewish War
+Sufferers appeal (*Emanu-El*, 28 January 1916; 919 entries, full transcription, not
+yet checked) and a partial draft of the *Committee for the
 Relief of the Sufferers at Mogador* list (*The Voice of Jacob*, 3 January 1845).
 Check it against the original before relying on it.
 

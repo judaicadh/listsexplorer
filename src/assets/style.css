@@ -127,6 +127,7 @@ input[type="search"], input[type="text"], input[type="number"], select {
 .crumbs { font-size: 14px; color: var(--muted); }
 .page-image { margin: 0; display: flex; flex-direction: column; gap: 8px; }
 .page-image img { display: block; border: 1px solid #D9D4C8; border-radius: 10px; background: #EFEBE2; }
+.page-thumbs { display: flex; flex-direction: column; gap: 8px; }
 .page-image figcaption { font-size: 13px; color: var(--muted); }
 @media (min-width: 900px) { .page-image { position: sticky; top: 16px; } }
 

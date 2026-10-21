@@ -26,7 +26,9 @@ eleventyComputed:
       {% if list.beneficiaryPlace %}<dt>For</dt><dd><a href="{{ list.beneficiaryPlace.url }}">{{ list.beneficiaryPlace.name }}</a></dd>{% endif %}
       {% if list.currency %}<dt>Currency</dt><dd>{{ list.currency.name }}</dd>{% endif %}
       <dt>Entries</dt><dd>{{ list.entries.length }}{% if list.status %} · <span class="warn">{{ list.status }}</span>{% endif %}</dd>
-      {% if list.totals.length %}<dt>Total so far</dt><dd>{{ totalsLine(list.totals) }}</dd>{% endif %}
+      {% if list.copies %}<dt>Copies</dt><dd>{{ list.copies }}</dd>{% endif %}
+      {% if list.placeCount > 1 %}<dt>Places</dt><dd>{{ list.placeCount }}</dd>{% endif %}
+      {% if list.totals.length %}<dt>Total transcribed</dt><dd>{{ totalsLine(list.totals) }}</dd>{% endif %}
       {% if list.transcriber %}<dt>Transcribed by</dt><dd>{{ list.transcriber }}</dd>{% endif %}
       {% if list.pages %}<dt>Pages</dt><dd>{{ list.pages }}</dd>{% endif %}
     </dl>
@@ -67,13 +69,32 @@ eleventyComputed:
   </section>
   {% endif %}
 
+  {% if list.byPlace.length > 2 %}
+  <section class="panel">
+    <h2>By place</h2>
+    <div class="bars">
+      {% for b in list.byPlace %}
+      <div class="bar-row">
+        <span class="bar-label"><a href="{{ b.place.url }}">{{ b.place.name }}</a></span>
+        <span class="bar-track" aria-hidden="true"><span class="bar" style="width: {{ b.pct }}%"></span></span>
+        <span class="bar-val">{{ b.n }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
   <section class="section-tight">
-    <h2>{% if list.image %}Page &amp; transcription{% else %}Transcription{% endif %}</h2>
+    <h2>{% if list.images.length %}Page &amp; transcription{% else %}Transcription{% endif %}</h2>
     <div class="split">
-      {% if list.image %}
+      {% if list.images.length %}
       <figure class="split-side page-image">
-        <a href="{{ list.image }}"><img src="{{ list.image }}" alt="Printed page of {{ list.title }}" loading="lazy"></a>
-        <figcaption>{% if list.source %}<i>{{ list.source.title }}</i>, {% endif %}{{ list.dateLabel }}{% if list.image_credit %}. {{ list.image_credit }}{% endif %}{% if list.iiif_manifest %} · <a href="{{ list.iiif_manifest }}">IIIF manifest</a>{% endif %}</figcaption>
+        <div class="page-thumbs">
+        {% for img in list.images %}
+        <a href="{{ img }}"><img src="{{ img }}" alt="Scan {{ loop.index }} of {{ list.images.length }}: {{ list.title }}" loading="lazy"></a>
+        {% endfor %}
+        </div>
+        <figcaption>{% if list.source %}<i>{{ list.source.title }}</i>, {% endif %}{{ list.dateLabel }}{% if list.image_credit %}. {{ list.image_credit }}{% endif %}{% if list.iiif_manifest %} · <a href="{{ list.iiif_manifest }}">IIIF manifest</a>{% endif %}{% if list.images.length > 1 %} · Select a scan to open it full size.{% endif %}</figcaption>
       </figure>
       {% endif %}
       <div class="split-main">
