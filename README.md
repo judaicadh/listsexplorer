@@ -49,6 +49,17 @@ See **[docs/DATA.md](docs/DATA.md)** for every file and column. In short, to add
 4. Put page images in `src/images/` and reference them in the list's `image` column
    (or use a full URL, e.g. from a library's IIIF server).
 
+## AI assistance, CSV uploads and list downloads
+
+Use **Add a list** to prepare an AI transcription prompt, upload or paste the
+resulting CSV, check it against the source, and download a contribution for the
+editor. CSV uploads stay in the contributor's browser. The editor previews and
+imports the contribution with `npm run import-list -- FILE` and `--apply`, then
+builds and publishes normally. See [the data guide](docs/DATA.md#ai-assisted-contributions-and-csv-uploads).
+
+Each list now has its own **Download this list as CSV** link. Individual exports
+preserve the original columns, amount values, IDs and uncertainty notes.
+
 ## Customize
 
 * Site title, credits, licence, GitHub link: `src/_data/site.js`

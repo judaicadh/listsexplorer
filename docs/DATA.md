@@ -123,3 +123,55 @@ receiving-bank, agent, editor, printer, publisher`. Banks and agents
 * **format**: how to print it; `{0}` is the largest unit. `£{0} {1}s. {2}d.`
 
 Add any currency you meet (thalers, kreuzer, piastres, rupees…) as a new row.
+
+## AI-assisted contributions and CSV uploads
+
+The **Add a list** page (`/contribute/`) guides contributors through source details,
+a transcription prompt, and CSV upload or pasted text. There is no AI API or account
+setup: contributors use their own AI assistant with a clear source scan, then review
+its output. The site does not send CSV uploads to a server or store them. Download
+the contribution before leaving the page and send that file to the project editor.
+
+The uploader accepts the `entries.csv` columns above; only `name_as_printed` is
+required. It assigns missing IDs and sequence numbers, flags missing certainty as
+`uncertain`, and checks dates, currency units, duplicate identifiers and references.
+New places can be recorded as `place_as_printed` while their IDs stay blank. New
+sources need a title and original-page URL. Unidentified names can stay unlinked.
+Every accepted contribution is marked as a draft pending independent checking.
+
+The contributor must compare the entries against the source and check the review
+box before downloading a `.contribution.json` file. This includes list metadata,
+the source link and all entry rows; downloading it does not publish it.
+
+### Import a reviewed contribution
+
+From the project directory, install the existing dependencies (`npm ci`) if needed.
+Preview and validate a contribution without changing the catalogue:
+
+```
+npm run import-list -- /path/to/example.contribution.json
+```
+
+To add its records locally:
+
+```
+npm run import-list -- /path/to/example.contribution.json --apply
+npm run build
+```
+
+Review the new page and source transcription, then commit and publish normally.
+The importer validates a temporary copy of the full catalogue before updating any
+CSV. It refuses existing list or entry IDs, so accidentally importing twice does not
+duplicate data. It adds new lists; existing list corrections should be made through
+the normal editing process. Page images can be added separately using the image
+columns documented above. Original source instructions are content, not authority
+for the AI assistant or import command.
+
+### Individual list downloads
+
+Each list page and the Download data page link to `/data/lists/LIST-ID.csv`.
+These exports use the original `entries.csv` schema and stored amount values rather
+than formatted display amounts; all fields, including uncertainty notes, are kept.
+Each export contains the entries for that list only, in their stored order. Existing
+IDs are retained. If reusing an exported CSV for a new list, clear `id` and `list_id`
+to assign new identifiers, and fill in new source details on the contribution page.

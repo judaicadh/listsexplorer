@@ -175,3 +175,16 @@ td.empty { text-align: center; color: var(--muted); padding: 32px; }
 .prose h2 { margin-top: 12px; }
 .prose ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
 .actions { font-size: 15px; font-weight: 600; }
+
+/* Contribution editor */
+[hidden] { display: none !important; }
+.contribution-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; }
+textarea, input[type="url"] { padding: 12px; font: inherit; font-size: 16px; color: var(--ink); background: var(--surface); border: 1px solid var(--field); border-radius: 8px; width: 100%; }
+textarea { resize: vertical; min-height: 130px; }
+#csv-text, #ai-prompt { font-family: ui-monospace, monospace; font-size: 14px; }
+.field small { color: var(--muted); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+caption { text-align: left; padding: 12px 14px; font-weight: 600; }
+#review-status ul { padding-left: 24px; }
+#preview .check { align-items: flex-start; }
+#preview .check input { flex-shrink: 0; }

@@ -17,6 +17,7 @@ eleventyComputed:
       {{ typeTag(list) }}
       {% if list.title_original %}<p class="orig" dir="auto">{{ list.title_original }}</p>{% endif %}
       <h1>{{ list.title }}</h1>
+      <p class="actions"><a href="/data/lists/{{ list.id }}.csv" download="{{ list.id }}.csv">Download this list as CSV</a></p>
       <p class="sub">{% if list.source %}<a href="{{ list.source.url }}"><i>{{ list.source.title }}</i></a>{% if list.citation %}, {{ list.citation }}{% endif %} · {% endif %}{% if list.place %}{{ list.place.name }}, {% endif %}{{ list.dateLabel }}</p>
       {% if list.purpose %}<p>{{ list.purpose }}</p>{% endif %}
       {% if list.notes %}<p class="note">{{ list.notes }}</p>{% endif %}

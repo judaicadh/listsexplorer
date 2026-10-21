@@ -6,6 +6,13 @@ permalink: /data/
 <div class="wrap section prose">
   <h1>Download the data</h1>
   <p class="lede">The complete dataset behind this site, as plain CSV files (UTF-8). Built {{ site.builtAt }}.</p>
+  <h2>Download an individual list</h2>
+  <p>Each CSV contains every entry in printed order, with the original amount values, notes and catalogue IDs. UTF-8 format; ready to use in a spreadsheet.</p>
+  <ul>
+    {% for list in db.lists %}<li><a href="/data/lists/{{ list.id }}.csv" download="{{ list.id }}.csv">{{ list.title }}</a> · {{ list.dateLabel }} · {{ list.entries.length }} entries</li>{% endfor %}
+  </ul>
+  <p><a href="/contribute/">Add a list with AI assistance or upload a CSV</a>.</p>
+  <h2>Download the complete dataset</h2>
   <div class="table-box">
     <table>
       <thead><tr><th scope="col">File</th><th scope="col">Contains</th><th scope="col" class="num">Rows</th></tr></thead>

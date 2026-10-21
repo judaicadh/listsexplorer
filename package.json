@@ -7,7 +7,9 @@
     "validate": "node scripts/validate.js",
     "build": "npm run validate && eleventy",
     "start": "eleventy --serve",
-    "clean": "rm -rf _site"
+    "clean": "rm -rf _site",
+    "import-list": "node scripts/import-list.js",
+    "test": "node --test"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
