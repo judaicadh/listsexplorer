@@ -6,15 +6,32 @@ permalink: /contribute/
 <div class="wrap section">
   <div class="stack">
     <p class="eyebrow">Contribute</p>
-    <h1>Add a list</h1>
-    <p class="lede">Turn a historical list into data with AI assistance, or bring a CSV you have already prepared. Check it against the source before sharing it.</p>
-    <p class="note">Your CSV stays in this browser. Download your reviewed contribution and send it to the project editor to add to the catalogue. This page does not publish or save uploads.</p>
+    <h1>Check a CSV or add a list</h1>
+    <p class="lede">Check an existing CSV straight away. Source details and AI assistance are optional steps when you want to add a new list.</p>
+    <p class="note">Your CSV stays in this browser. Checking it does not add it to the catalogue.</p>
   </div>
   <noscript><p class="note">Enable JavaScript to prepare and review a contribution. You can still <a href="/data/">download existing data</a>.</p></noscript>
   <p id="load-status" role="status">Loading the list editor…</p>
-  <form id="contribute-form" class="stack" hidden>
+  <form id="contribute-form" class="stack" novalidate hidden>
     <section class="panel">
-      <h2>1. Describe the list</h2>
+      <h2>Check a CSV</h2>
+      <p>Start here. You do not need a title, source details or a review confirmation to check a file.</p>
+      <p>Upload a UTF-8 CSV (up to 5 MB and 20,000 entries), or paste CSV text. The only required column is <code>name_as_printed</code>. Use the template for the other supported columns.</p>
+      <label for="csv-file">Choose a CSV file</label><input id="csv-file" type="file" accept=".csv,text/csv">
+      <label for="csv-text">CSV text (editable)</label><textarea id="csv-text" rows="10" spellcheck="false" placeholder="name_as_printed,place_as_printed,amount,certainty,note"></textarea>
+      <p class="small-note">Amounts use separate units: £1 10s. 6d. becomes <code>1.10.6</code>; $12.50 becomes <code>12.50</code>. Leave unknown amounts blank. Leave entity and place IDs blank unless you know their catalogue IDs; place names can go in <code>place_as_printed</code>.</p>
+        <div class="field"><label for="list-currency">Default currency</label><select id="list-currency" name="currency"><option value="">No amounts / unknown</option></select></div>
+      <p class="small-note">Choose a currency if amounts do not have their own currency column. Otherwise, amounts are checked for numeric format only.</p>
+      <div class="filter-bar"><button class="btn" type="submit">Check CSV</button><button class="btn btn-quiet" id="template" type="button">Download CSV template</button></div>
+      <div id="review-status" role="status" aria-live="polite"></div>
+      <div id="preview" class="stack" hidden>
+        <div class="table-box"><table><caption id="preview-caption"></caption><thead><tr><th>#</th><th>Name as printed</th><th>Place</th><th>Amount</th><th>Certainty</th><th>Notes</th></tr></thead><tbody id="preview-rows"></tbody></table></div>
+        <div class="filter-bar"><button class="btn btn-quiet" id="preview-prev" type="button">Previous entries</button><button class="btn btn-quiet" id="preview-next" type="button">Next entries</button></div>
+      </div>
+    </section>
+    <details class="panel" id="contribution-details">
+      <summary>Prepare a contribution for the catalogue</summary>
+      <p>Add source details when you are ready to contribute this CSV.</p>
       <p>Use the publication date and a link to the original page. Fields marked * are required.</p>
       <div class="contribution-fields">
         <div class="field"><label for="list-title">List title *</label><input id="list-title" name="title" type="text" required></div>
@@ -26,35 +43,25 @@ permalink: /contribute/
         <div class="field"><label for="source-url">Link to the original page *</label><input id="source-url" type="url" required placeholder="https://…"></div>
         <div class="field"><label for="list-citation">Volume / issue</label><input id="list-citation" name="citation" type="text" placeholder="Vol. 12, no. 44"></div>
         <div class="field"><label for="list-pages">Page(s)</label><input id="list-pages" name="pages" type="text" placeholder="p. 348"></div>
-        <div class="field"><label for="list-currency">Default currency</label><select id="list-currency" name="currency"><option value="">No amounts / unknown</option></select></div>
         <div class="field"><label for="list-purpose">Purpose of the list</label><input id="list-purpose" name="purpose" type="text"></div>
         <div class="field"><label for="list-transcriber">Transcriber / credit</label><input id="list-transcriber" name="transcriber" type="text" placeholder="Your name; AI-assisted if applicable"></div>
       </div>
-    </section>
-    <section class="panel">
-      <h2>2. Prepare the entries</h2>
-      <p>Copy this prompt into your preferred AI assistant and attach a clear scan of the list. Ask for a CSV file, then upload the result below. You can also fill in the template yourself.</p>
-      <label for="ai-prompt">Transcription prompt</label>
-      <textarea id="ai-prompt" rows="10" readonly></textarea>
-      <div class="filter-bar"><button class="btn btn-quiet" id="copy-prompt" type="button">Copy prompt</button><button class="btn btn-quiet" id="template" type="button">Download CSV template</button><a href="/data/">Browse existing list downloads</a></div>
-      <p id="copy-status" role="status"></p>
-    </section>
-    <section class="panel">
-      <h2>3. Upload and review</h2>
-      <p>Upload a UTF-8 CSV (up to 5 MB and 20,000 entries), or paste CSV text. The only required column is <code>name_as_printed</code>. Use the template for the other supported columns.</p>
-      <label for="csv-file">Choose a CSV file</label><input id="csv-file" type="file" accept=".csv,text/csv">
-      <label for="csv-text">CSV text (editable)</label><textarea id="csv-text" rows="10" spellcheck="false" placeholder="name_as_printed,place_as_printed,amount,certainty,note"></textarea>
-      <p class="small-note">Amounts use separate units: £1 10s. 6d. becomes <code>1.10.6</code>; $12.50 becomes <code>12.50</code>. Leave unknown amounts blank. Leave entity and place IDs blank unless you know their catalogue IDs; place names can go in <code>place_as_printed</code>.</p>
-      <button class="btn" type="submit">Check and preview</button>
-      <div id="review-status" role="status" aria-live="polite"></div>
-      <div id="preview" class="stack" hidden>
-        <div class="table-box"><table><caption id="preview-caption"></caption><thead><tr><th>#</th><th>Name as printed</th><th>Place</th><th>Amount</th><th>Certainty</th><th>Notes</th></tr></thead><tbody id="preview-rows"></tbody></table></div>
-        <div class="filter-bar"><button class="btn btn-quiet" id="preview-prev" type="button">Previous entries</button><button class="btn btn-quiet" id="preview-next" type="button">Next entries</button></div>
+    <button class="btn" id="prepare-contribution" type="button">Check contribution details</button>
+      <div id="contribution-status" role="status" aria-live="polite"></div>
+      <div id="contribution-ready" class="stack" hidden>
         <label class="check"><input id="reviewed" type="checkbox">I checked the entries against the original and marked uncertain readings.</label>
         <button class="btn" id="export" type="button" disabled>Download contribution for the editor</button>
-        <p class="small-note">The contribution file contains the list details, source link and all entries. It will enter the catalogue as a draft for independent checking.</p>
+        <p class="small-note">Download the contribution and send it to the project editor. It includes source details and all entries, and will enter the catalogue as a draft for independent checking.</p>
       </div>
-    </section>
+    </details>
+    <details class="panel">
+      <summary>Need help transcribing with AI?</summary>
+      <p>Copy this prompt into your preferred AI assistant and attach a clear scan of the list. Ask for a CSV file, then upload the resulting CSV above. You can also fill in the template yourself.</p>
+      <label for="ai-prompt">Transcription prompt</label>
+      <textarea id="ai-prompt" rows="10" readonly></textarea>
+      <div class="filter-bar"><button class="btn btn-quiet" id="copy-prompt" type="button">Copy prompt</button><a href="/data/">Browse existing list downloads</a></div>
+      <p id="copy-status" role="status"></p>
+    </details>
   </form>
 </div>
 <script src="/assets/contribution.js" defer></script>

@@ -50,7 +50,7 @@
       currencies: db.currencies.map(c => ({ code: c.code, name: c.name, ratios: c.ratioList })),
     };
   }
-  function validate(input, ctx) {
+  function validate(input, ctx, entriesOnly = false) {
     const errors = [];
     const clean = (obj, fields) => Object.fromEntries(fields.map(f => [f, String(obj && obj[f] != null ? obj[f] : "").trim()]));
     if (!input || input.version !== 1 || !input.list || !Array.isArray(input.entries)) throw new Error("This is not a Lists Explorer contribution (version 1).");
@@ -59,49 +59,56 @@
     const idOK = id => /^[a-z0-9][a-z0-9-]{0,99}$/.test(id);
     const has = (rows, id, key = "id") => rows.some(r => (typeof r === "string" ? r : r[key]) === id);
     const http = s => /^https?:\/\/[^\s]+$/i.test(s);
-    if (!idOK(list.id) || list.id.length > 90) errors.push("Use a list ID with lower-case letters, numbers and hyphens (up to 90 characters).");
-    if (has(ctx.lists, list.id)) errors.push("This list ID already exists. Choose a new ID for a new list.");
-    if (!list.title) errors.push("Enter a list title.");
-    if (!["subscription", "donation", "membership", "pledge", "other"].includes(list.list_type)) errors.push("Choose a list type.");
-    if (!/^\d{4}(-\d{2}(-\d{2})?)?$/.test(list.date)) errors.push("Enter a date as YYYY, YYYY-MM or YYYY-MM-DD.");
-    else {
-      const [y, m, d] = list.date.split("-").map(Number);
-      if ((m !== undefined && (m < 1 || m > 12)) || (d !== undefined && (d < 1 || d > new Date(Date.UTC(y, m, 0)).getUTCDate()))) errors.push("The list date is not a valid calendar date.");
+    if (!entriesOnly) {
+      if (!idOK(list.id) || list.id.length > 90) errors.push("Use a list ID with lower-case letters, numbers and hyphens (up to 90 characters).");
+      if (has(ctx.lists, list.id)) errors.push("This list ID already exists. Choose a new ID for a new list.");
+      if (!list.title) errors.push("Enter a list title.");
+      if (!["subscription", "donation", "membership", "pledge", "other"].includes(list.list_type)) errors.push("Choose a list type.");
+      if (!/^\d{4}(-\d{2}(-\d{2})?)?$/.test(list.date)) errors.push("Enter a date as YYYY, YYYY-MM or YYYY-MM-DD.");
+      else {
+        const [y, m, d] = list.date.split("-").map(Number);
+        if ((m !== undefined && (m < 1 || m > 12)) || (d !== undefined && (d < 1 || d > new Date(Date.UTC(y, m, 0)).getUTCDate()))) errors.push("The list date is not a valid calendar date.");
+      }
+      if (source) {
+        if (!idOK(source.id) || source.id !== list.source_id) errors.push("The new source ID must match the list's source ID.");
+        if (has(ctx.sources, source.id)) errors.push("This source ID exists. Select the existing source instead.");
+        if (!source.title || !http(source.url)) errors.push("A new source needs a title and an http or https source link.");
+        if (source.place_id && !has(ctx.places, source.place_id)) errors.push("Unknown source place ID: " + source.place_id);
+      } else if (!has(ctx.sources, list.source_id)) errors.push("Select an existing source or enter a new one.");
+      if (list.currency && !has(ctx.currencies, list.currency, "code")) errors.push("Choose a known currency.");
+      for (const key of ["place_id", "beneficiary_place_id"]) if (list[key] && !has(ctx.places, list[key])) errors.push("Unknown " + key + ": " + list[key]);
+      if (list.organizer_id && !has(ctx.entities, list.organizer_id)) errors.push("Unknown organizer ID.");
+      if (list.image && list.image.split("|").some(s => !http(s))) errors.push("Use full http or https links for page images.");
+      if (list.iiif_manifest && !http(list.iiif_manifest)) errors.push("Use an http or https IIIF link.");
     }
-    if (source) {
-      if (!idOK(source.id) || source.id !== list.source_id) errors.push("The new source ID must match the list's source ID.");
-      if (has(ctx.sources, source.id)) errors.push("This source ID exists. Select the existing source instead.");
-      if (!source.title || !http(source.url)) errors.push("A new source needs a title and an http or https source link.");
-      if (source.place_id && !has(ctx.places, source.place_id)) errors.push("Unknown source place ID: " + source.place_id);
-    } else if (!has(ctx.sources, list.source_id)) errors.push("Select an existing source or enter a new one.");
-    if (list.currency && !has(ctx.currencies, list.currency, "code")) errors.push("Choose a known currency.");
-    for (const key of ["place_id", "beneficiary_place_id"]) if (list[key] && !has(ctx.places, list[key])) errors.push("Unknown " + key + ": " + list[key]);
-    if (list.organizer_id && !has(ctx.entities, list.organizer_id)) errors.push("Unknown organizer ID.");
-    if (list.image && list.image.split("|").some(s => !http(s))) errors.push("Use full http or https links for page images.");
-    if (list.iiif_manifest && !http(list.iiif_manifest)) errors.push("Use an http or https IIIF link.");
     if (!input.entries.length || input.entries.length > 20000) errors.push("Include between 1 and 20,000 entries.");
-    const ids = new Set(ctx.entries), seqs = new Set();
+    const ids = new Set(entriesOnly ? [] : ctx.entries), seqs = new Set();
     const entries = input.entries.map((raw, i) => {
       const e = clean(raw, columns), label = "Entry " + (i + 1) + ": ";
-      e.id = e.id || list.id + "-" + String(i + 1).padStart(4, "0");
-      if (e.list_id && e.list_id !== list.id) errors.push(label + "list_id must match " + list.id + ".");
-      e.list_id = list.id; e.seq = e.seq || String(i + 1);
-      e.role = e.role || (list.list_type === "subscription" ? "subscriber" : list.list_type === "membership" ? "member" : list.list_type === "pledge" ? "pledger" : "donor");
-      e.certainty = e.certainty || "uncertain";
-      if (!idOK(e.id) || ids.has(e.id)) errors.push(label + "entry ID is invalid or already used: " + e.id);
+      if (!entriesOnly) {
+        e.id = e.id || list.id + "-" + String(i + 1).padStart(4, "0");
+        if (e.list_id && e.list_id !== list.id) errors.push(label + "list_id must match " + list.id + ".");
+        e.list_id = list.id; e.seq = e.seq || String(i + 1);
+        e.role = e.role || (list.list_type === "subscription" ? "subscriber" : list.list_type === "membership" ? "member" : list.list_type === "pledge" ? "pledger" : "donor");
+        e.certainty = e.certainty || "uncertain";
+      }
+      if (e.id && (!idOK(e.id) || ids.has(e.id))) errors.push(label + "entry ID is invalid or already used: " + e.id);
       ids.add(e.id);
-      if (!/^[1-9]\d*$/.test(e.seq) || seqs.has(e.seq)) errors.push(label + "sequence numbers must be positive and unique.");
-      seqs.add(e.seq);
+      if (e.seq && (!/^[1-9]\d*$/.test(e.seq) || seqs.has(e.seq))) errors.push(label + "sequence numbers must be positive and unique.");
+      if (e.seq) seqs.add(e.seq);
       if (!e.name_as_printed) errors.push(label + "a printed name is required.");
-      if (!["donor", "subscriber", "member", "pledger"].includes(e.role)) errors.push(label + "unknown role.");
-      if (!["certain", "probable", "uncertain"].includes(e.certainty)) errors.push(label + "certainty must be certain, probable or uncertain.");
+      if (e.role && !["donor", "subscriber", "member", "pledger"].includes(e.role)) errors.push(label + "unknown role.");
+      if (e.certainty && !["certain", "probable", "uncertain"].includes(e.certainty)) errors.push(label + "certainty must be certain, probable or uncertain.");
       for (const key of ["entity_id", "agent_id"]) if (e[key] && !has(ctx.entities, e[key])) errors.push(label + "unknown " + key + ". Leave unidentified names unlinked.");
       if (e.place_id && !has(ctx.places, e.place_id)) errors.push(label + "unknown place_id. Use place_as_printed for a place not yet in the directory.");
       if (e.quantity && !/^[1-9]\d*$/.test(e.quantity)) errors.push(label + "quantity must be a positive whole number.");
       const currency = ctx.currencies.find(c => c.code === (e.currency || list.currency));
       if (e.currency && !currency) errors.push(label + "unknown currency.");
       if (e.amount) {
-        if (!currency) errors.push(label + "select a currency for this amount.");
+        if (!currency) {
+          if (!entriesOnly) errors.push(label + "select a currency for this amount.");
+          else if (!/^\d+(?:\.\d+)*[½¼¾⅓⅔]?$/.test(e.amount)) errors.push(label + "amount must use numeric units separated by dots.");
+        }
         else {
           const parts = e.amount.split(".");
           if (parts.length > currency.ratios.length + 1 || parts.some((p, n) => !(n === parts.length - 1 ? /^\d+[½¼¾⅓⅔]?$/ : /^\d+$/).test(p)) || parts.some((p, n) => n > 0 && parseFloat(p) >= currency.ratios[n - 1])) errors.push(label + "invalid amount for " + currency.code + ". Use unit-separated values such as 1.10.6 for GBP, or 12.50 for USD.");
@@ -113,5 +120,14 @@
     list.status = "contributed draft — not independently checked"; list.featured = "";
     return { errors, contribution: { version: 1, list, source, entries } };
   }
-  return { columns, listColumns, sourceColumns, parse, stringify, slug, context, validate };
+  function checkEntries(entries, ctx, currency = "") {
+    const result = validate({ version: 1, list: { currency }, entries }, ctx, true);
+    const warnings = [];
+    if (currency && !ctx.currencies.some(c => c.code === currency)) result.errors.push("Choose a known default currency.");
+    if (entries.some(e => e.amount && !e.currency && !currency)) warnings.push("Some amounts have no currency. Their unit ranges have not been checked; choose a default currency to check them.");
+    const uncertain = entries.filter(e => e.certainty !== "certain").length;
+    if (uncertain) warnings.push(uncertain + (uncertain === 1 ? " entry has an uncertain or unconfirmed reading." : " entries have uncertain or unconfirmed readings.") + " A CSV check cannot verify the transcription against the source.");
+    return { errors: result.errors, warnings, entries: result.contribution.entries };
+  }
+  return { columns, listColumns, sourceColumns, parse, stringify, slug, context, validate, checkEntries };
 });

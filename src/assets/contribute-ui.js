@@ -2,15 +2,23 @@
   "use strict";
   const api = window.ListContribution, $ = id => document.getElementById(id);
   const form = $("contribute-form");
-  let context, ready = null, idEdited = false, fileVersion = 0, previewPage = 0;
+  let context, ready = null, idEdited = false, fileVersion = 0, previewPage = 0, previewRows = [], previewCurrency = "";
   function download(name, text, type) {
     const url = URL.createObjectURL(new Blob([text], { type }));
     const a = document.createElement("a"); a.href = url; a.download = name;
     document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
-  function invalidate() {
-    ready = null; $("preview").hidden = true; $("reviewed").checked = false;
-    $("export").disabled = true; $("review-status").textContent = "";
+  function invalidate(clearCheck = false) {
+    ready = null; $("reviewed").checked = false; $("export").disabled = true;
+    $("contribution-ready").hidden = true; $("contribution-status").textContent = "";
+    if (clearCheck) { previewRows = []; $("preview").hidden = true; $("review-status").textContent = ""; }
+  }
+  function showIssues(target, errors) {
+    const heading = document.createElement("p"); heading.textContent = "Please fix " + errors.length + " issue(s) and check again:";
+    const ul = document.createElement("ul");
+    errors.slice(0, 30).forEach(error => { const li = document.createElement("li"); li.textContent = error; ul.append(li); });
+    target.replaceChildren(heading, ul);
+    if (errors.length > 30) target.append("Showing the first 30 issues.");
   }
   function prompt() {
     const get = name => form.elements.namedItem(name).value.trim();
@@ -26,21 +34,21 @@
       "Quote CSV fields containing commas, quotes or line breaks; double any quotes inside quoted fields. Return the CSV as a downloadable file without Markdown fences. All readings must be checked by a person against the scan."
     ].join("\n\n");
   }
-  function input() {
+  function input(clearCheck = false) {
     if (!idEdited) $("list-id").value = api.slug($("list-title").value + ($("list-date").value ? "-" + $("list-date").value : ""));
     $("source-title").disabled = $("list-source").value !== "__new__";
     $("source-title").required = !$("source-title").disabled;
-    invalidate(); prompt();
+    invalidate(clearCheck); prompt();
   }
   $("list-id").addEventListener("input", () => { idEdited = true; });
-  form.addEventListener("input", e => { if (!["reviewed", "ai-prompt", "csv-file"].includes(e.target.id)) input(); });
-  form.addEventListener("change", e => { if (e.target.tagName === "SELECT") input(); });
+  form.addEventListener("input", e => { if (!["reviewed", "ai-prompt", "csv-file"].includes(e.target.id)) input(["csv-text", "list-currency"].includes(e.target.id)); });
+  form.addEventListener("change", e => { if (e.target.tagName === "SELECT") input(e.target.id === "list-currency"); });
   $("csv-text").addEventListener("input", () => { fileVersion++; });
   $("csv-file").addEventListener("change", async () => {
-    invalidate(); const file = $("csv-file").files[0], version = ++fileVersion;
+    invalidate(true); $("csv-text").value = ""; const file = $("csv-file").files[0], version = ++fileVersion;
     if (!file) return;
     if (file.size > 5 * 1024 * 1024) { $("review-status").textContent = "Choose a CSV smaller than 5 MB."; return; }
-    try { const text = await file.text(); if (version === fileVersion) { $("csv-text").value = text; $("review-status").textContent = "File loaded. Select Check and preview to review it."; } }
+    try { const text = await file.text(); if (version === fileVersion) { $("csv-text").value = text; $("review-status").textContent = "File loaded. Select Check CSV to check it."; } }
     catch (_) { $("review-status").textContent = "The file could not be read. Try again or paste its CSV text."; }
   });
   $("copy-prompt").addEventListener("click", async () => {
@@ -49,7 +57,17 @@
   });
   $("template").addEventListener("click", () => download("list-entries-template.csv", "\uFEFF" + api.stringify([]), "text/csv;charset=utf-8"));
   form.addEventListener("submit", e => {
-    e.preventDefault(); invalidate();
+    e.preventDefault(); invalidate(true);
+    try {
+      const result = api.checkEntries(api.parse($("csv-text").value), context, $("list-currency").value);
+      if (result.errors.length) { showIssues($("review-status"), result.errors); return; }
+      previewRows = result.entries; previewCurrency = $("list-currency").value;
+      $("review-status").textContent = previewRows.length + (previewRows.length === 1 ? " entry checked. " : " entries checked. ") + "No CSV errors found. " + result.warnings.join(" ");
+      previewPage = 0; renderPreview(); $("preview").hidden = false;
+    } catch (error) { $("review-status").textContent = error.message; }
+  });
+  $("prepare-contribution").addEventListener("click", () => {
+    invalidate();
     try {
       const list = Object.fromEntries(api.listColumns.map(c => [c, form.elements.namedItem(c)?.value.trim() || ""]));
       let source = null;
@@ -60,35 +78,30 @@
       }
       list.notes = "Original page: " + $("source-url").value.trim();
       const result = api.validate({ version: 1, list, source, entries: api.parse($("csv-text").value) }, context);
-      if (result.errors.length) {
-        const heading = document.createElement("p"); heading.textContent = "Please fix " + result.errors.length + " issue(s) and check again:";
-        const ul = document.createElement("ul");
-        result.errors.slice(0, 30).forEach(error => { const li = document.createElement("li"); li.textContent = error; ul.append(li); });
-        $("review-status").replaceChildren(heading, ul);
-        if (result.errors.length > 30) $("review-status").append("Showing the first 30 issues.");
-        return;
-      }
+      if (result.errors.length) { showIssues($("contribution-status"), result.errors); return; }
       ready = result.contribution;
       const uncertain = ready.entries.filter(r => r.certainty !== "certain").length;
-      $("review-status").textContent = ready.entries.length + " entries checked. " + uncertain + " marked probable or uncertain. Compare every row with the source before exporting.";
+      $("contribution-status").textContent = "Contribution details checked. " + uncertain + " entries marked probable or uncertain. Confirm your source review to download.";
+      previewRows = ready.entries; previewCurrency = ready.list.currency;
+      $("contribution-ready").hidden = false;
       previewPage = 0; renderPreview();
       $("preview").hidden = false;
-    } catch (error) { $("review-status").textContent = error.message; }
+    } catch (error) { $("contribution-status").textContent = error.message; }
   });
   function renderPreview() {
-    const start = previewPage * 50, end = Math.min(start + 50, ready.entries.length);
-    $("preview-caption").textContent = "Entries " + (start + 1) + "–" + end + " of " + ready.entries.length + ". All entries will be exported.";
+    const start = previewPage * 50, end = Math.min(start + 50, previewRows.length);
+    $("preview-caption").textContent = "Entries " + (start + 1) + "–" + end + " of " + previewRows.length + ".";
     $("preview-prev").disabled = previewPage === 0;
-    $("preview-next").disabled = end >= ready.entries.length;
+    $("preview-next").disabled = end >= previewRows.length;
     $("preview-rows").replaceChildren();
-    ready.entries.slice(start, end).forEach(row => {
+    previewRows.slice(start, end).forEach((row, index) => {
       const tr = document.createElement("tr");
-      [row.seq, row.name_as_printed, row.place_as_printed || row.place_id, row.amount + (row.amount ? " " + (row.currency || ready.list.currency) : ""), row.certainty, row.note].forEach(value => { const td = document.createElement("td"); td.textContent = value; tr.append(td); });
+      [row.seq || String(start + index + 1), row.name_as_printed, row.place_as_printed || row.place_id, row.amount + (row.amount ? " " + (row.currency || previewCurrency) : ""), row.certainty || "not recorded", row.note].forEach(value => { const td = document.createElement("td"); td.textContent = value; tr.append(td); });
       $("preview-rows").append(tr);
     });
   }
-  $("preview-prev").addEventListener("click", () => { if (ready && previewPage > 0) { previewPage--; renderPreview(); } });
-  $("preview-next").addEventListener("click", () => { if (ready && (previewPage + 1) * 50 < ready.entries.length) { previewPage++; renderPreview(); } });
+  $("preview-prev").addEventListener("click", () => { if (previewRows.length && previewPage > 0) { previewPage--; renderPreview(); } });
+  $("preview-next").addEventListener("click", () => { if (previewRows.length && (previewPage + 1) * 50 < previewRows.length) { previewPage++; renderPreview(); } });
   $("reviewed").addEventListener("change", () => { $("export").disabled = !ready || !$("reviewed").checked; });
   $("export").addEventListener("click", () => {
     if (!ready || !$("reviewed").checked) return;

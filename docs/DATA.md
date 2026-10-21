@@ -126,8 +126,17 @@ Add any currency you meet (thalers, kreuzer, piastres, rupees…) as a new row.
 
 ## AI-assisted contributions and CSV uploads
 
-The **Add a list** page (`/contribute/`) guides contributors through source details,
-a transcription prompt, and CSV upload or pasted text. There is no AI API or account
+The **Add a list** page (`/contribute/`) starts with a standalone CSV checker.
+Upload or paste a CSV and select **Check CSV** without entering a title, date,
+source or review confirmation. Existing catalogue exports can be checked without
+being treated as duplicate contributions. Checks cover CSV structure, printed
+names, identifiers within the file and numeric amount format; choose a default
+currency (or include a currency column) to check currency unit ranges. Missing
+currency and uncertain readings appear as notices, not demands to complete the
+contribution workflow. This checks the data format, not accuracy against a scan.
+
+Optional sections provide source details for a new contribution and an AI
+transcription prompt. There is no AI API or account
 setup: contributors use their own AI assistant with a clear source scan, then review
 its output. The site does not send CSV uploads to a server or store them. Download
 the contribution before leaving the page and send that file to the project editor.

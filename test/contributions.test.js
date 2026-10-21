@@ -84,3 +84,25 @@ test('import previews without writes, applies validated rows, and refuses repeat
     result=run('--apply'); assert.notEqual(result.status,0); assert.deepEqual(snapshot(),after);
   } finally { fs.rmSync(dir,{recursive:true,force:true}); }
 });
+
+
+test('standalone checks need no list metadata and preserve unconfirmed readings', () => {
+  const rows = api.parse('name_as_printed,amount\nMiss Jacobs,1.0.0');
+  const result = api.checkEntries(rows, ctx);
+  assert.deepEqual(result.errors, []);
+  assert.equal(result.entries[0].id, '');
+  assert.equal(result.entries[0].certainty, '');
+  assert.equal(result.entries[0].amount, '1.0.0');
+  assert.ok(result.warnings.some(w => /no currency/.test(w)));
+  assert.ok(result.warnings.some(w => /unconfirmed/.test(w)));
+  assert.ok(api.checkEntries(api.parse('name_as_printed,amount\nA,1.20.0'),ctx,'GBP').errors.length);
+  assert.ok(api.checkEntries(api.parse('name_as_printed,amount\nA,oops'),ctx).errors.length);
+  assert.ok(api.checkEntries(api.parse('name_as_printed\nA'),ctx,'UNKNOWN').errors.length);
+});
+test('standalone checks accept existing catalogue exports but catch duplicates within a file', () => {
+  const raw = parseCsv(fs.readFileSync(path.join(root,'data/entries.csv'),'utf8'),{columns:true,skip_empty_lines:true,bom:true});
+  const existing = raw.filter(e => e.list_id === ctx.lists[0]);
+  assert.deepEqual(api.checkEntries(existing,ctx,'GBP').errors, []);
+  assert.ok(api.checkEntries([existing[0], existing[0]],ctx,'GBP').errors.length);
+  assert.ok(api.validate({version:1,list:{},entries:existing},ctx).errors.length);
+});
