@@ -7,3 +7,4 @@ FRF,French francs,100,{0} fr. {1} c.,1 franc = 100 centimes
 NLG,Dutch guilders,20|16,{0} gld. {1} st. {2} pen.,1 guilder = 20 stuivers = 320 penningen
 USD,US dollars,100,${0}.{1},Write 12.50
 NY-CUR,New York currency (£ s. d.),20|12,£{0} {1}s. {2}d.,"Colonial New York money of account, not sterling. Write 15.1.6"
+SLASH-UNSPEC,Slash notation (unit and currency unidentified),,{0}/ (unit unidentified),Literal numerals followed by a slash in the Eleazer Lyons manuscript. No denomination or conversion is assumed; confirm the accounting unit before reassigning a currency.

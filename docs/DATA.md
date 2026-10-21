@@ -235,3 +235,16 @@ and blocked from contribution import until recorded. No identity is guessed.
 
 Duplicate matching compares the donor and gift independently of intermediary links,
 so adding or correcting an agent does not let a copied list evade duplicate checks.
+
+
+### Offering lists
+
+Use `list_type=offering` for a list of one person's offering dedications. The
+maker is recorded under `organizer_id` (displayed as “Offerings made by”) and may
+also have the list role `offerer`. The people, groups or purposes named beside
+amounts use the entry role `offering-purpose`; they are not automatically donors
+or intermediaries. Amounts attached to this role are excluded from a linked
+person's “Total given”. Preserve unclear currency notation separately, using an
+explicitly unidentified accounting unit until the denomination is established.
+The Eleazer Lyons manuscript uses `SLASH-UNSPEC` to preserve its written 2/ and
+28/ figures without identifying them as sterling or New York currency.

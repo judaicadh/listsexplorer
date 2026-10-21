@@ -122,7 +122,8 @@ test('readable spreadsheet headings preserve the supplied Swansea sample', () =>
   assert.equal(rows[15].agent_id,'jewish-chronicle-office');
   assert.equal(rows[26].entity_id,'sichel-a-s');
   assert.equal(rows[42].name_as_printed,'Sundry small Subscriptions');
-  const result=api.checkEntries(rows,ctx);
+  const unresolved={...ctx,entities:ctx.entities.filter(id=>!['sichel-a-s','jewish-chronicle-office'].includes(id))};
+  const result=api.checkEntries(rows,unresolved);
   assert.deepEqual(result.errors,[]);
   assert.ok(result.warnings.some(w=>w.includes('sichel-a-s')));
   assert.ok(result.warnings.some(w=>w.includes('jewish-chronicle-office')));
@@ -240,4 +241,34 @@ test('section headings do not hide the via link on a list page',()=>{
   const entry=list.entries.find(e=>e.agent_id==='myers-i-h');
   const output=env.renderString(fs.readFileSync(path.join(root,'src/lists/list.njk'),'utf8'),{list:{...list,sections:[{title:'Ramsgate',entries:[entry]}]},site:{}});
   assert.match(output,/via <a href="\/people\/myers-i-h\/">I\. H\. Myers<\/a>/);
+});
+
+test('Lyons manuscript is an offering-purpose list with literal unidentified units',()=>{
+  const db=require('../lib/db').build();const list=db.lists.find(l=>l.id==='eleazer-lyons-offerings-1818-11-07');
+  assert.equal(list.date,'1818-11-07');assert.equal(list.typeLabel,'Offering list');assert.equal(list.entries.length,9);
+  assert.equal(list.organizer.id,'lyons-eleazer');assert.ok(list.roles.some(r=>r.role==='offerer'));
+  assert.ok(list.entries.every(e=>e.role==='offering-purpose'&&!e.agent_id));
+  assert.equal(list.currency.code,'SLASH-UNSPEC');assert.deepEqual(list.currency.ratioList,[]);
+  assert.equal(list.totals[0].display,'44/ (unit unidentified)');
+  assert.equal(list.entries.filter(e=>e.amount==='2').length,8);assert.equal(list.entries.find(e=>e.seq==='4').amount,'28');
+  assert.equal(list.source.catalogueUrl,'/images/ajhs-p15-3-161-eleazer-lyons-offerings.pdf');
+  assert.notEqual(list.source.url,list.source.catalogueUrl);
+});
+test('offering purposes are accepted by the contributor and import validators',()=>{
+  const p=sample();p.list.list_type='offering';p.entries[0].role='';
+  const result=api.validate(p,ctx);assert.deepEqual(result.errors,[]);
+  assert.equal(result.contribution.entries[0].role,'offering-purpose');
+});
+test('an offering honouree is not counted as a donor in personal totals',()=>{
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'lists-offering-test-'));
+  try{
+    fs.cpSync(path.join(root,'data'),path.join(dir,'data'),{recursive:true});
+    fs.cpSync(path.join(root,'lib'),path.join(dir,'lib'),{recursive:true});
+    fs.symlinkSync(path.join(root,'node_modules'),path.join(dir,'node_modules'),'dir');
+    const file=path.join(dir,'data/entries.csv');const rows=parseCsv(fs.readFileSync(file,'utf8'),{columns:true,skip_empty_lines:true});
+    const e=rows.find(e=>e.id==='lyons1818-001');e.entity_id='lyons-eleazer';
+    fs.writeFileSync(file,api.stringify(rows));
+    const db=require(path.join(dir,'lib/db')).build();assert.deepEqual(db.errors,[]);
+    const person=db.people.find(p=>p.id==='lyons-eleazer');assert.equal(person.entries.length,1);assert.deepEqual(person.totals,[]);
+  }finally{fs.rmSync(dir,{recursive:true,force:true});}
 });

@@ -14,7 +14,7 @@ eleventyComputed:
   <p class="eyebrow">{{ source.type or "Source" }}</p>
   <h1><i>{{ source.title }}</i></h1>
   {% if source.title_original %}<p class="orig" dir="auto">{{ source.title_original }}</p>{% endif %}
-  <p class="sub">{% if source.place %}<a href="{{ source.place.url }}">{{ source.place.name }}</a>{% endif %}{% if source.publisher %} · {{ source.publisher }}{% endif %}{% if source.dates %} · {{ source.dates }}{% endif %}{% if source.url %} · <a href="{{ source.url }}">Catalogue / digitized copy</a>{% endif %}</p>
+  <p class="sub">{% if source.place %}<a href="{{ source.place.url }}">{{ source.place.name }}</a>{% endif %}{% if source.publisher %} · {{ source.publisher }}{% endif %}{% if source.dates %} · {{ source.dates }}{% endif %}{% if source.catalogueUrl %} · <a href="{{ source.catalogueUrl }}">Catalogue / digitized copy</a>{% endif %}</p>
   {% if source.notes %}<p>{{ source.notes }}</p>{% endif %}
   <section class="section-tight">
     <h2>Lists in this source</h2>
