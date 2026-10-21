@@ -22,4 +22,9 @@ permalink: /agents/
       </tbody>
     </table>
   </div>
+  {% if db.unlinkedAgents.length %}
+  <h2>Intermediaries awaiting identification</h2>
+  <p>Names recorded as printed, awaiting a link to a person or organization.</p>
+  <ul class="plain">{% for a in db.unlinkedAgents %}<li><b>{{ a.name }}</b> · {{ a.entries.length }} entries · {% for l in a.lists %}<a href="{{ l.url }}">{{ l.title }}</a>{% if not loop.last %}; {% endif %}{% endfor %}</li>{% endfor %}</ul>
+  {% endif %}
 </div>

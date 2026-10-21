@@ -48,7 +48,7 @@ eleventyComputed:
 
   {% if list.agents.length %}
   <section class="panel">
-    <h2 class="h-small">Subscriptions received by</h2>
+    <h2 class="h-small">Agents &amp; intermediaries</h2>
     <ul class="inline-list">
       {% for r in list.agents %}<li>{{ entityLink(r.entity, r.displayName) }}{% if r.address_as_printed %} <span class="muted">({{ r.address_as_printed }})</span>{% endif %}</li>{% endfor %}
     </ul>
@@ -109,7 +109,7 @@ eleventyComputed:
               {% for e in s.entries %}
               <tr id="{{ e.id }}">
                 <td class="num muted">{{ e.seq }}</td>
-                <td>{% if e.entity %}<a href="{{ e.entity.url }}">{{ e.name_as_printed }}</a>{% else %}{{ e.name_as_printed }}{% endif %}{{ certainty(e) }}{% if e.note %}<span class="muted block">{{ e.note }}</span>{% endif %}{% if e.agent and not s.title %}<span class="muted block">via {{ e.agent.name }}</span>{% endif %}</td>
+                <td>{% if e.entity %}<a href="{{ e.entity.url }}">{{ e.name_as_printed }}</a>{% else %}{{ e.name_as_printed }}{% endif %}{{ certainty(e) }}{% if e.note %}<span class="muted block">{{ e.note }}</span>{% endif %}{% if e.agentLabel %}<span class="muted block">via {% if e.agent %}<a href="{{ e.agent.url }}">{{ e.agent.name }}</a>{% else %}{{ e.agent_as_printed }} <span class="small-note">(not yet linked)</span>{% endif %}</span>{% endif %}</td>
                 <td>{% if e.place %}<a href="{{ e.place.url }}">{{ e.place_as_printed or e.place.name }}</a>{% else %}{{ e.place_as_printed }}{% endif %}</td>
                 <td class="num">{{ e.amountLabel }}</td>
               </tr>

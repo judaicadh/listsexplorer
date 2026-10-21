@@ -70,6 +70,7 @@ currencies ── used by lists and entries
 | currency | only if different from the list's currency |
 | quantity | copies subscribed for (subscription lists) |
 | agent_id | person or organization it was paid through |
+| agent_as_printed | intermediary’s exact printed name; keep even before identification |
 | certainty | `certain`, `probable` or `uncertain` (the reading of the name) |
 | note | |
 
@@ -192,3 +193,45 @@ The CSV checker also accepts spreadsheet headings `#` (sequence),
 in entry notes, without treating them as independent verification. Unknown entity,
 agent or place references appear as notices during standalone checking, so the
 rows can still be inspected. Catalogue import still requires resolving those links.
+
+
+### Duplicate prevention
+
+CSV checks compare entry content as well as IDs. The checker flags repeated rows,
+repeated names within a section and place, matches to catalogue entries, and entire
+lists whose entry contents already exist. Matching ignores capitalization and
+punctuation and compares equivalent amount forms within a known currency. It does
+not infer that differently spelled names identify the same person.
+
+The duplicate report links to the existing lists. Repeated names can be genuine;
+review the source and remove accidental repeats in the CSV, or confirm that the
+remaining repeats are intentional before preparing a contribution. Nothing is
+removed automatically. A contribution retains that explicit confirmation, and the
+editor's importer runs the same checks again against the current catalogue.
+
+Reused catalogue IDs remain blocked. An entire matching list is also blocked when
+its source, publication date and page match an existing list, even if its list and
+entry IDs were changed. A matching roster from a different issue is flagged for
+review rather than blocked. With source details missing, the standalone checker
+shows possible matches without preventing inspection. Different spellings or
+incomplete metadata may require manual comparison.
+
+
+### Recording agents and intermediaries
+
+Keep the donor and the intermediary separate. For “Ramsgate Synagogue, per Rev.
+I. H. Myers”, retain the complete printed name in `name_as_printed`, link the donor
+to `ramsgate-synagogue`, set `agent_as_printed` to `Rev. I. H. Myers` and `agent_id`
+to `myers-i-h`. The public page shows “via I. H. Myers” and links his record.
+
+For an unidentified intermediary, fill in `agent_as_printed` and leave `agent_id`
+blank. The name remains visible in list, directory, search, preview and downloaded
+entry data. The Agents page lists these names separately pending identification.
+The uploader accepts either an ID or a printed name in the spreadsheet's `via`
+column; canonical `agent_id` always requires a valid catalogue ID. AI prompts ask
+for `agent_as_printed` explicitly. Entries with per/via/c/o wording in the donor
+name or section but neither intermediary field filled are flagged during checking
+and blocked from contribution import until recorded. No identity is guessed.
+
+Duplicate matching compares the donor and gift independently of intermediary links,
+so adding or correcting an agent does not let a copied list evade duplicate checks.

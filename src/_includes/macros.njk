@@ -30,7 +30,7 @@
     <td>{{ entityLink(e.entity, "—") }}</td>
     {% if showList %}<td><a href="{{ e.list.url }}">{{ e.list.title }}</a></td><td class="num">{{ e.list.year }}</td>{% endif %}
     <td>{% if e.place %}<a href="{{ e.place.url }}">{{ e.place.name }}</a>{% else %}{{ e.place_as_printed or "—" }}{% endif %}</td>
-    <td>{% if e.agent %}<a href="{{ e.agent.url }}">{{ e.agent.name }}</a>{% else %}—{% endif %}</td>
+    <td>{% if e.agent %}<a href="{{ e.agent.url }}">{{ e.agent.name }}</a>{% else %}{{ e.agent_as_printed or "—" }}{% endif %}</td>
     <td class="num">{{ e.amountLabel }}</td>
   </tr>
   {% endfor %}

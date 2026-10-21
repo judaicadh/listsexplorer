@@ -16,8 +16,9 @@ class SearchIndex {
       y: e.list ? e.list.year : null,
       p: e.place ? e.place.name : e.place_as_printed || "",
       pu: e.place ? e.place.url : "",
-      g: e.agent ? e.agent.name : "",
+      g: e.agentLabel || "",
       gu: e.agent ? e.agent.url : "",
+      gp: e.agent_as_printed || "",
       s: e.section || "",
       r: e.roleLabel,
       a: e.amountLabel,
@@ -29,6 +30,8 @@ class SearchIndex {
       k: [
         ...(e.entity ? e.entity.variants : []),
         ...(e.place ? e.place.variants : []),
+        ...(e.agent ? e.agent.variants : []),
+        e.agent_as_printed,
         e.place && e.place.modern_name,
       ].filter(Boolean).join(" "),
     }));

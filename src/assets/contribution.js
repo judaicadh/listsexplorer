@@ -4,7 +4,7 @@
   else root.ListContribution = factory();
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   "use strict";
-  const columns = "id,list_id,seq,page,column,section,name_as_printed,entity_id,place_as_printed,place_id,role,amount,currency,quantity,agent_id,certainty,note".split(",");
+  const columns = "id,list_id,seq,page,column,section,name_as_printed,entity_id,place_as_printed,place_id,role,amount,currency,quantity,agent_id,certainty,note,agent_as_printed".split(",");
   const listColumns = "id,title,title_original,list_type,source_id,date,citation,pages,purpose,organizer_id,place_id,beneficiary_place_id,currency,image,image_credit,iiif_manifest,status,transcriber,featured,notes".split(",");
   const sourceColumns = "id,title,title_original,type,place_id,publisher,dates,url,notes".split(",");
   const slug = value => String(value || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 90).replace(/-$/, "");
@@ -46,19 +46,73 @@
         if (entry.currency && entry.currency !== "GBP") throw new Error("CSV row " + (i + 2) + ": currency conflicts with the pounds/shillings/pence amount heading.");
         entry.currency = "GBP";
       }
+      if (printedHeaders.includes("via") && entry.agent_id && !/^[a-z0-9][a-z0-9-]*$/.test(entry.agent_id)) {
+        if (entry.agent_as_printed && entry.agent_as_printed !== entry.agent_id) throw new Error("CSV row " + (i + 2) + ": via and agent_as_printed disagree.");
+        entry.agent_as_printed = entry.agent_id; entry.agent_id = "";
+      }
       const checked = header.includes("checked") ? values[header.indexOf("checked")].trim() : "";
       if (checked) entry.note = [entry.note, "Spreadsheet review flag: " + checked].filter(Boolean).join("\n");
       return entry;
     });
   }
+  const normalized = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+  function rowKey(e, currency, ctx) {
+    const code = e.currency || currency || "";
+    const cur = ctx.currencies.find(c => c.code === code);
+    let amount = String(e.amount || "").trim();
+    if (amount && cur) {
+      const fractions = { "½": .5, "¼": .25, "¾": .75, "⅓": 1 / 3, "⅔": 2 / 3 };
+      const parts = amount.split(".").map(p => Number(p.replace(/[½¼¾⅓⅔]/g, "")) + (fractions[p.slice(-1)] || 0));
+      while (parts.length < cur.ratios.length + 1) parts.push(0);
+      amount = String(parts.reduce((sum, n, i) => i ? sum * cur.ratios[i - 1] + n : n, 0));
+    }
+    const place = ctx.places.find(p => p.id === e.place_id);
+    return JSON.stringify([normalized(e.name_as_printed), normalized(place ? place.name : e.place_as_printed), normalized(e.section), amount, code, String(e.quantity || "")]);
+  }
+  function findDuplicates(entries, ctx, list = {}) {
+    const groups = new Map(), names = new Map(), catalogue = new Map(), byList = new Map();
+    for (const row of ctx.catalogueRows || []) {
+      if (!catalogue.has(row.key)) catalogue.set(row.key, []);
+      catalogue.get(row.key).push(row);
+      if (!byList.has(row.list_id)) byList.set(row.list_id, []);
+      byList.get(row.list_id).push(row.key);
+    }
+    const existing = [], keys = entries.map(e => rowKey(e, list.currency, ctx));
+    entries.forEach((e, i) => {
+      if (!normalized(e.name_as_printed)) return;
+      const key = keys[i];
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(i + 1);
+      const name = JSON.stringify([normalized(e.name_as_printed), normalized(e.section), normalized(e.place_as_printed || e.place_id)]);
+      if (!names.has(name)) names.set(name, []);
+      names.get(name).push(i + 1);
+      const matches = catalogue.get(key);
+      if (matches) existing.push({ row: i + 1, name: e.name_as_printed, matches: matches.slice(0, 5) });
+    });
+    const repeated = [...groups.values()].filter(rows => rows.length > 1).map(rows => ({ rows, name: entries[rows[0] - 1].name_as_printed, exact: true }));
+    for (const rows of names.values()) if (rows.length > 1 && new Set(rows.map(n => keys[n - 1])).size > 1) repeated.push({ rows, name: entries[rows[0] - 1].name_as_printed, exact: false });
+    const signature = JSON.stringify(keys.slice().sort());
+    const wholeLists = entries.length === 0 ? [] : [...byList].filter(([, values]) => values.length === entries.length && JSON.stringify(values.slice().sort()) === signature).map(([id]) => {
+      const known = (ctx.listDetails || []).find(l => l.id === id) || { id, title: id };
+      const sourceTitle = list.source_title || (ctx.sources.find(s => s.id === list.source_id) || {}).title;
+      const sameSource = list.source_id === known.source_id || (sourceTitle && normalized(sourceTitle) === normalized(known.source_title));
+      const samePage = list.pages && known.pages && normalized(list.pages) === normalized(known.pages);
+      return { ...known, blocked: Boolean(sameSource && list.date && list.date === known.date && samePage) };
+    });
+    return { repeated, existing, wholeLists, needsReview: Boolean(repeated.length || existing.length || wholeLists.length) };
+  }
   function context(db) {
-    return {
+    const ctx = {
       lists: db.lists.map(l => l.id), entries: db.entries.map(e => e.id),
       sources: db.sources.map(s => ({ id: s.id, title: s.title })),
       places: db.places.map(p => ({ id: p.id, name: p.name })),
       entities: [...db.people, ...db.organizations].map(e => e.id),
+      entityLabels: Object.fromEntries([...db.people, ...db.organizations].map(e => [e.id, { name: e.name, url: e.url }])),
       currencies: db.currencies.map(c => ({ code: c.code, name: c.name, ratios: c.ratioList })),
     };
+    ctx.listDetails = db.lists.map(l => ({ id: l.id, title: l.title, date: l.date, source_id: l.source_id, source_title: l.source ? l.source.title : "", pages: l.pages }));
+    ctx.catalogueRows = db.entries.map(e => ({ id: e.id, list_id: e.list_id, key: rowKey(e, e.list && e.list.currency ? e.list.currency.code : "", ctx) }));
+    return ctx;
   }
   function validate(input, ctx, entriesOnly = false) {
     const errors = [];
@@ -124,11 +178,17 @@
           if (parts.length > currency.ratios.length + 1 || parts.some((p, n) => !(n === parts.length - 1 ? /^\d+[½¼¾⅓⅔]?$/ : /^\d+$/).test(p)) || parts.some((p, n) => n > 0 && parseFloat(p) >= currency.ratios[n - 1])) errors.push(label + "invalid amount for " + currency.code + ". Use unit-separated values such as 1.10.6 for GBP, or 12.50 for USD.");
         }
       }
+      if (!entriesOnly && /(?:\bper\s+|\bvia\s+|\bc\/o\s+)/i.test([e.name_as_printed, e.section].join(" ")) && !e.agent_id && !e.agent_as_printed) errors.push(label + "an intermediary is printed here. Record the name in agent_as_printed or link agent_id before importing.");
       return e;
     });
     // Every contribution enters the catalogue as a draft, even after a contributor reviews it.
     list.status = "contributed draft — not independently checked"; list.featured = "";
-    return { errors, contribution: { version: 1, list, source, entries } };
+    const duplicates = entriesOnly ? null : findDuplicates(entries, ctx, { ...list, source_title: source && source.title });
+    if (duplicates) {
+      for (const known of duplicates.wholeLists.filter(l => l.blocked)) errors.push("This list's entries already exist in “" + known.title + "” for the same source and date. Use the existing list instead of importing it again.");
+      if (duplicates.needsReview && input.duplicate_reviewed !== true) errors.push("Review the possible duplicates and confirm which repeated entries are intentional before preparing this contribution.");
+    }
+    return { errors, duplicates, contribution: { version: 1, list, source, entries, duplicate_reviewed: input.duplicate_reviewed === true } };
   }
   function checkEntries(entries, ctx, currency = "") {
     const result = validate({ version: 1, list: { currency }, entries }, ctx, true);
@@ -136,12 +196,14 @@
     if (currency && !ctx.currencies.some(c => c.code === currency)) result.errors.push("Choose a known default currency.");
     if (entries.some(e => e.amount && !e.currency && !currency)) warnings.push("Some amounts have no currency. Their unit ranges have not been checked; choose a default currency to check them.");
     entries.forEach((e, index) => {
+      if (/(?:\bper\s+|\bvia\s+|\bc\/o\s+)/i.test([e.name_as_printed, e.section].join(" ")) && !e.agent_id && !e.agent_as_printed) warnings.push("Entry " + (index + 1) + ": intermediary wording is present. Record the printed name in agent_as_printed or link an agent_id before importing.");
       for (const key of ["entity_id", "agent_id"]) if (e[key] && !ctx.entities.includes(e[key])) warnings.push("Entry " + (index + 1) + ": " + key + " “" + e[key] + "” is not in the catalogue yet; retained for review before importing.");
       if (e.place_id && !ctx.places.some(p => p.id === e.place_id)) warnings.push("Entry " + (index + 1) + ": place_id “" + e.place_id + "” is not in the catalogue yet; retained for review before importing.");
     });
     const uncertain = entries.filter(e => e.certainty !== "certain").length;
     if (uncertain) warnings.push(uncertain + (uncertain === 1 ? " entry has an uncertain or unconfirmed reading." : " entries have uncertain or unconfirmed readings.") + " A CSV check cannot verify the transcription against the source.");
-    return { errors: result.errors, warnings, entries: result.contribution.entries };
+    const duplicates = findDuplicates(result.contribution.entries, ctx, { currency });
+    return { errors: result.errors, warnings, entries: result.contribution.entries, duplicates };
   }
-  return { columns, listColumns, sourceColumns, parse, stringify, slug, context, validate, checkEntries };
+  return { columns, listColumns, sourceColumns, parse, stringify, slug, context, validate, checkEntries, findDuplicates };
 });

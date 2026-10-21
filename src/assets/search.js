@@ -112,7 +112,7 @@
   }
 
   function downloadCsv() {
-    var cols = [["id", "id"], ["name_as_printed", "n"], ["identified_as", "e"], ["list", "l"], ["year", "y"], ["place", "p"], ["agent", "g"], ["section", "s"], ["role", "r"], ["amount", "a"], ["currency", "c"], ["quantity", "q"], ["certainty", "x"]];
+    var cols = [["id", "id"], ["name_as_printed", "n"], ["identified_as", "e"], ["list", "l"], ["year", "y"], ["place", "p"], ["agent", "g"], ["agent_as_printed", "gp"], ["section", "s"], ["role", "r"], ["amount", "a"], ["currency", "c"], ["quantity", "q"], ["certainty", "x"]];
     var q = function (v) { v = v == null ? "" : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
     var lines = [cols.map(function (c) { return c[0]; }).join(",")].concat(filtered.map(function (r) {
       return cols.map(function (c) { return q(r[c[1]]); }).join(",");
