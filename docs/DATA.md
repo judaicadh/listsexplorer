@@ -248,3 +248,19 @@ person's “Total given”. Preserve unclear currency notation separately, using
 explicitly unidentified accounting unit until the denomination is established.
 The Eleazer Lyons manuscript uses `SLASH-UNSPEC` to preserve its written 2/ and
 28/ figures without identifying them as sterling or New York currency.
+
+
+### Bills and arrears
+
+Use `list_type=debt` and the entry role `debtor` for offering bills listed as
+unpaid. Their amounts appear as billed or outstanding, and are excluded from a
+linked person's “Total given”. No payment is inferred from the existence of a bill.
+Record payments separately only when a source documents them. A year such as
+Hebrew 5599 can be represented by `1838/1839`, with the original year retained in
+the citation; no exact Gregorian date is inferred.
+
+The list role `document-intermediary` records someone delivering or handling the
+list itself. It can retain a printed name with a blank `entity_id` while identity
+is uncertain. This does not make that person a collecting agent for every entry.
+For example, the verso of AJHS_P_15_4_277.pdf names Parnass Phillips in relation to
+the document; no full-name identification or receipt of funds is inferred.

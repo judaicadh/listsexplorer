@@ -272,3 +272,43 @@ test('an offering honouree is not counted as a donor in personal totals',()=>{
     const person=db.people.find(p=>p.id==='lyons-eleazer');assert.equal(person.entries.length,1);assert.deepEqual(person.totals,[]);
   }finally{fs.rmSync(dir,{recursive:true,force:true});}
 });
+
+test('offering bills are unpaid accounts, not received donations',()=>{
+  const db=require('../lib/db').build();const list=db.lists.find(l=>l.id==='offering-bills-unpaid-5599');
+  assert.equal(list.entries.length,25);assert.equal(list.list_type,'debt');assert.equal(list.date,'1838/1839');assert.equal(list.dateLabel,'1838–1839');
+  assert.ok(list.entries.every(e=>e.role==='debtor'&&!e.agent_id));
+  assert.equal(list.totals[0].display,'$127.88');
+  assert.equal(list.entries[1].place_id,'savannah');assert.equal(list.entries[6].place_id,'liverpool');
+  const role=list.roles.find(r=>r.role==='document-intermediary');
+  assert.equal(role.displayName,'Parnass Phillips');assert.equal(role.entity,null);assert.equal(role.isAgent,false);
+  const Search=require('../src/search-index.11ty.js');
+  const rows=JSON.parse(new Search().render({db})).rows.filter(r=>r.t==='debt');
+  assert.ok(rows.every(r=>r.r==='Person billed / debtor'));
+});
+test('date ranges and debtor defaults are accepted without inventing an exact day',()=>{
+  const input=sample();input.list.list_type='debt';input.list.date='1838/1839';input.entries[0].role='';
+  let result=api.validate(input,ctx);assert.deepEqual(result.errors,[]);assert.equal(result.contribution.entries[0].role,'debtor');
+  for(const date of ['1839/1838','1838/','1838/1839/1840','1839-02-29/1839-03-01']){
+    input.list.date=date;assert.ok(api.validate(input,ctx).errors.length,date);
+  }
+  input.list.date='1840-02-29/1840-03-01';assert.deepEqual(api.validate(input,ctx).errors,[]);
+});
+test('an identified debtor does not acquire a misleading total given',()=>{
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'lists-debtor-test-'));
+  try{
+    fs.cpSync(path.join(root,'data'),path.join(dir,'data'),{recursive:true});
+    fs.cpSync(path.join(root,'lib'),path.join(dir,'lib'),{recursive:true});
+    fs.symlinkSync(path.join(root,'node_modules'),path.join(dir,'node_modules'),'dir');
+    const file=path.join(dir,'data/entries.csv');const rows=parseCsv(fs.readFileSync(file,'utf8'),{columns:true,skip_empty_lines:true});
+    rows.find(e=>e.id==='bills5599-001').entity_id='lyons-eleazer';fs.writeFileSync(file,api.stringify(rows));
+    const db=require(path.join(dir,'lib/db')).build();assert.deepEqual(db.errors,[]);
+    const person=db.people.find(p=>p.id==='lyons-eleazer');assert.equal(person.entries.length,1);assert.deepEqual(person.totals,[]);
+  }finally{fs.rmSync(dir,{recursive:true,force:true});}
+});
+test('bill pages label arrears and keep the document role separate',()=>{
+  const nj=require('nunjucks');const env=new nj.Environment(new nj.FileSystemLoader(path.join(root,'src/_includes')));
+  const db=require('../lib/db').build();const list=db.lists.find(l=>l.id==='offering-bills-unpaid-5599');
+  const html=env.renderString(fs.readFileSync(path.join(root,'src/lists/list.njk'),'utf8'),{list,site:{}});
+  assert.match(html,/Total listed as unpaid/);assert.match(html,/Largest unpaid bills/);assert.match(html,/Document handling/);
+  assert.match(html,/Person billed as written/);assert.match(html,/Parnass Phillips/);assert.doesNotMatch(html,/via Parnass Phillips/);
+});
