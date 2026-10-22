@@ -270,3 +270,12 @@ the document; no full-name identification or receipt of funds is inferred.
 Use `list_type=bequest`, `role=beneficiary` for the institutions or funds receiving legacies. Record the testator with `organizer_id` and/or the list role `testator`. Beneficiaries remain searchable, but their bequests are excluded from their own “Total given”. Bequests describe the published legacies, not confirmed receipt of payment.
 
 For later versions of an already transcribed appeal, compare the entries and preserve the later scan. A clearly labelled partial transcription may include only newly acknowledged gifts; explain omitted repeated names and carried-forward sums in the list notes so these are not counted twice.
+
+
+### Lists of agents
+
+Use `list_type=agents` for a printed list of a newspaper's or society's agents
+(for example the “Agents” box in The Australian Israelite). Each agent is an entry
+with the role `agent`, no amount, the town as `place_as_printed`/`place_id`, and
+any street address kept in the note. Each issue's box is its own list, so changes
+over time (agents added, dropped or respelled) can be compared.
