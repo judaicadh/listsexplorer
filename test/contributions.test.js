@@ -348,3 +348,35 @@ test('Swansea additions omit the reprinted gifts and carry-forward',()=>{
   assert.ok(list.entries.every(e=>!prior.has(signature(e))));
   assert.equal(old.entries.length,43);assert.ok(list.entries.filter(e=>/\bPer\b/.test(e.section)).every(e=>e.agent_as_printed));
 });
+
+test('literary society book gifts preserve donors and both intermediaries without cash values',()=>{
+  const db=require('../lib/db').build();assert.deepEqual(db.errors,[]);
+  const list=db.lists.find(l=>l.id==='melbourne-hebrew-literary-books-1871-09-29');
+  assert.equal(list.entries.length,18);assert.deepEqual(list.totals,[]);
+  assert.ok(list.entries.every(e=>!e.amount&&!e.quantity&&e.agent_as_printed==='Messrs. B. S. Cohen and J. Harris'));
+  assert.equal(list.entries.filter(e=>e.name_as_printed==='Myers and Zox').length,1);
+  assert.equal(list.agents.length,2);
+  const Export=require('../src/list-downloads.11ty.js');const rows=api.parse(new Export().render({list:{id:list.id}}));
+  assert.equal(rows.length,18);assert.ok(rows.every(e=>e.agent_as_printed==='Messrs. B. S. Cohen and J. Harris'&&!e.amount));
+});
+test('listed newspaper agents retain dated appearances without being forwarded gifts',()=>{
+  const db=require('../lib/db').build();
+  const originals=db.entries.filter(e=>e.role==='agent');assert.ok(originals.length>0);
+  const appearances=db.listedAgents.flatMap(a=>a.entries);
+  assert.deepEqual(new Set(appearances.map(e=>e.id)),new Set(originals.map(e=>e.id)));
+  assert.equal(appearances.length,originals.length);
+  const spiel=db.listedAgents.find(a=>a.name.includes('Spielvogel'));
+  assert.ok(spiel.entries.some(e=>e.list.date==='1871-07-07'));
+  assert.ok(spiel.entries.some(e=>e.list.date==='1871-09-29'));
+  assert.ok(spiel.entries.every(e=>/Armstrong/.test(e.note)));
+  const nj=require('nunjucks');const env=new nj.Environment();
+  const html=env.renderString(fs.readFileSync(path.join(root,'src/agents/index.njk'),'utf8'),{db});
+  assert.match(html,/Agents listed by town/);assert.match(html,/29 September 1871/);assert.match(html,/15 Armstrong-street/);
+});
+test('fold-obscured Sydney amounts are not invented to reconcile the printed total',()=>{
+  const db=require('../lib/db').build();const list=db.lists.find(l=>l.id==='sydney-new-synagogue-1871');
+  for(const name of ['D. L. Levy','M. Levy','S. A. Ander[son]']){
+    const e=list.entries.find(e=>e.name_as_printed===name);assert.equal(e.amount,'');assert.equal(e.money,null);assert.equal(e.certainty,'uncertain');assert.match(e.note,/conjectur/);
+  }
+  assert.match(list.notes,/printed total/i);assert.match(list.notes,/transcribed sum is incomplete/);
+});

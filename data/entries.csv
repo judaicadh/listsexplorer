@@ -7791,8 +7791,8 @@ sydns71-001,sydney-new-synagogue-1871,1,1,,,The Reverend A. B. Davis,,,,subscrib
 sydns71-002,sydney-new-synagogue-1871,2,1,1,,Mr. S. A. Joseph,,,,subscriber,200.0.0,,,,,,
 sydns71-003,sydney-new-synagogue-1871,3,1,1,,"M. Alexander, M.L.A.",,,,subscriber,200.0.0,,,,,,
 sydns71-004,sydney-new-synagogue-1871,4,1,1,,M. Moss,,,,subscriber,200.0.0,,,,uncertain,Amount partly hidden by a fold.,
-sydns71-005,sydney-new-synagogue-1871,5,1,1,,D. L. Levy,,,,subscriber,250.0.0,,,,uncertain,"Name and amount partly hidden by a fold. The three hidden amounts (D. L. Levy, M. Levy, S. A. Anderson) must come to £375 for the list to agree with the printed total; read as £250, £100 and £25.",
-sydns71-006,sydney-new-synagogue-1871,6,1,1,,M. Levy,,,,subscriber,100.0.0,,,,uncertain,"Name and amount partly hidden by a fold. The three hidden amounts (D. L. Levy, M. Levy, S. A. Anderson) must come to £375 for the list to agree with the printed total; read as £250, £100 and £25.",
+sydns71-005,sydney-new-synagogue-1871,5,1,1,,D. L. Levy,,,,subscriber,,,,,uncertain,Name and amount obscured by the page fold; requires a clearer scan. Previous draft conjectured 250.0.0 to balance the printed total. This conjecture is not a source reading and is excluded from numeric totals.,
+sydns71-006,sydney-new-synagogue-1871,6,1,1,,M. Levy,,,,subscriber,,,,,uncertain,Name and amount obscured by the page fold; requires a clearer scan. Previous draft conjectured 100.0.0 to balance the printed total. This conjecture is not a source reading and is excluded from numeric totals.,
 sydns71-007,sydney-new-synagogue-1871,7,1,1,,"S. Samuel, M.L.A.",,,,subscriber,100.0.0,,,,,,
 sydns71-008,sydney-new-synagogue-1871,8,1,1,,S. Hoffnung,,,,subscriber,200.0.0,,,,,,
 sydns71-009,sydney-new-synagogue-1871,9,1,1,,S. Cohen,,,,subscriber,50.0.0,,,,,,
@@ -7837,7 +7837,7 @@ sydns71-047,sydney-new-synagogue-1871,47,1,2,,Mr. D. H. Davis,,,,subscriber,25.0
 sydns71-048,sydney-new-synagogue-1871,48,1,2,,D. Marks,,,,subscriber,50.0.0,,,,,,
 sydns71-049,sydney-new-synagogue-1871,49,1,2,,H. L. Nelson,,,,subscriber,50.0.0,,,,,,
 sydns71-050,sydney-new-synagogue-1871,50,1,2,,B. F. Marks,,,,subscriber,25.0.0,,,,uncertain,Amount partly hidden by a fold.,
-sydns71-051,sydney-new-synagogue-1871,51,1,2,,S. A. Ander[son],,,,subscriber,25.0.0,,,,uncertain,"Name and amount partly hidden by a fold. The three hidden amounts (D. L. Levy, M. Levy, S. A. Anderson) must come to £375 for the list to agree with the printed total; read as £250, £100 and £25.",
+sydns71-051,sydney-new-synagogue-1871,51,1,2,,S. A. Ander[son],,,,subscriber,,,,,uncertain,Name and amount obscured by the page fold; requires a clearer scan. Previous draft conjectured 25.0.0 to balance the printed total. This conjecture is not a source reading and is excluded from numeric totals.,
 sydns71-052,sydney-new-synagogue-1871,52,1,2,,C. Solomon,,,,subscriber,10.0.0,,,,,,
 sydns71-053,sydney-new-synagogue-1871,53,1,2,,A. Michaels,,,,subscriber,5.0.0,,,,,,
 sydns71-054,sydney-new-synagogue-1871,54,1,2,,Mrs. S. H. Harris,,,,subscriber,100.0.0,,,,,,
@@ -7888,3 +7888,21 @@ aisub73-013,australian-israelite-subscriptions-1873-08-22,13,4,,Half-Yearly,G. B
 aisub73-014,australian-israelite-subscriptions-1873-08-22,14,4,,Half-Yearly,W. Brasch,,,,subscriber,0.10.0,,,,,Amount as printed in shillings.,
 aisub73-015,australian-israelite-subscriptions-1873-08-22,15,4,,Half-Yearly,Rev. I. Friedman,,,,subscriber,0.10.0,,,,,Amount as printed in shillings.,
 aisub73-016,australian-israelite-subscriptions-1873-08-22,16,4,,Half-Yearly,"J. Friedman, Sandhurst",,Sandhurst,sandhurst,subscriber,0.12.0,,,,,Amount as printed in shillings.,
+mhlbooks71-001,melbourne-hebrew-literary-books-1871-09-29,1,1,2,,"Hon. E. Cohen, M.L.A., Patron",,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-002,melbourne-hebrew-literary-books-1871-09-29,2,1,2,,G. Owen,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated. Printed after “and Messrs.”.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-003,melbourne-hebrew-literary-books-1871-09-29,3,1,2,,I. Jacobs,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-004,melbourne-hebrew-literary-books-1871-09-29,4,1,2,,H. Levy,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-005,melbourne-hebrew-literary-books-1871-09-29,5,1,2,,D. Rosenthal,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-006,melbourne-hebrew-literary-books-1871-09-29,6,1,2,,H. P. Harris,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-007,melbourne-hebrew-literary-books-1871-09-29,7,1,2,,J. Davis,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-008,melbourne-hebrew-literary-books-1871-09-29,8,1,2,,M. Myers,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-009,melbourne-hebrew-literary-books-1871-09-29,9,1,2,,B. S. Cohen,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-010,melbourne-hebrew-literary-books-1871-09-29,10,1,2,,E. Marks,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-011,melbourne-hebrew-literary-books-1871-09-29,11,1,2,,J. Harris,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-012,melbourne-hebrew-literary-books-1871-09-29,12,1,2,,Heymanson,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-013,melbourne-hebrew-literary-books-1871-09-29,13,1,2,,D. Henry,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-014,melbourne-hebrew-literary-books-1871-09-29,14,1,2,,N. Barnet,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-015,melbourne-hebrew-literary-books-1871-09-29,15,1,2,,Myers and Zox,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-016,melbourne-hebrew-literary-books-1871-09-29,16,1,2,,M. Marks,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-017,melbourne-hebrew-literary-books-1871-09-29,17,1,2,,L. Benjamin,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris
+mhlbooks71-018,melbourne-hebrew-literary-books-1871-09-29,18,1,2,,Miss Thomas,,,,donor,,,,,,In-kind gift: books. Quantity and monetary value not stated.,Messrs. B. S. Cohen and J. Harris

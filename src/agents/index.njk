@@ -5,7 +5,7 @@ permalink: /agents/
 ---
 <div class="wrap section">
   <h1>Agents</h1>
-  <p class="lede">Banks, booksellers, rabbis and others who received subscriptions or forwarded them on behalf of donors — named in the lists as receiving houses or with “per …”.</p>
+  <p class="lede">Banks, booksellers, rabbis and others who received subscriptions or forwarded them on behalf of donors — named in the lists as receiving houses or with “per …”. Newspaper agents listed by town appear below.</p>
   <div class="table-box">
     <table>
       <thead><tr><th scope="col">Agent</th><th scope="col">Type</th><th scope="col">Based in</th><th scope="col">Lists</th><th scope="col" class="num">Entries forwarded</th></tr></thead>
@@ -22,6 +22,18 @@ permalink: /agents/
       </tbody>
     </table>
   </div>
+  {% if db.listedAgents.length %}
+  <h2>Agents listed by town</h2>
+  <p>Each dated appearance is retained. Repeated listings do not imply additional payments; spellings remain as printed.</p>
+  <div class="table-box"><table>
+    <thead><tr><th scope="col">Agent as printed</th><th scope="col">Town</th><th scope="col">Dated appearances and addresses</th></tr></thead>
+    <tbody>{% for a in db.listedAgents %}<tr>
+      <td>{% if a.entity %}<a href="{{ a.entity.url }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}</td>
+      <td>{% if a.place %}<a href="{{ a.place.url }}">{{ a.place.name }}</a>{% else %}{{ a.place_as_printed }}{% endif %}</td>
+      <td><ul class="plain">{% for e in a.entries %}<li><a href="{{ e.list.url }}#{{ e.id }}">{{ e.list.source.title }} · {{ e.list.dateLabel }}</a>{% if e.note %} · {{ e.note }}{% endif %}</li>{% endfor %}</ul></td>
+    </tr>{% endfor %}</tbody>
+  </table></div>
+  {% endif %}
   {% if db.unlinkedAgents.length %}
   <h2>Intermediaries awaiting identification</h2>
   <p>Names recorded as printed, awaiting a link to a person or organization.</p>
