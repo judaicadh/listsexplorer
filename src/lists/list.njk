@@ -23,13 +23,13 @@ eleventyComputed:
       {% if list.notes %}<p class="note">{{ list.notes }}</p>{% endif %}
     </div>
     <dl class="split-side facts">
-      {% if list.organizer %}<dt>{% if list.list_type == "offering" %}Offerings made by{% else %}Organized by{% endif %}</dt><dd>{{ entityLink(list.organizer) }}</dd>{% endif %}
+      {% if list.organizer %}<dt>{% if list.list_type == "offering" %}Offerings made by{% elif list.list_type == "bequest" %}Bequests made by{% else %}Organized by{% endif %}</dt><dd>{{ entityLink(list.organizer) }}</dd>{% endif %}
       {% if list.beneficiaryPlace %}<dt>For</dt><dd><a href="{{ list.beneficiaryPlace.url }}">{{ list.beneficiaryPlace.name }}</a></dd>{% endif %}
       {% if list.currency %}<dt>Currency</dt><dd>{{ list.currency.name }}</dd>{% endif %}
       <dt>Entries</dt><dd>{{ list.entries.length }}{% if list.status %} · <span class="warn">{{ list.status }}</span>{% endif %}</dd>
       {% if list.copies %}<dt>Copies</dt><dd>{{ list.copies }}</dd>{% endif %}
       {% if list.placeCount > 1 %}<dt>Places</dt><dd>{{ list.placeCount }}</dd>{% endif %}
-      {% if list.totals.length %}<dt>{% if list.list_type == "debt" %}Total listed as unpaid{% else %}Total transcribed{% endif %}</dt><dd>{{ totalsLine(list.totals) }}</dd>{% endif %}
+      {% if list.totals.length %}<dt>{% if list.list_type == "debt" %}Total listed as unpaid{% elif list.list_type == "bequest" %}Total bequeathed{% else %}Total transcribed{% endif %}</dt><dd>{{ totalsLine(list.totals) }}</dd>{% endif %}
       {% if list.transcriber %}<dt>Transcribed by</dt><dd>{{ list.transcriber }}</dd>{% endif %}
       {% if list.pages %}<dt>Pages</dt><dd>{{ list.pages }}</dd>{% endif %}
     </dl>
@@ -37,7 +37,7 @@ eleventyComputed:
 
   {% if list.officers.length %}
   <section class="panel">
-    <h2 class="h-small">{% if list.list_type == "offering" %}Attribution{% elif list.list_type == "debt" %}Document handling{% else %}Officers &amp; committee{% endif %}</h2>
+    <h2 class="h-small">{% if list.list_type == "offering" or list.list_type == "bequest" %}Attribution{% elif list.list_type == "debt" %}Document handling{% else %}Officers &amp; committee{% endif %}</h2>
     <ul class="officers">
       {% for r in list.officers %}
       <li><span class="muted small-note">{{ r.roleLabel }}</span>{{ entityLink(r.entity, r.displayName) }}{% if r.address_as_printed %}<span class="muted small-note">{{ r.address_as_printed }}</span>{% endif %}{% if list.list_type == "debt" and r.note %}<span class="muted small-note">{{ r.note }}</span>{% endif %}</li>
@@ -104,7 +104,7 @@ eleventyComputed:
           {% if s.title %}<h3 class="tx-head">{{ s.title }}{% if s.totals.length %} <span class="muted">· {{ totalsLine(s.totals) }}</span>{% endif %}</h3>{% endif %}
           <div class="table-box">
             <table class="tx">
-              <thead><tr><th scope="col" class="num">#</th><th scope="col">{% if list.list_type == "offering" %}Dedication / purpose as written{% elif list.list_type == "debt" %}Person billed as written{% else %}Name as printed{% endif %}</th><th scope="col">Place</th><th scope="col" class="num">Amount</th></tr></thead>
+              <thead><tr><th scope="col" class="num">#</th><th scope="col">{% if list.list_type == "offering" %}Dedication / purpose as written{% elif list.list_type == "debt" %}Person billed as written{% elif list.list_type == "bequest" %}Recipient as printed{% else %}Name as printed{% endif %}</th><th scope="col">Place</th><th scope="col" class="num">Amount</th></tr></thead>
               <tbody>
               {% for e in s.entries %}
               <tr id="{{ e.id }}">

@@ -264,3 +264,9 @@ list itself. It can retain a printed name with a blank `entity_id` while identit
 is uncertain. This does not make that person a collecting agent for every entry.
 For example, the verso of AJHS_P_15_4_277.pdf names Parnass Phillips in relation to
 the document; no full-name identification or receipt of funds is inferred.
+
+## Charitable bequests
+
+Use `list_type=bequest`, `role=beneficiary` for the institutions or funds receiving legacies. Record the testator with `organizer_id` and/or the list role `testator`. Beneficiaries remain searchable, but their bequests are excluded from their own “Total given”. Bequests describe the published legacies, not confirmed receipt of payment.
+
+For later versions of an already transcribed appeal, compare the entries and preserve the later scan. A clearly labelled partial transcription may include only newly acknowledged gifts; explain omitted repeated names and carried-forward sums in the list notes so these are not counted twice.

@@ -312,3 +312,39 @@ test('bill pages label arrears and keep the document role separate',()=>{
   assert.match(html,/Total listed as unpaid/);assert.match(html,/Largest unpaid bills/);assert.match(html,/Document handling/);
   assert.match(html,/Person billed as written/);assert.match(html,/Parnass Phillips/);assert.doesNotMatch(html,/via Parnass Phillips/);
 });
+
+test('November bequests preserve recipients without crediting them as donors',()=>{
+  const db=require('../lib/db').build();assert.deepEqual(db.errors,[]);
+  const list=db.lists.find(l=>l.id==='morris-emanuel-bequests-1849-11-30');
+  assert.equal(list.entries.length,23);assert.equal(list.totals[0].display,'£500 0s. 0d.');
+  assert.ok(list.entries.every(e=>e.role==='beneficiary'));
+  assert.equal(list.roles.find(r=>r.role==='testator').displayName,'the late Mr. Morris Emanuel');
+  const org=db.organizations.find(o=>o.id==='great-synagogue-dukes-place');
+  const amounts=org.entries.filter(e=>e.role==='beneficiary');assert.equal(amounts.length,1);
+  const without=org.entries.filter(e=>!['offering-purpose','debtor','beneficiary'].includes(e.role));
+  assert.equal(org.totals.reduce((n,t)=>n+t.count,0),without.filter(e=>e.money).length);
+  const input=sample();input.list.list_type='bequest';input.entries[0].role='';
+  const result=api.validate(input,ctx);assert.deepEqual(result.errors,[]);assert.equal(result.contribution.entries[0].role,'beneficiary');
+  const nj=require('nunjucks');const env=new nj.Environment(new nj.FileSystemLoader(path.join(root,'src/_includes')));
+  const html=env.renderString(fs.readFileSync(path.join(root,'src/lists/list.njk'),'utf8'),{list,site:{}});
+  assert.match(html,/Recipient as printed/);assert.match(html,/Total bequeathed/);
+});
+test('Brower donations keep receiving agents, nested collectors and unpriced clothing',()=>{
+  const db=require('../lib/db').build();const list=db.lists.find(l=>l.id==='isaac-brower-relief-1849-11-30');
+  assert.equal(list.entries.length,8);assert.equal(list.totals[0].display,'£8 10s. 0d.');
+  assert.ok(list.entries.every(e=>e.agent_as_printed));
+  assert.equal(list.entries.find(e=>e.name_as_printed.startsWith('Mr. Mozley')).amount,'');
+  assert.match(list.entries.at(-1).agent_as_printed,/B\. Boam; per Mr\. M\. Boam/);
+  const Export=require('../src/list-downloads.11ty.js');
+  const exported=api.parse(new Export().render({list:{id:list.id}}));
+  assert.equal(exported.at(-1).agent_as_printed,list.entries.at(-1).agent_as_printed);
+});
+test('Swansea additions omit the reprinted gifts and carry-forward',()=>{
+  const db=require('../lib/db').build();const list=db.lists.find(l=>l.id==='swansea-congregation-1849-05-11-additions');
+  assert.equal(list.entries.length,12);assert.match(list.notes,/Partial transcription/);
+  const old=db.lists.find(l=>l.id==='swansea-congregation-1849');
+  const signature=e=>[e.name_as_printed,e.amount].join('|');
+  const prior=new Set(old.entries.map(signature));
+  assert.ok(list.entries.every(e=>!prior.has(signature(e))));
+  assert.equal(old.entries.length,43);assert.ok(list.entries.filter(e=>/\bPer\b/.test(e.section)).every(e=>e.agent_as_printed));
+});

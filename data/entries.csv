@@ -7097,3 +7097,57 @@ soup56-028,jewish-soup-kitchen-1856-02-15,28,481,2,,"Chas. Mosely, esq.",,,,dono
 soup56-029,jewish-soup-kitchen-1856-02-15,29,481,2,,"Thos. Fleet, esq.",,,,donor,0.10.6,,,,,,
 soup56-030,jewish-soup-kitchen-1856-02-15,30,481,2,,"M. Speyer, esq., 2d d.",,,,donor,0.10.0,,,,,Second donation.,
 soup56-031,jewish-soup-kitchen-1856-02-15,31,481,2,,"Miss Ann Israel, Mecklenberg-sq.",,Mecklenberg-sq.,london,donor,0.10.0,,,,,,
+swansea-congregation-1849-05-11-additions-001,swansea-congregation-1849-05-11-additions,1,252,1,London,"M. Cohen, Esq.",,,london,donor,1.0.0,,,,,Not named in the 4 May list.,
+swansea-congregation-1849-05-11-additions-002,swansea-congregation-1849-05-11-additions,2,252,1,London,"Coleman Solomon, Esq.",,,london,donor,1.0.0,,,,,Not named in the 4 May list.,
+swansea-congregation-1849-05-11-additions-003,swansea-congregation-1849-05-11-additions,3,252,1,London,Mrs. Phillips,,,london,donor,0.10.6,,,,,Not named in the 4 May list.,
+swansea-congregation-1849-05-11-additions-004,swansea-congregation-1849-05-11-additions,4,252,1,Manchester — Per Rev. J. Kantrowitz,"P. Lucas, Esq.",,,manchester,donor,5.0.0,,,,,Not named in the 4 May list.,Rev. J. Kantrowitz
+swansea-congregation-1849-05-11-additions-005,swansea-congregation-1849-05-11-additions,5,252,1,Manchester — Per Rev. J. Kantrowitz,"Joel Caspar, Esq.",,,manchester,donor,1.1.0,,,,,Not named in the 4 May list.,Rev. J. Kantrowitz
+swansea-congregation-1849-05-11-additions-006,swansea-congregation-1849-05-11-additions,6,252,1,Manchester — Per Rev. J. Kantrowitz,"B. Hyam, Esq.",,,manchester,donor,1.1.0,,,,,Not named in the 4 May list.,Rev. J. Kantrowitz
+swansea-congregation-1849-05-11-additions-007,swansea-congregation-1849-05-11-additions,7,252,1,Manchester — Per Rev. J. Kantrowitz,"E. Moses, Esq.",,,manchester,donor,0.10.0,,,,,Not named in the 4 May list.,Rev. J. Kantrowitz
+swansea-congregation-1849-05-11-additions-008,swansea-congregation-1849-05-11-additions,8,252,1,Birmingham — Per Mr. B. Vallentine,"S. K. Marks, Esq., President of the Congregation",,,birmingham,donor,1.1.0,,,,,Not named in the 4 May list. Footer spells the receiving agent Benjamin Valentine.,Mr. B. Vallentine
+swansea-congregation-1849-05-11-additions-009,swansea-congregation-1849-05-11-additions,9,252,1,Birmingham — Per Mr. B. Vallentine,"I. Abel, Esq., Treasurer of the Congregation",,,birmingham,donor,0.10.6,,,,,Not named in the 4 May list. Footer spells the receiving agent Benjamin Valentine.,Mr. B. Vallentine
+swansea-congregation-1849-05-11-additions-010,swansea-congregation-1849-05-11-additions,10,252,1,Brighton,Brighton Congregation,,Brighton,,donor,2.2.0,,,,,Not named in the 4 May list.,
+swansea-congregation-1849-05-11-additions-011,swansea-congregation-1849-05-11-additions,11,252,1,Brighton,"M. Mosely, Esq.",,Brighton,,donor,0.10.6,,,,,Not named in the 4 May list.,
+swansea-congregation-1849-05-11-additions-012,swansea-congregation-1849-05-11-additions,12,252,1,Edinburgh,"Jacob Ashenheim, Esq.",,Edinburgh,,donor,0.10.6,,,,,Not named in the 4 May list.,
+jewish-ladies-benevolent-1849-11-30-001,jewish-ladies-benevolent-1849-11-30,1,64,1,For the Loan Fund,Mrs. Joshua Benoliel,,,,donor,2.0.0,,,,,,
+jewish-ladies-benevolent-1849-11-30-002,jewish-ladies-benevolent-1849-11-30,2,64,1,For the Loan Fund,"D. A. Lindo, Esq.",,,,donor,1.0.0,,,,,,
+jewish-ladies-benevolent-1849-11-30-003,jewish-ladies-benevolent-1849-11-30,3,64,1,For the Loan Fund,"S. M. Drach, Esq.",,,,donor,1.0.0,,,,,,
+jewish-ladies-benevolent-1849-11-30-004,jewish-ladies-benevolent-1849-11-30,4,64,1,For the Loan Fund,"S. A. Levy, Esq.",,,,donor,0.10.0,,,,,,
+jewish-ladies-benevolent-1849-11-30-005,jewish-ladies-benevolent-1849-11-30,5,64,1,For the Loan Fund,"I. A. Levy, Esq.",,,,donor,0.10.0,,,,,,
+jewish-ladies-benevolent-1849-11-30-006,jewish-ladies-benevolent-1849-11-30,6,64,1,For the Loan Fund,Mrs. Henry Emanuel,,,,donor,0.10.0,,,,,,
+jewish-ladies-benevolent-1849-11-30-007,jewish-ladies-benevolent-1849-11-30,7,64,1,For the Loan Fund,Miss Miriam Hart,,,,donor,0.10.0,,,,,,
+jewish-ladies-benevolent-1849-11-30-008,jewish-ladies-benevolent-1849-11-30,8,64,1,For the Loan Fund,Miss Maria De Castro,,,,donor,0.5.0,,,,,,
+jewish-ladies-benevolent-1849-11-30-009,jewish-ladies-benevolent-1849-11-30,9,64,1,For Relief to the Poor,"Barnett Meyers, Esq.",,,,donor,10.10.0,,,,,,
+jewish-ladies-benevolent-1849-11-30-010,jewish-ladies-benevolent-1849-11-30,10,64,1,For Relief to the Poor,A Friend (per Miss Isreels),,,,donor,1.0.0,,,,,,Miss Isreels
+jewish-ladies-benevolent-1849-11-30-011,jewish-ladies-benevolent-1849-11-30,11,64,1,For Relief to the Poor,Miss Hart,,,,donor,0.5.0,,,,,,
+isaac-brower-relief-1849-11-30-001,isaac-brower-relief-1849-11-30,1,64,2,Per Jewish Chronicle,Mrs. M. Hyam,,,,donor,0.10.0,,,jewish-chronicle-office,,,Jewish Chronicle
+isaac-brower-relief-1849-11-30-002,isaac-brower-relief-1849-11-30,2,64,2,Per Jewish Chronicle,"Mr. I. Jacobs, Falmouth",,Falmouth,falmouth,donor,0.2.6,,,jewish-chronicle-office,,,Jewish Chronicle
+isaac-brower-relief-1849-11-30-003,isaac-brower-relief-1849-11-30,3,64,2,Per Jewish Chronicle,"Miss Jacobs, ditto",,ditto,falmouth,donor,0.2.6,,,jewish-chronicle-office,,,Jewish Chronicle
+isaac-brower-relief-1849-11-30-004,isaac-brower-relief-1849-11-30,4,64,2,Per Jewish Chronicle,"Mr. and Mrs. Moss Jacobs, ditto",,ditto,falmouth,donor,0.5.0,,,jewish-chronicle-office,,,Jewish Chronicle
+isaac-brower-relief-1849-11-30-005,isaac-brower-relief-1849-11-30,5,64,2,Per Rev. D. W. Marks,Additional Contributions,,,,donor,5.0.0,,,,,Aggregate as printed; individual contributors not named.,Rev. D. W. Marks
+isaac-brower-relief-1849-11-30-006,isaac-brower-relief-1849-11-30,6,64,2,Per Mr. Isaac Lyon,"Mrs. Barned, Gloucester-terrace, Regent’s-park",,,,donor,1.0.0,,,,,,Mr. Isaac Lyon
+isaac-brower-relief-1849-11-30-007,isaac-brower-relief-1849-11-30,7,64,2,Per Mr. Isaac Lyon,"Mr. Mozley, Margaret-street",,,,donor,,,,,,In-kind gift: “some Clothes.” No cash value is printed.,Mr. Isaac Lyon
+isaac-brower-relief-1849-11-30-008,isaac-brower-relief-1849-11-30,8,64,2,Per Mr. M. Boam,"Collected from a few Friends at Manchester and Glasgow, by Mr. B. Boam",,Manchester and Glasgow,,donor,1.10.0,,,,,B. Boam is named as collector; M. Boam heads the receiving section. The footer names receiver Moses Boam. No identity equivalence is assumed.,Mr. B. Boam; per Mr. M. Boam
+morris-emanuel-bequests-1849-11-30-001,morris-emanuel-bequests-1849-11-30,1,63,2,,Great Synagogue,great-synagogue-dukes-place,,,beneficiary,100,,,,,,
+morris-emanuel-bequests-1849-11-30-002,morris-emanuel-bequests-1849-11-30,2,63,2,,ditto for Decayed Members’ Fund,,,,beneficiary,25,,,,,“ditto” refers to the Great Synagogue.,
+morris-emanuel-bequests-1849-11-30-003,morris-emanuel-bequests-1849-11-30,3,63,2,,"Privileged Members’ Fund of New Synagogue, Great St. Helen’s",,,,beneficiary,25,,,,,,
+morris-emanuel-bequests-1849-11-30-004,morris-emanuel-bequests-1849-11-30,4,63,2,,Jews’ Hospital,,,,beneficiary,25,,,,,,
+morris-emanuel-bequests-1849-11-30-005,morris-emanuel-bequests-1849-11-30,5,63,2,,Jews’ Free School,,,,beneficiary,50,,,,,,
+morris-emanuel-bequests-1849-11-30-006,morris-emanuel-bequests-1849-11-30,6,63,2,,Beth Hamidrash,,,,beneficiary,50,,,,,,
+morris-emanuel-bequests-1849-11-30-007,morris-emanuel-bequests-1849-11-30,7,63,2,,"Bread, Meat, and Coals Charity",,,,beneficiary,25,,,,,,
+morris-emanuel-bequests-1849-11-30-008,morris-emanuel-bequests-1849-11-30,8,63,2,,"צרכי שבת 5s. weekly during three months of winter, ditto",,,,beneficiary,25,,,,probable,"Separate £25 provision; printed “ditto” follows the Bread, Meat, and Coals Charity entry. Recipient identification requires review.",
+morris-emanuel-bequests-1849-11-30-009,morris-emanuel-bequests-1849-11-30,9,63,2,,London Hospital,,,,beneficiary,25,,,,,,
+morris-emanuel-bequests-1849-11-30-010,morris-emanuel-bequests-1849-11-30,10,63,2,,Jews’ Orphan Asylum,,,,beneficiary,25,,,,,,
+morris-emanuel-bequests-1849-11-30-011,morris-emanuel-bequests-1849-11-30,11,63,2,,Society for Relieving the Destitute Blind,,,,beneficiary,15,,,,,,
+morris-emanuel-bequests-1849-11-30-012,morris-emanuel-bequests-1849-11-30,12,63,2,,Philanthropic Society,,,,beneficiary,10,,,,,,
+morris-emanuel-bequests-1849-11-30-013,morris-emanuel-bequests-1849-11-30,13,63,2,,Hand-in-Hand Asylum for Old Men,,,,beneficiary,10,,,,,,
+morris-emanuel-bequests-1849-11-30-014,morris-emanuel-bequests-1849-11-30,14,63,2,,Circumcision Society,,,,beneficiary,20,,,,,,
+morris-emanuel-bequests-1849-11-30-015,morris-emanuel-bequests-1849-11-30,15,63,2,,Lady’s Lying-In Charity,,,,beneficiary,10,,,,,,
+morris-emanuel-bequests-1849-11-30-016,morris-emanuel-bequests-1849-11-30,16,63,2,,Lady’s Benevolent Loan and Visiting Society,,,,beneficiary,10,,,,,,
+morris-emanuel-bequests-1849-11-30-017,morris-emanuel-bequests-1849-11-30,17,63,2,,Jews’ Infant School,,,,beneficiary,10,,,,,,
+morris-emanuel-bequests-1849-11-30-018,morris-emanuel-bequests-1849-11-30,18,63,2,,Western Free School for Girls,,,,beneficiary,5,,,,,,
+morris-emanuel-bequests-1849-11-30-019,morris-emanuel-bequests-1849-11-30,19,63,2,,Widows’ Home,,,,beneficiary,5,,,,,,
+morris-emanuel-bequests-1849-11-30-020,morris-emanuel-bequests-1849-11-30,20,63,2,,"Beth Holim Hospital, Mile End",,,,beneficiary,10,,,,,,
+morris-emanuel-bequests-1849-11-30-021,morris-emanuel-bequests-1849-11-30,21,63,2,,Society for Relieving Distressed Mourners,,,,beneficiary,5,,,,,,
+morris-emanuel-bequests-1849-11-30-022,morris-emanuel-bequests-1849-11-30,22,63,2,,Brighton Synagogue,,,,beneficiary,10,,,,,,
+morris-emanuel-bequests-1849-11-30-023,morris-emanuel-bequests-1849-11-30,23,63,2,,"Stranger’s Fund, at Brighton",,,,beneficiary,5,,,,,,
