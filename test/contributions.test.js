@@ -380,3 +380,34 @@ test('fold-obscured Sydney amounts are not invented to reconcile the printed tot
   }
   assert.match(list.notes,/printed total/i);assert.match(list.notes,/transcribed sum is incomplete/);
 });
+
+test('October-January agent lists preserve changes and count overlapping January crops once',()=>{
+ const db=require('../lib/db').build();assert.deepEqual(db.errors,[]);
+ const lists=db.lists.filter(l=>l.id.startsWith('australian-israelite-agents-')&&l.date>='1871-10-06'&&l.date<='1872-01-05');
+ assert.equal(lists.length,13);assert.equal(lists.reduce((n,l)=>n+l.entries.length,0),51);
+ assert.ok(lists.find(l=>l.date==='1871-10-06').entries.some(e=>e.name_as_printed==='Mr. W. Hopkins'));
+ assert.ok(lists.filter(l=>l.date>='1871-10-13').every(l=>l.entries.some(e=>e.name_as_printed==='Mr. W. B. Lee'&&e.note.includes('87 Harrington'))));
+ const jan=lists.find(l=>l.date==='1872-01-05');assert.equal(jan.entries.length,3);assert.ok(!jan.entries.some(e=>e.place_id==='launceston'));
+ assert.ok(lists.every(l=>!l.totals.length));
+ const input=sample();input.list.list_type='agents';input.list.currency='';input.entries[0].amount='';input.entries[0].role='';
+ const result=api.validate(input,ctx);assert.deepEqual(result.errors,[]);assert.equal(result.contribution.entries[0].role,'agent');
+});
+test('additional donations keep explicit extra wording and officers have no invented gifts',()=>{
+ const db=require('../lib/db').build();const oct6=db.lists.find(l=>l.id==='melbourne-atonement-additions-1871-10-06');
+ assert.equal(oct6.entries.length,7);assert.match(oct6.entries.find(e=>e.name_as_printed==='S. Flatau').note,/extra/);
+ assert.equal(db.lists.find(l=>l.id==='melbourne-atonement-additions-1871-10-13').entries.length,2);
+ const officers=db.lists.find(l=>l.id==='united-friends-officers-1871-10-13');assert.equal(officers.entries.length,5);
+ assert.ok(officers.entries.every(e=>e.role==='officer'&&!e.amount));assert.deepEqual(officers.totals,[]);
+ const input=sample();input.entries[0].role='officer';input.entries[0].amount='';assert.deepEqual(api.validate(input,ctx).errors,[]);
+});
+test('Sympathy Fund distinguishes promises, receipts and damaged source readings',()=>{
+ const db=require('../lib/db').build();const oct=db.lists.find(l=>l.id==='davis-sympathy-fund-1871-10-27');const nov=db.lists.find(l=>l.id==='davis-sympathy-fund-1871-11-03');
+ assert.equal(oct.entries.length,138);assert.ok(oct.entries.every(e=>e.role==='pledger'));
+ assert.equal(nov.entries.length,33);assert.ok(nov.entries.every(e=>e.role==='donor'));
+ assert.ok(nov.entries.some(e=>e.name_as_printed==='John [surname unreadable]'&&!e.amount&&e.certainty==='uncertain'));
+ assert.ok(nov.entries.some(e=>e.name_as_printed==='[name unreadable]'&&e.certainty==='uncertain'));
+ assert.ok(nov.entries.filter(e=>e.section==='[Maitland?]').every(e=>e.certainty==='uncertain'));
+ for(const l of [oct,nov])assert.deepEqual(l.agents.map(r=>r.name_as_printed),['M. De Lissa','H. L. Nelson']);
+ assert.equal(oct.entries.find(e=>e.name_as_printed==='A. Braun').amount,'0.2.8');
+ assert.equal(oct.entries.find(e=>e.name_as_printed==='B Francis').amount,'1.1.2');
+});
