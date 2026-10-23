@@ -37,7 +37,7 @@ eleventyComputed:
 
   {% if list.officers.length %}
   <section class="panel">
-    <h2 class="h-small">{% if list.list_type == "offering" or list.list_type == "bequest" %}Attribution{% elif list.list_type == "debt" %}Document handling{% else %}Officers &amp; committee{% endif %}</h2>
+    <h2 class="h-small">{% if list.list_type == "offering" or list.list_type == "bequest" %}Attribution{% elif list.list_type == "debt" or list.list_type == "petition" %}Document handling{% else %}Officers &amp; committee{% endif %}</h2>
     <ul class="officers">
       {% for r in list.officers %}
       <li><span class="muted small-note">{{ r.roleLabel }}</span>{{ entityLink(r.entity, r.displayName) }}{% if r.address_as_printed %}<span class="muted small-note">{{ r.address_as_printed }}</span>{% endif %}{% if list.list_type == "debt" and r.note %}<span class="muted small-note">{{ r.note }}</span>{% endif %}</li>
@@ -104,7 +104,7 @@ eleventyComputed:
           {% if s.title %}<h3 class="tx-head">{{ s.title }}{% if s.totals.length %} <span class="muted">· {{ totalsLine(s.totals) }}</span>{% endif %}</h3>{% endif %}
           <div class="table-box">
             <table class="tx">
-              <thead><tr><th scope="col" class="num">#</th><th scope="col">{% if list.list_type == "offering" %}Dedication / purpose as written{% elif list.list_type == "debt" %}Person billed as written{% elif list.list_type == "bequest" %}Recipient as printed{% else %}Name as printed{% endif %}</th><th scope="col">Place</th><th scope="col" class="num">Amount</th></tr></thead>
+              <thead><tr><th scope="col" class="num">#</th><th scope="col">{% if list.list_type == "offering" %}Dedication / purpose as written{% elif list.list_type == "debt" %}Person billed as written{% elif list.list_type == "bequest" %}Recipient as printed{% elif list.list_type == "petition" %}Signatory as printed{% else %}Name as printed{% endif %}</th><th scope="col">Place</th><th scope="col" class="num">Amount</th></tr></thead>
               <tbody>
               {% for e in s.entries %}
               <tr id="{{ e.id }}">

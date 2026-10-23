@@ -279,3 +279,7 @@ Use `list_type=agents` for a printed list of a newspaper's or society's agents
 with the role `agent`, no amount, the town as `place_as_printed`/`place_id`, and
 any street address kept in the note. Each issue's box is its own list, so changes
 over time (agents added, dropped or respelled) can be compared.
+
+## Petitions and requisitions
+
+Use `list_type=petition` and `role=signatory` for names attached to petitions, requisitions or signed requests. Signatures are not donations. Keep printed occupations in entry notes and addresses in `place_as_printed`; the word agent in an occupation does not establish a collecting intermediary. Use list roles `addressee` and `respondent` for the recipient and signer of a reply, rather than adding them to the original signers.

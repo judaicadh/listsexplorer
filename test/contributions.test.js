@@ -411,3 +411,38 @@ test('Sympathy Fund distinguishes promises, receipts and damaged source readings
  assert.equal(oct.entries.find(e=>e.name_as_printed==='A. Braun').amount,'0.2.8');
  assert.equal(oct.entries.find(e=>e.name_as_printed==='B Francis').amount,'1.1.2');
 });
+
+test('petition signers keep occupations apart from payment intermediaries',()=>{
+ const db=require('../lib/db').build();assert.deepEqual(db.errors,[]);
+ const list=db.lists.find(l=>l.id==='stephen-street-site-petition-1872-09-13');
+ assert.equal(list.entries.length,31);assert.ok(list.entries.every(e=>e.role==='signatory'&&!e.amount&&!e.agent_id&&!e.agent_as_printed));
+ const raphael=list.entries.find(e=>e.name_as_printed==='Henry Raphael');assert.match(raphael.note,/estate agent/);assert.equal(raphael.place_as_printed,'St Kilda');
+ assert.deepEqual(list.totals,[]);
+ const input=sample();input.list.list_type='petition';input.entries[0].role='';input.entries[0].amount='';
+ const result=api.validate(input,ctx);assert.deepEqual(result.errors,[]);assert.equal(result.contribution.entries[0].role,'signatory');
+ const nj=require('nunjucks');const env=new nj.Environment(new nj.FileSystemLoader(path.join(root,'src/_includes')));
+ const html=env.renderString(fs.readFileSync(path.join(root,'src/lists/list.njk'),'utf8'),{list,site:{}});assert.match(html,/Signatory as printed/);
+});
+test('Persian relief requisition and reprinted committee preserve distinct capacities',()=>{
+ const db=require('../lib/db').build();const req=db.lists.find(l=>l.id==='persian-famine-requisition-1872-05-03');
+ assert.equal(req.entries.length,12);assert.ok(!req.entries.some(e=>/Michaelis/.test(e.name_as_printed)));
+ assert.deepEqual(req.roles.map(r=>r.role),['addressee','respondent']);assert.equal(req.agents.length,0);
+ const committee=db.lists.find(l=>l.id==='persian-famine-committee-1872-05-24');
+ assert.equal(committee.images.length,2);assert.equal(committee.entries.length,24);
+ assert.equal(committee.entries.filter(e=>e.role==='agent').length,23);assert.equal(committee.agents.length,23);
+ assert.equal(committee.entries.find(e=>e.name_as_printed==='N. S. Marks').role,'officer');
+ assert.ok(!db.lists.some(l=>l.id==='persian-famine-committee-1872-05-31'));
+ assert.ok(committee.entries.every(e=>!e.amount));
+ const appointments=db.lists.find(l=>l.id==='melbourne-congregation-appointments-1872-04-26');
+ assert.deepEqual(appointments.entries.filter(e=>e.role==='agent').map(e=>e.name_as_printed),['Mr. Lewis Collins']);
+});
+test('St Kilda snapshots flag cumulative amounts and preserve printed repeated and aggregate entries',()=>{
+ const db=require('../lib/db').build();const build=db.lists.find(l=>l.id==='st-kilda-building-extended-1872-04-26');
+ assert.match(build.notes,/cumulative/);assert.match(build.notes,/st-kilda-hebrew-congregation-1871/);
+ const con=db.lists.find(l=>l.id==='st-kilda-consecration-donations-1872-10-11');
+ assert.deepEqual(con.entries.filter(e=>e.name_as_printed==='Joseph Cohen').map(e=>e.amount),['2.0.0','1.1.0']);
+ const cash=con.entries.find(e=>e.name_as_printed==='Cash');assert.equal(cash.amount,'6.8.6');assert.match(cash.note,/Aggregate/);
+ assert.equal(con.entries.find(e=>e.name_as_printed==='Mrs. I. Benjamin').amount,'0.2.0');
+ const exports=require('../src/list-downloads.11ty.js');const rows=api.parse(new exports().render({list:{id:con.id}}));
+ assert.equal(rows.filter(e=>e.name_as_printed==='Joseph Cohen').length,2);assert.equal(rows.at(-1).amount,'6.8.6');
+});

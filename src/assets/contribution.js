@@ -127,7 +127,7 @@
       if (!idOK(list.id) || list.id.length > 90) errors.push("Use a list ID with lower-case letters, numbers and hyphens (up to 90 characters).");
       if (has(ctx.lists, list.id)) errors.push("This list ID already exists. Choose a new ID for a new list.");
       if (!list.title) errors.push("Enter a list title.");
-      if (!["subscription", "donation", "membership", "pledge", "other", "offering", "debt", "bequest", "agents"].includes(list.list_type)) errors.push("Choose a list type.");
+      if (!["subscription", "donation", "membership", "pledge", "other", "offering", "debt", "bequest", "agents", "petition"].includes(list.list_type)) errors.push("Choose a list type.");
       const dates = list.date.split("/");
       if (dates.length > 2 || dates.some(d => !/^\d{4}(-\d{2}(-\d{2})?)?$/.test(d))) errors.push("Enter YYYY, YYYY-MM, YYYY-MM-DD or a year range such as 1838/1839.");
       else {
@@ -157,7 +157,7 @@
         e.id = e.id || list.id + "-" + String(i + 1).padStart(4, "0");
         if (e.list_id && e.list_id !== list.id) errors.push(label + "list_id must match " + list.id + ".");
         e.list_id = list.id; e.seq = e.seq || String(i + 1);
-        e.role = e.role || (list.list_type === "subscription" ? "subscriber" : list.list_type === "membership" ? "member" : list.list_type === "pledge" ? "pledger" : list.list_type === "offering" ? "offering-purpose" : list.list_type === "debt" ? "debtor" : list.list_type === "bequest" ? "beneficiary" : list.list_type === "agents" ? "agent" : "donor");
+        e.role = e.role || (list.list_type === "subscription" ? "subscriber" : list.list_type === "membership" ? "member" : list.list_type === "pledge" ? "pledger" : list.list_type === "offering" ? "offering-purpose" : list.list_type === "debt" ? "debtor" : list.list_type === "bequest" ? "beneficiary" : list.list_type === "petition" ? "signatory" : list.list_type === "agents" ? "agent" : "donor");
         e.certainty = e.certainty || "uncertain";
       }
       if (e.id && (!idOK(e.id) || ids.has(e.id))) errors.push(label + "entry ID is invalid or already used: " + e.id);
@@ -165,7 +165,7 @@
       if (e.seq && (!/^[1-9]\d*$/.test(e.seq) || seqs.has(e.seq))) errors.push(label + "sequence numbers must be positive and unique.");
       if (e.seq) seqs.add(e.seq);
       if (!e.name_as_printed) errors.push(label + "a printed name is required.");
-      if (e.role && !["donor", "subscriber", "member", "pledger", "offering-purpose", "debtor", "beneficiary", "agent", "officer"].includes(e.role)) errors.push(label + "unknown role.");
+      if (e.role && !["donor", "subscriber", "member", "pledger", "offering-purpose", "debtor", "beneficiary", "agent", "officer", "signatory"].includes(e.role)) errors.push(label + "unknown role.");
       if (e.certainty && !["certain", "probable", "uncertain"].includes(e.certainty)) errors.push(label + "certainty must be certain, probable or uncertain.");
       for (const key of ["entity_id", "agent_id"]) if (!entriesOnly && e[key] && !has(ctx.entities, e[key])) errors.push(label + "unknown " + key + ": " + e[key] + ". Leave unidentified names unlinked.");
       if (!entriesOnly && e.place_id && !has(ctx.places, e.place_id)) errors.push(label + "unknown place_id. Use place_as_printed for a place not yet in the directory.");
