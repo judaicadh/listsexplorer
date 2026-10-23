@@ -1,0 +1,40 @@
+---
+layout: base.njk
+title: Map
+permalink: /map/
+description: Explore the places connected to historical lists and their entries.
+---
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="/assets/map.css">
+<div class="wrap section map-page">
+  <p class="eyebrow">Explore the catalogue</p>
+  <h1>A world of connections</h1>
+  <p class="lede">Find the places named in the lists. Select a point or a place below to explore its records.</p>
+  <div class="map-filters">
+    <div class="field"><label for="map-query">Find a place</label><input id="map-query" type="search" placeholder="Name or historical spelling" disabled></div>
+    <div class="field"><label for="map-country">Country</label><select id="map-country" disabled><option value="">All countries</option></select></div>
+    <div class="field"><label for="map-type">List type</label><select id="map-type" disabled><option value="">All list types</option></select></div>
+    <button id="map-reset" type="button" disabled>Reset map</button>
+  </div>
+  <p id="map-summary" class="muted" role="status" aria-live="polite">Loading places…</p>
+  <div class="map-layout">
+    <section class="map-frame" aria-label="Map of catalogue places">
+      <div id="place-map" aria-label="Interactive map"></div>
+      <p class="map-key"><span aria-hidden="true"></span> Point size shows the number of connected lists.</p>
+    </section>
+    <section class="panel map-detail" id="map-detail" aria-label="Selected place" aria-live="polite">
+      <h2>Choose a place</h2>
+      <p>Select a point on the map, or use the place buttons below. Each place opens the lists connected to it.</p>
+    </section>
+  </div>
+  <p class="muted small-note">Points mark approximate modern town or city locations, not historical borders or individual addresses. Places without coordinates are listed below. Counts describe catalogue records, not distinct people or payments.</p>
+  <p id="map-message" class="note" role="status" hidden></p>
+  <section class="section-tight">
+    <h2>Places in this view</h2>
+    <p class="muted">This list follows the filters above; panning the map does not hide places.</p>
+    <div id="map-places" class="map-place-grid"></div>
+  </section>
+  <noscript><p>The interactive map needs JavaScript. <a href="/places/">Browse all places and their records instead.</a></p></noscript>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+<script src="/assets/map.js" defer></script>

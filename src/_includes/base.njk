@@ -20,7 +20,7 @@
       <span class="brand-tag">{{ site.tagline }}</span>
     </a>
     <nav aria-label="Main" class="main-nav">
-      {%- set nav = [["/search/","Search"],["/lists/","Lists"],["/sources/","Sources"],["/people/","People"],["/organizations/","Organizations"],["/places/","Places"],["/agents/","Agents"],["/contribute/","Add a list"],["/about/","About"]] -%}
+      {%- set nav = [["/search/","Search"],["/lists/","Lists"],["/sources/","Sources"],["/people/","People"],["/organizations/","Organizations"],["/places/","Places"],["/map/","Map"],["/agents/","Agents"],["/contribute/","Add a list"],["/about/","About"]] -%}
       {%- for item in nav %}
       <a href="{{ item[0] }}"{% if page.url.startsWith(item[0]) %} aria-current="page"{% endif %}>{{ item[1] }}</a>
       {%- endfor %}

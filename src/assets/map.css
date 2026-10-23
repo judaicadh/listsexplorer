@@ -1,0 +1,27 @@
+.map-page { display:grid; gap:18px; }
+.map-filters { display:grid; grid-template-columns:2fr 1fr 1fr auto; gap:16px; align-items:end; padding:20px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); }
+.map-filters .field { display:grid; gap:6px; }
+.map-filters input,.map-filters select { width:100%; min-width:0; }
+.map-filters button { white-space:nowrap; }
+.map-layout { display:grid; grid-template-columns:minmax(0, 2fr) minmax(270px,1fr); gap:20px; align-items:start; }
+.map-frame { border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:#e7efef; }
+#place-map { height:530px; width:100%; z-index:0; }
+.map-key { display:flex; gap:8px; align-items:center; padding:12px 16px; background:var(--surface); font-size:13px; color:var(--muted); }
+.map-key span { width:12px; height:12px; border:2px solid #1f4e79; border-radius:50%; background:#91adc4; }
+.map-detail { max-height:575px; overflow:auto; }
+.map-detail h2 { font-size:28px; }
+.map-detail ul { margin:0; padding-left:20px; }
+.map-detail li { margin:12px 0; }
+.map-detail .map-record-note { display:block; color:var(--muted); font-size:13px; }
+.map-place-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:10px; margin-top:14px; }
+.map-place-button { display:flex; flex-direction:column; align-items:flex-start; text-align:left; padding:12px 14px; border:1px solid var(--line); border-radius:8px; background:var(--surface); color:var(--ink); font:inherit; cursor:pointer; }
+.map-place-button:hover,.map-place-button[aria-pressed="true"] { background:var(--sub-bg); border-color:var(--accent); }
+.map-place-button span { font-size:13px; color:var(--muted); }
+.leaflet-container { font-family:var(--sans); }
+.leaflet-popup-content a { color:var(--accent); }
+.leaflet-interactive:focus { outline:3px solid #b76c20; }
+@media(max-width:800px) { .map-layout { grid-template-columns:1fr; } .map-filters { grid-template-columns:1fr 1fr; } #place-map { height:420px; } .map-detail { max-height:none; } }
+@media(max-width:480px) { .map-filters { grid-template-columns:1fr; } }
+.map-filters button { min-height:46px; padding:10px 18px; border:1px solid var(--accent); border-radius:8px; background:var(--accent); color:white; font:inherit; cursor:pointer; }
+.map-filters button:hover { background:var(--accent-dark); }
+.map-filters button:disabled { opacity:.5; cursor:wait; }
