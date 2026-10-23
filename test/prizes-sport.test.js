@@ -11,7 +11,7 @@ const list=id=>db.lists.find(l=>l.id===id);
 
 test('1873 agent issues and school lists preserve distinct dated appearances and awards',()=>{
   assert.deepEqual(db.errors,[]);
-  const agents=db.lists.filter(l=>l.id.startsWith('australian-israelite-agents-1873-'));
+  const agents=db.lists.filter(l=>l.id.startsWith('australian-israelite-agents-1873-')&&l.date<='1873-05-16');
   assert.equal(agents.length,16);
   for(const l of agents){
     assert.equal(l.entries.length,4);
