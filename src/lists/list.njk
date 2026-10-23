@@ -104,14 +104,14 @@ eleventyComputed:
           {% if s.title %}<h3 class="tx-head">{{ s.title }}{% if s.totals.length %} <span class="muted">· {{ totalsLine(s.totals) }}</span>{% endif %}</h3>{% endif %}
           <div class="table-box">
             <table class="tx">
-              <thead><tr><th scope="col" class="num">#</th><th scope="col">{% if list.list_type == "offering" %}Dedication / purpose as written{% elif list.list_type == "debt" %}Person billed as written{% elif list.list_type == "bequest" %}Recipient as printed{% elif list.list_type == "prize" %}Prize recipient as printed{% elif list.list_type == "sport" or list.list_type == "roster" %}Participant as printed{% elif list.list_type == "petition" %}Signatory as printed{% else %}Name as printed{% endif %}</th><th scope="col">Place</th>{% if list.list_type != "sport" and list.list_type != "roster" %}<th scope="col" class="num">{% if list.list_type == "prize" %}Printed prize value{% else %}Amount{% endif %}</th>{% endif %}</tr></thead>
+              <thead><tr><th scope="col" class="num">#</th><th scope="col">{% if list.list_type == "offering" %}Dedication / purpose as written{% elif list.list_type == "debt" %}Person billed as written{% elif list.list_type == "bequest" %}Recipient as printed{% elif list.list_type == "patron" %}Patron as listed{% elif list.list_type == "prize" %}Prize recipient as printed{% elif list.list_type == "sport" or list.list_type == "roster" %}Participant as printed{% elif list.list_type == "petition" %}Signatory as printed{% else %}Name as printed{% endif %}</th><th scope="col">Place</th>{% if list.list_type != "sport" and list.list_type != "roster" and list.list_type != "patron" %}<th scope="col" class="num">{% if list.list_type == "prize" %}Printed prize value{% else %}Amount{% endif %}</th>{% endif %}</tr></thead>
               <tbody>
               {% for e in s.entries %}
               <tr id="{{ e.id }}">
                 <td class="num muted">{{ e.seq }}</td>
                 <td>{% if e.entity %}<a href="{{ e.entity.url }}">{{ e.name_as_printed }}</a>{% else %}{{ e.name_as_printed }}{% endif %}{{ certainty(e) }}{% if e.note %}<span class="muted block">{{ e.note }}</span>{% endif %}{% if e.agentLabel %}<span class="muted block">via {% if e.agent %}<a href="{{ e.agent.url }}">{{ e.agent.name }}</a>{% else %}{{ e.agent_as_printed }} <span class="small-note">(not yet linked)</span>{% endif %}</span>{% endif %}</td>
                 <td>{% if e.place %}<a href="{{ e.place.url }}">{{ e.place_as_printed or e.place.name }}</a>{% else %}{{ e.place_as_printed }}{% endif %}</td>
-                {% if list.list_type != "sport" and list.list_type != "roster" %}<td class="num">{{ e.amountLabel }}</td>{% endif %}
+                {% if list.list_type != "sport" and list.list_type != "roster" and list.list_type != "patron" %}<td class="num">{{ e.amountLabel }}</td>{% endif %}
               </tr>
               {% endfor %}
               </tbody>
