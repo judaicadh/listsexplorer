@@ -446,3 +446,25 @@ test('St Kilda snapshots flag cumulative amounts and preserve printed repeated a
  const exports=require('../src/list-downloads.11ty.js');const rows=api.parse(new exports().render({list:{id:con.id}}));
  assert.equal(rows.filter(e=>e.name_as_printed==='Joseph Cohen').length,2);assert.equal(rows.at(-1).amount,'6.8.6');
 });
+
+test('late 1872 newspaper agents retain the dated address change and England agent',()=>{
+ const db=require('../lib/db').build();assert.deepEqual(db.errors,[]);
+ const before=db.lists.find(l=>l.id==='australian-israelite-agents-1872-12-06');const after=db.lists.find(l=>l.id==='australian-israelite-agents-1872-12-13');
+ assert.match(before.entries[0].note,/87 Harrington/);assert.match(after.entries[0].note,/158 Castlereagh/);
+ const dec20=db.lists.find(l=>l.id==='australian-israelite-agents-1872-12-20');assert.equal(dec20.entries.length,4);
+ const england=dec20.entries.find(e=>e.name_as_printed==='Publisher of Jewish Chronicle');assert.equal(england.place_id,'london');assert.match(england.note,/43 Finsbury/);assert.equal(england.entity_id,'');
+});
+test('the ball roster preserves reprinted evidence and distinct capacities without donor amounts',()=>{
+ const db=require('../lib/db').build();const ball=db.lists.find(l=>l.id==='st-kilda-ball-roster-1872-11-08');
+ assert.equal(ball.roles.filter(r=>r.role==='steward').length,29);assert.equal(ball.images.length,2);assert.equal(ball.entries.length,54);assert.ok(ball.entries.every(e=>e.role==='officer'&&!e.amount));assert.deepEqual(ball.totals,[]);
+ assert.deepEqual(ball.entries.filter(e=>e.name_as_printed==='D. Benjamin, Esq.').map(e=>e.section),['Stewards','Committee']);
+ assert.ok(!db.lists.some(l=>l.id==='st-kilda-ball-roster-1872-11-15'));
+ assert.equal(ball.roles.find(r=>r.role==='hon-secretary').address_as_printed,'11 Collins-street west');
+});
+test('explicit second gifts and ditto referents survive individual-list CSV download',()=>{
+ const db=require('../lib/db').build();const list=db.lists.find(l=>l.id==='melbourne-atonement-donations-1872-10-18');
+ const second=list.entries.filter(e=>e.name_as_printed==='„ „ second donation');assert.deepEqual(second.map(e=>e.amount),['5.5.0','10.10.0']);
+ assert.match(second[0].note,/Simeon Cohen/);assert.match(second[1].note,/J\. Kronheimer/);
+ const Export=require('../src/list-downloads.11ty.js');const rows=api.parse(new Export().render({list:{id:list.id}}));
+ assert.deepEqual(rows.filter(e=>e.name_as_printed==='„ „ second donation').map(e=>[e.amount,e.note]),second.map(e=>[e.amount,e.note]));
+});
