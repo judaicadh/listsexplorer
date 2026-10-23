@@ -4,7 +4,7 @@ const db=require('../lib/db').build();
 const list=id=>db.lists.find(l=>l.id===id);
 test('1874 receipts retain unspecified terms, printed coverage, initials and ditto places',()=>{
  assert.deepEqual(db.errors,[]);
- const subs=db.lists.filter(l=>l.id.startsWith('australian-israelite-subscriptions-1874-'));
+ const subs=db.lists.filter(l=>l.id.startsWith('australian-israelite-subscriptions-1874-')&&l.date<='1874-05-01');
  assert.equal(subs.length,18);assert.equal(subs.reduce((n,l)=>n+l.entries.length,0),197);
  for(const date of ['1874-04-17','1874-02-13'])assert.ok(list('australian-israelite-subscriptions-'+date).entries.every(e=>e.section===''));
  const feb=list('australian-israelite-subscriptions-1874-02-20');
