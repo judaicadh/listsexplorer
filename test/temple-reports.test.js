@@ -1,0 +1,35 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const db=require('../lib/db').build();
+const sourceId='hsss-philadelphia-reports-1888-1926';
+const lists=db.lists.filter(l=>l.source_id===sourceId);
+const find=key=>lists.find(l=>l.id==='temple-reports-'+key);
+test('Temple reports preserve both societies and all 38 extracted rosters with scan provenance',()=>{
+ assert.deepEqual(db.errors,[]);
+ assert.equal(lists.length,38);
+ assert.equal(lists.reduce((n,l)=>n+l.entries.length,0),1833);
+ assert.ok(lists.flatMap(l=>l.entries).every(e=>/^Scan \d{3}/.test(e.page)));
+ assert.ok(lists.every(l=>l.images.length));
+ assert.equal(find('hes-members-1913').entries.length,324);
+ assert.equal(find('hes-charter-members').organizer_id,'hebrew-education-society-philadelphia');
+ assert.equal(find('1913-donations').organizer_id,'hebrew-sunday-school-society-philadelphia');
+ assert.equal(find('memorial-insert-1913').organizer_id,'');
+ assert.equal(find('1858-signatures').date,'1858-05-10');
+});
+test('Temple fund capital, dues, expected bequests and in-kind gifts do not become invented cash or book copies',()=>{
+ const historical=['hes-permanent-fund-1913','memorial-insert-1913','1926-endowments','1926-expected-bequests','hes-members-1913'];
+ for(const key of historical) assert.ok(find(key).entries.every(e=>!e.amount && !e.currency));
+ assert.ok(lists.flatMap(l=>l.entries).every(e=>!e.quantity));
+ const fund=find('hes-sulzberger-fund-1913');
+ assert.equal(fund.entries.length,35);
+ assert.equal(fund.list_type,'support');
+ assert.equal(fund.copies,null);
+ assert.equal(fund.entries.reduce((n,e)=>n+(e.money?.base||0),0),959500);
+ const material=find('1926-donations').entries.find(e=>e.name_as_printed==='Mr. Frank Newhouse');
+ assert.ok(!material.amount);
+ assert.match(material.note,/Materials/);
+ const joint=find('1926-donations').entries.filter(e=>/Dr. Abraham S. W. Rosenbach and/.test(e.name_as_printed));
+ assert.equal(joint.length,1);assert.equal(joint[0].amount,'100.00');
+ assert.equal(find('hes-prizes-1912').entries.length,66);
+ assert.ok(find('hes-prizes-1912').entries.every(e=>e.role==='prize-recipient'));
+});
