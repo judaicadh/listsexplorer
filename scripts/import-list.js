@@ -19,6 +19,8 @@ try {
   const result = api.validate(JSON.parse(fs.readFileSync(file, "utf8")), api.context(db));
   if (result.errors.length) throw new Error(result.errors.join("\n"));
   const { list, source, entries } = result.contribution;
+  // Catalogue addition time is assigned here, independently of historical date.
+  list.added_at = new Date().toISOString();
   stage = fs.mkdtempSync(path.join(os.tmpdir(), "lists-import-"));
   fs.cpSync(path.join(root, "data"), path.join(stage, "data"), { recursive: true });
   const updates = { lists: [list], entries, ...(source ? { sources: [source] } : {}) };

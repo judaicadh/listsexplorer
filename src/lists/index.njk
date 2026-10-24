@@ -4,20 +4,28 @@ title: Lists
 permalink: /lists/
 ---
 {% from "macros.njk" import typeTag %}
+<link rel="stylesheet" href="/assets/list-sort.css">
 <div class="wrap section">
   <h1>Lists</h1>
-  <p class="lede">Every transcribed subscriber and donation list, in date order.</p>
+  <p class="lede">Browse transcribed lists by historical date, title or when they were added.</p>
   <div class="filter-bar">
     <label for="flt">Filter lists</label>
     <input id="flt" type="search" data-filter-input placeholder="Title, source, place or year">
-    <span class="muted" data-filter-count></span>
+    <label for="list-sort">Sort by</label>
+    <select id="list-sort" data-list-sort>
+      <option value="date">Historical date: oldest first</option>
+      <option value="date-desc">Historical date: newest first</option>
+      <option value="recent">Most recently added</option>
+      <option value="title">Title: A–Z</option>
+    </select>
+    <span class="muted" data-filter-count aria-live="polite"></span>
   </div>
   <div class="table-box">
     <table>
       <thead><tr><th scope="col">Date</th><th scope="col">List</th><th scope="col">Type</th><th scope="col">Source</th><th scope="col">Place</th><th scope="col" class="num">Entries</th><th scope="col">Status</th></tr></thead>
-      <tbody>
+      <tbody data-list-rows>
       {% for l in db.lists %}
-      <tr data-filter-item="{{ l.title }} {{ l.title_original }} {{ l.year }}">
+      <tr data-filter-item="{{ l.title }} {{ l.title_original }} {{ l.year }}" data-list-date="{{ l.date }}" data-list-title="{{ l.title }}" data-list-added="{{ l.added_at }}" data-list-order="{{ l.additionIndex }}">
         <td class="nowrap">{{ l.dateLabel }}</td>
         <td><a href="{{ l.url }}">{{ l.title }}</a>{% if l.title_original %}<div class="orig-sm" dir="auto">{{ l.title_original }}</div>{% endif %}</td>
         <td>{{ typeTag(l) }}</td>
@@ -32,3 +40,5 @@ permalink: /lists/
   </div>
 </div>
 <script src="/assets/filter.js" defer></script>
+
+<script src="/assets/list-sort.js" defer></script>

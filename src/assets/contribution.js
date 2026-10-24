@@ -5,7 +5,7 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   "use strict";
   const columns = "id,list_id,seq,page,column,section,name_as_printed,entity_id,place_as_printed,place_id,role,amount,currency,quantity,agent_id,certainty,note,agent_as_printed".split(",");
-  const listColumns = "id,title,title_original,list_type,source_id,date,citation,pages,purpose,organizer_id,place_id,beneficiary_place_id,currency,image,image_credit,iiif_manifest,status,transcriber,featured,notes".split(",");
+  const listColumns = "id,title,title_original,list_type,source_id,date,citation,pages,purpose,organizer_id,place_id,beneficiary_place_id,currency,image,image_credit,iiif_manifest,status,transcriber,featured,notes,added_at".split(",");
   const sourceColumns = "id,title,title_original,type,place_id,publisher,dates,url,notes".split(",");
   const slug = value => String(value || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 90).replace(/-$/, "");
   function stringify(rows, fields = columns, newline = "\r\n") {
