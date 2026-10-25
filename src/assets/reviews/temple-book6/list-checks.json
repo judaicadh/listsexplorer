@@ -1,0 +1,679 @@
+[
+  {
+    "id": "temple-book6-attendance-1905",
+    "entries": 20,
+    "scans": [
+      5,
+      20
+    ]
+  },
+  {
+    "id": "temple-book6-staff-changes-1905",
+    "entries": 2,
+    "scans": [
+      5,
+      18
+    ]
+  },
+  {
+    "id": "temple-book6-events-1905",
+    "entries": 12,
+    "scans": [
+      6,
+      7,
+      25,
+      46,
+      49
+    ]
+  },
+  {
+    "id": "temple-book6-committees-1905",
+    "entries": 7,
+    "scans": [
+      7,
+      18
+    ]
+  },
+  {
+    "id": "temple-book6-prizes-1905",
+    "entries": 45,
+    "scans": [
+      8,
+      47,
+      54,
+      55,
+      59
+    ]
+  },
+  {
+    "id": "temple-book6-appointments-1905",
+    "entries": 2,
+    "scans": [
+      17,
+      21
+    ]
+  },
+  {
+    "id": "temple-book6-gifts-1905",
+    "entries": 3,
+    "scans": [
+      18
+    ]
+  },
+  {
+    "id": "temple-book6-attendance-1906",
+    "entries": 99,
+    "scans": [
+      24,
+      27,
+      29,
+      31,
+      35,
+      60,
+      62,
+      68,
+      69,
+      72,
+      74,
+      77
+    ]
+  },
+  {
+    "id": "temple-book6-nursery-transfer-1905",
+    "entries": 1,
+    "scans": [
+      22
+    ]
+  },
+  {
+    "id": "temple-book6-staff-changes-1906",
+    "entries": 17,
+    "scans": [
+      25,
+      31,
+      34,
+      36,
+      37,
+      63,
+      68,
+      69,
+      74,
+      78
+    ]
+  },
+  {
+    "id": "temple-book6-gifts-1906",
+    "entries": 9,
+    "scans": [
+      25,
+      26,
+      27,
+      30,
+      36,
+      64,
+      74
+    ]
+  },
+  {
+    "id": "temple-book6-committees-1906",
+    "entries": 26,
+    "scans": [
+      26,
+      42,
+      61,
+      68,
+      72,
+      75
+    ]
+  },
+  {
+    "id": "temple-book6-events-1906",
+    "entries": 36,
+    "scans": [
+      33,
+      49,
+      64,
+      66,
+      67,
+      72,
+      74,
+      78,
+      104
+    ]
+  },
+  {
+    "id": "temple-book6-officers-1906",
+    "entries": 17,
+    "scans": [
+      42
+    ]
+  },
+  {
+    "id": "temple-book6-report-signers-1906",
+    "entries": 5,
+    "scans": [
+      43,
+      51,
+      53
+    ]
+  },
+  {
+    "id": "temple-book6-acknowledgments-1906",
+    "entries": 8,
+    "scans": [
+      45,
+      51
+    ]
+  },
+  {
+    "id": "temple-book6-superintendents-1906",
+    "entries": 10,
+    "scans": [
+      47,
+      48
+    ]
+  },
+  {
+    "id": "temple-book6-annual-donations-1906",
+    "entries": 27,
+    "scans": [
+      58
+    ]
+  },
+  {
+    "id": "temple-book6-appropriations-1906",
+    "entries": 5,
+    "scans": [
+      52
+    ]
+  },
+  {
+    "id": "temple-book6-teachers-1904-1905",
+    "entries": 76,
+    "scans": [
+      56,
+      57
+    ]
+  },
+  {
+    "id": "temple-book6-prizes-1906",
+    "entries": 48,
+    "scans": [
+      67,
+      110,
+      111
+    ]
+  },
+  {
+    "id": "temple-book6-sewing-prizes-1906",
+    "entries": 9,
+    "scans": [
+      67
+    ]
+  },
+  {
+    "id": "temple-book6-memorial-signers-1906",
+    "entries": 5,
+    "scans": [
+      71
+    ]
+  },
+  {
+    "id": "temple-book6-apologies-1906",
+    "entries": 5,
+    "scans": [
+      77
+    ]
+  },
+  {
+    "id": "temple-book6-attendance-1907",
+    "entries": 84,
+    "scans": [
+      80,
+      81,
+      82,
+      86,
+      89,
+      119,
+      121,
+      127,
+      131,
+      134,
+      138
+    ]
+  },
+  {
+    "id": "temple-book6-memorial-signers-1907",
+    "entries": 2,
+    "scans": [
+      80
+    ]
+  },
+  {
+    "id": "temple-book6-staff-changes-1907",
+    "entries": 14,
+    "scans": [
+      83,
+      86,
+      87,
+      123,
+      127,
+      128,
+      129,
+      130,
+      131,
+      138,
+      139,
+      140
+    ]
+  },
+  {
+    "id": "temple-book6-gifts-1907",
+    "entries": 29,
+    "scans": [
+      83,
+      88,
+      118,
+      121,
+      122,
+      131,
+      132,
+      135,
+      138,
+      140
+    ]
+  },
+  {
+    "id": "temple-book6-events-1907",
+    "entries": 21,
+    "scans": [
+      87,
+      106,
+      123,
+      126,
+      135,
+      165
+    ]
+  },
+  {
+    "id": "temple-book6-committees-1907",
+    "entries": 24,
+    "scans": [
+      87,
+      90,
+      97,
+      128,
+      132,
+      137
+    ]
+  },
+  {
+    "id": "temple-book6-officers-1907",
+    "entries": 17,
+    "scans": [
+      97
+    ]
+  },
+  {
+    "id": "temple-book6-report-signers-1907",
+    "entries": 5,
+    "scans": [
+      98,
+      107,
+      109
+    ]
+  },
+  {
+    "id": "temple-book6-superintendents-1907",
+    "entries": 9,
+    "scans": [
+      105
+    ]
+  },
+  {
+    "id": "temple-book6-acknowledgments-1907",
+    "entries": 5,
+    "scans": [
+      107
+    ]
+  },
+  {
+    "id": "temple-book6-appropriations-1907",
+    "entries": 4,
+    "scans": [
+      108
+    ]
+  },
+  {
+    "id": "temple-book6-teachers-1906-1907",
+    "entries": 104,
+    "scans": [
+      112,
+      113,
+      114
+    ]
+  },
+  {
+    "id": "temple-book6-annual-donations-1907",
+    "entries": 35,
+    "scans": [
+      115,
+      116
+    ]
+  },
+  {
+    "id": "temple-book6-apologies-1907",
+    "entries": 9,
+    "scans": [
+      117,
+      121,
+      127,
+      134
+    ]
+  },
+  {
+    "id": "temple-book6-prizes-1907",
+    "entries": 29,
+    "scans": [
+      126,
+      163
+    ]
+  },
+  {
+    "id": "temple-book6-attendance-1908",
+    "entries": 83,
+    "scans": [
+      141,
+      144,
+      147,
+      150,
+      180,
+      186,
+      189,
+      191,
+      193
+    ]
+  },
+  {
+    "id": "temple-book6-apologies-1908",
+    "entries": 16,
+    "scans": [
+      141,
+      147,
+      181,
+      186,
+      191
+    ]
+  },
+  {
+    "id": "temple-book6-gifts-1908",
+    "entries": 21,
+    "scans": [
+      141,
+      145,
+      148,
+      152,
+      180,
+      182,
+      185,
+      186,
+      187,
+      189,
+      190,
+      191,
+      194
+    ]
+  },
+  {
+    "id": "temple-book6-staff-changes-1908",
+    "entries": 20,
+    "scans": [
+      142,
+      144,
+      145,
+      150,
+      151,
+      180,
+      181,
+      182,
+      187,
+      188,
+      189
+    ]
+  },
+  {
+    "id": "temple-book6-committees-1908",
+    "entries": 19,
+    "scans": [
+      145,
+      158,
+      190
+    ]
+  },
+  {
+    "id": "temple-book6-officers-1908",
+    "entries": 18,
+    "scans": [
+      154,
+      158,
+      159,
+      181
+    ]
+  },
+  {
+    "id": "temple-book6-honor-roll-1908",
+    "entries": 13,
+    "scans": [
+      164
+    ]
+  },
+  {
+    "id": "temple-book6-superintendents-1908",
+    "entries": 10,
+    "scans": [
+      164,
+      165
+    ]
+  },
+  {
+    "id": "temple-book6-events-1908",
+    "entries": 15,
+    "scans": [
+      166,
+      181,
+      185
+    ]
+  },
+  {
+    "id": "temple-book6-acknowledgments-1908",
+    "entries": 7,
+    "scans": [
+      166
+    ]
+  },
+  {
+    "id": "temple-book6-report-signers-1908",
+    "entries": 4,
+    "scans": [
+      159,
+      167,
+      169
+    ]
+  },
+  {
+    "id": "temple-book6-appropriations-1908",
+    "entries": 4,
+    "scans": [
+      168
+    ]
+  },
+  {
+    "id": "temple-book6-prizes-1908",
+    "entries": 31,
+    "scans": [
+      171,
+      172,
+      185
+    ]
+  },
+  {
+    "id": "temple-book6-teachers-1907-1908",
+    "entries": 113,
+    "scans": [
+      173,
+      174,
+      175
+    ]
+  },
+  {
+    "id": "temple-book6-annual-donations-1908",
+    "entries": 48,
+    "scans": [
+      176,
+      177
+    ]
+  },
+  {
+    "id": "temple-book6-attendance-1909",
+    "entries": 46,
+    "scans": [
+      196,
+      200,
+      204,
+      208,
+      213
+    ]
+  },
+  {
+    "id": "temple-book6-staff-changes-1909",
+    "entries": 7,
+    "scans": [
+      198,
+      210,
+      211,
+      213
+    ]
+  },
+  {
+    "id": "temple-book6-gifts-1909",
+    "entries": 11,
+    "scans": [
+      201,
+      202,
+      206,
+      211,
+      214
+    ]
+  },
+  {
+    "id": "temple-book6-events-1909",
+    "entries": 15,
+    "scans": [
+      202,
+      221,
+      228
+    ]
+  },
+  {
+    "id": "temple-book6-apologies-1909",
+    "entries": 7,
+    "scans": [
+      204,
+      208
+    ]
+  },
+  {
+    "id": "temple-book6-loans-1909",
+    "entries": 2,
+    "scans": [
+      206,
+      214
+    ]
+  },
+  {
+    "id": "temple-book6-committees-1909",
+    "entries": 17,
+    "scans": [
+      210,
+      220
+    ]
+  },
+  {
+    "id": "temple-book6-officers-1909",
+    "entries": 17,
+    "scans": [
+      214,
+      220
+    ]
+  },
+  {
+    "id": "temple-book6-honor-roll-1909",
+    "entries": 15,
+    "scans": [
+      225
+    ]
+  },
+  {
+    "id": "temple-book6-superintendents-1909",
+    "entries": 11,
+    "scans": [
+      226,
+      227
+    ]
+  },
+  {
+    "id": "temple-book6-acknowledgments-1909",
+    "entries": 8,
+    "scans": [
+      228
+    ]
+  },
+  {
+    "id": "temple-book6-report-signers-1909",
+    "entries": 5,
+    "scans": [
+      221,
+      228,
+      230
+    ]
+  },
+  {
+    "id": "temple-book6-appropriations-1909",
+    "entries": 6,
+    "scans": [
+      229
+    ]
+  },
+  {
+    "id": "temple-book6-prizes-1909",
+    "entries": 44,
+    "scans": [
+      231,
+      232
+    ]
+  },
+  {
+    "id": "temple-book6-teachers-1908-1909",
+    "entries": 120,
+    "scans": [
+      233,
+      234,
+      235
+    ]
+  },
+  {
+    "id": "temple-book6-annual-donations-1909",
+    "entries": 35,
+    "scans": [
+      236
+    ]
+  },
+  {
+    "id": "temple-book6-endowments-1902-1909",
+    "entries": 22,
+    "scans": [
+      170,
+      237
+    ]
+  }
+]
