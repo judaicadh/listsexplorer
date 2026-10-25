@@ -1,0 +1,1107 @@
+[
+  {
+    "id": "temple-president-staff",
+    "entries": 7,
+    "scans": [
+      1,
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "temple-president-schools",
+    "entries": 5,
+    "scans": [
+      1,
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "temple-president-gifts",
+    "entries": 5,
+    "scans": [
+      2,
+      5
+    ]
+  },
+  {
+    "id": "temple-president-proceeds",
+    "entries": 1,
+    "scans": [
+      2,
+      5
+    ]
+  },
+  {
+    "id": "temple-president-speaker",
+    "entries": 1,
+    "scans": [
+      2,
+      5
+    ]
+  },
+  {
+    "id": "temple-president-author",
+    "entries": 1,
+    "scans": [
+      3,
+      6
+    ]
+  },
+  {
+    "id": "temple-book3-election-1888",
+    "entries": 14,
+    "scans": [
+      5,
+      6,
+      9,
+      18
+    ]
+  },
+  {
+    "id": "temple-book3-attendance-1888",
+    "entries": 27,
+    "scans": [
+      9,
+      13,
+      15
+    ]
+  },
+  {
+    "id": "temple-book3-attendance-1889",
+    "entries": 58,
+    "scans": [
+      24,
+      35,
+      39,
+      47,
+      55,
+      58,
+      60,
+      62
+    ]
+  },
+  {
+    "id": "temple-book3-committees-1888",
+    "entries": 22,
+    "scans": [
+      12,
+      13,
+      18
+    ]
+  },
+  {
+    "id": "temple-book3-staff-1888",
+    "entries": 22,
+    "scans": [
+      7
+    ]
+  },
+  {
+    "id": "temple-book3-speakers-1888",
+    "entries": 15,
+    "scans": [
+      7
+    ]
+  },
+  {
+    "id": "temple-book3-chanukah-1888",
+    "entries": 13,
+    "scans": [
+      19
+    ]
+  },
+  {
+    "id": "temple-book3-gifts-1888",
+    "entries": 7,
+    "scans": [
+      18
+    ]
+  },
+  {
+    "id": "temple-book3-committees-1889",
+    "entries": 5,
+    "scans": [
+      28,
+      44
+    ]
+  },
+  {
+    "id": "temple-book3-gifts-1889",
+    "entries": 20,
+    "scans": [
+      29,
+      34,
+      36,
+      37,
+      42,
+      64
+    ]
+  },
+  {
+    "id": "temple-book3-members-1889",
+    "entries": 2,
+    "scans": [
+      34,
+      37
+    ]
+  },
+  {
+    "id": "temple-book3-staff-events-1889",
+    "entries": 15,
+    "scans": [
+      25,
+      31,
+      33,
+      40,
+      41,
+      42
+    ]
+  },
+  {
+    "id": "temple-book3-prizes-1889",
+    "entries": 2,
+    "scans": [
+      39
+    ]
+  },
+  {
+    "id": "temple-book3-attendance-1890",
+    "entries": 41,
+    "scans": [
+      67,
+      69,
+      88,
+      95,
+      99
+    ]
+  },
+  {
+    "id": "temple-book3-election-1889",
+    "entries": 17,
+    "scans": [
+      51,
+      53,
+      55,
+      58
+    ]
+  },
+  {
+    "id": "temple-book3-staff-report-1889",
+    "entries": 20,
+    "scans": [
+      53
+    ]
+  },
+  {
+    "id": "temple-book3-gifts-1890",
+    "entries": 7,
+    "scans": [
+      67,
+      68,
+      71,
+      77,
+      86
+    ]
+  },
+  {
+    "id": "temple-book3-staff-events-1890",
+    "entries": 15,
+    "scans": [
+      68,
+      71,
+      76,
+      77
+    ]
+  },
+  {
+    "id": "temple-book3-election-1890",
+    "entries": 16,
+    "scans": [
+      91,
+      95,
+      96
+    ]
+  },
+  {
+    "id": "temple-book3-prizes-1890",
+    "entries": 8,
+    "scans": [
+      84
+    ]
+  },
+  {
+    "id": "temple-book3-teachers-1890",
+    "entries": 44,
+    "scans": [
+      84
+    ]
+  },
+  {
+    "id": "temple-book3-prize-offer-1890",
+    "entries": 1,
+    "scans": [
+      96
+    ]
+  },
+  {
+    "id": "temple-book3-attendance-1891",
+    "entries": 67,
+    "scans": [
+      106,
+      109,
+      114,
+      121,
+      123,
+      126,
+      133,
+      136
+    ]
+  },
+  {
+    "id": "temple-book3-committees-1890",
+    "entries": 15,
+    "scans": [
+      98
+    ]
+  },
+  {
+    "id": "temple-book3-memorial-1891",
+    "entries": 3,
+    "scans": [
+      109
+    ]
+  },
+  {
+    "id": "temple-book3-gifts-1891",
+    "entries": 23,
+    "scans": [
+      102,
+      106,
+      112,
+      114,
+      116,
+      118,
+      127,
+      137
+    ]
+  },
+  {
+    "id": "temple-book3-subscribers-1891",
+    "entries": 14,
+    "scans": [
+      116
+    ]
+  },
+  {
+    "id": "temple-book3-prizes-1891",
+    "entries": 3,
+    "scans": [
+      114
+    ]
+  },
+  {
+    "id": "temple-book3-acknowledgments-1891",
+    "entries": 18,
+    "scans": [
+      116,
+      119
+    ]
+  },
+  {
+    "id": "temple-book3-election-1891",
+    "entries": 1,
+    "scans": [
+      102
+    ]
+  },
+  {
+    "id": "temple-book3-chanucah-1890",
+    "entries": 28,
+    "scans": [
+      105
+    ]
+  },
+  {
+    "id": "temple-book3-purim-1891",
+    "entries": 13,
+    "scans": [
+      117
+    ]
+  },
+  {
+    "id": "temple-book3-anniversary-1891",
+    "entries": 7,
+    "scans": [
+      117
+    ]
+  },
+  {
+    "id": "temple-book3-graduates-1891",
+    "entries": 16,
+    "scans": [
+      117
+    ]
+  },
+  {
+    "id": "temple-book3-teachers-1891",
+    "entries": 46,
+    "scans": [
+      117
+    ]
+  },
+  {
+    "id": "temple-book3-attendance-1892",
+    "entries": 65,
+    "scans": [
+      139,
+      143,
+      147,
+      151,
+      154,
+      163,
+      166,
+      173,
+      177
+    ]
+  },
+  {
+    "id": "temple-book3-appointments-1891",
+    "entries": 18,
+    "scans": [
+      122,
+      127,
+      128,
+      133
+    ]
+  },
+  {
+    "id": "temple-book3-committees-1891",
+    "entries": 18,
+    "scans": [
+      135,
+      137
+    ]
+  },
+  {
+    "id": "temple-book3-gifts-1892",
+    "entries": 18,
+    "scans": [
+      140,
+      145,
+      147,
+      152,
+      157,
+      166,
+      178
+    ]
+  },
+  {
+    "id": "temple-book3-elections-1892",
+    "entries": 19,
+    "scans": [
+      141,
+      161,
+      168,
+      173
+    ]
+  },
+  {
+    "id": "temple-book3-chanucah-1891",
+    "entries": 35,
+    "scans": [
+      143
+    ]
+  },
+  {
+    "id": "temple-book3-committees-1892",
+    "entries": 24,
+    "scans": [
+      145,
+      152,
+      166,
+      174
+    ]
+  },
+  {
+    "id": "temple-book3-bequest-1892",
+    "entries": 2,
+    "scans": [
+      151,
+      161
+    ]
+  },
+  {
+    "id": "temple-book3-staff-1892",
+    "entries": 18,
+    "scans": [
+      147,
+      152,
+      155,
+      157,
+      158,
+      159,
+      171
+    ]
+  },
+  {
+    "id": "temple-book3-purim-1892",
+    "entries": 18,
+    "scans": [
+      147
+    ]
+  },
+  {
+    "id": "temple-book3-anniversary-1892",
+    "entries": 14,
+    "scans": [
+      154,
+      156
+    ]
+  },
+  {
+    "id": "temple-book3-prizes-1892",
+    "entries": 24,
+    "scans": [
+      154
+    ]
+  },
+  {
+    "id": "temple-book3-attendance-1893",
+    "entries": 53,
+    "scans": [
+      182,
+      185,
+      189,
+      192,
+      202,
+      205,
+      216
+    ]
+  },
+  {
+    "id": "temple-book3-committees-1893",
+    "entries": 44,
+    "scans": [
+      183,
+      186,
+      205,
+      206,
+      213
+    ]
+  },
+  {
+    "id": "temple-book3-chanucah-1892",
+    "entries": 10,
+    "scans": [
+      180
+    ]
+  },
+  {
+    "id": "temple-book3-gifts-1893",
+    "entries": 41,
+    "scans": [
+      182,
+      183,
+      185,
+      186,
+      187,
+      194,
+      205,
+      217,
+      218,
+      220
+    ]
+  },
+  {
+    "id": "temple-book3-contributors-1893",
+    "entries": 11,
+    "scans": [
+      190
+    ]
+  },
+  {
+    "id": "temple-book3-elections-1893",
+    "entries": 13,
+    "scans": [
+      208,
+      211
+    ]
+  },
+  {
+    "id": "temple-book3-prizes-1893",
+    "entries": 13,
+    "scans": [
+      195,
+      201,
+      209
+    ]
+  },
+  {
+    "id": "temple-book3-staff-1893",
+    "entries": 16,
+    "scans": [
+      195,
+      196,
+      206,
+      209,
+      218
+    ]
+  },
+  {
+    "id": "temple-book3-events-1893",
+    "entries": 16,
+    "scans": [
+      193,
+      201,
+      209
+    ]
+  },
+  {
+    "id": "temple-book3-attendance-1894",
+    "entries": 18,
+    "scans": [
+      223,
+      227
+    ]
+  },
+  {
+    "id": "temple-book3-gifts-1894",
+    "entries": 8,
+    "scans": [
+      224,
+      225,
+      227,
+      228
+    ]
+  },
+  {
+    "id": "temple-book3-staff-1894",
+    "entries": 1,
+    "scans": [
+      223
+    ]
+  },
+  {
+    "id": "temple-book3-purim-1894",
+    "entries": 16,
+    "scans": [
+      231
+    ]
+  },
+  {
+    "id": "temple-book3-closing-1894",
+    "entries": 6,
+    "scans": [
+      229
+    ]
+  },
+  {
+    "id": "temple-book3-board-rosters",
+    "entries": 93,
+    "scans": [
+      232,
+      233,
+      234,
+      235,
+      236,
+      238
+    ]
+  },
+  {
+    "id": "temple-book5-staff-1900",
+    "entries": 25,
+    "scans": [
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "id": "temple-book5-prizes-1900",
+    "entries": 28,
+    "scans": [
+      9
+    ]
+  },
+  {
+    "id": "temple-book5-events-1900",
+    "entries": 12,
+    "scans": [
+      7,
+      8,
+      10
+    ]
+  },
+  {
+    "id": "temple-book5-gifts-1900",
+    "entries": 3,
+    "scans": [
+      7,
+      12,
+      21
+    ]
+  },
+  {
+    "id": "temple-book5-report-officers-1900",
+    "entries": 4,
+    "scans": [
+      11,
+      12
+    ]
+  },
+  {
+    "id": "temple-book5-patrons-1900",
+    "entries": 28,
+    "scans": [
+      13
+    ]
+  },
+  {
+    "id": "temple-book5-elections-1900",
+    "entries": 14,
+    "scans": [
+      14,
+      16,
+      21
+    ]
+  },
+  {
+    "id": "temple-book5-attendance-1900",
+    "entries": 25,
+    "scans": [
+      16,
+      20,
+      22
+    ]
+  },
+  {
+    "id": "temple-book5-committees-1900",
+    "entries": 19,
+    "scans": [
+      17,
+      18
+    ]
+  },
+  {
+    "id": "temple-book5-staff-changes-1900",
+    "entries": 3,
+    "scans": [
+      18,
+      23
+    ]
+  },
+  {
+    "id": "temple-book5-bequests",
+    "entries": 5,
+    "scans": [
+      22,
+      55,
+      112,
+      117,
+      120
+    ]
+  },
+  {
+    "id": "temple-book5-attendance-1901",
+    "entries": 91,
+    "scans": [
+      25,
+      31,
+      35,
+      37,
+      43,
+      47,
+      59,
+      62,
+      65,
+      68
+    ]
+  },
+  {
+    "id": "temple-book5-staff-changes-1901",
+    "entries": 4,
+    "scans": [
+      26,
+      44,
+      47
+    ]
+  },
+  {
+    "id": "temple-book5-events-1901",
+    "entries": 16,
+    "scans": [
+      26,
+      28,
+      42,
+      54,
+      69
+    ]
+  },
+  {
+    "id": "temple-book5-gifts-1901",
+    "entries": 19,
+    "scans": [
+      28,
+      33,
+      39,
+      45,
+      57,
+      60,
+      66
+    ]
+  },
+  {
+    "id": "temple-book5-committees-1901",
+    "entries": 4,
+    "scans": [
+      45,
+      63
+    ]
+  },
+  {
+    "id": "temple-book5-elections-1901",
+    "entries": 22,
+    "scans": [
+      52,
+      60,
+      62,
+      63,
+      66
+    ]
+  },
+  {
+    "id": "temple-book5-prizes-1901",
+    "entries": 38,
+    "scans": [
+      54,
+      55
+    ]
+  },
+  {
+    "id": "temple-book5-report-officers-1901",
+    "entries": 4,
+    "scans": [
+      56,
+      57
+    ]
+  },
+  {
+    "id": "temple-book5-attendance-1902",
+    "entries": 60,
+    "scans": [
+      72,
+      78,
+      81,
+      84,
+      90,
+      93,
+      105,
+      109
+    ]
+  },
+  {
+    "id": "temple-book5-gifts-1902",
+    "entries": 3,
+    "scans": [
+      75,
+      81,
+      91
+    ]
+  },
+  {
+    "id": "temple-book5-staff-changes-1902",
+    "entries": 5,
+    "scans": [
+      90,
+      149,
+      152
+    ]
+  },
+  {
+    "id": "temple-book5-prizes-1902",
+    "entries": 39,
+    "scans": [
+      84,
+      99
+    ]
+  },
+  {
+    "id": "temple-book5-events-1902",
+    "entries": 6,
+    "scans": [
+      84
+    ]
+  },
+  {
+    "id": "temple-book5-elections-1902",
+    "entries": 13,
+    "scans": [
+      96,
+      105
+    ]
+  },
+  {
+    "id": "temple-book5-staff-1902",
+    "entries": 86,
+    "scans": [
+      97,
+      98
+    ]
+  },
+  {
+    "id": "temple-book5-report-officers-1902",
+    "entries": 2,
+    "scans": [
+      101,
+      102
+    ]
+  },
+  {
+    "id": "temple-book5-committees-1902",
+    "entries": 15,
+    "scans": [
+      107
+    ]
+  },
+  {
+    "id": "temple-book5-attendance-1903",
+    "entries": 92,
+    "scans": [
+      115,
+      119,
+      123,
+      127,
+      135,
+      140,
+      145,
+      148,
+      151
+    ]
+  },
+  {
+    "id": "temple-book5-elections-1903",
+    "entries": 6,
+    "scans": [
+      117,
+      121,
+      143,
+      145
+    ]
+  },
+  {
+    "id": "temple-book5-committees-1903",
+    "entries": 27,
+    "scans": [
+      121,
+      145,
+      146,
+      149,
+      150
+    ]
+  },
+  {
+    "id": "temple-book5-events-1903",
+    "entries": 14,
+    "scans": [
+      115,
+      124,
+      141,
+      167
+    ]
+  },
+  {
+    "id": "temple-book5-gifts-1903",
+    "entries": 5,
+    "scans": [
+      135,
+      140,
+      142
+    ]
+  },
+  {
+    "id": "temple-book5-report-officers-1903",
+    "entries": 3,
+    "scans": [
+      130,
+      132,
+      133
+    ]
+  },
+  {
+    "id": "temple-book5-attendance-1904",
+    "entries": 68,
+    "scans": [
+      155,
+      158,
+      161,
+      163,
+      172,
+      177,
+      182,
+      185
+    ]
+  },
+  {
+    "id": "temple-book5-committees-1904",
+    "entries": 23,
+    "scans": [
+      158,
+      174,
+      179,
+      180
+    ]
+  },
+  {
+    "id": "temple-book5-elections-1904",
+    "entries": 17,
+    "scans": [
+      163,
+      166,
+      172,
+      179,
+      182
+    ]
+  },
+  {
+    "id": "temple-book5-gifts-1904",
+    "entries": 26,
+    "scans": [
+      159,
+      170,
+      173,
+      178,
+      182
+    ]
+  },
+  {
+    "id": "temple-book5-prizes-1903",
+    "entries": 41,
+    "scans": [
+      167
+    ]
+  },
+  {
+    "id": "temple-book5-staff-1904",
+    "entries": 20,
+    "scans": [
+      168
+    ]
+  },
+  {
+    "id": "temple-book5-events-1904",
+    "entries": 14,
+    "scans": [
+      168,
+      178,
+      187,
+      211
+    ]
+  },
+  {
+    "id": "temple-book5-report-officers-1904",
+    "entries": 2,
+    "scans": [
+      169,
+      171
+    ]
+  },
+  {
+    "id": "temple-book5-staff-changes-1904-1905",
+    "entries": 13,
+    "scans": [
+      178,
+      183,
+      191,
+      194
+    ]
+  },
+  {
+    "id": "temple-book5-attendance-1905",
+    "entries": 49,
+    "scans": [
+      188,
+      190,
+      193,
+      198,
+      225,
+      228
+    ]
+  },
+  {
+    "id": "temple-book5-appointments-1905",
+    "entries": 3,
+    "scans": [
+      189,
+      191,
+      194
+    ]
+  },
+  {
+    "id": "temple-book5-gifts-1905",
+    "entries": 22,
+    "scans": [
+      189,
+      191,
+      200,
+      201,
+      222
+    ]
+  },
+  {
+    "id": "temple-book5-committees-1905",
+    "entries": 19,
+    "scans": [
+      194,
+      205,
+      225
+    ]
+  },
+  {
+    "id": "temple-book5-purim-1905",
+    "entries": 42,
+    "scans": [
+      201
+    ]
+  },
+  {
+    "id": "temple-book5-officers-1905",
+    "entries": 16,
+    "scans": [
+      205
+    ]
+  },
+  {
+    "id": "temple-book5-prizes-1904",
+    "entries": 45,
+    "scans": [
+      211,
+      212,
+      218,
+      219
+    ]
+  },
+  {
+    "id": "temple-book5-staff-1905",
+    "entries": 93,
+    "scans": [
+      210,
+      211,
+      212,
+      220,
+      221
+    ]
+  },
+  {
+    "id": "temple-book5-report-signers-1905",
+    "entries": 3,
+    "scans": [
+      207,
+      215,
+      217
+    ]
+  }
+]
