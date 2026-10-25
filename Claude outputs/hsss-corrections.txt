@@ -1,0 +1,211 @@
+# corrections: id|field|old|new|reason
+hsss-philadelphia-1838-1840-0020|name_as_printed|H L.|A L.|initial reads A (cf. A L. Hart on p. 1)
+hsss-philadelphia-1838-1840-0025|certainty|uncertain|certain|reading clear: Mr Depau
+hsss-philadelphia-1838-1840-0025|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1840-1841-0025|name_as_printed|Mr Schustman|Mr Schubman|letters read “Schubman”; still uncertain
+hsss-philadelphia-1840-1841-0027|certainty|uncertain|certain|reading clear: Mrs Tobison
+hsss-philadelphia-1840-1841-0027|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1841-0005|certainty|uncertain|certain|reading clear
+hsss-philadelphia-1841-0005|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1841-0008|name_as_printed|Aaron Shanckarb|Aaron Shanckark|final letter reads k; still uncertain
+hsss-philadelphia-1841-0014|name_as_printed|L Bonister|L Bomisler|letters read “Bomisler”; still uncertain
+hsss-philadelphia-1841-0025|name_as_printed|A L. Wolf|A S. Wolf|middle initial reads S
+hsss-philadelphia-1841-0032|name_as_printed|G Solis|S Solis|initial reads S
+hsss-philadelphia-1841-0028|certainty|uncertain|certain|reading clear: Cromline
+hsss-philadelphia-1841-0028|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1841-0047|name_as_printed|G. B. Bloom|S. B. Bloom|initial reads S
+hsss-philadelphia-1841-0048|name_as_printed|G Gantz|S Gantz|initial reads S
+hsss-philadelphia-1841-0056|name_as_printed|Levi Sinsberger|Levi Snowberger|reads Snowberger (cf. Samuel Snowanguard above); still uncertain
+hsss-philadelphia-1841-0055|name_as_printed|Samuel Snowangrand|Samuel Snowanguard|letters read Snowanguard; still uncertain
+hsss-philadelphia-1841-0062|name_as_printed|Erlich|Erleck|reads “Erleck”
+hsss-philadelphia-1841-0062|certainty|certain|uncertain|
+hsss-philadelphia-1842-0011|name_as_printed|Ho. Depau|H. Depau|reads H. Depau
+hsss-philadelphia-1842-0011|certainty|uncertain|certain|
+hsss-philadelphia-1842-0011|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1842-0013|certainty|uncertain|certain|reading clear: M. Rienhard
+hsss-philadelphia-1842-0013|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1842-0022|name_as_printed|I. E. Phillips|I. C. Phillips|middle initial reads C
+hsss-philadelphia-1842-0023|name_as_printed|Moses Arnold|Morris Arnold|reads Morris (cf. Morris Arnold 1840, 1841)
+hsss-philadelphia-1842-0034|name_as_printed|E. May|E. Mark|reads “E. Mark”; still uncertain
+hsss-philadelphia-1842-0035|name_as_printed|A. S. Wolff|A. S. Wolf|written Wolf
+hsss-philadelphia-1843-0007|name_as_printed|Van Biell|Van Biel|written Van Biel
+hsss-philadelphia-1843-0010|name_as_printed|L. I. Levy|L. J. Levy|initial reads J
+hsss-philadelphia-1843-0012|name_as_printed|I L. Nedlenburg|I. L. Hackenburg|reads “I. L. Hackenburg” (cf. I. L. Hackenburg 1841); first letter unclear
+hsss-philadelphia-1843-0013|name_as_printed|Soln Gunst|Soln Gantz|reads Gantz (cf. S Gantz 1841)
+hsss-philadelphia-1843-0018|name_as_printed|Elkin|Ellison|reads “Ellison”
+hsss-philadelphia-1843-0018|certainty|certain|uncertain|
+hsss-philadelphia-1843-0023|name_as_printed|E Rogers|E Roget|reads “E Roget”; still uncertain
+hsss-philadelphia-1843-0029|name_as_printed|I Archbald|I Andrade|reads “I Andrade”; still uncertain
+hsss-philadelphia-1843-0034|name_as_printed|Mrs Shots|Mrs Spots|reads “Spots”; still uncertain
+hsss-philadelphia-1843-0035|certainty|uncertain|certain|reading clear: Depau
+hsss-philadelphia-1843-0035|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1843-0036|name_as_printed|Rosenberger|Rockenberger|reads Rockenberger
+hsss-philadelphia-1843-0044|name_as_printed|M Freidenburg|M Fredenburg|written Fredenburg
+hsss-philadelphia-1844-0002|name_as_printed|Jos. Archbald|Jos. Andrade|reads “Jos. Andrade”; still uncertain
+hsss-philadelphia-1844-0014|name_as_printed|Gantz|Gants|written Gants
+hsss-philadelphia-1844-0027|name_as_printed|Steenbein|Steenlein|reads Steenlein; still uncertain
+hsss-philadelphia-1844-0033|name_as_printed|Roggenburg|Roggenberger|second entry written Roggenberger
+hsss-philadelphia-1844-0034|name_as_printed|Brash|Brach|reads Brach
+hsss-philadelphia-1844-0038|name_as_printed|Anthern|Aschheim|reads “Aschheim”; still uncertain
+hsss-philadelphia-1844-0039|name_as_printed|A L. Hart|A S. Hart|middle initial reads S
+hsss-philadelphia-1844-0041|name_as_printed|D Peters|D Peson|reads “D Peson”
+hsss-philadelphia-1844-0041|certainty|certain|uncertain|
+hsss-philadelphia-1844-0044|name_as_printed|S Solis|P Solis|initial reads P
+hsss-philadelphia-1844-0051|name_as_printed|L. Levine|L. Lavine|written Lavine
+hsss-philadelphia-1844-0054|certainty|uncertain|certain|reading clear: M Depau
+hsss-philadelphia-1844-0054|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1844-0059|name_as_printed|Arnoyth|A Smyth|reads “A Smyth”
+hsss-philadelphia-1844-0066|name_as_printed|H Delyoung|H DeYoung|reads DeYoung (cf. M H DeYoung 1841)
+hsss-philadelphia-1844-0067|name_as_printed|Mrs Abrahams|Mrs Abendaven|reads “Mrs Abendaven”(?), not Abrahams
+hsss-philadelphia-1844-0067|certainty|certain|uncertain|
+hsss-philadelphia-1844-0073|name_as_printed|Mrs I. L. Florance|Mrs J. L. Florance|initial reads J
+hsss-philadelphia-1844-0074|name_as_printed|Abe|Abbe|written Abbe
+hsss-philadelphia-1845-0013|name_as_printed|I Andrale|I Andrade|reads Andrade
+hsss-philadelphia-1845-0013|certainty|uncertain|certain|
+hsss-philadelphia-1845-0013|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1845-0024|name_as_printed|I. L Levy|L. J. Levy|reads L. J. Levy (cf. 1843)
+hsss-philadelphia-1846-0011|name_as_printed|Mr Kep|Mr Kess|reads “Mr Kess”
+hsss-philadelphia-1846-0011|certainty|certain|uncertain|
+hsss-philadelphia-1846-0013|name_as_printed|A C Peixotta|A C Piexotta|written Piexotta
+hsss-philadelphia-1846-0014|name_as_printed|Tattnaly|Saffarly|reads “Saffarly”; still uncertain
+hsss-philadelphia-1846-0020|name_as_printed|Lo. J. Levy|L. J. Levy|reads L. J. Levy
+hsss-philadelphia-1846-0022|name_as_printed|Solomon Reyser|Solomon Keysir|reads Keysir (cf. S. Keyser 1843)
+hsss-philadelphia-1846-0023|name_as_printed|Rosina Florence|Rosina Florance|written Florance
+hsss-philadelphia-1847-1848-0020|name_as_printed|Mr A S. Wolff|Mr A S. Wolf|written Wolf
+hsss-philadelphia-1847-1848-0016|name_as_printed|Mr Mayer Arnold|Mr Myer Arnold|written Myer
+hsss-philadelphia-1847-1848-0023|name_as_printed|Mr Mils|Mr Miles|reads Miles
+hsss-philadelphia-1847-1848-0025|name_as_printed|Mrs Wolff|Mrs Wolf|written Wolf
+hsss-philadelphia-1847-1848-0027|name_as_printed|Mrs Gansle|Mrs Genske|reads “Genske”; still uncertain
+hsss-philadelphia-1847-1848-0038|name_as_printed|Mr E L Levy|Mr E S Levy|middle initial reads S
+hsss-philadelphia-1847-1848-0045|name_as_printed|Mr Andrale|Mr Andrade|reads Andrade
+hsss-philadelphia-1847-1848-0045|certainty|uncertain|certain|
+hsss-philadelphia-1847-1848-0045|note|10 October 1847. Reading tentative; check manuscript.|10 October 1847.|
+hsss-philadelphia-1848-0006|name_as_printed|P Goldsmith|N Goldsmith|initial reads N
+hsss-philadelphia-1848-0012|name_as_printed|Ju Moss|Jno Moss|reads Jno (John) Moss
+hsss-philadelphia-1848-0012|certainty|uncertain|probable|
+hsss-philadelphia-1848-0012|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1848-0023|name_as_printed|Juh Moss|Jul. Moss|reads “Jul. Moss”
+hsss-philadelphia-1848-0023|certainty|uncertain|probable|
+hsss-philadelphia-1848-0023|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1848-0021|name_as_printed|F Freidenberg|F Fredenberg|written Fredenberg
+hsss-philadelphia-1848-0027|name_as_printed|A Sol. Rosewel|Adol. Roland|reads “Adol. Roland”
+hsss-philadelphia-1848-0027|certainty|uncertain|certain|
+hsss-philadelphia-1848-0027|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1848-0030|name_as_printed|Miss E Florance|Miss C Florence|initial reads C; surname written Florence here
+hsss-philadelphia-1848-0034|name_as_printed|Mr Van Biell|Mr Van Biel|written Van Biel
+hsss-philadelphia-1849-0002|name_as_printed|H E Gratz|H Gratz|no middle initial written
+hsss-philadelphia-1849-0012|name_as_printed|Mrs I L Florance|Mrs J L Florance|initial reads J
+hsss-philadelphia-1849-0020|name_as_printed|E Pesoa|C Pesoa|initial reads C
+hsss-philadelphia-1849-0021|name_as_printed|Mr Ising Cohen|Mr Sims Cohen|forename unclear (Sims? Simy?)
+hsss-philadelphia-1849-0021|certainty|certain|uncertain|
+hsss-philadelphia-1849-0022|name_as_printed|Mrs Rosenstiel|Mrs Rosenthal|reads Rosenthal
+hsss-philadelphia-1849-0026|name_as_printed|Mr Reinbach|Mr Reinhardt|reads Reinhardt (cf. M. Rienhard 1842)
+hsss-philadelphia-1849-0026|certainty|certain|uncertain|
+hsss-philadelphia-1849-0027|name_as_printed|Mr Eckstien|Mr Einstien|reads Einstien (cf. Mr Einstine 1847)
+hsss-philadelphia-1849-0028|name_as_printed|Mrs Berg|Mrs Beck|reads Beck
+hsss-philadelphia-1849-0029|name_as_printed|Mr Saalberth|Mr Sulbeck|reads “Sulbeck”; still uncertain
+hsss-philadelphia-1849-0032|name_as_printed|S Vankourfel|S VanRosifel|reads “VanRosifel”; still uncertain
+hsss-philadelphia-1850-0003|name_as_printed|D. L. Solis|D. S. Solis|middle initial reads S
+hsss-philadelphia-1850-0014|name_as_printed|Eckstien|Eckstein|written Eckstein
+hsss-philadelphia-1850-0017|name_as_printed|S Schloss|S Shloss|written Shloss
+hsss-philadelphia-1850-0018|name_as_printed|H W Stern|H W Stein|reads Stein
+hsss-philadelphia-1850-0022|name_as_printed|Mayer Eagle|Myer Egle|written Myer Egle
+hsss-philadelphia-1850-0023|name_as_printed|I Binswanger|I Brunsmayer|reads “Brunsmayer”, not Binswanger
+hsss-philadelphia-1850-0023|certainty|certain|uncertain|
+hsss-philadelphia-1850-0025|name_as_printed|A Kahn|A Khan|written Khan
+hsss-philadelphia-1851-0018|name_as_printed|I Wisler|I Wistler|reads Wistler
+hsss-philadelphia-1852-0007|name_as_printed|Mr L. Hess|Mr L Hecht|reads Hecht
+hsss-philadelphia-1852-0008|name_as_printed|Mr Jos Hyneman|Mr Is. Hyneman|forename reads Is.
+hsss-philadelphia-1852-0010|name_as_printed|Mrs R. Cronidline|Mrs R Cromline|reads Cromline (cf. Mr Cromline 1849)
+hsss-philadelphia-1852-0012|name_as_printed|Mrs M Fucotmen|Mrs M Friedman|reads “Friedman”; still uncertain
+hsss-philadelphia-1852-0013|name_as_printed|Mr Soln Gans|Mr Soln Gantz|written Gantz
+hsss-philadelphia-1852-0015|name_as_printed|Mr Elipoch|Mr Elepech|reads “Elepech”; still uncertain
+hsss-philadelphia-1852-0016|name_as_printed|Mr David Cronlin|Mr David Cromlin|reads Cromlin(e)
+hsss-philadelphia-1852-0018|name_as_printed|Mr Azevedo|Mr Azevdo|written Azevdo
+hsss-philadelphia-1852-0026|name_as_printed|Mr B Bissonnis|Mr B Bearins|reads “Bearins”; still uncertain
+hsss-philadelphia-1852-0029|name_as_printed|M Rassabuck|M Rosenbach|reads “Rosenbach”(?); still uncertain
+hsss-philadelphia-1852-0032|name_as_printed|B Puasnamis|B Paashamer|reads “Paashamer”; still uncertain
+hsss-philadelphia-1852-0036|name_as_printed|I Tesler|J Veiller|reads “J Veiller”
+hsss-philadelphia-1852-0036|certainty|certain|uncertain|
+hsss-philadelphia-1852-0037|note|21 [March, following prior page].|21 March 1852.|
+hsss-philadelphia-1853-1854-0005|name_as_printed|I I Phillips|I J Phillips|reads I J
+hsss-philadelphia-1853-1854-0006|name_as_printed|L. I. Lieberman|L. J. Liberman|reads L. J. Liberman
+hsss-philadelphia-1853-1854-0010|name_as_printed|Mayer Cohen|Mayor Cohen|written Mayor
+hsss-philadelphia-1853-1854-0011|name_as_printed|Mr Shereman|Mr Shoneman|reads Shoneman (cf. Joseph Shoneman)
+hsss-philadelphia-1853-1854-0018|name_as_printed|Mr Eger|M Eager|written “M Eager”
+hsss-philadelphia-1853-1854-0026|name_as_printed|Mr Greenwald|Mr Greenawald|written Greenawald
+hsss-philadelphia-1853-1854-0028|name_as_printed|Mr Reggsberger|Mr Roggenberger|reads Roggenberger (cf. 1844)
+hsss-philadelphia-1853-1854-0030|name_as_printed|Mr Beotyte|Mr Beitzle|reads “Beitzle”; still uncertain
+hsss-philadelphia-1853-1854-0031|note|Cents following the preceding $1 entry; separate anonymous contribution.|The 25 cents is written on Mr Beitzle’s line and “Cash” has no amount of its own; it may belong to Beitzle ($1.25).|
+hsss-philadelphia-1853-1854-0037|name_as_printed|Mr Sieldbach|Mr Sidlebach|reads “Sidlebach”; still uncertain
+hsss-philadelphia-1853-1854-0039|name_as_printed|Attu|Attia|reads “Attia”(?); still uncertain
+hsss-philadelphia-1853-1854-0042|name_as_printed|Mr Binswanger|Mr Brunswanger|written Brunswanger
+hsss-philadelphia-1854-1855-0004|name_as_printed|Mayer Arnold|Myer Arnold|written Myer
+hsss-philadelphia-1854-1855-0013|name_as_printed|Mrs R. Cronetien|Mrs R Cromelin|reads Cromelin (cf. Cromline); still uncertain
+hsss-philadelphia-1854-1855-0019|name_as_printed|Mrs Hershfield|Mrs Hershfeld|written Hershfeld
+hsss-philadelphia-1854-1855-0023|name_as_printed|Miss Efinger|Miss Ellinger|reads Ellinger (cf. Ellinger 1843)
+hsss-philadelphia-1854-1855-0023|certainty|uncertain|probable|
+hsss-philadelphia-1854-1855-0023|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1854-1855-0025|name_as_printed|Mr I Newhouse|Mr J Newhouse|initial reads J
+hsss-philadelphia-1854-1855-0034|name_as_printed|Mr Cromlen|Mr Cromlin|reads Cromlin
+hsss-philadelphia-1854-1855-0040|name_as_printed|Mr I L Moss|Mr J L Moss|initial reads J
+hsss-philadelphia-1854-1855-0042|name_as_printed|Brunette Moses|Brunetta Moses|reads Brunetta(?); still uncertain
+hsss-philadelphia-1854-1855-0042|certainty|certain|uncertain|
+hsss-philadelphia-1855-0008|name_as_printed|Mrs I A Phillips|Mrs J A Phillips|initial reads J
+hsss-philadelphia-1855-0010|name_as_printed|A Golsmit|A Oelsner|reads “A Oelsner”
+hsss-philadelphia-1855-0016|name_as_printed|B Liber|B Lieber|reads Lieber
+hsss-philadelphia-1855-0019|name_as_printed|I Binswanger|I Bingwanger|written Bingwanger
+hsss-philadelphia-1855-0022|name_as_printed|George Isaacs|George Seward|reads “George Seward”(?); still uncertain
+hsss-philadelphia-1855-0023|name_as_printed|I I Phillips|I J Phillips|reads I J
+hsss-philadelphia-1855-0028|name_as_printed|Mrs R Cronetien|Mrs R Cromelien|reads Cromelien
+hsss-philadelphia-1855-0028|certainty|uncertain|certain|
+hsss-philadelphia-1855-0028|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1856-0004|name_as_printed|Meyer Hemberger|Major Hemberger|forename reads Major(?); still uncertain
+hsss-philadelphia-1856-0007|name_as_printed|Mrs I L Florance|Mrs J L Florance|initial reads J
+hsss-philadelphia-1856-0013|name_as_printed|Lavinia Florance|Lucia Florance|forename reads Lucia(?)
+hsss-philadelphia-1856-0013|certainty|certain|uncertain|
+hsss-philadelphia-1856-0017|name_as_printed|L Hecht|L Hekt|written Hekt
+hsss-philadelphia-1856-0022|note||Marked with a cross in the margin.|
+hsss-philadelphia-1856-0026|name_as_printed|Mr E Hart|Mr L Hart|initial reads L
+hsss-philadelphia-1856-0027|name_as_printed|Mrs Liber|Mrs Leiber|reads Leiber
+hsss-philadelphia-1856-0031|name_as_printed|Wolf Genther|Wolf Gentler|reads “Gentler”
+hsss-philadelphia-1857-0001|name_as_printed|Mrs I. A. Phillips|Mrs J. A. Phillips|initial reads J
+hsss-philadelphia-1857-0005|name_as_printed|I Cauffman|I. Cauburn|reads “Cauburn”
+hsss-philadelphia-1857-0005|certainty|certain|uncertain|
+hsss-philadelphia-1857-0006|name_as_printed|S Gans|S Ganz|written Ganz
+hsss-philadelphia-1857-0019|name_as_printed|M Friedman|M Freedman|written Freedman
+hsss-philadelphia-1857-0021|name_as_printed|S Abels|S Abells|written Abells
+hsss-philadelphia-1857-0022|name_as_printed|Lewis Gans|Lewis Ganz|written Ganz
+hsss-philadelphia-1858-0003|name_as_printed|Mrs I L Florance|Mrs J L Florance|initial reads J
+hsss-philadelphia-1858-0004|name_as_printed|Jac Nordlinger|Jac Nerdlinger|written Nerdlinger
+hsss-philadelphia-1858-0005|name_as_printed|Jac Cauffman|Jac Caufman|written Caufman
+hsss-philadelphia-1858-0006|name_as_printed|Fred Wettinger|Fred Nerlinger|reads “Nerlinger”; still uncertain
+hsss-philadelphia-1858-0011|name_as_printed|Washn Cromlen|Washn Cromlein|reads Cromlein
+hsss-philadelphia-1858-0013|name_as_printed|I. I. Levy|J. J. Levy|initials read J. J.
+hsss-philadelphia-1858-0014|name_as_printed|L Leffner|L Lepper|reads “Lepper”; still uncertain
+hsss-philadelphia-1858-0018|name_as_printed|Mr Liber|Mrs Lieber|title reads Mrs; surname Lieber
+hsss-philadelphia-1859-subscriptions-0007|name_as_printed|Mr R Taller|Mr R Teller|reads Teller
+hsss-philadelphia-1859-subscriptions-0007|certainty|uncertain|certain|
+hsss-philadelphia-1859-subscriptions-0007|note|Digit overwritten; $2 read from final figure and subtotal. Reading tentative; check manuscript.|A stray “1” precedes the $2.|
+hsss-philadelphia-1859-subscriptions-0009|name_as_printed|Mr Lewis Liber|Mr Lewis Libser|written “Libser”(?)
+hsss-philadelphia-1859-subscriptions-0013|name_as_printed|Mr Mayer Arnold|Mr Myer Arnold|written Myer
+hsss-philadelphia-1859-subscriptions-0014|name_as_printed|Revd I Fraenkel|Revd I Frankel|written Frankel
+hsss-philadelphia-1859-subscriptions-0016|name_as_printed|Mr Simon Affle|Mr Simon Apple|reads Apple
+hsss-philadelphia-1859-subscriptions-0016|certainty|uncertain|certain|
+hsss-philadelphia-1859-subscriptions-0016|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1859-subscriptions-0021|name_as_printed|Eleonr Samuel|Eleanor Samuel|written Eleanor
+hsss-philadelphia-1859-donations-0001|name_as_printed|Mr B Leiber|Mr B. Lieber|written Lieber
+hsss-philadelphia-1859-donations-0003|name_as_printed|A Gugenheimer|A Guggenheimer|reads Guggenheimer
+hsss-philadelphia-1859-donations-0003|certainty|uncertain|probable|
+hsss-philadelphia-1859-donations-0003|note|Reading tentative; check manuscript.||
+hsss-philadelphia-1859-subscriptions-0030|name_as_printed|Mr A Golsmit|Mr A Oelsner|reads “A Oelsner” (cf. 1855)
+hsss-philadelphia-1859-subscriptions-0032|name_as_printed|Miss Simcha Peixotta|Miss Simcha Piexotta|written Piexotta
+temple-book3-purim-1891-010|name_as_printed|Miss Clara Schoneman|Miss Clara Schoeneman|printed Schoeneman
+temple-book3-anniversary-1891-004|name_as_printed|Miss Hannah Wasserman|Miss Hannah C. Wasserman|printed “Hannah C.”
+temple-book3-graduates-1891-013|section|Bedichiemer medals|Bedichimer medals|printed Bedichimer
+temple-book3-graduates-1891-014|section|Bedichiemer medals|Bedichimer medals|printed Bedichimer
+temple-book5-staff-1902-019|name_as_printed|Joseph Sternberg|Joseph Sternberger|printed Sternberger
+hsss-philadelphia-constitution-signatures-002|note|Initials read as R. C.; verify against signature. Signature block undated; adjacent incorporation endorsements are dated 1858.|Signature block undated; adjacent incorporation endorsements are dated 1858.|initials clear
+hsss-philadelphia-constitution-signatures-005|name_as_printed|Anna Allen|Anne Allen|signed Anne
+hsss-philadelphia-constitution-signatures-011|note|Initial read as R.; verify against signature. Signature block undated; adjacent incorporation endorsements are dated 1858.|Signature block undated; adjacent incorporation endorsements are dated 1858.|initial clear
+hsss-philadelphia-constitution-signatures-012|name_as_printed|Emily Phillips|Miss Emily Phillips|signed with “Miss”
