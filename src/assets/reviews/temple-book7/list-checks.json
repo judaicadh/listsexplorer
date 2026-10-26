@@ -1,0 +1,919 @@
+[
+  {
+    "id": "temple-book7-attendance-1909",
+    "entries": 48,
+    "scans": [
+      5,
+      12,
+      18,
+      23,
+      27
+    ]
+  },
+  {
+    "id": "temple-book7-gifts-1909",
+    "entries": 25,
+    "scans": [
+      5,
+      6,
+      12,
+      13,
+      14,
+      23,
+      25,
+      27,
+      29,
+      30
+    ]
+  },
+  {
+    "id": "temple-book7-staff-changes-1909",
+    "entries": 13,
+    "scans": [
+      6,
+      7,
+      14,
+      15,
+      18,
+      19,
+      20,
+      24
+    ]
+  },
+  {
+    "id": "temple-book7-committees-1909",
+    "entries": 17,
+    "scans": [
+      8,
+      20
+    ]
+  },
+  {
+    "id": "temple-book7-prizes-1909",
+    "entries": 57,
+    "scans": [
+      11
+    ]
+  },
+  {
+    "id": "temple-book7-events-1909",
+    "entries": 6,
+    "scans": [
+      11,
+      73
+    ]
+  },
+  {
+    "id": "temple-book7-apologies-1909",
+    "entries": 3,
+    "scans": [
+      13,
+      27
+    ]
+  },
+  {
+    "id": "temple-book7-prize-pledges-1909",
+    "entries": 2,
+    "scans": [
+      21,
+      29
+    ]
+  },
+  {
+    "id": "temple-book7-prize-rules",
+    "entries": 40,
+    "scans": [
+      32,
+      33,
+      34
+    ]
+  },
+  {
+    "id": "temple-book7-attendance-1910",
+    "entries": 95,
+    "scans": [
+      36,
+      39,
+      42,
+      46,
+      51,
+      55,
+      86,
+      90,
+      95,
+      100
+    ]
+  },
+  {
+    "id": "temple-book7-staff-changes-1910",
+    "entries": 20,
+    "scans": [
+      36,
+      39,
+      43,
+      47,
+      52,
+      56,
+      91,
+      96,
+      101
+    ]
+  },
+  {
+    "id": "temple-book7-committees-1910",
+    "entries": 18,
+    "scans": [
+      36,
+      47,
+      58,
+      59
+    ]
+  },
+  {
+    "id": "temple-book7-gifts-1910",
+    "entries": 21,
+    "scans": [
+      37,
+      40,
+      43,
+      48,
+      49,
+      53,
+      55,
+      87,
+      88
+    ]
+  },
+  {
+    "id": "temple-book7-apologies-1910",
+    "entries": 5,
+    "scans": [
+      42,
+      86
+    ]
+  },
+  {
+    "id": "temple-book7-events-1910",
+    "entries": 29,
+    "scans": [
+      43,
+      48,
+      57,
+      58,
+      62,
+      69,
+      76,
+      105
+    ]
+  },
+  {
+    "id": "temple-book7-officers-1910",
+    "entries": 5,
+    "scans": [
+      51
+    ]
+  },
+  {
+    "id": "temple-book7-graduation-permissions-1910",
+    "entries": 1,
+    "scans": [
+      52
+    ]
+  },
+  {
+    "id": "temple-book7-prizes-1910",
+    "entries": 58,
+    "scans": [
+      62,
+      80
+    ]
+  },
+  {
+    "id": "temple-book7-graduates-1910",
+    "entries": 18,
+    "scans": [
+      62
+    ]
+  },
+  {
+    "id": "temple-book7-annual-board-1910",
+    "entries": 34,
+    "scans": [
+      68,
+      78
+    ]
+  },
+  {
+    "id": "temple-book7-superintendents-1910",
+    "entries": 12,
+    "scans": [
+      74,
+      75
+    ]
+  },
+  {
+    "id": "temple-book7-teachers-1910",
+    "entries": 111,
+    "scans": [
+      81,
+      82,
+      83
+    ]
+  },
+  {
+    "id": "temple-book7-annual-donations-1910",
+    "entries": 40,
+    "scans": [
+      84
+    ]
+  },
+  {
+    "id": "temple-book7-endowments",
+    "entries": 58,
+    "scans": [
+      85,
+      148,
+      230,
+      388,
+      389
+    ]
+  },
+  {
+    "id": "temple-book7-board-elections-1910",
+    "entries": 7,
+    "scans": [
+      90,
+      97,
+      102
+    ]
+  },
+  {
+    "id": "temple-book7-attendance-1911",
+    "entries": 92,
+    "scans": [
+      104,
+      108,
+      114,
+      119,
+      150,
+      157,
+      164,
+      169,
+      175,
+      179
+    ]
+  },
+  {
+    "id": "temple-book7-apologies-1911",
+    "entries": 8,
+    "scans": [
+      104,
+      108,
+      114
+    ]
+  },
+  {
+    "id": "temple-book7-board-elections-1911",
+    "entries": 11,
+    "scans": [
+      104,
+      111,
+      114,
+      130
+    ]
+  },
+  {
+    "id": "temple-book7-gifts-1911",
+    "entries": 35,
+    "scans": [
+      104,
+      109,
+      117,
+      150,
+      153,
+      157,
+      164,
+      165,
+      167,
+      169,
+      176,
+      180,
+      181
+    ]
+  },
+  {
+    "id": "temple-book7-staff-changes-1911",
+    "entries": 15,
+    "scans": [
+      105,
+      116,
+      153,
+      158,
+      165,
+      166,
+      170,
+      171,
+      176,
+      180,
+      181
+    ]
+  },
+  {
+    "id": "temple-book7-committees-1911",
+    "entries": 33,
+    "scans": [
+      109,
+      111,
+      115,
+      120,
+      121,
+      154,
+      170,
+      171,
+      177,
+      188
+    ]
+  },
+  {
+    "id": "temple-book7-acting-officers-1911",
+    "entries": 1,
+    "scans": [
+      113
+    ]
+  },
+  {
+    "id": "temple-book7-events-1911",
+    "entries": 34,
+    "scans": [
+      117,
+      136,
+      157,
+      163,
+      164,
+      180
+    ]
+  },
+  {
+    "id": "temple-book7-graduation-permissions-1911",
+    "entries": 1,
+    "scans": [
+      120
+    ]
+  },
+  {
+    "id": "temple-book7-annual-board-1911",
+    "entries": 34,
+    "scans": [
+      129,
+      138
+    ]
+  },
+  {
+    "id": "temple-book7-superintendents-1911",
+    "entries": 13,
+    "scans": [
+      134,
+      135
+    ]
+  },
+  {
+    "id": "temple-book7-prize-pledges-1911",
+    "entries": 7,
+    "scans": [
+      135
+    ]
+  },
+  {
+    "id": "temple-book7-prizes-1911",
+    "entries": 63,
+    "scans": [
+      138,
+      139,
+      140,
+      163
+    ]
+  },
+  {
+    "id": "temple-book7-teachers-1911",
+    "entries": 118,
+    "scans": [
+      140,
+      141,
+      142,
+      143,
+      144,
+      145
+    ]
+  },
+  {
+    "id": "temple-book7-graduates-1911",
+    "entries": 33,
+    "scans": [
+      145
+    ]
+  },
+  {
+    "id": "temple-book7-annual-donations-1911",
+    "entries": 53,
+    "scans": [
+      146,
+      147
+    ]
+  },
+  {
+    "id": "temple-book7-officer-elections-1911",
+    "entries": 5,
+    "scans": [
+      151
+    ]
+  },
+  {
+    "id": "temple-book7-attendance-1912",
+    "entries": 113,
+    "scans": [
+      184,
+      189,
+      192,
+      197,
+      203,
+      232,
+      238,
+      244,
+      248,
+      251,
+      255,
+      260
+    ]
+  },
+  {
+    "id": "temple-book7-gifts-1912",
+    "entries": 42,
+    "scans": [
+      184,
+      191,
+      192,
+      197,
+      203,
+      204,
+      205,
+      232,
+      236,
+      238,
+      239,
+      244,
+      246,
+      248,
+      249,
+      251
+    ]
+  },
+  {
+    "id": "temple-book7-staff-changes-1912",
+    "entries": 16,
+    "scans": [
+      194,
+      203,
+      204,
+      234,
+      235,
+      239,
+      245,
+      248,
+      249,
+      252,
+      256,
+      257
+    ]
+  },
+  {
+    "id": "temple-book7-events-1912",
+    "entries": 35,
+    "scans": [
+      198,
+      203,
+      211,
+      217,
+      242,
+      251,
+      255,
+      260
+    ]
+  },
+  {
+    "id": "temple-book7-prize-pledges-1912",
+    "entries": 2,
+    "scans": [
+      199
+    ]
+  },
+  {
+    "id": "temple-book7-committees-1912",
+    "entries": 25,
+    "scans": [
+      200,
+      250
+    ]
+  },
+  {
+    "id": "temple-book7-hes-members-1912",
+    "entries": 29,
+    "scans": [
+      209
+    ]
+  },
+  {
+    "id": "temple-book7-annual-board-1912",
+    "entries": 32,
+    "scans": [
+      210
+    ]
+  },
+  {
+    "id": "temple-book7-board-elections-1912",
+    "entries": 8,
+    "scans": [
+      211
+    ]
+  },
+  {
+    "id": "temple-book7-superintendents-1912",
+    "entries": 15,
+    "scans": [
+      215,
+      216
+    ]
+  },
+  {
+    "id": "temple-book7-prizes-1912",
+    "entries": 68,
+    "scans": [
+      219,
+      220,
+      221,
+      243
+    ]
+  },
+  {
+    "id": "temple-book7-teachers-1912",
+    "entries": 137,
+    "scans": [
+      222,
+      223,
+      224,
+      225,
+      226,
+      227
+    ]
+  },
+  {
+    "id": "temple-book7-annual-donations-1912",
+    "entries": 52,
+    "scans": [
+      228,
+      229
+    ]
+  },
+  {
+    "id": "temple-book7-officer-elections-1912",
+    "entries": 5,
+    "scans": [
+      233
+    ]
+  },
+  {
+    "id": "temple-book7-graduates-1912",
+    "entries": 53,
+    "scans": [
+      243
+    ]
+  },
+  {
+    "id": "temple-book7-attendance-1913",
+    "entries": 177,
+    "scans": [
+      262,
+      264,
+      269,
+      272,
+      273,
+      275,
+      279,
+      281,
+      307,
+      311,
+      315,
+      321,
+      326,
+      329,
+      331,
+      335
+    ]
+  },
+  {
+    "id": "temple-book7-committees-1913",
+    "entries": 59,
+    "scans": [
+      262,
+      263,
+      267,
+      277,
+      282,
+      313,
+      327,
+      333,
+      334
+    ]
+  },
+  {
+    "id": "temple-book7-gifts-1913",
+    "entries": 45,
+    "scans": [
+      264,
+      266,
+      269,
+      273,
+      308,
+      315,
+      317,
+      321,
+      322,
+      326,
+      328,
+      330,
+      338
+    ]
+  },
+  {
+    "id": "temple-book7-staff-changes-1913",
+    "entries": 24,
+    "scans": [
+      265,
+      276,
+      277,
+      311,
+      312,
+      323,
+      324,
+      327,
+      330,
+      332,
+      333,
+      337,
+      338
+    ]
+  },
+  {
+    "id": "temple-book7-events-1913",
+    "entries": 40,
+    "scans": [
+      269,
+      272,
+      279,
+      289,
+      295,
+      319,
+      328,
+      329,
+      331,
+      336,
+      341
+    ]
+  },
+  {
+    "id": "temple-book7-annual-board-1913",
+    "entries": 32,
+    "scans": [
+      288
+    ]
+  },
+  {
+    "id": "temple-book7-board-elections-1913",
+    "entries": 9,
+    "scans": [
+      289,
+      313
+    ]
+  },
+  {
+    "id": "temple-book7-superintendents-1913",
+    "entries": 13,
+    "scans": [
+      294
+    ]
+  },
+  {
+    "id": "temple-book7-prize-pledges-1913",
+    "entries": 3,
+    "scans": [
+      295
+    ]
+  },
+  {
+    "id": "temple-book7-auditors-1913",
+    "entries": 2,
+    "scans": [
+      298
+    ]
+  },
+  {
+    "id": "temple-book7-prizes-1913",
+    "entries": 74,
+    "scans": [
+      299,
+      300,
+      301,
+      319
+    ]
+  },
+  {
+    "id": "temple-book7-teachers-1913",
+    "entries": 127,
+    "scans": [
+      302,
+      303,
+      304,
+      305
+    ]
+  },
+  {
+    "id": "temple-book7-annual-donations-1913",
+    "entries": 46,
+    "scans": [
+      305,
+      306
+    ]
+  },
+  {
+    "id": "temple-book7-officer-elections-1913",
+    "entries": 5,
+    "scans": [
+      307
+    ]
+  },
+  {
+    "id": "temple-book7-graduates-1913",
+    "entries": 52,
+    "scans": [
+      319,
+      367,
+      368
+    ]
+  },
+  {
+    "id": "temple-book7-attendance-1914",
+    "entries": 128,
+    "scans": [
+      340,
+      343,
+      345,
+      347,
+      351,
+      391,
+      395,
+      399,
+      404,
+      408,
+      413,
+      417
+    ]
+  },
+  {
+    "id": "temple-book7-gifts-1914",
+    "entries": 49,
+    "scans": [
+      340,
+      342,
+      344,
+      345,
+      347,
+      349,
+      353,
+      399,
+      400,
+      402,
+      405,
+      406,
+      410,
+      415,
+      417,
+      418
+    ]
+  },
+  {
+    "id": "temple-book7-staff-changes-1914",
+    "entries": 23,
+    "scans": [
+      341,
+      349,
+      354,
+      365,
+      366,
+      392,
+      395,
+      397,
+      401,
+      402,
+      404,
+      405,
+      411,
+      413,
+      418
+    ]
+  },
+  {
+    "id": "temple-book7-events-1914",
+    "entries": 30,
+    "scans": [
+      343,
+      345,
+      347,
+      352,
+      363,
+      372,
+      408,
+      409,
+      419
+    ]
+  },
+  {
+    "id": "temple-book7-committees-1914",
+    "entries": 53,
+    "scans": [
+      348,
+      374,
+      394,
+      401,
+      409,
+      411,
+      419
+    ]
+  },
+  {
+    "id": "temple-book7-annual-board-1914",
+    "entries": 32,
+    "scans": [
+      362
+    ]
+  },
+  {
+    "id": "temple-book7-board-elections-1914",
+    "entries": 8,
+    "scans": [
+      363
+    ]
+  },
+  {
+    "id": "temple-book7-superintendents-1914",
+    "entries": 14,
+    "scans": [
+      369,
+      370
+    ]
+  },
+  {
+    "id": "temple-book7-prize-pledges-1914",
+    "entries": 7,
+    "scans": [
+      371,
+      395
+    ]
+  },
+  {
+    "id": "temple-book7-prizes-1914",
+    "entries": 80,
+    "scans": [
+      375,
+      376,
+      377
+    ]
+  },
+  {
+    "id": "temple-book7-teachers-1914",
+    "entries": 214,
+    "scans": [
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385
+    ]
+  },
+  {
+    "id": "temple-book7-annual-donations-1914",
+    "entries": 63,
+    "scans": [
+      386,
+      387
+    ]
+  },
+  {
+    "id": "temple-book7-officer-elections-1914",
+    "entries": 5,
+    "scans": [
+      391
+    ]
+  }
+]
