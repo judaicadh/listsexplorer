@@ -18,6 +18,7 @@
     <a class="brand" href="/">
       <span class="brand-name">{{ site.title }}</span>
       <span class="brand-tag">{{ site.tagline }}</span>
+      <span class="brand-tag brand-by">by {{ site.creator }}</span>
     </a>
     <nav aria-label="Main" class="main-nav">
       {%- set nav = [["/search/","Search"],["/lists/","Lists"],["/sources/","Sources"],["/people/","People"],["/organizations/","Organizations"],["/places/","Places"],["/map/","Map"],["/agents/","Agents"],["/contribute/","Add a list"],["/about/","About"]] -%}
@@ -32,7 +33,7 @@
 </main>
 <footer class="site-footer">
   <div class="wrap footer-row">
-    <span>{{ site.credits }} · {{ site.license }}</span>
+    <span>Created by {{ site.creator }} · {{ site.license }}</span>
     <span class="footer-links"><a href="/about/">About</a><a href="/data/">Download data</a>{% if site.repoUrl %}<a href="{{ site.repoUrl }}">GitHub</a>{% endif %}</span>
   </div>
 </footer>

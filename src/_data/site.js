@@ -3,9 +3,10 @@ module.exports = {
   title: "Lists Explorer",
   tagline: "Subscribers & donors in printed sources",
   description: "A database of historical subscription and donation lists: who gave, where they lived, and how much.",
-  credits: "[Project name / institution]",
+  creator: "Dr. Laura Newman Eckstein",
+  credits: "created by Dr. Laura Newman Eckstein",
   license: "Data licence: [e.g. CC BY 4.0]",
-  repoUrl: "", // e.g. https://github.com/your-name/lists-explorer — shows an “Edit on GitHub” link
+  repoUrl: "https://github.com/judaicadh/listsexplorer", // e.g. https://github.com/your-name/lists-explorer — shows an “Edit on GitHub” link
   pathPrefix: process.env.PATH_PREFIX || "/",
   builtAt: new Date().toISOString().slice(0, 10),
 };
