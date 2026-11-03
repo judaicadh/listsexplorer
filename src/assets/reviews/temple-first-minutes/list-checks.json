@@ -1,0 +1,117 @@
+[
+  {
+    "id": "temple-first-inkind",
+    "entries": 12,
+    "scans": [
+      7
+    ]
+  },
+  {
+    "id": "temple-first-subscriptions-1838",
+    "entries": 10,
+    "scans": [
+      8
+    ]
+  },
+  {
+    "id": "temple-first-subscriptions-1839",
+    "entries": 21,
+    "scans": [
+      9,
+      10
+    ]
+  },
+  {
+    "id": "temple-first-other-income",
+    "entries": 18,
+    "scans": [
+      10,
+      13,
+      14,
+      17,
+      22,
+      23,
+      26
+    ]
+  },
+  {
+    "id": "temple-first-examination-1840",
+    "entries": 48,
+    "scans": [
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "id": "temple-first-gifts-1840-1841",
+    "entries": 7,
+    "scans": [
+      13,
+      14,
+      17
+    ]
+  },
+  {
+    "id": "temple-first-examination-1841",
+    "entries": 69,
+    "scans": [
+      15,
+      16,
+      17,
+      19,
+      20
+    ]
+  },
+  {
+    "id": "temple-first-unpaid-1841",
+    "entries": 3,
+    "scans": [
+      15,
+      16
+    ]
+  },
+  {
+    "id": "temple-first-examination-1842",
+    "entries": 45,
+    "scans": [
+      18,
+      21,
+      22
+    ]
+  },
+  {
+    "id": "temple-first-gifts-1842",
+    "entries": 1,
+    "scans": [
+      22
+    ]
+  },
+  {
+    "id": "temple-first-examination-1843",
+    "entries": 40,
+    "scans": [
+      24,
+      25,
+      26
+    ]
+  },
+  {
+    "id": "temple-first-gifts-1843",
+    "entries": 6,
+    "scans": [
+      26
+    ]
+  },
+  {
+    "id": "temple-first-loans",
+    "entries": 6,
+    "scans": [
+      28,
+      31,
+      32,
+      34,
+      36
+    ]
+  }
+]
