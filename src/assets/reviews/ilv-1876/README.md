@@ -1,0 +1,3 @@
+AI-assisted draft, not independently proofread. All seven archive scans visually reviewed: only leaves n4 and n5 contain the original circular. This is an invitation and publication catalogue, not a subscriber roster or a record of payments. Titles and original author forms retained; no personal identity matches inferred. Advertised prices and membership rates are descriptive notes, not contributions. A damaged signature is read with the help of the intact reference to Dr. Rahmer in the body.
+
+Seven scans reviewed; four lists, seventeen entries, two source images. Original item dated March 1, 1876.
