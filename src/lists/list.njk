@@ -99,8 +99,14 @@ eleventyComputed:
       </figure>
       {% endif %}
       <div class="split-main">
+        {% if list.sections.length > 1 and list.entries.length > 1000 %}
+        <nav aria-label="Transcription sections" class="panel">
+          <p class="h-small">Jump to a section</p>
+          <ul class="inline-list">{% for s in list.sections %}{% if s.title %}<li><a href="#section-{{ loop.index }}">{{ s.title }}</a></li>{% endif %}{% endfor %}</ul>
+        </nav>
+        {% endif %}
         {% for s in list.sections %}
-        <div class="tx-section">
+        <div class="tx-section" id="section-{{ loop.index }}">
           {% if s.title %}<h3 class="tx-head">{{ s.title }}{% if s.totals.length %} <span class="muted">· {{ totalsLine(s.totals) }}</span>{% endif %}</h3>{% endif %}
           <div class="table-box">
             <table class="tx">
