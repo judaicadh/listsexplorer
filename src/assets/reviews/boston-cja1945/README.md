@@ -6,4 +6,6 @@ https://www.bjpa.org/content/upload/bjpa/fift/FIFTY%20YEARS%20OF%20JEWISH%20PHIL
 
 Amounts in anonymous groups are per contribution, with printed count in quantity. Fund principal, estate income and campaign pledges are distinct. No complete or verified aggregate total is asserted.
 
-Geographic and alphabetical subdivisions were consolidated into one honor roll and one pledge directory. All 39,874 entry identifiers are preserved. Former list pages redirect to their complete list.
+Geographic and alphabetical subdivisions were consolidated into one honor roll and one pledge directory. All 39,875 entry identifiers are preserved. Former list pages redirect to their complete list.
+
+Charter update: all 490 printed amounts checked against scans; seven cross-references have no printed figure. Restored W I, $2.00. Names remain OCR drafts.

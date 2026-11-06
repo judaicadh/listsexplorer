@@ -81,12 +81,14 @@
   },
   {
     "id": "boston-cja1945-charter",
-    "entries": 496,
+    "entries": 497,
     "pdf_scans": [
       22,
       23
     ],
-    "uncertain": 257
+    "uncertain": 0,
+    "printed_amounts_checked": 490,
+    "unpriced_cross_references": 7
   },
   {
     "id": "boston-cja1945-honor-roll",
