@@ -1,0 +1,263 @@
+{
+  "scope": "31 selected California newspaper lists plus one Magnes passenger roster; other OCR search leads remain unreviewed. Hotels and boarding houses are a separate local CSV project.",
+  "new_lists": 32,
+  "new_entries": 593,
+  "lists": [
+    {
+      "id": "arabia-cairo-passengers-1914-01-13",
+      "title": "P.S. Arabia: passengers leaving Cairo, 13 January 1914",
+      "entries": 76,
+      "date": "1914-01-13",
+      "status": "full transcription — checked against image; independent proofreading pending",
+      "citation": "List of Passengers by the P.S. “Arabia,” leaving Cairo January 13th 1914; Magnes Museum Flickr photo 3724206825"
+    },
+    {
+      "id": "hebrew-newspaper-agencies-1864-12-23",
+      "title": "The Hebrew: geographically arranged newspaper agencies (1864-12-23)",
+      "entries": 7,
+      "date": "1864-12-23",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Hebrew, 1864-12-23; casfema_000237_access.pdf; PDF scan 4, approximate column 1"
+    },
+    {
+      "id": "gleaner-eastern-newspaper-agents-1857-01-30",
+      "title": "The Gleaner: geographically arranged newspaper agents (1857-01-30)",
+      "entries": 15,
+      "date": "1857-01-30",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1857-01-30; casfema_000003_access.pdf; PDF scan 4, approximate column 4"
+    },
+    {
+      "id": "gleaner-newspaper-payments-1857-07-03",
+      "title": "The Gleaner: acknowledgments of payments received (1857-07-03)",
+      "entries": 8,
+      "date": "1857-07-03",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1857-07-03; casfema_000021_access.pdf; PDF scan 4, approximate column 1"
+    },
+    {
+      "id": "gleaner-newspaper-supporters-1857-06-05",
+      "title": "The Gleaner: named supporters thanked for efforts on its behalf (1857-06-05)",
+      "entries": 7,
+      "date": "1857-06-05",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1857-06-05; casfema_000017_access.pdf; PDF scan 4, approximate column 4"
+    },
+    {
+      "id": "voice-israel-kesher-shel-barzel-directory-1870-10-07",
+      "title": "Kesher Shel Barzel: grand and lodge officers (1870-10-07)",
+      "entries": 67,
+      "date": "1870-10-07",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Voice of Israel, 1870-10-07; casfema_000161_access.pdf; PDF scan 8, approximate column 2"
+    },
+    {
+      "id": "voice-israel-bnai-brith-directory-1870-10-14",
+      "title": "B’nai B’rith District Grand Lodge No. 4 and subordinate lodges (1870-10-14)",
+      "entries": 21,
+      "date": "1870-10-14",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Voice of Israel, 1870-10-14; casfema_000162_access.pdf; PDF scan 7, approximate column 2"
+    },
+    {
+      "id": "voice-israel-knights-pythias-directory-1870-10-07",
+      "title": "Knights of Pythias: grand officers and lodge directory (1870-10-07)",
+      "entries": 63,
+      "date": "1870-10-07",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Voice of Israel, 1870-10-07; casfema_000161_access.pdf; PDF scan 8, approximate column 4"
+    },
+    {
+      "id": "bnai-brith-orphan-asylum-incorporators-1870-11-11",
+      "title": "B’nai B’rith Orphan Asylum: incorporators (1870-11-11)",
+      "entries": 23,
+      "date": "1870-11-11",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Voice of Israel, 1870-11-11; casfema_000163_access.pdf; PDF scan 5, approximate column 4"
+    },
+    {
+      "id": "american-roumanian-society-trustees-1870-12-30",
+      "title": "American Roumanian Society: geographically arranged trustees (1870-12-30)",
+      "entries": 23,
+      "date": "1870-12-30",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Voice of Israel, 1870-12-30; casfema_000165_access.pdf; PDF scan 2, approximate column 1"
+    },
+    {
+      "id": "bnai-brith-library-officers-1871-01-13",
+      "title": "B’nai B’rith Library and Literary Circle: elected officers and directors (1871-01-13)",
+      "entries": 11,
+      "date": "1871-01-13",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Voice of Israel, 1871-01-13; casfema_000166_access.pdf; PDF scan 1, approximate column 3"
+    },
+    {
+      "id": "hebrew-ladies-sewing-society-officers-1871-01-13",
+      "title": "Hebrew Ladies’ Sewing Society: officers and distribution committee (1871-01-13)",
+      "entries": 15,
+      "date": "1871-01-13",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Voice of Israel, 1871-01-13; casfema_000166_access.pdf; PDF scan 1, approximate column 4"
+    },
+    {
+      "id": "california-jewish-youth-officers-1871-02-10",
+      "title": "California Jewish Youth: founding officers and trustees (1871-02-10)",
+      "entries": 7,
+      "date": "1871-02-10",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Voice of Israel, 1871-02-10; casfema_000168_access.pdf; PDF scan 5, approximate column 2"
+    },
+    {
+      "id": "bnai-brith-picnic-committee-1871-05-05",
+      "title": "Picnic notice: ticket and arrangements committee (1871-05-05)",
+      "entries": 9,
+      "date": "1871-05-05",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Voice of Israel, 1871-05-05; casfema_000174_access.pdf; PDF scan 7, approximate column 1"
+    },
+    {
+      "id": "eureka-social-club-officers-1871-06-30",
+      "title": "Eureka Social Club: officers, arrangements committee and trustees (1871-06-30)",
+      "entries": 12,
+      "date": "1871-06-30",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Voice of Israel, 1871-06-30; casfema_000178_access.pdf; PDF scan 1, approximate column 1"
+    },
+    {
+      "id": "bnai-brith-lodge-elections-1871-06-30",
+      "title": "B’nai B’rith lodge elections: elected officers (1871-06-30)",
+      "entries": 32,
+      "date": "1871-06-30",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Voice of Israel, 1871-06-30; casfema_000178_access.pdf; PDF scan 6, approximate column 1"
+    },
+    {
+      "id": "ophir-lodge-fifth-term-officers-1857-01-30",
+      "title": "Ophir Lodge No. 21: fifth-term officers and trustees (1857-01-30)",
+      "entries": 6,
+      "date": "1857-01-30",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1857-01-30; casfema_000003_access.pdf; PDF scan 4, approximate column 4"
+    },
+    {
+      "id": "shasta-hebrew-indigent-society-officers-1857-03-13",
+      "title": "Hebrew Indigent Sick and Burial Society: elected officers and trustees (1857-03-13)",
+      "entries": 7,
+      "date": "1857-03-13",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1857-03-13; casfema_000009_access.pdf; PDF scan 3, approximate column 1"
+    },
+    {
+      "id": "gleaner-melbourne-synagogue-contributors-1858-02-19",
+      "title": "Melbourne synagogue building: named contributors and amounts (1858-02-19)",
+      "entries": 27,
+      "date": "1858-02-19",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1858-02-19; casfema_000052_access.pdf; PDF scan 5, approximate column 1"
+    },
+    {
+      "id": "new-orleans-jewish-home-selected-donors-1858-06-25",
+      "title": "Jewish home: selected donors giving one hundred dollars (1858-06-25)",
+      "entries": 7,
+      "date": "1858-06-25",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1858-06-25; casfema_000070_access.pdf; PDF scan 8, approximate column 3"
+    },
+    {
+      "id": "moroccan-refugees-british-donations-1860-01-20",
+      "title": "Relief for Moroccan refugees: British donations received (1860-01-20)",
+      "entries": 5,
+      "date": "1860-01-20",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1860-01-20; casfema_000139_access.pdf; PDF scan 5, approximate column 3"
+    },
+    {
+      "id": "gleaner-morocco-fund-donations-1860-02-24",
+      "title": "Morocco Fund: donations from individuals, congregations and societies (1860-02-24)",
+      "entries": 34,
+      "date": "1860-02-24",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1860-02-24; casfema_000140_access.pdf; PDF scan 4, approximate column 3"
+    },
+    {
+      "id": "hephtsi-bah-april-may-donations-1861-05-24",
+      "title": "Donations to Hephzibah during April and May (1861-05-24)",
+      "entries": 2,
+      "date": "1861-05-24",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1861-05-24; casfema_000193_access.pdf; PDF scan 4, approximate column 4"
+    },
+    {
+      "id": "hephtsi-bah-holyday-donations-1861-09-25",
+      "title": "Hephzibah: donations received during the holy days (1861-09-25)",
+      "entries": 7,
+      "date": "1861-09-25",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1861-09-25; casfema_000210_access.pdf; PDF scan 7, approximate column 1"
+    },
+    {
+      "id": "shearith-israel-officers-1860-10-19",
+      "title": "Congregation Shearith Israel: officers and trustees (1860-10-19)",
+      "entries": 19,
+      "date": "1860-10-19",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1860-10-19; casfema_000154_access.pdf; PDF scan 5, approximate column 3"
+    },
+    {
+      "id": "eureka-social-club-officers-1864-12-23",
+      "title": "Eureka Social Club: elected officers and committee (1864-12-23)",
+      "entries": 9,
+      "date": "1864-12-23",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Hebrew, 1864-12-23; casfema_000237_access.pdf; PDF scan 4, approximate column 2"
+    },
+    {
+      "id": "chebra-achim-rachmonim-committee-1865-08-18",
+      "title": "Chebra Achim Rachmonim: committee and ticket sellers (1865-08-18)",
+      "entries": 7,
+      "date": "1865-08-18",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Hebrew, 1865-08-18; casfema_000269_access.pdf; PDF scan 5, approximate column 4"
+    },
+    {
+      "id": "hebrew-free-school-directors-1865-07-28",
+      "title": "Hebrew Free School: school directors and organizing committee (1865-07-28)",
+      "entries": 13,
+      "date": "1865-07-28",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Hebrew, 1865-07-28; casfema_000266_access.pdf; PDF scan 4, approximate column 4"
+    },
+    {
+      "id": "jews-free-school-london-benefactors-1865-10-27",
+      "title": "British Jewish benefactors: names and donation amounts (1865-10-27)",
+      "entries": 16,
+      "date": "1865-10-27",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Hebrew, 1865-10-27; casfema_000278_access.pdf; PDF scan 2, approximate column 2"
+    },
+    {
+      "id": "melbourne-hebrew-ladies-benevolent-officers-1868-10-16",
+      "title": "Benevolent society: women’s committee and elected officers (1868-10-16)",
+      "entries": 15,
+      "date": "1868-10-16",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Hebrew, 1868-10-16; casfema_000346_access.pdf; PDF scan 2, approximate column 2"
+    },
+    {
+      "id": "ophir-lodge-installed-officers-1865-07-07",
+      "title": "Ophir Lodge No. 21: installed officers and trustees (1865-07-07)",
+      "entries": 11,
+      "date": "1865-07-07",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Hebrew, 1865-07-07; casfema_000263_access.pdf; PDF scan 4, approximate column 2"
+    },
+    {
+      "id": "gleaner-newspaper-repositories-1857-07-03",
+      "title": "The Gleaner: local repositories and country outlets (1857-07-03)",
+      "entries": 12,
+      "date": "1857-07-03",
+      "status": "draft transcription — independent proofreading pending",
+      "citation": "The Weekly Gleaner, 1857-07-03; casfema_000021_access.pdf; PDF scan 4, approximate column 1"
+    }
+  ]
+}
