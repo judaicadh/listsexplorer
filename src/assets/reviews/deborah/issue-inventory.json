@@ -1,0 +1,602 @@
+[
+  {
+    "file": "Jg. 29 Nr. 2 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 172406,
+    "review_status": "initial scan screening and targeted transcription"
+  },
+  {
+    "file": "Jg. 29 Nr. 28 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 175742,
+    "review_status": "initial scan screening and targeted transcription"
+  },
+  {
+    "file": "Jg. 29 Nr. 29 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 165555,
+    "review_status": "initial scan screening and targeted transcription"
+  },
+  {
+    "file": "Jg. 29 Nr. 30 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 167960,
+    "review_status": "initial scan screening and targeted transcription"
+  },
+  {
+    "file": "Jg. 29 Nr. 31 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 160827,
+    "review_status": "overview only; transcription pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 32 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 169507,
+    "review_status": "overview only; transcription pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 33 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 168250,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 34 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 155526,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 35 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 149907,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 36 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 161364,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 37 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 162604,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 38 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 157619,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 39 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 164626,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 40 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 158260,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 41 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 150902,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 42 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 177768,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 43 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 152715,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 44 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 158264,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 45 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 150028,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 46 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 159187,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 47 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 166010,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 48 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 165074,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 49 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 160254,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 50 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 152828,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 51 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 153727,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 29 Nr. 52 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 167734,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 01 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 170626,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 02 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 145009,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 04 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 146872,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 05 (1886)_text.pdf",
+    "pages": 6,
+    "chars": 116927,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 06 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 163219,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 07 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 159278,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 08 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 146757,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 09 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 134684,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 10 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 142470,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 13 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 153863,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 14 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 144418,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 15 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 148695,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 16 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 164349,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 17 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 160614,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 18 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 153051,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 19 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 142611,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 20 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 162564,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 21 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 152927,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 22 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 149123,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 23 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 160998,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 24 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 152646,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 25 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 157793,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 26 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 154803,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 30 Nr. 27 (1886)_text.pdf",
+    "pages": 8,
+    "chars": 157164,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 24 (1887)_text.pdf",
+    "pages": 8,
+    "chars": 149592,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 30 (1887)_text.pdf",
+    "pages": 7,
+    "chars": 128824,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 31 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 141536,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 33 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 148975,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 34 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 146884,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 35 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 153998,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 36 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 146397,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 37 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 146161,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 38 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 152432,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 39 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 145242,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 40 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 138293,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 41 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 151349,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 42 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 154971,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 43 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 153718,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 44 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 153270,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 46 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 151562,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 47 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 147324,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 48 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 137745,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 49 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 143676,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 31 Nr. 50 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 148297,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 32 Nr. 02 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 157772,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 32 Nr. 06 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 154793,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 32 Nr. 08 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 156220,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 32 Nr. 09 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 160537,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 32 Nr. 10 (1888)_text.pdf",
+    "pages": 8,
+    "chars": 156088,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "Jg. 40 Nr. 01 (1894)_text.pdf",
+    "pages": 44,
+    "chars": 642479,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 1 Nr. 01 (1901)_text.pdf",
+    "pages": 38,
+    "chars": 106642,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 1 Nr. 02 (1901)_text.pdf",
+    "pages": 32,
+    "chars": 97236,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 1 Nr. 03 (1901)_text.pdf",
+    "pages": 32,
+    "chars": 97287,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 1 Nr. 04 (1901)_text.pdf",
+    "pages": 32,
+    "chars": 102195,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 1 Nr. 05 (1901)_text.pdf",
+    "pages": 32,
+    "chars": 103306,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 1 Nr. 06 (1901)_text.pdf",
+    "pages": 32,
+    "chars": 101733,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 1 Nr. 07 (1901)_text.pdf",
+    "pages": 32,
+    "chars": 102746,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 1 Nr. 08 (1901)_text.pdf",
+    "pages": 32,
+    "chars": 103521,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 1 Nr. 09 (1901)_text.pdf",
+    "pages": 32,
+    "chars": 103291,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 1 Nr. 10 (1901)_text.pdf",
+    "pages": 32,
+    "chars": 101348,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 1 Nr. 11 (1901)_text.pdf",
+    "pages": 32,
+    "chars": 97315,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 1 Nr. 12 (1901)_text.pdf",
+    "pages": 32,
+    "chars": 105323,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 2 Nr. 01 (1902)_text.pdf",
+    "pages": 36,
+    "chars": 100775,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 2 Nr. 02 (1902)_text.pdf",
+    "pages": 32,
+    "chars": 100783,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 2 Nr. 03 (1902)_text.pdf",
+    "pages": 30,
+    "chars": 86881,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 2 Nr. 04 (1902)_text.pdf",
+    "pages": 32,
+    "chars": 104875,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 2 Nr. 05 (1902)_text.pdf",
+    "pages": 32,
+    "chars": 101666,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 2 Nr. 06 (1902)_text.pdf",
+    "pages": 32,
+    "chars": 102130,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 2 Nr. 07 (1902)_text.pdf",
+    "pages": 32,
+    "chars": 97229,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 2 Nr. 08 (1902)_text.pdf",
+    "pages": 32,
+    "chars": 99615,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 2 Nr. 09 (1902)_text.pdf",
+    "pages": 32,
+    "chars": 101397,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 2 Nr. 10 (1902)_text.pdf",
+    "pages": 32,
+    "chars": 101114,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 2 Nr. 11 (1902)_text.pdf",
+    "pages": 32,
+    "chars": 104677,
+    "review_status": "text extracted; scan review pending"
+  },
+  {
+    "file": "N.F. Jg. 2 Nr. 12 (1902)_text.pdf",
+    "pages": 38,
+    "chars": 99676,
+    "review_status": "text extracted; scan review pending"
+  }
+]
