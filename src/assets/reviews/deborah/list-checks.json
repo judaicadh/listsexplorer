@@ -46,5 +46,917 @@
     "entries": 4,
     "issue": 30,
     "page": 7
+  },
+  {
+    "id": "deborah-1886-02-12-bnaibrith-d3",
+    "issue_index": 7,
+    "pdf_pages": [
+      [
+        7,
+        6
+      ]
+    ],
+    "entries": 9,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-02-12-united-hebrew-charity-officers",
+    "issue_index": 7,
+    "pdf_pages": [
+      [
+        7,
+        7
+      ]
+    ],
+    "entries": 4,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-02-26-young-womens-union",
+    "issue_index": 9,
+    "pdf_pages": [
+      [
+        9,
+        6
+      ]
+    ],
+    "entries": 5,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-02-26-charity-ball-beneficiaries",
+    "issue_index": 9,
+    "pdf_pages": [
+      [
+        9,
+        6
+      ]
+    ],
+    "entries": 7,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-03-19-sons-benjamin",
+    "issue_index": 12,
+    "pdf_pages": [
+      [
+        12,
+        6
+      ]
+    ],
+    "entries": 12,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-03-19-young-mens-branch",
+    "issue_index": 12,
+    "pdf_pages": [
+      [
+        12,
+        6
+      ]
+    ],
+    "entries": 3,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-03-19-davenport-bnai-israel",
+    "issue_index": 12,
+    "pdf_pages": [
+      [
+        12,
+        7
+      ]
+    ],
+    "entries": 9,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-04-02-rappaport-ball",
+    "issue_index": 14,
+    "pdf_pages": [
+      [
+        14,
+        6
+      ]
+    ],
+    "entries": 15,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-04-02-hebrew-educational-society",
+    "issue_index": 14,
+    "pdf_pages": [
+      [
+        14,
+        6
+      ]
+    ],
+    "entries": 16,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-04-02-beth-el-emeth",
+    "issue_index": 14,
+    "pdf_pages": [
+      [
+        14,
+        6
+      ]
+    ],
+    "entries": 9,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-04-02-immanuel-anniversary",
+    "issue_index": 14,
+    "pdf_pages": [
+      [
+        14,
+        6
+      ]
+    ],
+    "entries": 6,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-04-30-ahavath-achim",
+    "issue_index": 18,
+    "pdf_pages": [
+      [
+        18,
+        8
+      ]
+    ],
+    "entries": 20,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-05-14-foster-home-board",
+    "issue_index": 20,
+    "pdf_pages": [
+      [
+        20,
+        6
+      ]
+    ],
+    "entries": 12,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-05-14-juvenile-charity-society",
+    "issue_index": 20,
+    "pdf_pages": [
+      [
+        20,
+        7
+      ]
+    ],
+    "entries": 4,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-05-14-eastern-rabbis-conference",
+    "issue_index": 20,
+    "pdf_pages": [
+      [
+        20,
+        6
+      ]
+    ],
+    "entries": 34,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-05-14-ahavath-chesed-officers",
+    "issue_index": 20,
+    "pdf_pages": [
+      [
+        20,
+        6
+      ]
+    ],
+    "entries": 5,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-05-21-orthodox-seminary-officers",
+    "issue_index": 21,
+    "pdf_pages": [
+      [
+        21,
+        6
+      ]
+    ],
+    "entries": 5,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-06-04-alliance-branch-officers",
+    "issue_index": 23,
+    "pdf_pages": [
+      [
+        23,
+        4
+      ],
+      [
+        23,
+        5
+      ]
+    ],
+    "entries": 18,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-06-04-ymha-officers",
+    "issue_index": 23,
+    "pdf_pages": [
+      [
+        23,
+        5
+      ]
+    ],
+    "entries": 9,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-06-11-family-orphan-education",
+    "issue_index": 24,
+    "pdf_pages": [
+      [
+        24,
+        6
+      ]
+    ],
+    "entries": 5,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-06-11-adas-jeshurun-building",
+    "issue_index": 24,
+    "pdf_pages": [
+      [
+        24,
+        6
+      ]
+    ],
+    "entries": 13,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-06-18-columbia-honors",
+    "issue_index": 25,
+    "pdf_pages": [
+      [
+        25,
+        5
+      ]
+    ],
+    "entries": 10,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-06-18-true-sisters-grand-officers",
+    "issue_index": 25,
+    "pdf_pages": [
+      [
+        25,
+        5
+      ]
+    ],
+    "entries": 6,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-10-15-sheltering-guardian-officers",
+    "issue_index": 39,
+    "pdf_pages": [
+      [
+        39,
+        7
+      ]
+    ],
+    "entries": 30,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-11-05-beth-emeth-officers",
+    "issue_index": 42,
+    "pdf_pages": [
+      [
+        42,
+        6
+      ]
+    ],
+    "entries": 9,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-12-03-eastern-rabbis-november",
+    "issue_index": 46,
+    "pdf_pages": [
+      [
+        46,
+        4
+      ],
+      [
+        46,
+        5
+      ]
+    ],
+    "entries": 39,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-12-31-hebrew-free-school",
+    "issue_index": 50,
+    "pdf_pages": [
+      [
+        50,
+        6
+      ]
+    ],
+    "entries": 3,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-12-31-brooklyn-ymha",
+    "issue_index": 50,
+    "pdf_pages": [
+      [
+        50,
+        6
+      ]
+    ],
+    "entries": 2,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1887-12-09-free-sons-israel-convention",
+    "issue_index": 51,
+    "pdf_pages": [
+      [
+        51,
+        6
+      ]
+    ],
+    "entries": 22,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1887-12-09-jewish-ministers-conference",
+    "issue_index": 51,
+    "pdf_pages": [
+      [
+        51,
+        7
+      ]
+    ],
+    "entries": 27,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-02-10-bnaibrith-d1",
+    "issue_index": 54,
+    "pdf_pages": [
+      [
+        54,
+        6
+      ]
+    ],
+    "entries": 10,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-02-10-technical-institute-trustees",
+    "issue_index": 54,
+    "pdf_pages": [
+      [
+        54,
+        6
+      ]
+    ],
+    "entries": 3,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-02-10-bnaibrith-d3-incumbents",
+    "issue_index": 54,
+    "pdf_pages": [
+      [
+        54,
+        7
+      ]
+    ],
+    "entries": 5,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-02-17-hebrew-charity-ball-officers",
+    "issue_index": 55,
+    "pdf_pages": [
+      [
+        55,
+        6
+      ]
+    ],
+    "entries": 4,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-02-17-bnaibrith-d3-election",
+    "issue_index": 55,
+    "pdf_pages": [
+      [
+        55,
+        6
+      ]
+    ],
+    "entries": 5,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-02-24-free-sons-d1-election",
+    "issue_index": 56,
+    "pdf_pages": [
+      [
+        56,
+        7
+      ]
+    ],
+    "entries": 11,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-02-24-free-sons-educational-allocations",
+    "issue_index": 56,
+    "pdf_pages": [
+      [
+        56,
+        7
+      ]
+    ],
+    "entries": 2,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-02-24-corset-manufacturers",
+    "issue_index": 56,
+    "pdf_pages": [
+      [
+        56,
+        7
+      ]
+    ],
+    "entries": 16,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-03-02-sons-benjamin-election",
+    "issue_index": 57,
+    "pdf_pages": [
+      [
+        57,
+        6
+      ]
+    ],
+    "entries": 7,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-03-02-sheltering-guardian-reception",
+    "issue_index": 57,
+    "pdf_pages": [
+      [
+        57,
+        6
+      ]
+    ],
+    "entries": 14,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-03-09-young-womens-union-1888",
+    "issue_index": 58,
+    "pdf_pages": [
+      [
+        58,
+        6
+      ]
+    ],
+    "entries": 7,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-03-09-industrial-school-purim-prizes",
+    "issue_index": 58,
+    "pdf_pages": [
+      [
+        58,
+        6
+      ]
+    ],
+    "entries": 10,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-04-13-natural-history-officers",
+    "issue_index": 63,
+    "pdf_pages": [
+      [
+        63,
+        8
+      ]
+    ],
+    "entries": 9,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-04-20-montefiore-home-board",
+    "issue_index": 64,
+    "pdf_pages": [
+      [
+        64,
+        6
+      ]
+    ],
+    "entries": 13,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-04-20-ahavath-achim-1888",
+    "issue_index": 64,
+    "pdf_pages": [
+      [
+        64,
+        8
+      ]
+    ],
+    "entries": 5,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-05-25-family-orphans-1888",
+    "issue_index": 68,
+    "pdf_pages": [
+      [
+        68,
+        7
+      ]
+    ],
+    "entries": 2,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-05-25-mount-sinai-nursing",
+    "issue_index": 68,
+    "pdf_pages": [
+      [
+        68,
+        7
+      ]
+    ],
+    "entries": 20,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-05-25-aged-home-officers",
+    "issue_index": 68,
+    "pdf_pages": [
+      [
+        68,
+        7
+      ]
+    ],
+    "entries": 3,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-08-24-jps-committees",
+    "issue_index": 73,
+    "pdf_pages": [
+      [
+        73,
+        6
+      ]
+    ],
+    "entries": 17,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1888-08-24-isaac-may-bequests",
+    "issue_index": 73,
+    "pdf_pages": [
+      [
+        73,
+        6
+      ]
+    ],
+    "entries": 8,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1902-08-01-brown-memorial-outing",
+    "issue_index": 96,
+    "pdf_pages": [
+      [
+        96,
+        25
+      ]
+    ],
+    "entries": 70,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-02-19-purim-ball-committee",
+    "issue_index": 8,
+    "pdf_pages": [
+      [
+        8,
+        7
+      ]
+    ],
+    "entries": 5,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-02-19-texeira-bequests",
+    "issue_index": 8,
+    "pdf_pages": [
+      [
+        8,
+        7
+      ]
+    ],
+    "entries": 14,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1886-03-12-legion-honour",
+    "issue_index": 11,
+    "pdf_pages": [
+      [
+        11,
+        6
+      ]
+    ],
+    "entries": 14,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1894-07-05-cultura-officers",
+    "issue_index": 76,
+    "pdf_pages": [
+      [
+        76,
+        16
+      ]
+    ],
+    "entries": 3,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1894-07-05-moravian-massafond",
+    "issue_index": 76,
+    "pdf_pages": [
+      [
+        76,
+        40
+      ]
+    ],
+    "entries": 11,
+    "review": "manually transcribed and compared to scans"
+  },
+  {
+    "id": "deborah-1901-jewish-historical-anniversaries",
+    "issue_index": 77,
+    "pdf_pages": [
+      [
+        77,
+        11
+      ],
+      [
+        77,
+        12
+      ],
+      [
+        77,
+        13
+      ],
+      [
+        77,
+        14
+      ],
+      [
+        77,
+        15
+      ],
+      [
+        78,
+        24
+      ],
+      [
+        78,
+        25
+      ],
+      [
+        78,
+        26
+      ],
+      [
+        78,
+        27
+      ],
+      [
+        79,
+        11
+      ],
+      [
+        79,
+        12
+      ],
+      [
+        79,
+        13
+      ],
+      [
+        79,
+        14
+      ],
+      [
+        80,
+        11
+      ],
+      [
+        80,
+        12
+      ],
+      [
+        80,
+        13
+      ],
+      [
+        80,
+        14
+      ],
+      [
+        81,
+        11
+      ],
+      [
+        81,
+        12
+      ],
+      [
+        81,
+        13
+      ],
+      [
+        81,
+        14
+      ],
+      [
+        82,
+        13
+      ],
+      [
+        82,
+        14
+      ],
+      [
+        82,
+        15
+      ],
+      [
+        82,
+        16
+      ],
+      [
+        83,
+        8
+      ],
+      [
+        83,
+        9
+      ],
+      [
+        83,
+        10
+      ],
+      [
+        83,
+        11
+      ],
+      [
+        84,
+        17
+      ],
+      [
+        84,
+        18
+      ],
+      [
+        84,
+        19
+      ],
+      [
+        85,
+        8
+      ],
+      [
+        85,
+        9
+      ],
+      [
+        85,
+        10
+      ],
+      [
+        86,
+        11
+      ],
+      [
+        86,
+        12
+      ],
+      [
+        86,
+        13
+      ],
+      [
+        86,
+        14
+      ],
+      [
+        87,
+        15
+      ],
+      [
+        87,
+        16
+      ],
+      [
+        87,
+        17
+      ],
+      [
+        87,
+        18
+      ],
+      [
+        88,
+        11
+      ],
+      [
+        88,
+        12
+      ],
+      [
+        88,
+        13
+      ],
+      [
+        88,
+        14
+      ],
+      [
+        89,
+        21
+      ],
+      [
+        91,
+        10
+      ],
+      [
+        92,
+        14
+      ],
+      [
+        93,
+        12
+      ],
+      [
+        95,
+        24
+      ],
+      [
+        96,
+        10
+      ],
+      [
+        97,
+        8
+      ],
+      [
+        100,
+        15
+      ],
+      [
+        100,
+        16
+      ]
+    ],
+    "entries": 2362,
+    "review": "OCR draft, row proofreading pending"
   }
 ]

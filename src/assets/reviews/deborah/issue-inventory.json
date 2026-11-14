@@ -3,600 +3,948 @@
     "file": "Jg. 29 Nr. 2 (1886)_text.pdf",
     "pages": 8,
     "chars": 172406,
-    "review_status": "initial scan screening and targeted transcription"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 1,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 29 Nr. 28 (1886)_text.pdf",
     "pages": 8,
     "chars": 175742,
-    "review_status": "initial scan screening and targeted transcription"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 2,
+    "transcribed_pdf_pages": [
+      6,
+      7
+    ]
   },
   {
     "file": "Jg. 29 Nr. 29 (1886)_text.pdf",
     "pages": 8,
     "chars": 165555,
-    "review_status": "initial scan screening and targeted transcription"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 3,
+    "transcribed_pdf_pages": [
+      6
+    ]
   },
   {
     "file": "Jg. 29 Nr. 30 (1886)_text.pdf",
     "pages": 8,
     "chars": 167960,
-    "review_status": "initial scan screening and targeted transcription"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 4,
+    "transcribed_pdf_pages": [
+      6,
+      7
+    ]
   },
   {
     "file": "Jg. 29 Nr. 31 (1886)_text.pdf",
     "pages": 8,
     "chars": 160827,
-    "review_status": "overview only; transcription pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 5,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 29 Nr. 32 (1886)_text.pdf",
     "pages": 8,
     "chars": 169507,
-    "review_status": "overview only; transcription pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 6,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 29 Nr. 33 (1886)_text.pdf",
     "pages": 8,
     "chars": 168250,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 7,
+    "transcribed_pdf_pages": [
+      6,
+      7
+    ]
   },
   {
     "file": "Jg. 29 Nr. 34 (1886)_text.pdf",
     "pages": 8,
     "chars": 155526,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 8,
+    "transcribed_pdf_pages": [
+      7
+    ]
   },
   {
     "file": "Jg. 29 Nr. 35 (1886)_text.pdf",
     "pages": 8,
     "chars": 149907,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 9,
+    "transcribed_pdf_pages": [
+      6
+    ]
   },
   {
     "file": "Jg. 29 Nr. 36 (1886)_text.pdf",
     "pages": 8,
     "chars": 161364,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 10,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 29 Nr. 37 (1886)_text.pdf",
     "pages": 8,
     "chars": 162604,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 11,
+    "transcribed_pdf_pages": [
+      6
+    ]
   },
   {
     "file": "Jg. 29 Nr. 38 (1886)_text.pdf",
     "pages": 8,
     "chars": 157619,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 12,
+    "transcribed_pdf_pages": [
+      6,
+      7
+    ]
   },
   {
     "file": "Jg. 29 Nr. 39 (1886)_text.pdf",
     "pages": 8,
     "chars": 164626,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 13,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 29 Nr. 40 (1886)_text.pdf",
     "pages": 8,
     "chars": 158260,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 14,
+    "transcribed_pdf_pages": [
+      6
+    ]
   },
   {
     "file": "Jg. 29 Nr. 41 (1886)_text.pdf",
     "pages": 8,
     "chars": 150902,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 15,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 29 Nr. 42 (1886)_text.pdf",
     "pages": 8,
     "chars": 177768,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 16,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 29 Nr. 43 (1886)_text.pdf",
     "pages": 8,
     "chars": 152715,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 17,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 29 Nr. 44 (1886)_text.pdf",
     "pages": 8,
     "chars": 158264,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 18,
+    "transcribed_pdf_pages": [
+      8
+    ]
   },
   {
     "file": "Jg. 29 Nr. 45 (1886)_text.pdf",
     "pages": 8,
     "chars": 150028,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 19,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 29 Nr. 46 (1886)_text.pdf",
     "pages": 8,
     "chars": 159187,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 20,
+    "transcribed_pdf_pages": [
+      6,
+      7
+    ]
   },
   {
     "file": "Jg. 29 Nr. 47 (1886)_text.pdf",
     "pages": 8,
     "chars": 166010,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 21,
+    "transcribed_pdf_pages": [
+      6
+    ]
   },
   {
     "file": "Jg. 29 Nr. 48 (1886)_text.pdf",
     "pages": 8,
     "chars": 165074,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 22,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 29 Nr. 49 (1886)_text.pdf",
     "pages": 8,
     "chars": 160254,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 23,
+    "transcribed_pdf_pages": [
+      4,
+      5
+    ]
   },
   {
     "file": "Jg. 29 Nr. 50 (1886)_text.pdf",
     "pages": 8,
     "chars": 152828,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 24,
+    "transcribed_pdf_pages": [
+      6
+    ]
   },
   {
     "file": "Jg. 29 Nr. 51 (1886)_text.pdf",
     "pages": 8,
     "chars": 153727,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 25,
+    "transcribed_pdf_pages": [
+      5
+    ]
   },
   {
     "file": "Jg. 29 Nr. 52 (1886)_text.pdf",
     "pages": 8,
     "chars": 167734,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 26,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 01 (1886)_text.pdf",
     "pages": 8,
     "chars": 170626,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 27,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 02 (1886)_text.pdf",
     "pages": 8,
     "chars": 145009,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 28,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 04 (1886)_text.pdf",
     "pages": 8,
     "chars": 146872,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 29,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 05 (1886)_text.pdf",
     "pages": 6,
     "chars": 116927,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 30,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 06 (1886)_text.pdf",
     "pages": 8,
     "chars": 163219,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 31,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 07 (1886)_text.pdf",
     "pages": 8,
     "chars": 159278,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 32,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 08 (1886)_text.pdf",
     "pages": 8,
     "chars": 146757,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 33,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 09 (1886)_text.pdf",
     "pages": 8,
     "chars": 134684,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 34,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 10 (1886)_text.pdf",
     "pages": 8,
     "chars": 142470,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 35,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 13 (1886)_text.pdf",
     "pages": 8,
     "chars": 153863,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 36,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 14 (1886)_text.pdf",
     "pages": 8,
     "chars": 144418,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 37,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 15 (1886)_text.pdf",
     "pages": 8,
     "chars": 148695,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 38,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 16 (1886)_text.pdf",
     "pages": 8,
     "chars": 164349,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 39,
+    "transcribed_pdf_pages": [
+      7
+    ]
   },
   {
     "file": "Jg. 30 Nr. 17 (1886)_text.pdf",
     "pages": 8,
     "chars": 160614,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 40,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 18 (1886)_text.pdf",
     "pages": 8,
     "chars": 153051,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 41,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 19 (1886)_text.pdf",
     "pages": 8,
     "chars": 142611,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 42,
+    "transcribed_pdf_pages": [
+      6
+    ]
   },
   {
     "file": "Jg. 30 Nr. 20 (1886)_text.pdf",
     "pages": 8,
     "chars": 162564,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 43,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 21 (1886)_text.pdf",
     "pages": 8,
     "chars": 152927,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 44,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 22 (1886)_text.pdf",
     "pages": 8,
     "chars": 149123,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 45,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 23 (1886)_text.pdf",
     "pages": 8,
     "chars": 160998,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 46,
+    "transcribed_pdf_pages": [
+      4,
+      5
+    ]
   },
   {
     "file": "Jg. 30 Nr. 24 (1886)_text.pdf",
     "pages": 8,
     "chars": 152646,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 47,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 25 (1886)_text.pdf",
     "pages": 8,
     "chars": 157793,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 48,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 26 (1886)_text.pdf",
     "pages": 8,
     "chars": 154803,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 49,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 30 Nr. 27 (1886)_text.pdf",
     "pages": 8,
     "chars": 157164,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 50,
+    "transcribed_pdf_pages": [
+      6
+    ]
   },
   {
     "file": "Jg. 31 Nr. 24 (1887)_text.pdf",
     "pages": 8,
     "chars": 149592,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 51,
+    "transcribed_pdf_pages": [
+      6,
+      7
+    ]
   },
   {
     "file": "Jg. 31 Nr. 30 (1887)_text.pdf",
     "pages": 7,
     "chars": 128824,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 52,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 31 Nr. 31 (1888)_text.pdf",
     "pages": 8,
     "chars": 141536,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 53,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 31 Nr. 33 (1888)_text.pdf",
     "pages": 8,
     "chars": 148975,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 54,
+    "transcribed_pdf_pages": [
+      6,
+      7
+    ]
   },
   {
     "file": "Jg. 31 Nr. 34 (1888)_text.pdf",
     "pages": 8,
     "chars": 146884,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 55,
+    "transcribed_pdf_pages": [
+      6
+    ]
   },
   {
     "file": "Jg. 31 Nr. 35 (1888)_text.pdf",
     "pages": 8,
     "chars": 153998,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 56,
+    "transcribed_pdf_pages": [
+      7
+    ]
   },
   {
     "file": "Jg. 31 Nr. 36 (1888)_text.pdf",
     "pages": 8,
     "chars": 146397,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 57,
+    "transcribed_pdf_pages": [
+      6
+    ]
   },
   {
     "file": "Jg. 31 Nr. 37 (1888)_text.pdf",
     "pages": 8,
     "chars": 146161,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 58,
+    "transcribed_pdf_pages": [
+      6
+    ]
   },
   {
     "file": "Jg. 31 Nr. 38 (1888)_text.pdf",
     "pages": 8,
     "chars": 152432,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 59,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 31 Nr. 39 (1888)_text.pdf",
     "pages": 8,
     "chars": 145242,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 60,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 31 Nr. 40 (1888)_text.pdf",
     "pages": 8,
     "chars": 138293,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 61,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 31 Nr. 41 (1888)_text.pdf",
     "pages": 8,
     "chars": 151349,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 62,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 31 Nr. 42 (1888)_text.pdf",
     "pages": 8,
     "chars": 154971,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 63,
+    "transcribed_pdf_pages": [
+      8
+    ]
   },
   {
     "file": "Jg. 31 Nr. 43 (1888)_text.pdf",
     "pages": 8,
     "chars": 153718,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 64,
+    "transcribed_pdf_pages": [
+      6,
+      8
+    ]
   },
   {
     "file": "Jg. 31 Nr. 44 (1888)_text.pdf",
     "pages": 8,
     "chars": 153270,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 65,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 31 Nr. 46 (1888)_text.pdf",
     "pages": 8,
     "chars": 151562,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 66,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 31 Nr. 47 (1888)_text.pdf",
     "pages": 8,
     "chars": 147324,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 67,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 31 Nr. 48 (1888)_text.pdf",
     "pages": 8,
     "chars": 137745,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 68,
+    "transcribed_pdf_pages": [
+      7
+    ]
   },
   {
     "file": "Jg. 31 Nr. 49 (1888)_text.pdf",
     "pages": 8,
     "chars": 143676,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 69,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 31 Nr. 50 (1888)_text.pdf",
     "pages": 8,
     "chars": 148297,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 70,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 32 Nr. 02 (1888)_text.pdf",
     "pages": 8,
     "chars": 157772,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 71,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 32 Nr. 06 (1888)_text.pdf",
     "pages": 8,
     "chars": 154793,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 72,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 32 Nr. 08 (1888)_text.pdf",
     "pages": 8,
     "chars": 156220,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 73,
+    "transcribed_pdf_pages": [
+      6
+    ]
   },
   {
     "file": "Jg. 32 Nr. 09 (1888)_text.pdf",
     "pages": 8,
     "chars": 160537,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 74,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 32 Nr. 10 (1888)_text.pdf",
     "pages": 8,
     "chars": 156088,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 75,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "Jg. 40 Nr. 01 (1894)_text.pdf",
     "pages": 44,
     "chars": 642479,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 76,
+    "transcribed_pdf_pages": [
+      16,
+      40
+    ]
   },
   {
     "file": "N.F. Jg. 1 Nr. 01 (1901)_text.pdf",
     "pages": 38,
     "chars": 106642,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 77,
+    "transcribed_pdf_pages": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
   },
   {
     "file": "N.F. Jg. 1 Nr. 02 (1901)_text.pdf",
     "pages": 32,
     "chars": 97236,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 78,
+    "transcribed_pdf_pages": [
+      24,
+      25,
+      26,
+      27
+    ]
   },
   {
     "file": "N.F. Jg. 1 Nr. 03 (1901)_text.pdf",
     "pages": 32,
     "chars": 97287,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 79,
+    "transcribed_pdf_pages": [
+      11,
+      12,
+      13,
+      14
+    ]
   },
   {
     "file": "N.F. Jg. 1 Nr. 04 (1901)_text.pdf",
     "pages": 32,
     "chars": 102195,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 80,
+    "transcribed_pdf_pages": [
+      11,
+      12,
+      13,
+      14
+    ]
   },
   {
     "file": "N.F. Jg. 1 Nr. 05 (1901)_text.pdf",
     "pages": 32,
     "chars": 103306,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 81,
+    "transcribed_pdf_pages": [
+      11,
+      12,
+      13,
+      14
+    ]
   },
   {
     "file": "N.F. Jg. 1 Nr. 06 (1901)_text.pdf",
     "pages": 32,
     "chars": 101733,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 82,
+    "transcribed_pdf_pages": [
+      13,
+      14,
+      15,
+      16
+    ]
   },
   {
     "file": "N.F. Jg. 1 Nr. 07 (1901)_text.pdf",
     "pages": 32,
     "chars": 102746,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 83,
+    "transcribed_pdf_pages": [
+      8,
+      9,
+      10,
+      11
+    ]
   },
   {
     "file": "N.F. Jg. 1 Nr. 08 (1901)_text.pdf",
     "pages": 32,
     "chars": 103521,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 84,
+    "transcribed_pdf_pages": [
+      17,
+      18,
+      19
+    ]
   },
   {
     "file": "N.F. Jg. 1 Nr. 09 (1901)_text.pdf",
     "pages": 32,
     "chars": 103291,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 85,
+    "transcribed_pdf_pages": [
+      8,
+      9,
+      10
+    ]
   },
   {
     "file": "N.F. Jg. 1 Nr. 10 (1901)_text.pdf",
     "pages": 32,
     "chars": 101348,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 86,
+    "transcribed_pdf_pages": [
+      11,
+      12,
+      13,
+      14
+    ]
   },
   {
     "file": "N.F. Jg. 1 Nr. 11 (1901)_text.pdf",
     "pages": 32,
     "chars": 97315,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 87,
+    "transcribed_pdf_pages": [
+      15,
+      16,
+      17,
+      18
+    ]
   },
   {
     "file": "N.F. Jg. 1 Nr. 12 (1901)_text.pdf",
     "pages": 32,
     "chars": 105323,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 88,
+    "transcribed_pdf_pages": [
+      11,
+      12,
+      13,
+      14
+    ]
   },
   {
     "file": "N.F. Jg. 2 Nr. 01 (1902)_text.pdf",
     "pages": 36,
     "chars": 100775,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 89,
+    "transcribed_pdf_pages": [
+      21
+    ]
   },
   {
     "file": "N.F. Jg. 2 Nr. 02 (1902)_text.pdf",
     "pages": 32,
     "chars": 100783,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 90,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "N.F. Jg. 2 Nr. 03 (1902)_text.pdf",
     "pages": 30,
     "chars": 86881,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 91,
+    "transcribed_pdf_pages": [
+      10
+    ]
   },
   {
     "file": "N.F. Jg. 2 Nr. 04 (1902)_text.pdf",
     "pages": 32,
     "chars": 104875,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 92,
+    "transcribed_pdf_pages": [
+      14
+    ]
   },
   {
     "file": "N.F. Jg. 2 Nr. 05 (1902)_text.pdf",
     "pages": 32,
     "chars": 101666,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 93,
+    "transcribed_pdf_pages": [
+      12
+    ]
   },
   {
     "file": "N.F. Jg. 2 Nr. 06 (1902)_text.pdf",
     "pages": 32,
     "chars": 102130,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 94,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "N.F. Jg. 2 Nr. 07 (1902)_text.pdf",
     "pages": 32,
     "chars": 97229,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 95,
+    "transcribed_pdf_pages": [
+      24
+    ]
   },
   {
     "file": "N.F. Jg. 2 Nr. 08 (1902)_text.pdf",
     "pages": 32,
     "chars": 99615,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 96,
+    "transcribed_pdf_pages": [
+      25,
+      10
+    ]
   },
   {
     "file": "N.F. Jg. 2 Nr. 09 (1902)_text.pdf",
     "pages": 32,
     "chars": 101397,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 97,
+    "transcribed_pdf_pages": [
+      8
+    ]
   },
   {
     "file": "N.F. Jg. 2 Nr. 10 (1902)_text.pdf",
     "pages": 32,
     "chars": 101114,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 98,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "N.F. Jg. 2 Nr. 11 (1902)_text.pdf",
     "pages": 32,
     "chars": 104677,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 99,
+    "transcribed_pdf_pages": []
   },
   {
     "file": "N.F. Jg. 2 Nr. 12 (1902)_text.pdf",
     "pages": 38,
     "chars": 99676,
-    "review_status": "text extracted; scan review pending"
+    "review_status": "first-pass page-layout screening and OCR candidate review",
+    "issue_index": 100,
+    "transcribed_pdf_pages": [
+      15,
+      16
+    ]
   }
 ]
