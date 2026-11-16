@@ -5,8 +5,9 @@ permalink: /people/
 ---
 <div class="wrap section">
   <h1>People</h1>
-  <p class="lede">Individuals identified in the lists. Each record groups the different ways a name was printed. Names not yet identified can still be found through <a href="/search/">search</a>.</p>
+  <p class="lede">Every name in a list has a profile. Identified person records appear below. Names whose identities have not been reviewed have provisional profiles, accessible by clicking their names in any list or search result. Possible aliases remain suggestions until reviewed.</p>
   <p><a class="button" href="/people/overlaps/">Find people across lists and compare alias confidence →</a></p>
+  <form action="/search/" method="get" class="filter-bar"><label for="profile-search">Find any name profile</label><input id="profile-search" name="q" type="search" placeholder="Name, initials or spelling"><button class="btn" type="submit">Find profiles</button></form>
   {% set items = db.people %}{% set label = "people" %}
   {% include "directory.njk" %}
 </div>

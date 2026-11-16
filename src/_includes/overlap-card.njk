@@ -5,7 +5,7 @@
     {% if group.personUrl %}<p><a href="{{ group.personUrl }}">Open person record →</a></p>{% endif %}
     {% for row in group.rows %}
     <section class="overlap-evidence stack">
-      <h3>{{ row.name }} <span class="chip">{% if row.reference %}Reference record{% else %}{{ row.score }}% match confidence{% endif %}</span></h3>
+      <h3><a href="{% if row.entity_id %}/people/{{ row.entity_id }}/{% else %}/people/record/?list={{ row.list.id | urlencode }}&amp;entry={{ row.id | urlencode }}{% endif %}">{{ row.name }}</a> <span class="chip">{% if row.reference %}Reference record{% else %}{{ row.score }}% match confidence{% endif %}</span></h3>
       <p><a href="{{ row.list.url }}">{{ row.list.title }}</a> · {{ row.list.date }}{% if row.place %} · {{ row.place }}{% endif %}{% if row.amount %} · {{ row.amount }}{% endif %}</p>
       <ul>{% for reason in row.reasons %}<li>{{ reason }}</li>{% endfor %}</ul>
     </section>

@@ -40,7 +40,7 @@ eleventyComputed:
     <h2 class="h-small">{% if list.list_type == "offering" or list.list_type == "bequest" %}Attribution{% elif list.list_type == "debt" or list.list_type == "petition" %}Document handling{% else %}Officers &amp; committee{% endif %}</h2>
     <ul class="officers">
       {% for r in list.officers %}
-      <li><span class="muted small-note">{{ r.roleLabel }}</span>{{ entityLink(r.entity, r.displayName) }}{% if r.address_as_printed %}<span class="muted small-note">{{ r.address_as_printed }}</span>{% endif %}{% if list.list_type == "debt" and r.note %}<span class="muted small-note">{{ r.note }}</span>{% endif %}</li>
+      <li><span class="muted small-note">{{ r.roleLabel }}</span>{% if r.profileUrl %}<a href="{{ r.profileUrl }}">{{ r.displayName }}</a>{% else %}{{ r.displayName }}{% endif %}{% if r.address_as_printed %}<span class="muted small-note">{{ r.address_as_printed }}</span>{% endif %}{% if list.list_type == "debt" and r.note %}<span class="muted small-note">{{ r.note }}</span>{% endif %}</li>
       {% endfor %}
     </ul>
   </section>
@@ -50,7 +50,7 @@ eleventyComputed:
   <section class="panel">
     <h2 class="h-small">Agents &amp; intermediaries</h2>
     <ul class="inline-list">
-      {% for r in list.agents %}<li>{{ entityLink(r.entity, r.displayName) }}{% if r.address_as_printed %} <span class="muted">({{ r.address_as_printed }})</span>{% endif %}</li>{% endfor %}
+      {% for r in list.agents %}<li>{% if r.profileUrl %}<a href="{{ r.profileUrl }}">{{ r.displayName }}</a>{% else %}{{ r.displayName }}{% endif %}{% if r.address_as_printed %} <span class="muted">({{ r.address_as_printed }})</span>{% endif %}</li>{% endfor %}
     </ul>
   </section>
   {% endif %}
@@ -61,7 +61,7 @@ eleventyComputed:
     <div class="bars">
       {% for g in list.topGifts %}
       <div class="bar-row">
-        <span class="bar-label">{% if g.entry.entity %}<a href="{{ g.entry.entity.url }}">{{ g.entry.name_as_printed }}</a>{% else %}{{ g.entry.name_as_printed }}{% endif %}</span>
+        <span class="bar-label"><a href="{{ g.entry.profileUrl }}">{{ g.entry.name_as_printed }}</a></span>
         <span class="bar-track" aria-hidden="true"><span class="bar bar-{{ list.list_type }}" style="width: {{ g.pct }}%"></span></span>
         <span class="bar-val">{{ g.entry.amountLabel }}</span>
       </div>
@@ -115,7 +115,7 @@ eleventyComputed:
               {% for e in s.entries %}
               <tr id="{{ e.id }}">
                 <td class="num muted">{{ e.seq }}</td>
-                <td>{% if e.entity %}<a href="{{ e.entity.url }}">{{ e.name_as_printed }}</a>{% else %}{{ e.name_as_printed }}{% endif %}{{ certainty(e) }}{% if e.note %}<span class="muted block">{{ e.note }}</span>{% endif %}{% if e.agentLabel %}<span class="muted block">via {% if e.agent %}<a href="{{ e.agent.url }}">{{ e.agent.name }}</a>{% else %}{{ e.agent_as_printed }} <span class="small-note">(not yet linked)</span>{% endif %}</span>{% endif %}</td>
+                <td><a href="{{ e.profileUrl }}">{{ e.name_as_printed }}</a>{{ certainty(e) }}{% if e.note %}<span class="muted block">{{ e.note }}</span>{% endif %}{% if e.agentLabel %}<span class="muted block">via {% if e.agent %}<a href="{{ e.agent.url }}">{{ e.agent.name }}</a>{% else %}<a href="{{ e.agentProfileUrl }}">{{ e.agent_as_printed }}</a> <span class="small-note">(identity not yet reviewed)</span>{% endif %}</span>{% endif %}</td>
                 <td>{% if e.place %}<a href="{{ e.place.url }}">{{ e.place_as_printed or e.place.name }}</a>{% else %}{{ e.place_as_printed }}{% endif %}</td>
                 {% if list.list_type != "sport" and list.list_type != "roster" and list.list_type != "patron" %}<td class="num">{{ e.amountLabel }}</td>{% endif %}
               </tr>

@@ -28,15 +28,15 @@ permalink: /agents/
   <div class="table-box"><table>
     <thead><tr><th scope="col">Agent as printed</th><th scope="col">Town</th><th scope="col">Dated appearances and addresses</th></tr></thead>
     <tbody>{% for a in db.listedAgents %}<tr>
-      <td>{% if a.entity %}<a href="{{ a.entity.url }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}</td>
+      <td>{% if a.entity %}<a href="{{ a.entity.url }}">{{ a.name }}</a>{% else %}<a href="{{ a.entries[0].profileUrl }}">{{ a.name }}</a>{% endif %}</td>
       <td>{% if a.place %}<a href="{{ a.place.url }}">{{ a.place.name }}</a>{% else %}{{ a.place_as_printed }}{% endif %}</td>
-      <td><ul class="plain">{% for e in a.entries %}<li><a href="{{ e.list.url }}#{{ e.id }}">{{ e.list.source.title }} · {{ e.list.dateLabel }}</a>{% if e.note %} · {{ e.note }}{% endif %}</li>{% endfor %}</ul></td>
+      <td><ul class="plain">{% for e in a.entries %}<li><a href="{{ e.profileUrl }}">{{ e.list.source.title }} · {{ e.list.dateLabel }}</a>{% if e.note %} · {{ e.note }}{% endif %}</li>{% endfor %}</ul></td>
     </tr>{% endfor %}</tbody>
   </table></div>
   {% endif %}
   {% if db.unlinkedAgents.length %}
   <h2>Intermediaries awaiting identification</h2>
   <p>Names recorded as printed, awaiting a link to a person or organization.</p>
-  <ul class="plain">{% for a in db.unlinkedAgents %}<li><b>{{ a.name }}</b> · {{ a.entries.length }} entries · {% for l in a.lists %}<a href="{{ l.url }}">{{ l.title }}</a>{% if not loop.last %}; {% endif %}{% endfor %}</li>{% endfor %}</ul>
+  <ul class="plain">{% for a in db.unlinkedAgents %}<li><b><a href="{{ a.entries[0].agentProfileUrl }}">{{ a.name }}</a></b> · {{ a.entries.length }} entries · {% for l in a.lists %}<a href="{{ l.url }}">{{ l.title }}</a>{% if not loop.last %}; {% endif %}{% endfor %}</li>{% endfor %}</ul>
   {% endif %}
 </div>

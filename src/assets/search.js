@@ -20,6 +20,10 @@
   }
   function link(text, url) { return url ? '<a href="' + esc(href(url)) + '">' + esc(text) + "</a>" : esc(text || "—"); }
 
+  function recordProfile(row, via) {
+    return "/people/record/?list=" + encodeURIComponent(row.lu.split("/")[2]) + "&entry=" + encodeURIComponent(row.id) + (via ? "&via=1" : "");
+  }
+
   function fillSelect(id, values, labels) {
     var sel = document.getElementById(id);
     values.forEach(function (v) {
@@ -96,8 +100,8 @@
       (filtered.length > PAGE_SIZE ? " · showing " + (start + 1) + "–" + (start + slice.length) : "");
     tbody.innerHTML = slice.length ? slice.map(function (r) {
       var cert = r.x === "uncertain" ? ' <span class="cert" title="Reading uncertain">?</span>' : r.x === "probable" ? ' <span class="cert cert-prob" title="Reading probable">~</span>' : "";
-      return "<tr><td>" + esc(r.n) + cert + "</td><td>" + link(r.e, r.eu) + "</td><td>" + link(r.l, r.lu) +
-        '</td><td class="num">' + esc(r.y || "") + "</td><td>" + link(r.p, r.pu) + "</td><td>" + link(r.g, r.gu) +
+      return "<tr><td>" + link(r.n, r.eu || recordProfile(r)) + cert + "</td><td>" + link(r.e, r.eu) + "</td><td>" + link(r.l, r.lu) +
+        '</td><td class="num">' + esc(r.y || "") + "</td><td>" + link(r.p, r.pu) + "</td><td>" + link(r.g, r.gu || (r.gp ? recordProfile(r, true) : "")) +
         '</td><td class="num">' + esc(r.a) + "</td></tr>";
     }).join("") : '<tr><td colspan="7" class="empty">No entries match. Try another spelling or clear some filters.</td></tr>';
     var html = "";

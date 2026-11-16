@@ -199,3 +199,7 @@ caption { text-align: left; padding: 12px 14px; font-weight: 600; }
 .overlap-evidence { border-top:1px solid var(--line); padding-top:16px; overflow-wrap:anywhere; }
 .overlap-evidence h3 { font-size:18px; }
 .overlap-evidence ul { margin:0; padding-left:22px; }
+.profile-facts { display:grid; grid-template-columns:minmax(110px, 180px) minmax(0, 1fr); gap:8px 16px; margin:0; }
+.profile-facts dt { font-weight:600; }
+.profile-facts dd { margin:0; white-space:pre-wrap; overflow-wrap:anywhere; }
+@media(max-width:500px) { .profile-facts {grid-template-columns:1fr;} .profile-facts dd {margin-bottom:8px;} }
