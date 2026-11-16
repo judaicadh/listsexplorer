@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: People across lists
+permalink: /people/overlaps/
+---
+{% from "overlap-card.njk" import overlapCard %}
+<div class="wrap section">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/people/">People</a> / People across lists</nav>
+  <h1>People across lists</h1>
+  <p class="lede">Explore recorded aliases and possible matches across {{ db.overlaps.length }} groups of names appearing in two or more lists.</p>
+  <section class="panel stack" id="confidence-method">
+    <h2 class="h-small">What does the percentage mean?</h2>
+    <p><strong>Match confidence is an evidence score, not a measured probability of identity.</strong> No records are merged by this view. Expand a name to compare the printed forms, dates, places and reasons for each score against its reference record.</p>
+    <details><summary>How scores are calculated and what is covered</summary>
+      <p>Base score: 80 for an existing catalogue identity link, 65 for the same full name after removing titles and punctuation, or 40 for a recorded alias. Add 10 for the same explicitly recorded place and 5 for dates within 30 years. Subtract 15 for a probable or uncertain transcription. Company or collective names are capped at 60, dates more than 60 years apart at 25, and conflicting identity links at 20. Scores never exceed 95.</p>
+      <p>A group’s percentage is its lowest comparison score across distinct lists. An existing catalogue link is evidence, not independent verification. Matching names, places and dates can still belong to namesakes. Related pledge/receipt records and reprints count as separate lists, not separate events or donations.</p>
+      <p>This first pass includes existing person records and exact full-name matches. Unlinked initials, fuzzy spelling matches, organizations and women recorded under spousal names need separate identity review and are not automatically grouped.</p>
+    </details>
+  </section>
+  <div class="overlap-controls" id="overlap-controls" hidden>
+    <label>Find a name or list<input id="overlap-query" type="search" placeholder="e.g. Daniel Gomez" autocomplete="off"></label>
+    <label>Minimum confidence<select id="overlap-score"><option value="0">All scores</option><option value="60">60% and above</option><option value="80">80% and above</option><option value="90">90% and above</option></select></label>
+    <label>Match type<select id="overlap-type"><option value="all">All matches</option><option value="linked">Existing person records</option><option value="candidate">Full-name candidates</option></select></label>
+  </div>
+  <p id="overlap-status" role="status">Showing the first 25 groups. Loading searchable matches…</p>
+  <div id="overlap-results" class="stack" data-url="/data/overlaps.json">
+    {% for group in db.overlaps %}{% if loop.index <= 25 %}{{ overlapCard(group) }}{% endif %}{% endfor %}
+  </div>
+  <button id="overlap-more" type="button" hidden>Show more matches</button>
+  <noscript><p>Enable JavaScript to search all groups. Recorded aliases and their scores also appear on individual person pages.</p></noscript>
+</div>
+<script src="/assets/overlaps.js" defer></script>

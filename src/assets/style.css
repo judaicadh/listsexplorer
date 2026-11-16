@@ -188,3 +188,14 @@ caption { text-align: left; padding: 12px 14px; font-weight: 600; }
 #review-status ul { padding-left: 24px; }
 #preview .check { align-items: flex-start; }
 #preview .check input { flex-shrink: 0; }
+
+/* Identity comparison */
+.overlap-controls { display:flex; flex-wrap:wrap; gap:16px; align-items:end; }
+.overlap-controls[hidden] { display:none; }
+.overlap-controls label { display:flex; flex-direction:column; gap:6px; }
+.overlap-controls input, .overlap-controls select { max-width:100%; padding:10px; font:inherit; }
+.overlap-card summary { cursor:pointer; display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+.overlap-card[open] > summary { margin-bottom:20px; }
+.overlap-evidence { border-top:1px solid var(--line); padding-top:16px; overflow-wrap:anywhere; }
+.overlap-evidence h3 { font-size:18px; }
+.overlap-evidence ul { margin:0; padding-left:22px; }

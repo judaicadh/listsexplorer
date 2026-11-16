@@ -1,4 +1,5 @@
 {# Shared body for person and organization pages. Expects `entity` and `crumb` = [url, label]. #}
+{% from "overlap-card.njk" import overlapCard %}
 {% from "macros.njk" import entriesTable, totalsLine, typeTag %}
 <div class="wrap section">
   <nav aria-label="Breadcrumb" class="crumbs"><a href="{{ crumb[0] }}">{{ crumb[1] }}</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ entity.name }}</span></nav>
@@ -40,6 +41,15 @@
       {% endif %}
     </aside>
   </div>
+
+  {% if entity.overlap %}
+  <section class="section-tight">
+    <h2>Aliases and match confidence</h2>
+    <p>These names appear across {{ entity.overlap.listCount }} lists. Percentages are evidence scores, not measured probabilities. <a href="/people/overlaps/#confidence-method">How confidence is calculated</a>.</p>
+    {{ overlapCard(entity.overlap) }}
+    <p><a href="/people/overlaps/">Find more people across lists →</a></p>
+  </section>
+  {% endif %}
 
   {% if entity.roles.length %}
   <section class="section-tight">

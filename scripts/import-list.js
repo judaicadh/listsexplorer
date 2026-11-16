@@ -23,6 +23,7 @@ try {
   list.added_at = new Date().toISOString();
   stage = fs.mkdtempSync(path.join(os.tmpdir(), "lists-import-"));
   fs.cpSync(path.join(root, "data"), path.join(stage, "data"), { recursive: true });
+  fs.cpSync(path.join(root, "lib"), path.join(stage, "lib"), { recursive: true });
   const updates = { lists: [list], entries, ...(source ? { sources: [source] } : {}) };
   const contents = new Map();
   for (const [table, rows] of Object.entries(updates)) {
