@@ -1,0 +1,378 @@
+{
+  "captured_on": "2026-11-18",
+  "documents": 37,
+  "scans": 3627,
+  "selected_scans": 19,
+  "records": [
+    {
+      "openn_id": "MikvehIsrael.AbigailDeLyonLetter1795",
+      "source_id": "mikveh-israel-abigail-de-lyon-letter1795",
+      "title": "Abigail De Lyon letter, 1795",
+      "dates": "1795",
+      "scans": 2,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.AbigailDeLyonLetter1795.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.AbrahamIsraelLetter1825",
+      "source_id": "mikveh-israel-abraham-israel-letter1825",
+      "title": "Abraham Israel letter, 1825",
+      "dates": "1825",
+      "scans": 2,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.AbrahamIsraelLetter1825.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.AccountsforBuildingNewSynagogue1782",
+      "source_id": "mikveh-israel-building-1782-1784",
+      "title": "Account book, donations for building a new synagogue, 1782-1784",
+      "dates": "1782-1784",
+      "scans": 49,
+      "selected_scans": 3,
+      "status": "Partial transcription",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.AccountsforBuildingNewSynagogue1782.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.BalanceBook1856-1876",
+      "source_id": "mikveh-israel-balance-book1856-1876",
+      "title": "Balance book, 1856-1876, 1900-1908",
+      "dates": "1858-1876; 1900-1908",
+      "scans": 51,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.BalanceBook1856-1876.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.Births1841-1862",
+      "source_id": "mikveh-israel-births1841-1862",
+      "title": "Births, 1841-1862",
+      "dates": "1841-1862",
+      "scans": 24,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.Births1841-1862.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.Births1843-1886",
+      "source_id": "mikveh-israel-births1843-1886",
+      "title": "Births, 1843-1886",
+      "dates": "1843-1886",
+      "scans": 144,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.Births1843-1886.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.BookofMinutes1782-1791",
+      "source_id": "mikveh-israel-minutes-1782-1783",
+      "title": "Board and congregational minutes, 1782-1783",
+      "dates": "1782-1783",
+      "scans": 111,
+      "selected_scans": 4,
+      "status": "Partial transcription",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.BookofMinutes1782-1791.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.BurialsSpruceSt1843-1868_FederalSt1849-1863",
+      "source_id": "mikveh-israel-burials-spruce-st1843-1868-federal-st1849-1863",
+      "title": "Burials in Spruce Street Cemetery, 1843-1868 and Federal Street Cemetery, 1849-1863",
+      "dates": "1843-1868",
+      "scans": 101,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.BurialsSpruceSt1843-1868_FederalSt1849-1863.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.CharterOfCongregationBethElEmeth",
+      "source_id": "mikveh-israel-charter-of-congregation-beth-el-emeth",
+      "title": "Charter of the Congregation Beth El Emeth, 1857",
+      "dates": "1857",
+      "scans": 31,
+      "selected_scans": 6,
+      "status": "Partial transcription",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.CharterOfCongregationBethElEmeth.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.CheckStubLedger1862-1910",
+      "source_id": "mikveh-israel-check-stub-ledger1862-1910",
+      "title": "Account book, check stubs, 1862-1910",
+      "dates": "1862-1910",
+      "scans": 217,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.CheckStubLedger1862-1910.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.EshcabothRoshHodesh",
+      "source_id": "mikveh-israel-eshcaboth-rosh-hodesh",
+      "title": "Eshcaboth Rosh Hodesh, 1785",
+      "dates": "1785",
+      "scans": 2,
+      "selected_scans": 2,
+      "status": "Partial transcription",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.EshcabothRoshHodesh.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.FederalStreetCemeteryDeed1841",
+      "source_id": "mikveh-israel-federal-street-cemetery-deed1841",
+      "title": "Deed for Federal Street cemetery, 1841",
+      "dates": "1841",
+      "scans": 2,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.FederalStreetCemeteryDeed1841.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.HaymSalomonManuscript",
+      "source_id": "mikveh-israel-haym-salomon-manuscript",
+      "title": "Facsimile of Haym Salomon's account of difficulties in financing construction of a new synagogue, circa 1784",
+      "dates": "1784",
+      "scans": 9,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.HaymSalomonManuscript.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.HebrewSundaySchoolLetters",
+      "source_id": "mikveh-israel-hebrew-sunday-school-letters",
+      "title": "Sunday School correspondence, 1835-1877",
+      "dates": "1835-1877",
+      "scans": 8,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.HebrewSundaySchoolLetters.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.InvitationToCornerstoneLaying1859",
+      "source_id": "mikveh-israel-invitation-to-cornerstone-laying1859",
+      "title": "Invitation to cornerstone ceremony (1859)",
+      "dates": "1859",
+      "scans": 2,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.InvitationToCornerstoneLaying1859.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.InvitationToNewSynagogueConsecration1866",
+      "source_id": "mikveh-israel-invitation-to-new-synagogue-consecration1866",
+      "title": "Invitation to consecration of new synagogue, 1866",
+      "dates": "1866",
+      "scans": 2,
+      "selected_scans": 1,
+      "status": "Partial transcription",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.InvitationToNewSynagogueConsecration1866.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.JonasPhillipsLetter1782",
+      "source_id": "mikveh-israel-jonas-phillips-letter1782",
+      "title": "Jonas Phillips letter, 1782",
+      "dates": "1782",
+      "scans": 3,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.JonasPhillipsLetter1782.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.KnifeInspectionDavidSolis1835",
+      "source_id": "mikveh-israel-knife-inspection-david-solis1835",
+      "title": "Letter regarding examination of schochet (kosher butcher) David Solis, 1835",
+      "dates": "1835",
+      "scans": 3,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.KnifeInspectionDavidSolis1835.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.Ledger_Seats1857-1866",
+      "source_id": "mikveh-israel-ledger-seats1857-1866",
+      "title": "Seat rentals, 1857-1866",
+      "dates": "1857-1866",
+      "scans": 307,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.Ledger_Seats1857-1866.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.Ledger1857-1866",
+      "source_id": "mikveh-israel-ledger1857-1866",
+      "title": "Account book, offerings, 1857-1866",
+      "dates": "1857-1866",
+      "scans": 357,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.Ledger1857-1866.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.LedgerandAccounts1824-1831",
+      "source_id": "mikveh-israel-ledgerand-accounts1824-1831",
+      "title": "Account book, 1824-1857",
+      "dates": "1824-1857",
+      "scans": 343,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.LedgerandAccounts1824-1831.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.LetterDavidSolisToIsaacLeeser1863Sept22",
+      "source_id": "mikveh-israel-letter-david-solis-to-isaac-leeser1863-sept22",
+      "title": "Copy of David Solis letter to Isaac Leeser, 1863",
+      "dates": "1863",
+      "scans": 5,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.LetterDavidSolisToIsaacLeeser1863Sept22.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.ListofSeatRentals1827-1833",
+      "source_id": "mikveh-israel-listof-seat-rentals1827-1833",
+      "title": "Annual seat rentals, 1827-1844",
+      "dates": "1827-1844",
+      "scans": 73,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.ListofSeatRentals1827-1833.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.MarriageCertificate1842",
+      "source_id": "mikveh-israel-marriage-certificate1842",
+      "title": "Marriage contract, 1842",
+      "dates": "1842",
+      "scans": 2,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.MarriageCertificate1842.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.MarriageContracts1813-1843",
+      "source_id": "mikveh-israel-marriage-contracts1813-1843",
+      "title": "Marriage contracts, 1813-1843",
+      "dates": "1813-1843",
+      "scans": 119,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.MarriageContracts1813-1843.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.MarriageContracts1843-1866",
+      "source_id": "mikveh-israel-marriage-contracts1843-1866",
+      "title": "Marriage contracts, 1843-1866",
+      "dates": "1843-1866",
+      "scans": 166,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.MarriageContracts1843-1866.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.MarriagesBirthsDeaths1776-1843",
+      "source_id": "mikveh-israel-marriages-births-deaths1776-1843",
+      "title": "Record of prayers, circumcisions, marriages and deaths, kept by Reverend Jacob Raphael Cohen and continued by others after his death, 1776-1843",
+      "dates": "1776-1843",
+      "scans": 96,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.MarriagesBirthsDeaths1776-1843.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.MarshallFamilyMarriagesBirthDeaths1769-1813",
+      "source_id": "mikveh-israel-marshall-family-marriages-birth-deaths1769-1813",
+      "title": "Marshall family marriages, births and deaths, 1769-1813",
+      "dates": "1769-1813",
+      "scans": 2,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.MarshallFamilyMarriagesBirthDeaths1769-1813.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.MinuteBook1810-1883",
+      "source_id": "mikveh-israel-minute-book1810-1883",
+      "title": "Congregational minutes, 1810-1883",
+      "dates": "1810-1883",
+      "scans": 468,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.MinuteBook1810-1883.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.MinuteBook1813-1864",
+      "source_id": "mikveh-israel-minute-book1813-1864",
+      "title": "Minutes, Society for the Visitation of the Sick and Mutual Assistance, 1813-1864",
+      "dates": "1813-1864",
+      "scans": 337,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.MinuteBook1813-1864.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.MinuteBook1824-1881",
+      "source_id": "mikveh-israel-minute-book1824-1881",
+      "title": "Board of Managers minutes, 1824-1870",
+      "dates": "1824-1870",
+      "scans": 354,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.MinuteBook1824-1881.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.PrayerServiceForDedicationOfNewSynagogue",
+      "source_id": "mikveh-israel-prayer-service-for-dedication-of-new-synagogue",
+      "title": "Form of service at the dedication of the new synagogue, 1825",
+      "dates": "1825",
+      "scans": 43,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.PrayerServiceForDedicationOfNewSynagogue.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.ProceedingsBoardOfManagers1823",
+      "source_id": "mikveh-israel-officers-1823-1827",
+      "title": "Lists of officers, 1823-1827",
+      "dates": "1823-1827",
+      "scans": 2,
+      "selected_scans": 1,
+      "status": "Partial transcription",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.ProceedingsBoardOfManagers1823.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.ProposalForAMikve",
+      "source_id": "mikveh-israel-proposal-for-amikve",
+      "title": "Petition for building a mikve, 1784",
+      "dates": "1784",
+      "scans": 3,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.ProposalForAMikve.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.RecordofAnnualSeatRentals1845-1862",
+      "source_id": "mikveh-israel-recordof-annual-seat-rentals1845-1862",
+      "title": "Annual seat rentals, 1845-1862",
+      "dates": "1845-1862",
+      "scans": 87,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.RecordofAnnualSeatRentals1845-1862.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.RecordofOfferings1786-1788",
+      "source_id": "mikveh-israel-offerings-1786-1788",
+      "title": "Account book, offerings, 1786-1788",
+      "dates": "1786-1788",
+      "scans": 51,
+      "selected_scans": 2,
+      "status": "Partial transcription",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.RecordofOfferings1786-1788.html"
+    },
+    {
+      "openn_id": "MikvehIsrael.WeittheimBookOfCircumcisions1810-1829",
+      "source_id": "mikveh-israel-weittheim-book-of-circumcisions1810-1829",
+      "title": "Circumcision book of Dr. A. J. Weirtheim, 1810-1829",
+      "dates": "1810-1829",
+      "scans": 49,
+      "selected_scans": 0,
+      "status": "Captured; transcription pending",
+      "catalogue_url": "https://openn.library.upenn.edu/Data/0039/html/MikvehIsrael.WeittheimBookOfCircumcisions1810-1829.html"
+    }
+  ]
+}

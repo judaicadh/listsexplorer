@@ -1,0 +1,42 @@
+---
+layout: base.njk
+title: Mikveh Israel collection review
+permalink: /collections/mikveh-israel/
+---
+<div class="wrap section">
+  <nav aria-label="Breadcrumb" class="crumbs"><a href="/sources/">Sources</a> / <span aria-current="page">Mikveh Israel collection</span></nav>
+  <h1>Mikveh Israel collection</h1>
+  <p class="lede">All {{ mikvehCollection.documents }} catalogue items from <a href="https://openn.library.upenn.edu/html/0039.html">Congregation Mikveh Israel on OPenn</a>.</p>
+  <p><strong>{{ mikvehCollection.scans }} supplied scans registered.</strong> Catalogue pages, descriptive metadata and every web-resolution scan have been saved for review. Archival master images remain linked from OPenn.</p>
+  <p><strong>Full collection transcription is still in progress.</strong> Named sections from {{ mikvehCollection.selected_scans }} scans have been transcribed so far. This count includes earlier imports; it does not mean that those entire pages, or the other scans, have been fully transcribed. Covers and colour cards are included in the supplied-scan count.</p>
+  <p><a href="/assets/reviews/mikveh-israel/catalogue.csv" download>Download the 37-item catalogue</a> · <a href="/assets/reviews/mikveh-israel/page-inventory.csv" download>Download the scan-by-scan review register</a></p>
+  <p class="muted">Capture checked {{ mikvehCollection.captured_on }}. “Captured” means the source has been saved for review; “Partial transcription” means selected names have been entered into Lists Explorer. Neither label claims a full-text transcription.</p>
+  <label for="collection-filter">Find a manuscript</label>
+  <input id="collection-filter" type="search" placeholder="Title, date or record type" style="display:block;width:100%;max-width:36rem;margin:.5rem 0 1.5rem;padding:.75rem;font:inherit;">
+  <p id="collection-result-count" class="muted" aria-live="polite">{{ mikvehCollection.documents }} catalogue items</p>
+  <div class="table-box">
+    <table id="collection-table">
+      <thead><tr><th scope="col">Source</th><th scope="col">Dates</th><th scope="col" class="num">Supplied scans</th><th scope="col">Transcription</th><th scope="col" class="num">Lists</th></tr></thead>
+      <tbody>{% for r in mikvehCollection.records %}
+        <tr>
+          <td><a href="/sources/{{ r.source_id }}/">{{ r.title }}</a><span class="muted block"><a href="{{ r.catalogue_url }}">OPenn scans and metadata</a></span></td>
+          <td>{{ r.dates }}</td>
+          <td class="num">{{ r.scans }}</td>
+          <td>{{ r.status }}{% if r.selected_scans %}<span class="muted block">Named sections from {{ r.selected_scans }} scan{% if r.selected_scans != 1 %}s{% endif %}</span>{% endif %}</td>
+          <td class="num">{% for s in db.sources %}{% if s.id == r.source_id %}{{ s.lists.length }}{% endif %}{% endfor %}</td>
+        </tr>
+      {% endfor %}</tbody>
+    </table>
+  </div>
+</div>
+<script>
+(() => {
+  const input=document.getElementById('collection-filter');
+  const rows=Array.from(document.querySelectorAll('#collection-table tbody tr'));
+  input.addEventListener('input',()=>{
+    const query=input.value.trim().toLocaleLowerCase();let count=0;
+    for(const row of rows){row.hidden=!row.textContent.toLocaleLowerCase().includes(query);if(!row.hidden)count++;}
+    document.getElementById('collection-result-count').textContent=`${count} catalogue item${count===1?'':'s'}`;
+  });
+})();
+</script>
