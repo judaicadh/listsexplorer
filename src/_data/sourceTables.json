@@ -1,0 +1,609 @@
+{
+  "jdc-population-report-68-1949": {
+    "images": [
+      "/images/jdc/population-report-68-1949-p1.jpg",
+      "/images/jdc/population-report-68-1949-p2.jpg",
+      "/images/jdc/population-report-68-1949-p3.jpg",
+      "/images/jdc/population-report-68-1949-p4.jpg"
+    ],
+    "tables": [
+      {
+        "id": "country-estimates",
+        "title": "Estimated Jewish population of Europe and North Africa (excluding the Soviet Union)",
+        "page": 2,
+        "as_of": "September 1949",
+        "headers": [
+          "Country or subtotal as written",
+          "Population as written",
+          "Qualification as written / editorial note"
+        ],
+        "rows": [
+          [
+            "Albania",
+            "300",
+            ""
+          ],
+          [
+            "Austria",
+            "20,500",
+            "Including 6,600 in DP camps and 5,000 DPs in towns."
+          ],
+          [
+            "Belgium",
+            "45,000",
+            "Including 3,200 post-war immigrants."
+          ],
+          [
+            "Bulgaria",
+            "4,000",
+            ""
+          ],
+          [
+            "Czechoslovakia",
+            "17,700",
+            ""
+          ],
+          [
+            "Denmark",
+            "7,150",
+            ""
+          ],
+          [
+            "Finland",
+            "1,800",
+            ""
+          ],
+          [
+            "France",
+            "280-300,000",
+            "Including 120-140,000 non-citizens."
+          ],
+          [
+            "Germany",
+            "49,000",
+            "Including 17,000 in DP camps and 18,500 DPs in towns."
+          ],
+          [
+            "Greece",
+            "7,000",
+            ""
+          ],
+          [
+            "Holland",
+            "27,000",
+            ""
+          ],
+          [
+            "Hungary",
+            "140-160,000",
+            ""
+          ],
+          [
+            "Italy",
+            "40,800",
+            "Including 2,900 DPs in camps and hachsharoth, and 2,500 DPs in towns and 655 Tripolitanians."
+          ],
+          [
+            "Luxembourg",
+            "500",
+            ""
+          ],
+          [
+            "Norway",
+            "1,000",
+            ""
+          ],
+          [
+            "Poland",
+            "75-80,000",
+            ""
+          ],
+          [
+            "Portugal",
+            "3,750",
+            ""
+          ],
+          [
+            "Rumania",
+            "375,000",
+            ""
+          ],
+          [
+            "Spain",
+            "3,500",
+            ""
+          ],
+          [
+            "Sweden",
+            "14,000",
+            "Including 8,000 non-Swedish citizens."
+          ],
+          [
+            "Switzerland",
+            "20,000",
+            ""
+          ],
+          [
+            "Turkey",
+            "80,000",
+            ""
+          ],
+          [
+            "Yugoslavia",
+            "5,500",
+            ""
+          ],
+          [
+            "Total Europe",
+            "1,218,500-1,263,500",
+            "Printed regional range, not an additional country."
+          ],
+          [
+            "Algiers",
+            "200,000",
+            ""
+          ],
+          [
+            "Egypt",
+            "75,000",
+            ""
+          ],
+          [
+            "Libya",
+            "30,000",
+            ""
+          ],
+          [
+            "Morocco",
+            "278,000",
+            ""
+          ],
+          [
+            "Tangiers",
+            "8,000",
+            ""
+          ],
+          [
+            "Tripolitania",
+            "30,000",
+            ""
+          ],
+          [
+            "Tunisia",
+            "105,000",
+            ""
+          ],
+          [
+            "Total North Africa",
+            "726,000",
+            "Printed regional subtotal."
+          ],
+          [
+            "Iran",
+            "90-100,000",
+            "Listed separately after the North Africa subtotal."
+          ]
+        ],
+        "notes": "Publication date: 7 November 1949. Historical labels are retained; Algiers, Libya and Tripolitania are not silently remapped or combined. Hyphenated shorthand such as 280-300,000 is retained, and no midpoint is substituted. Blank cells mean no qualification was printed. Regional subtotals are not extra populations.",
+        "csv_url": "/assets/reviews/jdc-population-1949/country-estimates.csv"
+      },
+      {
+        "id": "berlin-community",
+        "title": "Membership of Jewish Community at Berlin",
+        "page": 3,
+        "as_of": "August 1949",
+        "headers": [
+          "Age as written",
+          "Boys",
+          "Girls",
+          "Men",
+          "Women",
+          "Total",
+          "Grand total as positioned"
+        ],
+        "rows": [
+          [
+            "0-1",
+            "119",
+            "120",
+            "",
+            "",
+            "239",
+            ""
+          ],
+          [
+            "1-6",
+            "67",
+            "53",
+            "",
+            "",
+            "120",
+            ""
+          ],
+          [
+            "7-10",
+            "53",
+            "58",
+            "",
+            "",
+            "111",
+            ""
+          ],
+          [
+            "11-14",
+            "51",
+            "63",
+            "",
+            "",
+            "114",
+            ""
+          ],
+          [
+            "15-16",
+            "28",
+            "28",
+            "",
+            "",
+            "56",
+            ""
+          ],
+          [
+            "17-18",
+            "85",
+            "11",
+            "",
+            "",
+            "96",
+            "736"
+          ],
+          [
+            "19-25",
+            "",
+            "",
+            "227",
+            "217",
+            "444",
+            ""
+          ],
+          [
+            "26-35",
+            "",
+            "",
+            "356",
+            "378",
+            "734",
+            ""
+          ],
+          [
+            "36-45",
+            "",
+            "",
+            "480",
+            "556",
+            "1036",
+            ""
+          ],
+          [
+            "46-55",
+            "",
+            "",
+            "695",
+            "850",
+            "1545",
+            ""
+          ],
+          [
+            "56-65",
+            "",
+            "",
+            "704",
+            "629",
+            "1333",
+            ""
+          ],
+          [
+            "66-100",
+            "",
+            "",
+            "537",
+            "470",
+            "1007",
+            "6099"
+          ],
+          [
+            "TOTAL",
+            "403",
+            "333",
+            "2999",
+            "3100",
+            "6835",
+            "6835"
+          ]
+        ],
+        "notes": "These are community membership counts, not a count of every Jewish resident of Berlin. The grand-total column places 736 alongside the end of the under-19 group and 6099 alongside the end of the adult group. Blank cells are preserved and are not converted to zero. Overlapping age boundaries, as printed, are not silently repaired. Marginal handwritten calculations and percentages are excluded from the typed table.",
+        "csv_url": "/assets/reviews/jdc-population-1949/berlin-community.csv"
+      },
+      {
+        "id": "russian-zone-northern",
+        "title": "Population statistics: Schwerin, Halle, Magdeburg and Chemnitz",
+        "page": 4,
+        "as_of": "August 1949",
+        "headers": [
+          "Group as written",
+          "Age as written",
+          "Schwerin",
+          "Halle",
+          "Magdeburg",
+          "Chemnitz",
+          "Total",
+          "Grand total"
+        ],
+        "rows": [
+          [
+            "Children",
+            "0-1",
+            "8",
+            "-",
+            "2",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Children",
+            "2-5",
+            "2",
+            "4",
+            "5",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Children",
+            "6-13",
+            "-",
+            "1",
+            "2",
+            "-",
+            "",
+            ""
+          ],
+          [
+            "Children",
+            "14-17",
+            "1",
+            "1",
+            "2",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Children",
+            "Subtotal",
+            "11",
+            "6",
+            "11",
+            "3",
+            "31",
+            ""
+          ],
+          [
+            "Men",
+            "18-45",
+            "21",
+            "15",
+            "12",
+            "12",
+            "",
+            ""
+          ],
+          [
+            "Men",
+            "45 & over",
+            "25",
+            "32",
+            "62",
+            "17",
+            "",
+            ""
+          ],
+          [
+            "Men",
+            "Subtotal",
+            "46",
+            "47",
+            "74",
+            "29",
+            "196",
+            ""
+          ],
+          [
+            "Women",
+            "18-45",
+            "10",
+            "12",
+            "16",
+            "6",
+            "",
+            ""
+          ],
+          [
+            "Women",
+            "45 & over",
+            "27",
+            "28",
+            "65",
+            "14",
+            "",
+            ""
+          ],
+          [
+            "Women",
+            "Subtotal",
+            "37",
+            "40",
+            "81",
+            "20",
+            "178",
+            ""
+          ],
+          [
+            "TOTAL",
+            "",
+            "94",
+            "93",
+            "166",
+            "52",
+            "405",
+            "405"
+          ]
+        ],
+        "notes": "First panel on PDF p. 4. Printed dashes remain dashes; blank row totals remain blank. Handwritten added row totals are not included in the typed table. Printed panel total: 405.",
+        "csv_url": "/assets/reviews/jdc-population-1949/russian-zone-northern.csv"
+      },
+      {
+        "id": "russian-zone-southern",
+        "title": "Population statistics: Thuringen, Dresden, Brandenburg and Leipzig",
+        "page": 4,
+        "as_of": "August 1949",
+        "headers": [
+          "Group as written",
+          "Age as written",
+          "Thuringen",
+          "Dresden",
+          "Brandenburg",
+          "Leipzig",
+          "Total",
+          "Grand total"
+        ],
+        "rows": [
+          [
+            "Children",
+            "0-1",
+            "4",
+            "2",
+            "-",
+            "3",
+            "",
+            ""
+          ],
+          [
+            "Children",
+            "2-5",
+            "6",
+            "8",
+            "3",
+            "13",
+            "",
+            ""
+          ],
+          [
+            "Children",
+            "6-13",
+            "18",
+            "7",
+            "7",
+            "5",
+            "",
+            ""
+          ],
+          [
+            "Children",
+            "14-17",
+            "8",
+            "4",
+            "1",
+            "6",
+            "",
+            ""
+          ],
+          [
+            "Children",
+            "Subtotal",
+            "36",
+            "21",
+            "11",
+            "27",
+            "95",
+            ""
+          ],
+          [
+            "Men",
+            "18-45",
+            "47",
+            "30",
+            "4",
+            "76",
+            "",
+            ""
+          ],
+          [
+            "Men",
+            "45 & over",
+            "75",
+            "50",
+            "23",
+            "103",
+            "",
+            ""
+          ],
+          [
+            "Men",
+            "Subtotal",
+            "122",
+            "80",
+            "27",
+            "179",
+            "408",
+            ""
+          ],
+          [
+            "Women",
+            "18-45",
+            "35",
+            "38",
+            "11",
+            "53",
+            "",
+            ""
+          ],
+          [
+            "Women",
+            "45 & over",
+            "86",
+            "47",
+            "20",
+            "82",
+            "",
+            ""
+          ],
+          [
+            "Women",
+            "Subtotal",
+            "121",
+            "85",
+            "31",
+            "135",
+            "372",
+            ""
+          ],
+          [
+            "TOTAL",
+            "",
+            "279",
+            "186",
+            "69",
+            "341",
+            "875",
+            "875"
+          ]
+        ],
+        "notes": "Second panel on PDF p. 4. The page prints a combined Russian-zone total of 1280: 405 + 875. This is not a new row population to add to the two panel totals. Printed dashes and blanks remain distinct. Handwritten percentages and added calculations are not part of the typed transcription.",
+        "csv_url": "/assets/reviews/jdc-population-1949/russian-zone-southern.csv"
+      }
+    ],
+    "scope": "Four statistical tables from PDF pp. 2\u20134; the cover on p. 1 is retained as a scan. Marginal handwriting is not a full transcription. No country or age-group row is entered as a person, organization, donor or gift."
+  }
+}

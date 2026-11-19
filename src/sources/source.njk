@@ -19,8 +19,30 @@ eleventyComputed:
   {% for r in mikvehCollection.records %}{% if r.source_id == source.id %}
   <p><a href="/collections/mikveh-israel/">Mikveh Israel collection review</a> · {{ r.scans }} supplied scans · {{ r.status }}. <a href="/assets/reviews/mikveh-israel/page-inventory.csv">Scan-by-scan review register</a></p>
   {% endif %}{% endfor %}
+  {% if sourceTables[source.id] %}
+  {% set dataset = sourceTables[source.id] %}
+  <section class="section-tight">
+    <h2>Statistical tables</h2>
+    <p>{{ dataset.scope }}</p>
+    <div class="page-thumbs" style="display:flex;gap:1rem;flex-wrap:wrap;">
+      {% for img in dataset.images %}<a href="{{ img }}"><img src="{{ img }}" alt="PDF page {{ loop.index }} of {{ source.title }}" loading="lazy" style="width:150px;height:auto;"></a>{% endfor %}
+    </div>
+    <p class="muted small-note">Source images: JDC Archives, record 2573854. Select a page to view it full size.</p>
+    {% for table in dataset.tables %}
+      <section class="section-tight" id="{{ table.id }}">
+        <h3>{{ table.title }}</h3>
+        <p>Reference period: {{ table.as_of }} · PDF p. {{ table.page }} · <a href="{{ table.csv_url }}" download>Download table as CSV</a></p>
+        <p>{{ table.notes }}</p>
+        <div class="table-box"><table>
+          <thead><tr>{% for heading in table.headers %}<th scope="col">{{ heading }}</th>{% endfor %}</tr></thead>
+          <tbody>{% for row in table.rows %}<tr>{% for cell in row %}{% if loop.first %}<th scope="row">{{ cell }}</th>{% else %}<td>{{ cell }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody>
+        </table></div>
+      </section>
+    {% endfor %}
+  </section>
+  {% endif %}
   <section class="section-tight">
     <h2>Lists in this source</h2>
-    {% if source.lists.length %}<div class="grid-3">{% for l in source.lists %}{{ listCard(l) }}{% endfor %}</div>{% else %}<p>No lists have been transcribed from this source yet.</p>{% endif %}
+    {% if source.lists.length %}<div class="grid-3">{% for l in source.lists %}{{ listCard(l) }}{% endfor %}</div>{% elif sourceTables[source.id] %}<p>This source contains statistical tables, shown above. Its countries and age groups are not indexed as people.</p>{% else %}<p>No lists have been transcribed from this source yet.</p>{% endif %}
   </section>
 </div>
