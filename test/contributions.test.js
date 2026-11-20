@@ -237,6 +237,7 @@ test('new intermediary text cannot disguise an otherwise duplicate list',()=>{
 });
 test('section headings do not hide the via link on a list page',()=>{
   const nj=require('nunjucks');const env=new nj.Environment(new nj.FileSystemLoader(path.join(root,'src/_includes')));
+  env.addFilter('authorityLinks',require('../src/assets/authorities').links);
   const db=require('../lib/db').build();const list=db.lists.find(l=>l.id==='brussa-relief-1855-10-19');
   const entry=list.entries.find(e=>e.agent_id==='myers-i-h');
   const output=env.renderString(fs.readFileSync(path.join(root,'src/lists/list.njk'),'utf8'),{list:{...list,sections:[{title:'Ramsgate',entries:[entry]}]},site:{}});
