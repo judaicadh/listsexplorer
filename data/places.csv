@@ -30,11 +30,11 @@ watton,Watton,,"Watton-at-Stone, Hertfordshire",United Kingdom,51.8560,-0.1200,,
 worcester,Worcester,,Worcester,United Kingdom,52.1936,-2.2216,,
 shrewsbury,Shrewsbury,,Shrewsbury,United Kingdom,52.7073,-2.7553,,
 sheffield,Sheffield,,Sheffield,United Kingdom,53.3811,-1.4701,,
-sidmouth,Sidmouth,,"Sidmouth, Devon",United Kingdom,50.6780,-3.2390,,
+sidmouth,Sidmouth,,"Sidmouth, Devon",United Kingdom,50.6780,-3.2390,https://www.wikidata.org/wiki/Q995647,
 stockport,Stockport,,Stockport,United Kingdom,53.4106,-2.1575,,
 kingston-jamaica,Kingston,Jamaica,"Kingston, Jamaica",Jamaica,17.9714,-76.7920,https://www.wikidata.org/wiki/Q34692,
-st-thomas,St. Thomas,"St. Thomas', W. I.","St. Thomas, U.S. Virgin Islands",U.S. Virgin Islands,18.3419,-64.9307,,Danish West Indies in 1842.
-curacao,Curaçao,"Curacoa, W. I.",Curaçao,Curaçao,12.1091,-68.9316,,
+st-thomas,St. Thomas,"St. Thomas', W. I.","St. Thomas, U.S. Virgin Islands",U.S. Virgin Islands,18.3419,-64.9307,https://www.wikidata.org/wiki/Q463937,Danish West Indies in 1842.
+curacao,Curaçao,"Curacoa, W. I.",Curaçao,Curaçao,12.1091,-68.9316,https://www.wikidata.org/wiki/Q25279,
 barbados,Barbados,,Barbados,Barbados,13.0975,-59.6167,,
 charleston,Charleston,,"Charleston, South Carolina",United States,32.7765,-79.9311,,
 philadelphia,Philadelphia,,Philadelphia,United States,39.9526,-75.1652,,
@@ -288,5 +288,5 @@ hot-springs-arkansas,Hot Springs,,"Hot Springs, Arkansas",United States,,,,Place
 detroit-michigan,Detroit,,"Detroit, Michigan",United States,,,,Place named in the 1913 JPS anniversary volume. Coordinates not supplied. Distinct historical places are not collapsed into identically named locations.
 wilmington-north-carolina,Wilmington,,"Wilmington, North Carolina",United States,,,,Place named in the 1913 JPS anniversary volume. Coordinates not supplied. Distinct historical places are not collapsed into identically named locations.
 berkeley-california,Berkeley,,"Berkeley, California",United States,,,,Place named in the 1913 JPS anniversary volume. Coordinates not supplied. Distinct historical places are not collapsed into identically named locations.
-rochester-new-york,"Rochester, New York",,"Rochester, New York",United States,,,,Place named in the 1913 JPS anniversary volume. Coordinates not supplied. Distinct historical places are not collapsed into identically named locations.
+rochester-new-york,"Rochester, New York",,"Rochester, New York",United States,,,https://www.wikidata.org/wiki/Q49218,Place named in the 1913 JPS anniversary volume. Coordinates not supplied. Distinct historical places are not collapsed into identically named locations.
 england,England,,England,United Kingdom,,,,Place named in the 1913 JPS anniversary volume. Coordinates not supplied. Distinct historical places are not collapsed into identically named locations.
