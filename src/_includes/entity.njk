@@ -9,7 +9,7 @@
 {% else %}
 {# Shared body for person and organization pages. Expects `entity` and `crumb` = [url, label]. #}
 {% from "overlap-card.njk" import overlapCard %}
-{% from "macros.njk" import entriesTable, totalsLine, typeTag %}
+{% from "macros.njk" import entriesTable, totalsLine, typeTag, linkedRecords %}
 <div class="wrap section">
   <nav aria-label="Breadcrumb" class="crumbs"><a href="{{ crumb[0] }}">{{ crumb[1] }}</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ entity.name }}</span></nav>
 
@@ -29,6 +29,7 @@
         {% if entity.agentEntries.length %}<span class="chip chip-sub">Agent for {{ entity.agentEntries.length | plural("entry", "entries") }}</span>{% endif %}
         {% if entity.years.length %}<span class="chip">{{ entity.years[0] }}{% if entity.years.length > 1 %}–{{ entity.years[entity.years.length - 1] }}{% endif %}</span>{% endif %}
       </div>
+      {% if entity.authorities | authorityLinks | length %}<section class="linked-records" aria-label="Linked authority records"><h2 class="h-small">Linked records</h2>{{ linkedRecords(entity.authorities) }}<p class="muted authority-help">Explore this {{ "person" if entity.kind == "person" else "organization" }} in external reference databases.</p></section>{% endif %}
       {% if entity.notes %}<p>{{ entity.notes }}</p>{% endif %}
     </div>
     <aside class="split-side stack">
@@ -42,12 +43,7 @@
         <p>{{ totalsLine(entity.totals) }}</p>
       </section>
       {% endif %}
-      {% if entity.authorities.length %}
-      <section class="panel">
-        <h2 class="h-small">Elsewhere</h2>
-        <ul class="plain">{% for a in entity.authorities %}<li><a href="{{ a }}">{{ a }}</a></li>{% endfor %}</ul>
-      </section>
-      {% endif %}
+
     </aside>
   </div>
 

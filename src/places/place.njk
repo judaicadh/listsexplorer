@@ -8,12 +8,13 @@ permalink: "/places/{{ place.id }}/"
 eleventyComputed:
   title: "{{ place.name }}"
 ---
-{% from "macros.njk" import entriesTable, listCard %}
+{% from "macros.njk" import entriesTable, listCard, linkedRecords %}
 <div class="wrap section">
   <nav aria-label="Breadcrumb" class="crumbs"><a href="/places/">Places</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ place.name }}</span></nav>
   <p class="eyebrow">Place</p>
   <h1>{{ place.name }}</h1>
   <p class="sub">{% if place.modern_name and place.modern_name != place.name %}Today {{ place.modern_name }}, {% endif %}{{ place.country }}{% if place.variants.length %} · Also printed as {{ place.variants | join(", ") }}{% endif %}{% if place.lat %} · <a href="https://www.openstreetmap.org/?mlat={{ place.lat }}&mlon={{ place.lon }}#map=11/{{ place.lat }}/{{ place.lon }}">Map</a>{% endif %}</p>
+  {% if place.authority | authorityLinks | length %}<section class="linked-records" aria-label="Linked authority records"><h2 class="h-small">Linked records</h2>{{ linkedRecords(place.authority) }}<p class="muted authority-help">Reference records for identifying this place.</p></section>{% endif %}
   {% if place.notes %}<p>{{ place.notes }}</p>{% endif %}
 
   {% if place.lists.length %}

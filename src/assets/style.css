@@ -203,3 +203,6 @@ caption { text-align: left; padding: 12px 14px; font-weight: 600; }
 .profile-facts dt { font-weight:600; }
 .profile-facts dd { margin:0; white-space:pre-wrap; overflow-wrap:anywhere; }
 @media(max-width:500px) { .profile-facts {grid-template-columns:1fr;} .profile-facts dd {margin-bottom:8px;} }
+
+/* Human-readable linked authority records. */
+.linked-records{margin:1rem 0;padding:1rem 0;border-top:1px solid var(--line,#ddd)}.authority-links{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}.authority-link{display:inline-flex;flex-wrap:wrap;gap:.4rem;align-items:baseline;border:1px solid var(--line,#ddd);border-radius:6px;padding:.4rem .65rem;background:var(--surface,#fff);font-size:.95rem;text-decoration:none}.authority-link:hover,.authority-link:focus-visible{background:var(--neutral-bg,#eee);text-decoration:underline}.authority-id{font-size:.85em;color:var(--ink-2);overflow-wrap:anywhere}.authority-help{font-size:.9rem;margin:.6rem 0 0}.authority-links-compact{gap:.3rem;margin:.35rem 0 0}.authority-links-compact .authority-link{font-size:.8rem;padding:.15rem .4rem}

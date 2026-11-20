@@ -15,6 +15,7 @@ module.exports = async function (eleventyConfig) {
     const m = String(s || "").replace(/^(Messrs\.?|Mr\.?|Mrs\.?|Miss|Sir|Lady|Baron|Baroness|Rev\.?|Dr\.?|The)\s+/i, "").match(/[A-Za-z]/);
     return m ? m[0].toUpperCase() : "#";
   });
+  eleventyConfig.addFilter("authorityLinks", require("./src/assets/authorities").links);
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v));
 
   return {

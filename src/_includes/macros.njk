@@ -2,8 +2,13 @@
 <span class="tag tag-{{ list.list_type }}">{{ list.typeLabel }}</span>
 {%- endmacro %}
 
+{% macro linkedRecords(values, compact=false) -%}
+{% set links = values | authorityLinks %}
+{% if links.length %}<span class="authority-links{% if compact %} authority-links-compact{% endif %}">{% for record in links %}<a class="authority-link" href="{{ record.url }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ record.label }} record{% if record.id %} {{ record.id }}{% endif %}">{{ record.label }}{% if record.id and not compact %} <span class="authority-id">{{ record.id }}</span>{% endif %}</a>{% endfor %}</span>{% endif %}
+{%- endmacro %}
+
 {% macro entityLink(e, fallback) -%}
-{%- if e %}<a href="{{ e.url }}">{{ e.name }}</a>{% else %}{{ fallback }}{% endif -%}
+{%- if e %}<a href="{{ e.url }}">{{ e.name }}</a>{{ linkedRecords(e.authorities,true) }}{% else %}{{ fallback }}{% endif -%}
 {%- endmacro %}
 
 {% macro certainty(e) -%}
@@ -29,7 +34,7 @@
     <td><a href="{{ e.profileUrl }}">{{ e.name_as_printed }}</a>{{ certainty(e) }}</td>
     <td>{{ entityLink(e.entity, "—") }}</td>
     {% if showList %}<td><a href="{{ e.list.url }}">{{ e.list.title }}</a></td><td class="num">{{ e.list.year }}</td>{% endif %}
-    <td>{% if e.place %}<a href="{{ e.place.url }}">{{ e.place.name }}</a>{% else %}{{ e.place_as_printed or "—" }}{% endif %}</td>
+    <td>{% if e.place %}<a href="{{ e.place.url }}">{{ e.place.name }}</a>{{ linkedRecords(e.place.authority,true) }}{% else %}{{ e.place_as_printed or "—" }}{% endif %}</td>
     <td>{% if e.agent %}<a href="{{ e.agent.url }}">{{ e.agent.name }}</a>{% else %}{% if e.agentProfileUrl %}<a href="{{ e.agentProfileUrl }}">{{ e.agent_as_printed }}</a>{% else %}{{ e.agent_as_printed or "—" }}{% endif %}{% endif %}</td>
     <td class="num">{{ e.amountLabel }}</td>
   </tr>
