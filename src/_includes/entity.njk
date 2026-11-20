@@ -1,3 +1,12 @@
+{% if entity.mergedInto %}
+<div class="wrap section">
+  <p class="eyebrow">Merged profile</p>
+  <h1>{{ entity.name }}</h1>
+  <p>This profile has been merged into <a href="{{ entity.mergedInto.url }}">{{ entity.mergedInto.name }}</a>. Original printed names and source appearances are preserved on the combined profile.</p>
+  {% if entity.notes %}<p>{{ entity.notes }}</p>{% endif %}
+  <p><a href="{{ entity.mergedInto.url }}">View combined profile</a></p>
+</div>
+{% else %}
 {# Shared body for person and organization pages. Expects `entity` and `crumb` = [url, label]. #}
 {% from "overlap-card.njk" import overlapCard %}
 {% from "macros.njk" import entriesTable, totalsLine, typeTag %}
@@ -92,3 +101,5 @@
     <p>“{{ entity.name }}.” <i>{{ site.title }}</i>, {{ site.credits }}. [Stable URL]{{ entity.url }}. Accessed [date].</p>
   </section>
 </div>
+
+{% endif %}
