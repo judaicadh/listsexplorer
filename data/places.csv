@@ -80,9 +80,9 @@ spanish-town,Spanish Town,,"Spanish Town, Jamaica",Jamaica,17.9911,-76.9574,,
 port-maria,Port Maria,,"Port Maria, Jamaica",Jamaica,18.3696,-76.8902,,
 st-anns-bay,St. Ann's Bay,,"St. Ann's Bay, Jamaica",Jamaica,18.4359,-77.2016,,
 ocho-rios,Ocho Rios,,"Ocho Rios, Jamaica",Jamaica,18.4074,-77.1031,,
-manchester-jamaica,Manchester (Jamaica),,"Manchester Parish, Jamaica",Jamaica,,,,"A parish of Jamaica, not Manchester, England."
+manchester-jamaica,Manchester (Jamaica),,"Manchester Parish, Jamaica",Jamaica,18.05,-77.533333333333,https://www.wikidata.org/wiki/Q920496,"A parish of Jamaica, not Manchester, England."
 montego-bay,Montego Bay,,"Montego Bay, Jamaica",Jamaica,18.4762,-77.8939,https://www.wikidata.org/wiki/Q637555,
-clarendon-jamaica,Clarendon (Jamaica),,"Clarendon Parish, Jamaica",Jamaica,,,,
+clarendon-jamaica,Clarendon (Jamaica),,"Clarendon Parish, Jamaica",Jamaica,17.733,-77.15,https://www.wikidata.org/wiki/Q1095557,
 tobago,Tobago,,Tobago,Trinidad and Tobago,11.2500,-60.6667,,
 sydney,Sydney,,Sydney,Australia,-33.8688,151.2093,,
 melbourne,Melbourne,Port Phillip|P. Phil,Melbourne,Australia,-37.8136,144.9631,,
@@ -92,19 +92,19 @@ muzaffarpur,Muzafapore,Muzaffarpur,Muzaffarpur,India,26.1209,85.3647,,
 cussatollah,Cussatollah,,,India,,,,"Probably Cossitollah, a district of Calcutta."
 canton,Canton,,Guangzhou,China,23.1291,113.2644,https://www.wikidata.org/wiki/Q16572,
 tunis,Tunis,,Tunis,Tunisia,36.8065,10.1815,,
-holland,Holland,,Netherlands,Netherlands,,,,Country as printed; the entry names Arnheim.
+holland,Holland,,Netherlands,Netherlands,52.316666666667,5.55,https://www.wikidata.org/wiki/Q55,Country as printed; the entry names Arnheim.
 mercersburg,Mercersburgh,Mercersburg,"Mercersburg, Pennsylvania",United States,39.8279,-77.9030,,
 baltimore,Baltimore,,Baltimore,United States,39.2904,-76.6122,https://www.wikidata.org/wiki/Q5092,
-beaufort,Beaufort,,,United States,,,,"Printed under America; probably Beaufort, South Carolina."
-columbia,Columbia,,,United States,,,,"Printed under America; probably Columbia, South Carolina."
+beaufort,Beaufort,,,United States,32.431944444444,-80.689444444444,https://www.wikidata.org/wiki/Q813376,"Printed under America; probably Beaufort, South Carolina."
+columbia,Columbia,,,United States,34.000555555556,-81.044166666667,https://www.wikidata.org/wiki/Q38453,"Printed under America; probably Columbia, South Carolina."
 belville,Belville,,,,,,,Not yet identified (printed under America).
-augusta,Augusta,,,United States,,,,"Printed under America; probably Augusta, Georgia."
+augusta,Augusta,,,United States,33.47,-81.975,https://www.wikidata.org/wiki/Q181962,"Printed under America; probably Augusta, Georgia."
 savannah,Savannah,,"Savannah, Georgia",United States,32.0809,-81.0912,https://www.wikidata.org/wiki/Q83813,
 new-york,New York,,New York,United States,40.7128,-74.0060,,
 montreal,Montreal,,Montreal,Canada,45.5019,-73.5674,https://www.wikidata.org/wiki/Q340,
-brussa,Brussa,Bursa|Baroucha,Bursa,Turkey,,,https://www.wikidata.org/wiki/Q40738,Beneficiary community named in the appeal; the preceding page describes earthquake damage.
+brussa,Brussa,Bursa|Baroucha,Bursa,Turkey,40.19133055555555,29.08053888888889,https://www.wikidata.org/wiki/Q40738,Beneficiary community named in the appeal; the preceding page describes earthquake damage.
 merthyr-tydfil,Merthyr Tydfil,Merthyr Tidvil,Merthyr Tydfil,United Kingdom,,,https://www.wikidata.org/wiki/Q752762,
-wolverhampton,Wolverhampton,,Wolverhampton,United Kingdom,,,https://www.wikidata.org/wiki/Q126269,
+wolverhampton,Wolverhampton,,Wolverhampton,United Kingdom,52.58416666666667,-2.125277777777778,https://www.wikidata.org/wiki/Q126269,
 jersey,Jersey,,Jersey,Jersey,,,,
 ashton,Ashton,,Ashton-under-Lyne,United Kingdom,53.4880,-2.0980,https://www.wikidata.org/wiki/Q659803,Printed as “(Ashton)” under Manchester.
 ireland,Ireland,,Ireland,,,,https://www.wikidata.org/wiki/Q27,Country heading.
@@ -127,12 +127,12 @@ cardiff,Cardiff,,Cardiff,United Kingdom,51.4816,-3.1791,,
 pontypool,Pontypool,,Pontypool,United Kingdom,51.7016,-3.0441,,
 chambersburg,Chambersburg,,"Chambersburg, Pennsylvania",United States,,,,
 erie,Erie,,"Erie, Pennsylvania",United States,,,,
-franklin,"Franklin, Venango",,"Franklin, Pennsylvania",United States,,,,
+franklin,"Franklin, Venango",,"Franklin, Pennsylvania",United States,40.3431,-78.8819,https://www.wikidata.org/wiki/Q2053378,
 honesdale,Honesdale,,"Honesdale, Pennsylvania",United States,,,,
 huntington,"Huntington, Mont'y",,"Huntington, Pennsylvania",United States,,,,
-mercersburg-pennsylvania,Mercersburg,,"Mercersburg, Pennsylvania",United States,,,,
+mercersburg-pennsylvania,Mercersburg,,"Mercersburg, Pennsylvania",United States,39.82917,-77.90194,https://www.wikidata.org/wiki/Q1186505,
 meadville,Meadville,,"Meadville, Pennsylvania",United States,,,,
-pittsburg,Pittsburg,,"Pittsburg, Pennsylvania",United States,,,,
+pittsburg,Pittsburg,,"Pittsburg, Pennsylvania",United States,40.44166666666667,-80,https://www.wikidata.org/wiki/Q1342,
 wilkesbarre,Wilkesbarre,,"Wilkesbarre, Pennsylvania",United States,,,,
 jamaica,"Jamaica, L. I.",,"Jamaica, New York",United States,,,,
 pleasantville,"Pleasantville, W. C.",,"Pleasantville, New York",United States,,,,
@@ -159,7 +159,7 @@ pontotoc,Pontotoc,,"Pontotoc, Mississippi",United States,,,,
 new-orleans,New Orleans,,"New Orleans, Louisiana",United States,29.9511,-90.0715,https://www.wikidata.org/wiki/Q34404,
 covington,Covington,,"Covington, Louisiana",United States,,,,
 lebanon-tennessee,Lebanon,,"Lebanon, Tennessee",United States,,,,
-danville-kentucky,Danville,,"Danville, Kentucky",United States,,,,
+danville-kentucky,Danville,,"Danville, Kentucky",United States,37.645833333333336,-84.7725,https://www.wikidata.org/wiki/Q988923,
 lexington-kentucky,Lexington,,"Lexington, Kentucky",United States,,,,
 louisville,Louisville,,"Louisville, Kentucky",United States,,,,
 st-joseph,St. Joseph,,"St. Joseph, Florida",United States,,,https://www.wikidata.org/wiki/Q16900572,
