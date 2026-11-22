@@ -1,0 +1,30 @@
+{
+  "pdf_scans": 591,
+  "lists": 74,
+  "entries": 23262,
+  "organization_profiles": 1524,
+  "page_images": 517,
+  "entry_pages": 509,
+  "uncertain_readings": 23262,
+  "unique_entry_ids": 23262,
+  "unreconciled_person_appearances": 21783,
+  "roles": {
+    "listed-contact": 2746,
+    "member": 16403,
+    "listed-organization": 1479,
+    "officer": 2520,
+    "subscriber": 114
+  },
+  "image_bytes": 128260608,
+  "review_issues": 1214,
+  "checks_passed": [
+    "591 unique scans inventoried",
+    "Unique entry identifiers",
+    "All referenced page images exist",
+    "No amounts or member totals invented",
+    "All readings explicitly uncertain",
+    "No duplicate entries from Phi Alpha geographical alternate index",
+    "Sigma Delta Tau inserted Omega chapter assigned separately",
+    "Data-table and page-reference links valid"
+  ]
+}
