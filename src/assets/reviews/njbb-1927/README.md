@@ -4,11 +4,11 @@ Source: https://hdl.handle.net/2027/mdp.39015004131283
 
 University of Michigan copy, digitized by Google and supplied as a 591-page HathiTrust PDF. The title page identifies the 1927 edition and The Blue Book Publishing Company, 121 North Broad Street, Philadelphia. Printed pages in the numbered text correspond to supplied-PDF scan number minus 3; the HathiTrust PDF has its own added cover. We do not assume the PDF scan number is the online viewer's sequence number.
 
-74 logical draft lists; 23,262 structured transcription rows; 1,524 new organization profiles (including roster issuers); 517 rendered page images. These are appearance counts, not verified unique people or organizations.
+74 logical draft lists; 23,264 structured transcription rows; 1,524 new organization profiles (including roster issuers); 517 rendered page images. These are appearance counts, not verified unique people or organizations.
 
 ## Review status
 
-All 591 scans received an embedded-text and coordinate-layout inventory. Only targeted pages received visual checks: printed pp. 21, 127, 292, 494, 545 and 565 (including high-resolution checks for column boundaries and the subscriber advertisement). Rendering an image is not a claim of visual proofreading. Every imported reading is marked uncertain, and every list is labelled OCR-assisted draft with segmentation and names needing proofreading.
+All 591 scans received an embedded-text and coordinate-layout inventory. Only targeted pages received visual checks: printed pp. 21, 127, 292, 494, 545 and 565 (including high-resolution checks for column boundaries and the subscriber advertisement). Rendering an image is not a claim of visual proofreading. The original import marked every reading uncertain. On 2026-11-22, Executives (pp. 36–38) was manually redone: all 126 names and address details were checked against all three scans. Every other list remains an uncertain OCR-assisted draft. An audit of every imported name field identified address/place candidates; 14 professional directories are explicitly flagged for a scan-based redo. Flags are not exhaustive error counts, and an absence of flags does not mean a list is correct.
 
 This is NOT a verified complete name-by-name transcription. Some names remain inside source notes or unsegmented chapter/board prose. 1,214 extraction review items are retained in extraction-issues.csv. OCR joins, titles, spelling, cell alignment and person/organization boundaries need correction. An organization's heading may be completed from the book's own contents; such rows say so and retain the page-level source text, which can include adjacent organizations.
 
@@ -29,3 +29,9 @@ This is NOT a verified complete name-by-name transcription. Some names remain in
 ## Files
 
 page-inventory.csv inventories every supplied scan. text-layout.txt preserves complete embedded text. raw-column-transcription.jsonl preserves coordinate-ordered source lines. extraction-issues.csv records unsegmented and rejected material. checks.json records import integrity checks. lists.csv and entries.csv are provided in the downloadable draft package with organization/source metadata.
+
+## Executives correction, 2026-11-22
+
+126 scan-checked entries replace 124 unreliable OCR rows. The crosswalk documents retained identifiers, restored people, and retired address fragments. No entity link was removed from a retired row, and no identities were merged. Printed names and unusual spellings are retained; line wraps and punctuation spacing are normalized, and the care-of symbol is expanded as c/o. The original extraction files remain as historical audit evidence, not the current transcription. executives-reviewed.tsv is the corrected transcription. redo-audit.csv contains candidates across all 74 lists, including valid organization headings that match the heuristic and still require inspection.
+
+Broader audit: 21 Blue Book lists now have confirmed extraction problems, including seven club/fraternity/organization lists beyond the 14 professional directories. The separate data-quality-2026-11-22 review queue also includes Boston pledges and two Temple event lists; other candidates remain unverified.
