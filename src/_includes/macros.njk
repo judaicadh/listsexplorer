@@ -17,11 +17,13 @@
 
 {# Table of entries; showList = include the list column #}
 {% macro entriesTable(entries, showList=true, caption="") %}
+{% set showAddresses = entries | hasAddresses %}
 <div class="table-box">
 <table>
   {% if caption %}<caption class="sr-only">{{ caption }}</caption>{% endif %}
   <thead><tr>
     <th scope="col">Name as printed</th>
+    {% if showAddresses %}<th scope="col">Address as printed</th>{% endif %}
     <th scope="col">Identified as</th>
     {% if showList %}<th scope="col">List</th><th scope="col">Year</th>{% endif %}
     <th scope="col">Place</th>
@@ -31,7 +33,8 @@
   <tbody>
   {% for e in entries %}
   <tr>
-    <td><a href="{{ e.profileUrl }}">{{ e.name_as_printed }}</a>{{ certainty(e) }}{% for a in e.addresses %}<span class="muted block">{{ a.label }}: {{ a.address_as_printed }}{% if a.mapUrl %} · <a href="{{ a.mapUrl }}">{{ a.locationLabel }}</a>{% endif %}</span>{% endfor %}</td>
+    <td><a href="{{ e.profileUrl }}">{{ e.name_as_printed }}</a>{{ certainty(e) }}</td>
+    {% if showAddresses %}<td>{% for a in e.addresses %}<span class="block">{{ a.label }}: {{ a.address_as_printed }}{% if a.mapUrl %} · <a href="{{ a.mapUrl }}">{{ a.locationLabel }}</a>{% endif %}</span>{% else %}—{% endfor %}</td>{% endif %}
     <td>{{ entityLink(e.entity, "—") }}</td>
     {% if showList %}<td><a href="{{ e.list.url }}">{{ e.list.title }}</a></td><td class="num">{{ e.list.year }}</td>{% endif %}
     <td>{% if e.place %}<a href="{{ e.place.url }}">{{ e.place.name }}</a>{{ linkedRecords(e.place.authority,true) }}{% else %}{{ e.place_as_printed or "—" }}{% endif %}</td>

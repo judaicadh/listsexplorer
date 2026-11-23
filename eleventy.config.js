@@ -10,6 +10,7 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addWatchTarget("data/");
   eleventyConfig.addWatchTarget("lib/");
 
+  eleventyConfig.addFilter("hasAddresses", entries => (entries || []).some(e => e.addresses?.length));
   eleventyConfig.addFilter("plural", (n, one, many) => `${n} ${n === 1 ? one : many}`);
   eleventyConfig.addFilter("initial", (s) => {
     const m = String(s || "").replace(/^(Messrs\.?|Mr\.?|Mrs\.?|Miss|Sir|Lady|Baron|Baroness|Rev\.?|Dr\.?|The)\s+/i, "").match(/[A-Za-z]/);
