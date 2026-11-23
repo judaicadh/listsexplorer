@@ -1,0 +1,3 @@
+const {stringify}=require('./assets/contribution');
+const fields=['name_as_printed','list_title','historical_date','page','column','entity_id','id','entry_id','list_id','kind','address_as_printed','geocode_query','lat','lon','matched_address','geocode_status','precision','provider','geocoded_at','note'];
+module.exports=class{data(){return {permalink:'/data/address-records.csv',eleventyExcludeFromCollections:true};}render({db}){return '\uFEFF'+stringify(db.addresses.map(a=>({...a,name_as_printed:a.entry.name_as_printed,list_title:a.entry.list.title,historical_date:a.entry.list.date,page:a.entry.page,column:a.entry.column,entity_id:a.entry.entity_id})),fields);}};

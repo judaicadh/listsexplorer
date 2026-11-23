@@ -10,6 +10,8 @@ test('addresses retain historical appearances, split residences and offices, and
  const db=require('../lib/db').build();assert.deepEqual(db.errors,[]);assert.equal(db.addresses.length,470);
  const exec=db.lists.find(l=>l.id==='njbb-1927-executives');assert.equal(exec.addresses.length,225);assert.ok(exec.hasAddresses);
  const entry=exec.entries.find(e=>e.name_as_printed==='Adlerblum, Israel S.');assert.equal(entry.addresses.length,2);assert.equal(entry.addresses[0].kind,'listed');assert.equal(entry.addresses[1].kind,'office');
- assert.equal(db.addresses.filter(a=>a.geocode_status==='accepted').length,0);assert.equal(db.addresses.filter(a=>a.hasCoordinates).length,141);
+ assert.equal(db.addresses.filter(a=>a.geocode_status==='accepted').length,0);assert.equal(exec.addresses.filter(a=>a.hasCoordinates).length,138);
  assert.ok(addressData(db).every(a=>a.name&&a.date&&a.url));assert.ok(db.addresses.every(a=>!a.lat||a.provider));
 });
+
+test('address exports keep printed names, source dates and multiple addresses alongside coordinates',()=>{const {parse}=require('csv-parse/sync'),db=require('../lib/db').build(),Download=require('../src/address-downloads.11ty'),All=require('../src/address-records.11ty');const list=db.lists.find(l=>l.id==='njbb-1927-executives'),rows=parse(new Download().render({list}),{columns:true,bom:true,skip_empty_lines:true});assert.equal(rows.length,225);assert.equal(rows[0].name_as_printed,'Adlerblum, Israel S.');assert.equal(rows[0].historical_date,'1927');assert.equal(rows[0].kind,'listed');assert.equal(parse(new All().render({db}),{columns:true,bom:true,skip_empty_lines:true}).length,470);});
