@@ -31,6 +31,7 @@ class SearchIndex {
         ...(e.entity ? e.entity.variants : []),
         ...(e.place ? e.place.variants : []),
         ...(e.agent ? e.agent.variants : []),
+        ...(e.addresses || []).map(a => a.address_as_printed),
         e.agent_as_printed,
         e.place && e.place.modern_name,
       ].filter(Boolean).join(" "),

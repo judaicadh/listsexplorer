@@ -31,7 +31,7 @@
   <tbody>
   {% for e in entries %}
   <tr>
-    <td><a href="{{ e.profileUrl }}">{{ e.name_as_printed }}</a>{{ certainty(e) }}</td>
+    <td><a href="{{ e.profileUrl }}">{{ e.name_as_printed }}</a>{{ certainty(e) }}{% for a in e.addresses %}<span class="muted block">{{ a.label }}: {{ a.address_as_printed }}{% if a.mapUrl %} · <a href="{{ a.mapUrl }}">{{ a.locationLabel }}</a>{% endif %}</span>{% endfor %}</td>
     <td>{{ entityLink(e.entity, "—") }}</td>
     {% if showList %}<td><a href="{{ e.list.url }}">{{ e.list.title }}</a></td><td class="num">{{ e.list.year }}</td>{% endif %}
     <td>{% if e.place %}<a href="{{ e.place.url }}">{{ e.place.name }}</a>{{ linkedRecords(e.place.authority,true) }}{% else %}{{ e.place_as_printed or "—" }}{% endif %}</td>

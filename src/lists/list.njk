@@ -17,7 +17,7 @@ eleventyComputed:
       {{ typeTag(list) }}
       {% if list.title_original %}<p class="orig" dir="auto">{{ list.title_original }}</p>{% endif %}
       <h1>{{ list.title }}</h1>
-      <p class="actions"><a href="/data/lists/{{ list.id }}.csv" download="{{ list.id }}.csv">Download this list as CSV</a></p>
+      <p class="actions"><a href="/data/lists/{{ list.id }}.csv" download="{{ list.id }}.csv">Download this list as CSV</a>{% if list.hasAddresses %} · <a href="/data/list-addresses/{{ list.id }}.csv" download>Download addresses as CSV</a> · <a href="/addresses/?list={{ list.id }}">View address map</a>{% endif %}</p>
       <p class="sub">{% if list.source %}<a href="{{ list.source.url }}"><i>{{ list.source.title }}</i></a>{% if list.citation %}, {{ list.citation }}{% endif %} · {% endif %}{% if list.place %}{{ list.place.name }}, {% endif %}{{ list.dateLabel }}</p>
       {% if list.purpose %}<p>{{ list.purpose }}</p>{% endif %}
       {% if list.notes %}<p class="note">{{ list.notes }}</p>{% endif %}
@@ -110,14 +110,14 @@ eleventyComputed:
           {% if s.title %}<h3 class="tx-head">{{ s.title }}{% if s.totals.length %} <span class="muted">· {{ totalsLine(s.totals) }}</span>{% endif %}</h3>{% endif %}
           <div class="table-box">
             <table class="tx">
-              <thead><tr><th scope="col" class="num">#</th><th scope="col">{% if list.list_type == "offering" %}Dedication / purpose as written{% elif list.list_type == "debt" %}Person billed as written{% elif list.list_type == "bequest" %}Recipient as printed{% elif list.list_type == "patron" %}Patron as listed{% elif list.list_type == "prize" %}Prize recipient as printed{% elif list.list_type == "sport" or list.list_type == "roster" %}Participant as printed{% elif list.list_type == "petition" %}Signatory as printed{% else %}Name as printed{% endif %}</th>{% if list.list_type == "directory" %}<th scope="col">Role</th>{% endif %}<th scope="col">{% if list.list_type == "directory" %}Postal address as listed{% else %}Place{% endif %}</th>{% if list.list_type != "directory" and list.list_type != "sport" and list.list_type != "roster" and list.list_type != "patron" %}<th scope="col" class="num">{% if list.list_type == "prize" %}Printed prize value{% else %}Amount{% endif %}</th>{% endif %}</tr></thead>
+              <thead><tr><th scope="col" class="num">#</th><th scope="col">{% if list.list_type == "offering" %}Dedication / purpose as written{% elif list.list_type == "debt" %}Person billed as written{% elif list.list_type == "bequest" %}Recipient as printed{% elif list.list_type == "patron" %}Patron as listed{% elif list.list_type == "prize" %}Prize recipient as printed{% elif list.list_type == "sport" or list.list_type == "roster" %}Participant as printed{% elif list.list_type == "petition" %}Signatory as printed{% else %}Name as printed{% endif %}</th>{% if list.list_type == "directory" %}<th scope="col">Role</th>{% endif %}<th scope="col">{% if list.list_type == "directory" %}Address as listed{% else %}Place{% endif %}</th>{% if list.list_type != "directory" and list.list_type != "sport" and list.list_type != "roster" and list.list_type != "patron" %}<th scope="col" class="num">{% if list.list_type == "prize" %}Printed prize value{% else %}Amount{% endif %}</th>{% endif %}</tr></thead>
               <tbody>
               {% for e in s.entries %}
               <tr id="{{ e.id }}">
                 <td class="num muted">{{ e.seq }}</td>
                 <td><a href="{{ e.profileUrl }}">{{ e.name_as_printed }}</a>{{ certainty(e) }}{% if e.note %}<span class="muted block">{{ e.note }}</span>{% endif %}{% if e.agentLabel %}<span class="muted block">via {% if e.agent %}<a href="{{ e.agent.url }}">{{ e.agent.name }}</a>{% else %}<a href="{{ e.agentProfileUrl }}">{{ e.agent_as_printed }}</a> <span class="small-note">(identity not yet reviewed)</span>{% endif %}</span>{% endif %}</td>
                 {% if list.list_type == "directory" %}<td>{{ e.roleLabel }}</td>{% endif %}
-                <td>{% if list.list_type == "directory" and not e.place_as_printed %}<span class="muted">Not supplied</span>{% elif e.place %}<a href="{{ e.place.url }}">{{ e.place_as_printed or e.place.name }}</a>{% else %}{{ e.place_as_printed }}{% endif %}</td>
+                <td>{% if e.addresses.length %}{% for a in e.addresses %}<div class="record-address"><strong>{{ a.label }}</strong><span class="block">{{ a.address_as_printed }}</span>{% if a.mapUrl %}<a class="small-note" href="{{ a.mapUrl }}">{{ a.locationLabel }}</a>{% else %}<span class="muted small-note block">{{ a.locationLabel }}</span>{% endif %}</div>{% endfor %}{% elif list.list_type == "directory" and not e.place_as_printed %}<span class="muted">Not supplied</span>{% elif e.place %}<a href="{{ e.place.url }}">{{ e.place_as_printed or e.place.name }}</a>{% else %}{{ e.place_as_printed }}{% endif %}</td>
                 {% if list.list_type != "directory" and list.list_type != "sport" and list.list_type != "roster" and list.list_type != "patron" %}<td class="num">{{ e.amountLabel }}</td>{% endif %}
               </tr>
               {% endfor %}

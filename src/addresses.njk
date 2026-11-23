@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: Addresses
+permalink: /addresses/
+---
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="/assets/map.css">
+<div class="wrap section">
+<h1>Addresses in the lists</h1>
+<p>Addresses belong to a named appearance and historical date. Residence and office addresses are kept separately. Orange points are modern geocoding candidates awaiting review; they do not establish where a historical building stood. Coordinates are calculated along modern street address ranges.</p>
+<p><a href="/data/addresses.csv" download>Download addresses and geocoding results (CSV)</a> · <a href="/map/">Town and city map</a> · <a href="https://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.html">US Census geocoding method</a></p>
+<div class="map-filters"><div class="field"><label for="address-query">Name or address</label><input id="address-query" type="search"></div><div class="field"><label for="address-status">Location status</label><select id="address-status"><option value="">All addresses</option><option value="candidate">Location candidates</option><option value="accepted">Reviewed locations</option><option value="unmapped">Not mapped / ambiguous</option></select></div><div class="field"><label for="address-list">List</label><select id="address-list"><option value="">All lists</option></select></div></div>
+<p id="address-summary" role="status">Loading addresses…</p><div id="address-map" style="height:450px;border:1px solid #ccc" aria-label="Map of address candidates"></div>
+<p class="muted small-note">This address inventory is still being expanded. Uncertain names and broken draft associations must be checked before geocoding. Unmatched addresses remain visible below.</p>
+<div id="address-rows" class="stack"></div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script><script src="/assets/addresses.js" defer></script>
