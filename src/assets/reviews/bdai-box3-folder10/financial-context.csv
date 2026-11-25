@@ -1,0 +1,19 @@
+pdf_page,date,name_or_fund,amount,currency,transaction_type,note
+1,1871-05,M. S. Isaacs,118.76,USD,expense,Printing stationery and other outlays; not a donation
+1,1871-10-26,Dr Adler,55.69,USD,transfer,"£10 remitted; expense or transfer, not gift receipt"
+1,1872-05,Mr. S. Isaacs,72.25,USD,expense,"Printing and outlays; initial as read, not automatically reconciled"
+1,1872-03-09,A. Cremieux / Jaffa School,500,USD,transfer,From Jerusalem Fund; not additional donation receipt
+1,1872-05-20,Sir M. Montefiore,2768.80,USD,transfer,£500 remitted from Persian Fund; not additional donation receipt
+1,1872-05-20,Persian Fund,3557.42,USD,aggregate receipts,No individual donor breakdown given
+1,1872-05-20,Persian Fund,788.62,USD,balance,Not an individual gift
+1,1872-05,Roumanian Fund,85.63,USD,aggregate receipts,No individual donor breakdown given
+8,1863-01-11,K.K. Emanuel,10,USD,disputed dues,Draft allegedly remitted; Board says not received
+44,1875-05-06,Washington Hebrew Congregation,10,USD,annual dues remittance,"One congregation payment, not $10 per delegate"
+46,1876-04-02,Washington Hebrew Congregation,10,USD,annual dues remittance,"One congregation payment, not $10 per delegate"
+48,1871-05-22,Washington Hebrew Congregation,10,USD,annual dues remittance,"One congregation payment, not $10 per representative"
+14,1872,Mickvah Israel property,20000,USD,valuation,Approximate; not gift
+14,1872,Mickvah Israel annual income,2000,USD,income,"Approximate investment income, not gift"
+53,1872,Bnai Brith property,10000,USD,valuation,Not gift
+53,1872,Bnai Brith income,1300,USD,income,Not gift
+56,1872,Washington Hebrew Congregation property,20000,USD,valuation,Not gift
+56,1872,Washington Hebrew Congregation income,4000,USD,income,Not gift
