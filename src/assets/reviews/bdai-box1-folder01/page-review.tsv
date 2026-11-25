@@ -1,36 +1,493 @@
-pdf_page	review_status	description	notes
-1	visually reviewed	Cover	
-2	visually reviewed	Myer S. Isaacs bookplate	
-3	visually reviewed	Flyleaf M. S. Isaacs	
-4	visually reviewed	First session title 1859 published 1860	
-5	visually reviewed	Founding call and plan	
-6	visually reviewed	Call signatories and accredited delegates	
-7	visually reviewed	Constitution printed page 4	Printed page 3 appears absent between PDF scans 6 and 7; use German parallel for missing continuation
-8	visually reviewed	Constitution and majority report signers	
-9	visually reviewed	Majority and minority reports	
-10	visually reviewed	Minority report and nominating committee	
-11	visually reviewed	Elected officers trustees and executive committee	
-12	visually reviewed	German parallel text	
-13	visually reviewed	German parallel of founding proceedings; no duplicate import	
-14	visually reviewed	German parallel of founding proceedings; no duplicate import	
-15	visually reviewed	German parallel of founding proceedings; no duplicate import	
-16	visually reviewed	German parallel of founding proceedings; no duplicate import	
-17	visually reviewed	German parallel of founding proceedings; no duplicate import	
-18	visually reviewed	German parallel of founding proceedings; no duplicate import	
-19	visually reviewed	First Annual Report1860: cover	
-20	visually reviewed	First Annual Report1860: title	
-21	visually reviewed	First Annual Report1860: officer roster	
-22	OCR text reviewed	First Annual Report1860: European correspondence	
-23	OCR text reviewed	First Annual Report1860: European correspondence	
-24	OCR text reviewed	First Annual Report1860: Morocco relief appeal and aggregate total	No named donor roll in first annual report. Aggregate totals are not individual donations.
-25	OCR text reviewed	First Annual Report1860: Washington chaplain correspondence	No named donor roll in first annual report. Aggregate totals are not individual donations.
-26	OCR text reviewed	First Annual Report1860: Swiss treaty correspondence	No named donor roll in first annual report. Aggregate totals are not individual donations.
-27	OCR text reviewed	First Annual Report1860: Religious liberty discussion	No named donor roll in first annual report. Aggregate totals are not individual donations.
-28	OCR text reviewed	First Annual Report1860: Religious tests discussion	No named donor roll in first annual report. Aggregate totals are not individual donations.
-29	OCR text reviewed	First Annual Report1860: Book distribution offer and policy topics	No named donor roll in first annual report. Aggregate totals are not individual donations.
-30	OCR text reviewed	First Annual Report1860: Statistics collection and aggregate finances	No named donor roll in first annual report. Aggregate totals are not individual donations.
-31	OCR text reviewed	First Annual Report1860: Secretary and committee/trustee replacements	No named donor roll in first annual report. Aggregate totals are not individual donations.
-32	OCR text reviewed	First Annual Report1860: Report signature and acknowledgments	No named donor roll in first annual report. Aggregate totals are not individual donations.
-33	OCR text reviewed	First Annual Report1860: Blank sample survey form	No named donor roll in first annual report. Aggregate totals are not individual donations.
-34	OCR text reviewed; financial pages require visual check	First Annual Report1860: Blank annual form and treasurer account	No named donor roll in first annual report. Aggregate totals are not individual donations.
-35	OCR text reviewed; financial pages require visual check	First Annual Report1860: Morocco relief aggregate finances	No named donor roll in first annual report. Aggregate totals are not individual donations.
+pdf_scan	section	screening	list_review	duplicate_of_scan	notes
+1	Founding proceedings,1859	Complete	Blank/cover screening		-
+2	Founding proceedings,1859	Complete	OCR-assisted list screening; no additional named list transcribed		-
+3	Founding proceedings,1859	Complete	Blank/cover screening		-
+4	Founding proceedings,1859	Complete	OCR-assisted list screening; no additional named list transcribed		-
+5	Founding proceedings,1859	Complete	OCR-assisted list screening; no additional named list transcribed		-
+6	Founding proceedings,1859	Complete	List text visually checked; draft transcription		bdai-founding-call-signatories-1859 | bdai-founding-delegates-1859 | bdai-founding-session-committees-1859
+7	Founding proceedings,1859	Complete	OCR-assisted list screening; no additional named list transcribed		-
+8	Founding proceedings,1859	Complete	List text visually checked; draft transcription		bdai-founding-session-committees-1859
+9	Founding proceedings,1859	Complete	OCR-assisted list screening; no additional named list transcribed		-
+10	Founding proceedings,1859	Complete	List text visually checked; draft transcription		bdai-founding-session-committees-1859
+11	Founding proceedings,1859	Complete	List text visually checked; draft transcription		bdai-founding-officers-1859
+12	Founding proceedings,1859	Complete	List text visually checked; draft transcription		bdai-founding-call-signatories-1859 | bdai-founding-delegates-1859
+13	Founding proceedings,1859	Complete	List text visually checked; draft transcription		bdai-founding-delegates-1859 | bdai-founding-session-committees-1859
+14	Founding proceedings,1859	Complete	OCR-assisted list screening; no additional named list transcribed		-
+15	Founding proceedings,1859	Complete	OCR-assisted list screening; no additional named list transcribed		-
+16	Founding proceedings,1859	Complete	OCR-assisted list screening; no additional named list transcribed		-
+17	Founding proceedings,1859	Complete	OCR-assisted list screening; no additional named list transcribed		-
+18	Founding proceedings,1859	Complete	List text visually checked; draft transcription		bdai-founding-officers-1859
+19	Founding proceedings,1859	Complete	OCR-assisted list screening; no additional named list transcribed		-
+20	Founding proceedings,1859	Complete	OCR-assisted list screening; no additional named list transcribed		-
+21	Founding proceedings,1859	Complete	List text visually checked; draft transcription		bdai-officers-1860
+22	First annual report,1860	Complete	OCR-assisted list screening; no additional named list transcribed		-
+23	First annual report,1860	Complete	OCR-assisted list screening; no additional named list transcribed		-
+24	First annual report,1860	Complete	OCR-assisted list screening; no additional named list transcribed		-
+25	First annual report,1860	Complete	OCR-assisted list screening; no additional named list transcribed		-
+26	First annual report,1860	Complete	OCR-assisted list screening; no additional named list transcribed		-
+27	First annual report,1860	Complete	OCR-assisted list screening; no additional named list transcribed		-
+28	First annual report,1860	Complete	OCR-assisted list screening; no additional named list transcribed		-
+29	First annual report,1860	Complete	OCR-assisted list screening; no additional named list transcribed		-
+30	First annual report,1860	Complete	OCR-assisted list screening; no additional named list transcribed		-
+31	First annual report,1860	Complete	List text visually checked; draft transcription		bdai-officers-1860
+32	First annual report,1860	Complete	List text visually checked; draft transcription		bdai-officers-1860
+33	First annual report,1860	Complete	OCR-assisted list screening; no additional named list transcribed		-
+34	First annual report,1860	Complete	OCR-assisted list screening; no additional named list transcribed		-
+35	First annual report,1860	Complete	OCR-assisted list screening; no additional named list transcribed		-
+36	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+37	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+38	Second annual report,1861;Swiss diplomatic appendix	Complete	List text visually checked; draft transcription		bdai-officers-1861
+39	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+40	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+41	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+42	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+43	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+44	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+45	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+46	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+47	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+48	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+49	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+50	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+51	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+52	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+53	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+54	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+55	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+56	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+57	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+58	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+59	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+60	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+61	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+62	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+63	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+64	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+65	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+66	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+67	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+68	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+69	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+70	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+71	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+72	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+73	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+74	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+75	Second annual report,1861;Swiss diplomatic appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+76	Third annual report,1862	Complete	OCR-assisted list screening; no additional named list transcribed		-
+77	Third annual report,1862	Complete	OCR-assisted list screening; no additional named list transcribed		-
+78	Third annual report,1862	Complete	List text visually checked; draft transcription		bdai-officers-1862
+79	Third annual report,1862	Complete	OCR-assisted list screening; no additional named list transcribed		-
+80	Third annual report,1862	Complete	OCR-assisted list screening; no additional named list transcribed		-
+81	Third annual report,1862	Complete	OCR-assisted list screening; no additional named list transcribed		-
+82	Third annual report,1862	Complete	List text visually checked; draft transcription		chaplains-memorial-1861
+83	Third annual report,1862	Complete	OCR-assisted list screening; no additional named list transcribed		-
+84	Third annual report,1862	Complete	OCR-assisted list screening; no additional named list transcribed		-
+85	Third annual report,1862	Complete	OCR-assisted list screening; no additional named list transcribed		-
+86	Third annual report,1862	Complete	List text visually checked; draft transcription		bdai-relief-fund-receipts-1862
+87	Third annual report,1862	Complete	OCR-assisted list screening; no additional named list transcribed		-
+88	Third annual report,1862	Complete	OCR-assisted list screening; no additional named list transcribed		-
+89	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+90	Convention proceedings,1865	Complete	List text visually checked; draft transcription		bdai-officers-1865
+91	Convention proceedings,1865	Complete	List text visually checked; draft transcription		bdai-delegates-1865 | bdai-session-committees-1865
+92	Convention proceedings,1865	Complete	List text visually checked; draft transcription		bdai-delegates-1865
+93	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+94	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+95	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+96	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+97	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+98	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+99	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+100	Convention proceedings,1865	Complete	List text visually checked; draft transcription		bdai-session-committees-1865
+101	Convention proceedings,1865	Complete	List text visually checked; draft transcription		bdai-delegates-1865 | bdai-session-committees-1865
+102	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+103	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+104	Convention proceedings,1865	Complete	List text visually checked; draft transcription		bdai-session-committees-1865
+105	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+106	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+107	Convention proceedings,1865	Complete	List text visually checked; draft transcription		constitutional-protest-1865
+108	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+109	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+110	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+111	Convention proceedings,1865	Complete	OCR-assisted list screening; no additional named list transcribed		-
+112	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+113	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+114	Convention proceedings,1866	Complete	List text visually checked; draft transcription		bdai-officers-1866
+115	Convention proceedings,1866	Complete	List text visually checked; draft transcription		bdai-delegates-1866
+116	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+117	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+118	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+119	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+120	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+121	Convention proceedings,1866	Complete	List text visually checked; draft transcription		bdai-session-committees-1866
+122	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+123	Convention proceedings,1866	Complete	List text visually checked; draft transcription		bdai-delegates-1866
+124	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+125	Convention proceedings,1866	Complete	List text visually checked; draft transcription		bdai-session-committees-1866
+126	Convention proceedings,1866	Complete	List text visually checked; draft transcription		bdai-session-committees-1866
+127	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+128	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+129	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+130	Convention proceedings,1866	Complete	OCR-assisted list screening; no additional named list transcribed		-
+131	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+132	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+133	Convention proceedings,1867	Complete	List text visually checked; draft transcription		bdai-officers-1867
+134	Convention proceedings,1867	Complete	List text visually checked; draft transcription		bdai-congregations-represented-1867
+135	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+136	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+137	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+138	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+139	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+140	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+141	Convention proceedings,1867	Complete	List text visually checked; draft transcription		bdai-session-committees-1867
+142	Convention proceedings,1867	Complete	List text visually checked; draft transcription		bdai-congregations-represented-1867 | bdai-session-committees-1867
+143	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+144	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+145	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+146	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+147	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+148	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+149	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+150	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+151	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+152	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+153	Convention proceedings,1867	Complete	OCR-assisted list screening; no additional named list transcribed		-
+154	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+155	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+156	Convention proceedings,1868;Maimonides College appendix	Complete	List text visually checked; draft transcription		bdai-officers-1868
+157	Convention proceedings,1868;Maimonides College appendix	Complete	List text visually checked; draft transcription		bdai-delegates-1868
+158	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+159	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+160	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+161	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+162	Convention proceedings,1868;Maimonides College appendix	Complete	List text visually checked; draft transcription		bdai-session-committees-1868
+163	Convention proceedings,1868;Maimonides College appendix	Complete	List text visually checked; draft transcription		maimonides-college-trustees-1867
+164	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+165	Convention proceedings,1868;Maimonides College appendix	Complete	List text visually checked; draft transcription		bdai-session-committees-1868 | bdai-palestine-receipts-1867
+166	Convention proceedings,1868;Maimonides College appendix	Complete	List text visually checked; draft transcription		bdai-session-committees-1868
+167	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+168	Convention proceedings,1868;Maimonides College appendix	Complete	List text visually checked; draft transcription		bdai-session-committees-1868
+169	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+170	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+171	Convention proceedings,1868;Maimonides College appendix	Complete	List text visually checked; draft transcription		maimonides-college-faculty-1867
+172	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+173	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+174	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+175	Convention proceedings,1868;Maimonides College appendix	Complete	OCR-assisted list screening; no additional named list transcribed		-
+176	Convention proceedings,1868;Maimonides College appendix	Complete	Blank/cover screening		-
+177	Convention proceedings,1868;Maimonides College appendix	Complete	List text visually checked; draft transcription		maimonides-college-directory-1869
+178	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+179	Convention proceedings,1869	Complete	List text visually checked; draft transcription		bdai-officers-1869
+180	Convention proceedings,1869	Complete	List text visually checked; draft transcription		bdai-delegates-1869
+181	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+182	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+183	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+184	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+185	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+186	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+187	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+188	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+189	Convention proceedings,1869	Complete	List text visually checked; draft transcription		bdai-session-committees-1869
+190	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+191	Convention proceedings,1869	Complete	List text visually checked; draft transcription		bdai-session-committees-1869
+192	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+193	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+194	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+195	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+196	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+197	Convention proceedings,1869	Complete	List text visually checked; draft transcription		mount-zion-pilgrim-houses-committee-1868
+198	Convention proceedings,1869	Complete	List text visually checked; draft transcription		mount-zion-pilgrim-houses-committee-1868
+199	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+200	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+201	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+202	Convention proceedings,1869	Complete	OCR-assisted list screening; no additional named list transcribed		-
+203	Convention proceedings,1870;diplomatic appendices	Complete	Blank/cover screening		-
+204	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+205	Convention proceedings,1870;diplomatic appendices	Complete	List text visually checked; draft transcription		bdai-officers-1870
+206	Convention proceedings,1870;diplomatic appendices	Complete	List text visually checked; draft transcription		bdai-delegates-1870
+207	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+208	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+209	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+210	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+211	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+212	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+213	Convention proceedings,1870;diplomatic appendices	Complete	List text visually checked; draft transcription		bdai-session-committees-1870
+214	Convention proceedings,1870;diplomatic appendices	Complete	List text visually checked; draft transcription		bdai-delegates-1870 | bdai-session-committees-1870
+215	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+216	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+217	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+218	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+219	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+220	Convention proceedings,1870;diplomatic appendices	Complete	List text visually checked; draft transcription		bdai-session-committees-1870
+221	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+222	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+223	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+224	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+225	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+226	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+227	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+228	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+229	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+230	Convention proceedings,1870;diplomatic appendices	Complete	OCR-assisted list screening; no additional named list transcribed		-
+231	Convention proceedings,1870;diplomatic appendices	Complete	Blank/cover screening		-
+232	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+233	Convention proceedings,1871	Complete	List text visually checked; draft transcription		bdai-officers-1871
+234	Convention proceedings,1871	Complete	List text visually checked; draft transcription		bdai-delegates-1871
+235	Convention proceedings,1871	Complete	List text visually checked; draft transcription		bdai-delegates-1871
+236	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+237	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+238	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+239	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+240	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+241	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+242	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+243	Convention proceedings,1871	Complete	List text visually checked; draft transcription		bdai-session-committees-1871
+244	Convention proceedings,1871	Complete	List text visually checked; draft transcription		bdai-session-committees-1871
+245	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+246	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+247	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+248	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+249	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+250	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+251	Convention proceedings,1871	Complete	OCR-assisted list screening; no additional named list transcribed		-
+252	Convention proceedings,1871	Complete	Blank/cover screening		-
+253	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+254	Convention proceedings,1872	Complete	List text visually checked; draft transcription		bdai-officers-1872
+255	Convention proceedings,1872	Complete	List text visually checked; draft transcription		bdai-congregations-represented-1872
+256	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+257	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+258	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+259	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+260	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+261	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+262	Convention proceedings,1872	Complete	List text visually checked; draft transcription		bdai-session-committees-1872
+263	Convention proceedings,1872	Complete	List text visually checked; draft transcription		bdai-session-committees-1872
+264	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+265	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+266	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+267	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+268	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+269	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+270	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+271	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+272	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+273	Convention proceedings,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+274	Convention proceedings,1872	Complete	Blank/cover screening		-
+275	Convention proceedings,1873	Complete	OCR-assisted list screening; no additional named list transcribed		-
+276	Convention proceedings,1873	Complete	List text visually checked; draft transcription		bdai-officers-1873
+277	Convention proceedings,1873	Complete	List text visually checked; draft transcription		bdai-congregations-represented-1873 | bdai-session-committees-1873
+278	Convention proceedings,1873	Complete	OCR-assisted list screening; no additional named list transcribed		-
+279	Convention proceedings,1873	Complete	List text visually checked; draft transcription		bdai-session-committees-1873
+280	Convention proceedings,1873	Complete	OCR-assisted list screening; no additional named list transcribed		-
+281	Convention proceedings,1873	Complete	OCR-assisted list screening; no additional named list transcribed		-
+282	Convention proceedings,1873	Complete	OCR-assisted list screening; no additional named list transcribed		-
+283	Convention proceedings,1873	Complete	OCR-assisted list screening; no additional named list transcribed		-
+284	Convention proceedings,1873	Complete	List text visually checked; draft transcription		bdai-session-committees-1873
+285	Convention proceedings,1873	Complete	OCR-assisted list screening; no additional named list transcribed		-
+286	Convention proceedings,1873	Complete	OCR-assisted list screening; no additional named list transcribed		-
+287	Convention proceedings,1873	Complete	OCR-assisted list screening; no additional named list transcribed		-
+288	Convention proceedings,1873	Complete	OCR-assisted list screening; no additional named list transcribed		-
+289	Convention proceedings,1873	Complete	OCR-assisted list screening; no additional named list transcribed		-
+290	Convention proceedings,1873	Complete	Blank/cover screening		-
+291	Convention proceedings,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+292	Convention proceedings,1874	Complete	List text visually checked; draft transcription		bdai-officers-1874
+293	Convention proceedings,1874	Complete	List text visually checked; draft transcription		bdai-congregations-represented-1874 | bdai-session-committees-1874
+294	Convention proceedings,1874	Complete	List text visually checked; draft transcription		bdai-session-committees-1874
+295	Convention proceedings,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+296	Convention proceedings,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+297	Convention proceedings,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+298	Convention proceedings,1874	Complete	List text visually checked; draft transcription		bdai-session-committees-1874
+299	Convention proceedings,1874	Complete	List text visually checked; draft transcription		bdai-session-committees-1874
+300	Convention proceedings,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+301	Convention proceedings,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+302	Convention proceedings,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+303	Convention proceedings,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+304	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+305	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+306	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+307	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+308	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+309	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+310	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+311	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+312	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+313	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+314	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+315	Jews in Roumania pamphlet,1872	Complete	List text visually checked; draft transcription		cahul-petition-1872
+316	Jews in Roumania pamphlet,1872	Complete	List text visually checked; draft transcription		roumania-consular-protest-1872
+317	Jews in Roumania pamphlet,1872	Complete	List text visually checked; draft transcription		roumania-consular-protest-1872
+318	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+319	Jews in Roumania pamphlet,1872	Complete	List text visually checked; draft transcription		london-roumania-deputation-1872
+320	Jews in Roumania pamphlet,1872	Complete	OCR-assisted list screening; no additional named list transcribed		-
+321	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+322	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+323	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+324	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-officers-1874
+325	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-standing-committees-1874
+326	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+327	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+328	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+329	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+330	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+331	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+332	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+333	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+334	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+335	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+336	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-medical-staff-1874 | hboas-drawing-prize-1874
+337	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+338	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+339	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+340	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+341	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-industrial-school-donors-1874
+342	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+343	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+344	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-report-committees-1873
+345	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+346	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+347	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-relief-contributions-1873
+348	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-report-committees-1873 | hboas-clothing-donors-1874
+349	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+350	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+351	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+352	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+353	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+354	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-report-committees-1873
+355	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-orphans-estate-balances-1874
+356	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-report-committees-1873 | hboas-orphans-estate-balances-1874 | hboas-life-policies-1874
+357	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+358	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+359	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+360	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-report-committees-1873
+361	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	OCR-assisted list screening; no additional named list transcribed		-
+362	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-cash-donations-1873-1874
+363	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-cash-donations-1873-1874
+364	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-golden-book-1873-1874
+365	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-golden-book-1873-1874 | hboas-inmate-gifts-1873-1874
+366	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-inmate-gifts-1873-1874
+367	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	List text visually checked; draft transcription		hboas-inmate-gifts-1873-1874
+368	Hebrew Benevolent and Orphan Asylum annual report,1874	Complete	Blank/cover screening		-
+369	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	177	-
+370	Repeated1868notice and1869report	Complete	Blank/cover screening		-
+371	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	178	-
+372	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	179	-
+373	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	180	-
+374	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	181	-
+375	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	182	-
+376	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	183	-
+377	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	184	-
+378	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	185	-
+379	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	186	-
+380	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	187	-
+381	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	188	-
+382	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	189	-
+383	Repeated1868notice and1869report	Complete	List text visually checked; draft transcription		bdai-session-committees-1869 | Repeated1869edition preserves printedpage13missing from earlier copy.
+384	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	190	-
+385	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	191	-
+386	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	192	-
+387	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	193	-
+388	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	194	-
+389	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	195	-
+390	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	196	-
+391	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	197	-
+392	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	198	-
+393	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	199	-
+394	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	200	-
+395	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	201	-
+396	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	202	-
+397	Repeated1868notice and1869report	Complete	Repeated copy screened; canonical list retained	203	-
+398	Repeated1868notice and1869report	Complete	Blank/cover screening		-
+399	Repeated1871report	Complete	Blank/cover screening		-
+400	Repeated1871report	Complete	Repeated copy screened; canonical list retained	232	-
+401	Repeated1871report	Complete	Repeated copy screened; canonical list retained	233	-
+402	Repeated1871report	Complete	Repeated copy screened; canonical list retained	234	-
+403	Repeated1871report	Complete	Repeated copy screened; canonical list retained	235	-
+404	Repeated1871report	Complete	Repeated copy screened; canonical list retained	236	-
+405	Repeated1871report	Complete	Repeated copy screened; canonical list retained	237	-
+406	Repeated1871report	Complete	Repeated copy screened; canonical list retained	238	-
+407	Repeated1871report	Complete	Repeated copy screened; canonical list retained	239	-
+408	Repeated1871report	Complete	Repeated copy screened; canonical list retained	240	-
+409	Repeated1871report	Complete	Repeated copy screened; canonical list retained	241	-
+410	Repeated1871report	Complete	Repeated copy screened; canonical list retained	242	-
+411	Repeated1871report	Complete	Repeated copy screened; canonical list retained	243	-
+412	Repeated1871report	Complete	Repeated copy screened; canonical list retained	244	-
+413	Repeated1871report	Complete	Repeated copy screened; canonical list retained	245	-
+414	Repeated1871report	Complete	Repeated copy screened; canonical list retained	246	-
+415	Repeated1871report	Complete	Repeated copy screened; canonical list retained	247	-
+416	Repeated1871report	Complete	Repeated copy screened; canonical list retained	248	-
+417	Repeated1871report	Complete	Repeated copy screened; canonical list retained	249	-
+418	Repeated1871report	Complete	Repeated copy screened; canonical list retained	250	-
+419	Repeated1871report	Complete	Repeated copy screened; canonical list retained	251	-
+420	Repeated1871report	Complete	Blank/cover screening		-
+421	Repeated1874report	Complete	OCR-assisted list screening; no additional named list transcribed		-
+422	Repeated1874report	Complete	Repeated copy screened; canonical list retained	291	-
+423	Repeated1874report	Complete	Repeated copy screened; canonical list retained	292	-
+424	Repeated1874report	Complete	Repeated copy screened; canonical list retained	293	-
+425	Repeated1874report	Complete	Repeated copy screened; canonical list retained	294	-
+426	Repeated1874report	Complete	Repeated copy screened; canonical list retained	295	-
+427	Repeated1874report	Complete	Repeated copy screened; canonical list retained		 | Repeated1874edition preserves printedpage6missing from earlier copy; prose only.
+428	Repeated1874report	Complete	Repeated copy screened; canonical list retained	296	-
+429	Repeated1874report	Complete	Repeated copy screened; canonical list retained	297	-
+430	Repeated1874report	Complete	Repeated copy screened; canonical list retained	298	-
+431	Repeated1874report	Complete	Repeated copy screened; canonical list retained	299	-
+432	Repeated1874report	Complete	Repeated copy screened; canonical list retained	300	-
+433	Repeated1874report	Complete	Repeated copy screened; canonical list retained	301	-
+434	Repeated1874report	Complete	Repeated copy screened; canonical list retained	302	-
+435	Repeated1874report	Complete	Repeated copy screened; canonical list retained	303	-
+436	Repeated1874report	Complete	Blank/cover screening		-
+437	Repeated1874report	Complete	Blank/cover screening		-
+438	Convention proceedings,1875	Complete	OCR-assisted list screening; no additional named list transcribed		-
+439	Convention proceedings,1875	Complete	List text visually checked; draft transcription		bdai-officers-1875
+440	Convention proceedings,1875	Complete	List text visually checked; draft transcription		bdai-congregations-represented-1875
+441	Convention proceedings,1875	Complete	List text visually checked; draft transcription		bdai-palestine-congregational-gift-1875
+442	Convention proceedings,1875	Complete	List text visually checked; draft transcription		bdai-palestine-congregational-gift-1875
+443	Convention proceedings,1875	Complete	OCR-assisted list screening; no additional named list transcribed		-
+444	Convention proceedings,1875	Complete	OCR-assisted list screening; no additional named list transcribed		-
+445	Convention proceedings,1875	Complete	OCR-assisted list screening; no additional named list transcribed		-
+446	Convention proceedings,1875	Complete	OCR-assisted list screening; no additional named list transcribed		-
+447	Convention proceedings,1875	Complete	OCR-assisted list screening; no additional named list transcribed		-
+448	Convention proceedings,1875	Complete	OCR-assisted list screening; no additional named list transcribed		-
+449	Convention proceedings,1875	Complete	List text visually checked; draft transcription		bdai-election-tellers-1875
+450	Convention proceedings,1875	Complete	OCR-assisted list screening; no additional named list transcribed		-
+451	Convention proceedings,1875	Complete	OCR-assisted list screening; no additional named list transcribed		-
+452	Convention proceedings,1875	Complete	OCR-assisted list screening; no additional named list transcribed		-
+453	Convention proceedings,1875	Complete	OCR-assisted list screening; no additional named list transcribed		-
+454	Convention proceedings,1875	Complete	Blank/cover screening		-
+455	Convention proceedings,1875	Complete	Blank/cover screening		-
+456	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+457	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+458	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-officers-1877
+459	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-congregations-represented-1877
+460	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+461	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+462	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+463	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+464	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+465	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-committees-1876-1877
+466	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-committees-1876-1877
+467	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-committees-1876-1877 | bdai-statistics-early-congregations-1877
+468	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+469	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+470	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-statistics-institutions-1877 | bdai-statistics-early-congregations-1877
+471	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-committees-1876-1877 | bdai-statistics-institutions-1877 | bdai-statistics-newspapers-1877 | bdai-statistics-jewish-orders-1877
+472	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+473	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+474	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-committees-1876-1877
+475	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-committees-1876-1877
+476	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-committees-1876-1877
+477	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+478	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+479	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+480	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+481	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-committees-1876-1877
+482	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-committees-1876-1877
+483	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		bdai-committees-1876-1877
+484	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+485	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+486	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+487	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+488	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+489	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+490	Convention proceedings,1877;statistics;advertisement	Complete	OCR-assisted list screening; no additional named list transcribed		-
+491	Convention proceedings,1877;statistics;advertisement	Complete	List text visually checked; draft transcription		hebrew-orphan-asylum-printing-directory-1877
+492	Convention proceedings,1877;statistics;advertisement	Complete	Blank/cover screening		-

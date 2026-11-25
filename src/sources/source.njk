@@ -16,6 +16,13 @@ eleventyComputed:
   {% if source.title_original %}<p class="orig" dir="auto">{{ source.title_original }}</p>{% endif %}
   <p class="sub">{% if source.place %}<a href="{{ source.place.url }}">{{ source.place.name }}</a>{% endif %}{% if source.publisher %} · {{ source.publisher }}{% endif %}{% if source.dates %} · {{ source.dates }}{% endif %}{% if source.catalogueUrl %} · <a href="{{ source.catalogueUrl }}">Catalogue / digitized copy</a>{% endif %}</p>
   {% if source.notes %}<p>{{ source.notes }}</p>{% endif %}
+  {% if source.id == "bdai-box1-folder01" or source.id == "hboas-report-1874-bound-bdai" %}
+  <section class="section-tight" aria-label="Bound volume review and exports">
+    <p>All 492 scans have been screened for named lists. The volume yielded 73 lists and 1,388 source appearances, including the inserted asylum report. List transcriptions remain drafts pending independent proofreading.</p>
+    <p><a href="/assets/reviews/bdai-box1-folder01/full-volume-entries.csv" download>Download all volume entries (CSV)</a> · <a href="/assets/reviews/bdai-box1-folder01/list-inventory.csv" download>List inventory (CSV)</a> · <a href="/assets/reviews/bdai-box1-folder01/page-review.tsv" download>Scan-by-scan review (TSV)</a> · <a href="/assets/reviews/bdai-box1-folder01/financial-context.csv" download>Financial context (CSV)</a></p>
+    {% if source.id == "bdai-box1-folder01" %}<p>The inserted <a href="/sources/hboas-report-1874-bound-bdai/">1874 Hebrew Benevolent and Orphan Asylum Society report</a> has its own source record and lists.</p>{% else %}<p>This publication is bound within the <a href="/sources/bdai-box1-folder01/">Board of Delegates volume</a>. The CSV above includes both sources.</p>{% endif %}
+  </section>
+  {% endif %}
   {% for r in mikvehCollection.records %}{% if r.source_id == source.id %}
   <p><a href="/collections/mikveh-israel/">Mikveh Israel collection review</a> · {{ r.scans }} supplied scans · {{ r.status }}. <a href="/assets/reviews/mikveh-israel/page-inventory.csv">Scan-by-scan review register</a></p>
   {% endif %}{% endfor %}
