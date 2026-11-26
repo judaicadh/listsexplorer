@@ -31,14 +31,15 @@ eleventyComputed:
   <section class="section-tight">
     <h2>Statistical tables</h2>
     <p>{{ dataset.scope }}</p>
-    <div class="page-thumbs" style="display:flex;gap:1rem;flex-wrap:wrap;">
+    {% if dataset.images and dataset.images.length %}<div class="page-thumbs" style="display:flex;gap:1rem;flex-wrap:wrap;">
       {% for img in dataset.images %}<a href="{{ img }}"><img src="{{ img }}" alt="PDF page {{ loop.index }} of {{ source.title }}" loading="lazy" style="width:150px;height:auto;"></a>{% endfor %}
-    </div>
-    <p class="muted small-note">Source images: JDC Archives, record 2573854. Select a page to view it full size.</p>
+    </div>{% endif %}
+    <p class="muted small-note">{{ dataset.image_credit or "Source images: JDC Archives, record 2573854. Select a page to view it full size." }}</p>
+    {% if dataset.tables.length > 6 %}<nav aria-label="Tables"><p>{% for table in dataset.tables %}<a href="#{{ table.id }}">{{ table.title }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p></nav>{% endif %}
     {% for table in dataset.tables %}
       <section class="section-tight" id="{{ table.id }}">
         <h3>{{ table.title }}</h3>
-        <p>Reference period: {{ table.as_of }} · PDF p. {{ table.page }} · <a href="{{ table.csv_url }}" download>Download table as CSV</a></p>
+        <p>Reference period: {{ table.as_of }} · {{ table.page_label or "PDF p." }} {{ table.page }} · <a href="{{ table.csv_url }}" download>Download table as CSV</a></p>
         <p>{{ table.notes }}</p>
         <div class="table-box"><table>
           <thead><tr>{% for heading in table.headers %}<th scope="col">{{ heading }}</th>{% endfor %}</tr></thead>
