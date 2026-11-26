@@ -1,0 +1,13 @@
+pdf_page,date,name_or_fund,amount,currency,transaction_type,note
+1,1877-09-25,"Joseph Davis, printer, 645 Broadway",4.00,USD,expense,150 circulars (2 pages)
+2,1877-12-21,"J. Davis, printer",5.50,USD,expense,150 circulars (2 pages)
+3,1878-01-21,"J. Davis, printer",1.75,USD,expense,125 receipts
+5,1862-01-24,"Joseph Davis, printer, 432 Broadway",4.00,USD,expense,500 circulars
+6,1860-11-12,"Joseph Davis, printer, 25 Howard St.",23.25,USD,expense,500 pamphlets $15; 200 letter-sheet statistics $2; 200 [?] $1.50; 200 circulars $2; 150 notices $1.75; 100 note headings $1; total agrees
+8,1877-08-31,"Joseph Davis, printer",80.00,USD,expense,1000 annual reports $75; 150 copies of report of Conference Committee $5
+10,1872-07,"Joseph Davis, printer",184.25,USD,expense,"Notices, letter heads, circulars incl. 'Roumanian Society', 500 annual reports $54, 2500 pamphlets 'Roumanian Outrages' $118.75; paid 27 Sept. 1872"
+13,1873-10-16,"J. Davis, printer",57.75,USD,expense,"Order to A. S. Saroni, Treasurer"
+25,1872-03-07,"A. Cremieux (on Seligman Frères, Paris)",2352.25,FRF,transfer,"Bill of exchange no. 3262, second and third copies"
+44,1875-07-20,A. Cremieux / Agricultural School at Jaffa,1131.35,FRF,transfer,Board appropriation of $250
+40,1874-06-16,Alliance Israélite Universelle / Jaffa school,100,GBP,transfer,£100 appropriated at the annual meeting for the Agricultural School at Jaffa
+54,1872-05-14,Alliance Israélite Universelle / Jaffa school,500,USD,appropriation,Voted at the session of 14 May
