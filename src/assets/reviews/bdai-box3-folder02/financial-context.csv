@@ -1,0 +1,14 @@
+pdf_page,date,name_or_fund,amount,currency,transaction_type,note
+14,1860-03-30,"Sir Moses Montefiore, Morocco Refugee Relief Fund",205.3,GBP,transfer,£205 3s. further remittance acknowledged by Sampson Samuel
+13,1875-12-04,"Board of Deputies, Holy Land",100,GBP,transfer,Remittance acknowledged
+24,1865-11-25,"Holy Land Relief Fund (A. S. Saroni, Treasurer)",6259.27,USD,aggregate receipts,"Collected to date $6,259.27; remitted £750 = $5,379.53; balance $880.34 (agrees)"
+25,1860-08-12,Myer S. Isaacs,50,USD,salary,"Order of Henry I. Hart, President, per resolution"
+27,1860-08,"A. S. Saroni, Treasurer pro tem",54.80,USD,account balance,Cash from late treasurer $112.80; paid secretary $50; rent of room $8; balance $54.80 (agrees)
+29,1860,H. I. Hart,8,USD,expense,Rent of room
+31,1873-02,"Roumanian Emigration Society (L. Bamberger, President)",250,USD,transfer,From the emigrant fund; also a Persian fund draft of $500 to the Board of Deputies
+33,1873-06-09,Alliance Israélite Universelle (Jaffa school) and Jews' Hospital at Jerusalem,600,USD,transfer,"$500 and $100, Palestine fund"
+35,1873-06-09,American Roumania Society,1296,USD,transfer,Relief fund
+37,1873-07-21,"L. Bamberger, President, Roumanian Relief Committee",250,USD,transfer,
+42,1873-09-24,Marcus Rosenberg; Max Urwitz,30,USD,relief,"$10 and $20 to Russian emigrants, charged to the Relief Fund"
+45,1873-11-10,Abraham Hart in trust for Jos. Simsohn,100,USD,grant,Relief Fund
+40,1873-10-04,Emigrant (receipt),5,USD,relief,Received from A. S. Saroni

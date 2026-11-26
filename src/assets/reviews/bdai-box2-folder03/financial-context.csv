@@ -1,0 +1,7 @@
+pdf_page,date,name_or_fund,amount,currency,transaction_type,note
+1,1876-11-30,Cable to London,10.67,USD,expense,Receipt signed F. J. Egan
+2,1873-03-04,Persian Famine Relief Fund,30.4.2,GBP,transfer,£30 4s. 2d. sent through J. M. Montefiore
+5,1872-05-31,Persian Famine Relief Fund,200,GBP,transfer,Second remittance
+6,1872-05-24,Persian Famine Relief Fund,200,GBP,transfer,Acknowledged at Sir Moses Montefiore's request
+8,1872-06-21,Persian Famine Relief Fund,200,GBP,transfer,Third remittance
+13,1874-07-09,Holy Land Relief Fund,36.11.7,GBP,transfer,First contribution of the Board's committee
